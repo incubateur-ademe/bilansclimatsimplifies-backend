@@ -1,0 +1,18 @@
+{
+  "[python]": {
+      "editor.defaultFormatter": null
+  },
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.pylintArgs": [
+      "--load-plugins=pylint_django",
+      "--rcfile",
+      "${workspaceRoot}/.pylintrc"
+  ],
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "${workspaceRoot}/venv/bin/black",
+  "python.formatting.blackArgs": [
+    "--line-length=119"
+  ],
+  "python.linting.flake8Enabled": true
+}
