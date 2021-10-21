@@ -85,11 +85,54 @@ class TestReportApi(APITestCase):
         # self.assertIn("poste_2", body[0])
         # self.assertIn("totale", body[0])
 
-    # TODO: fetch details of report by id, with calculated totals
-    # TODO: check unauthenticated view
+    def test_unauthenticated_fetch_report(self):
+        """
+        403 if attempt to fetch report without logging in
+        """
+        response = self.client.get(reverse("report", kwargs={"pk": 10}))
+        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 
-    # TODO: test modify report
-    # TODO: test unauthenticated + unauthorised modify report
+    @authenticate
+    def test_unauthorised_fetch_report(self):
+        """
+        404 if attempt to fetch report user doesn't manage
+        """
+        not_my_report = ReportFactory.create()
+
+        response = self.client.get(reverse("report", kwargs={"pk": not_my_report.id}))
+
+        self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+
+    @authenticate
+    def test_fetch_report(self):
+        """
+        Return report given id
+        """
+        my_report = ReportFactory.create(gestionnaire=authenticate.user)
+
+        response = self.client.get(reverse("report", kwargs={"pk": my_report.id}))
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        body = response.json()
+        self.assertEqual(body["id"], my_report.id)
+        self.assertIn("annee", body)
+        # TODO: self.assertIn("poste_1", body)
+        # TODO: self.assertIn("poste_2", body)
+        # TODO: self.assertIn("total", body)
+
+    @authenticate
+    def test_update_report(self):
+        """
+        Modify report by id
+        """
+        my_report = ReportFactory.create(gestionnaire=authenticate.user, nombre_salaries=60)
+
+        response = self.client.patch(reverse("report", kwargs={"pk": my_report.id}), {"nombreSalaries": 100})
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        body = response.json()
+        self.assertEqual(body["id"], my_report.id)
+        self.assertEqual(body["nombreSalaries"], 100)
 
     # TODO: manually add poste totals
     # TODO: unauthed

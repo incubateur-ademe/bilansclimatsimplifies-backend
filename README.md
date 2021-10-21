@@ -42,3 +42,7 @@ DB_HOST=127.0.0.1
 `python manage.py runserver`
 
 Et aller à un endpoint dans votre navigateur, par exemple `localhost:8000/api/v1/bilans/`
+
+## Contribuer
+
+Avant committer, `pre-commit install`

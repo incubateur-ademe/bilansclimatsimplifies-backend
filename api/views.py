@@ -12,7 +12,7 @@ from rest_framework.generics import (
 )
 from api.serializers import ReportSerializer, UserSerializer, EmissionSerializer
 from data.models import Report, Emission
-from .permissions import CanManageEmissions
+from .permissions import CanManageReport, CanManageEmissions
 
 
 class AuthenticatedUserView(RetrieveUpdateAPIView):
@@ -29,7 +29,7 @@ class AuthenticatedUserView(RetrieveUpdateAPIView):
         return self.request.user
 
 
-class ReportView(ListCreateAPIView):
+class ReportsView(ListCreateAPIView):
     model = Report
     serializer_class = ReportSerializer
     permission_classes = [permissions.IsAuthenticated]
@@ -43,6 +43,13 @@ class ReportView(ListCreateAPIView):
             serializer.save(gestionnaire=self.request.user)
         except IntegrityError:
             raise BadRequest()
+
+
+class ReportView(RetrieveUpdateAPIView):
+    model = Report
+    serializer_class = ReportSerializer
+    permission_classes = [permissions.IsAuthenticated, CanManageReport]
+    queryset = Report.objects.all()
 
 
 class ReportEmissionsView(ListAPIView):
