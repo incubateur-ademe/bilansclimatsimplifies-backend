@@ -1,10 +1,18 @@
 from django.contrib.auth import get_user_model
-from django.core.exceptions import BadRequest, PermissionDenied
+from django.core.exceptions import BadRequest
 from django.db import IntegrityError, transaction
 from rest_framework import permissions
-from rest_framework.generics import ListCreateAPIView, RetrieveUpdateAPIView, CreateAPIView, ListAPIView
+from rest_framework.exceptions import NotFound
+from rest_framework.generics import (
+    ListCreateAPIView,
+    RetrieveUpdateAPIView,
+    RetrieveUpdateDestroyAPIView,
+    CreateAPIView,
+    ListAPIView,
+)
 from api.serializers import ReportSerializer, UserSerializer, EmissionSerializer
 from data.models import Report, Emission
+from .permissions import CanManageEmissions
 
 
 class AuthenticatedUserView(RetrieveUpdateAPIView):
@@ -46,7 +54,7 @@ class ReportEmissionsView(ListAPIView):
         report_id = self.request.parser_context.get("kwargs").get("report_pk")
         report = Report.objects.get(pk=report_id)
         if report.gestionnaire != self.request.user:
-            raise PermissionDenied()
+            raise NotFound()
         return Emission.objects.filter(bilan=report_id)
 
 
@@ -60,7 +68,14 @@ class EmissionsView(CreateAPIView):
         try:
             report = serializer.validated_data["bilan"]
             if report.gestionnaire != self.request.user:
-                raise PermissionDenied()
+                raise NotFound()
             serializer.save()
         except IntegrityError:
             raise BadRequest()
+
+
+class EmissionView(RetrieveUpdateDestroyAPIView):
+    model = Emission
+    serializer_class = EmissionSerializer
+    permission_classes = [permissions.IsAuthenticated, CanManageEmissions]
+    queryset = Emission.objects.all()

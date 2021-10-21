@@ -38,7 +38,7 @@ class TestEmissionApi(APITestCase):
             },
         )
 
-        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+        self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
         self.assertEqual(len(Emission.objects.all()), 0)
 
     @authenticate
@@ -96,7 +96,7 @@ class TestEmissionApi(APITestCase):
     @authenticate
     def test_unauthorised_fetch_report_emissions(self):
         """
-        403 if not manager of the report
+        404 if not manager of the report
         """
         not_my_report = ReportFactory.create()
         EmissionFactory.create(bilan=not_my_report)
@@ -104,7 +104,7 @@ class TestEmissionApi(APITestCase):
 
         response = self.client.get(reverse("report_emissions", kwargs={"report_pk": not_my_report.id}))
 
-        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+        self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
     @authenticate
     def test_fetch_report_emissions(self):
@@ -125,11 +125,65 @@ class TestEmissionApi(APITestCase):
         # TODO: self.assertIn("resultat", emission)
         self.assertIn("note", emission)
 
-    # TODO: fetch specific emission by id
-    # TODO: unauthed
+    def test_unauthenticated_fetch_emission(self):
+        """
+        403 if attempt to fetch emission without logging in
+        """
+        response = self.client.get(reverse("emission", kwargs={"pk": 10}))
+        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 
-    # TODO: update emission by id
-    # TODO: unauthed
+    @authenticate
+    def test_unauthorised_fetch_emission(self):
+        """
+        404 if attempt to fetch emission user doesn't manage
+        """
+        not_my_report = ReportFactory.create()
+        emission = EmissionFactory.create(bilan=not_my_report)
 
-    # TODO: delete emission from report
-    # TODO: check unauthenticated view & incorrect user view
+        response = self.client.get(reverse("emission", kwargs={"pk": emission.id}))
+
+        self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+
+    @authenticate
+    def test_fetch_emission(self):
+        """
+        Return emission given id
+        """
+        my_report = ReportFactory.create(gestionnaire=authenticate.user)
+        emission = EmissionFactory.create(bilan=my_report)
+
+        response = self.client.get(reverse("emission", kwargs={"pk": emission.id}))
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        body = response.json()
+        self.assertEqual(body["id"], emission.id)
+        self.assertIn("unite", body)
+        # TODO: self.assertIn("resultat", body)
+
+    @authenticate
+    def test_update_emission(self):
+        """
+        Modify emission by id
+        """
+        my_report = ReportFactory.create(gestionnaire=authenticate.user)
+        emission = EmissionFactory.create(bilan=my_report, unite="l")
+
+        response = self.client.patch(reverse("emission", kwargs={"pk": emission.id}), {"unite": "ml"})
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        body = response.json()
+        self.assertEqual(body["id"], emission.id)
+        self.assertEqual(body["unite"], "ml")
+
+    @authenticate
+    def test_delete_emission(self):
+        """
+        Can delete emission by id
+        """
+        my_report = ReportFactory.create(gestionnaire=authenticate.user)
+        emission = EmissionFactory.create(bilan=my_report)
+
+        response = self.client.delete(reverse("emission", kwargs={"pk": emission.id}))
+
+        self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
+        self.assertEqual(Emission.objects.count(), 0)
