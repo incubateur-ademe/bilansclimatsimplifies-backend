@@ -30,7 +30,7 @@ CSRF_COOKIE_SECURE = os.getenv("FORCE_HTTPS") == "True"
 SESSION_COOKIE_SECURE = os.getenv("FORCE_HTTPS") == "True"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv("DEBUG")
+DEBUG = os.getenv("DEBUG") == "True"
 
 ALLOWED_HOSTS = [x.strip() for x in os.getenv("ALLOWED_HOSTS").split(",")]
 
