@@ -167,5 +167,9 @@ REST_FRAMEWORK = {
 
 # Configuration to allow cross origin resource sharing CORS
 
-CORS_ORIGIN_WHITELIST = [x.strip() for x in os.getenv("CORS_ORIGIN_WHITELIST").split(",")]
+if os.getenv("CORS_ORIGIN_WHITELIST"):
+    CORS_ORIGIN_WHITELIST = [x.strip() for x in os.getenv("CORS_ORIGIN_WHITELIST").split(",")]
+else:
+    # Don't use this in production
+    CORS_ALLOW_ALL_ORIGINS = os.getenv("CORS_ALLOW_ALL_ORIGINS") == "True"
 CSRF_TRUSTED_ORIGINS = [x.strip() for x in os.getenv("CSRF_TRUSTED_ORIGINS").split(",")]
