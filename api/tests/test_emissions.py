@@ -15,7 +15,7 @@ class TestEmissionApi(APITestCase):
 
         response = self.client.post(reverse("emissions"), {})
 
-        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+        self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
         self.assertEqual(len(Emission.objects.all()), 0)
 
     @authenticate
@@ -91,7 +91,7 @@ class TestEmissionApi(APITestCase):
         403 if not logged in
         """
         response = self.client.get(reverse("report_emissions", kwargs={"report_pk": 90}))
-        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+        self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
 
     @authenticate
     def test_unauthorised_fetch_report_emissions(self):
@@ -130,7 +130,7 @@ class TestEmissionApi(APITestCase):
         403 if attempt to fetch emission without logging in
         """
         response = self.client.get(reverse("emission", kwargs={"pk": 10}))
-        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+        self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
 
     @authenticate
     def test_unauthorised_fetch_emission(self):

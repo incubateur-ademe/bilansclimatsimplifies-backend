@@ -15,7 +15,7 @@ class TestReportApi(APITestCase):
 
         response = self.client.post(reverse("reports"), {})
 
-        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+        self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
         self.assertEqual(len(Report.objects.all()), 0)
 
     @authenticate
@@ -62,7 +62,7 @@ class TestReportApi(APITestCase):
 
     def test_unauthenticated_fetch_reports(self):
         response = self.client.get(reverse("reports"))
-        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+        self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
 
     @authenticate
     def test_authenticated_fetch_reports(self):
@@ -90,7 +90,7 @@ class TestReportApi(APITestCase):
         403 if attempt to fetch report without logging in
         """
         response = self.client.get(reverse("report", kwargs={"pk": 10}))
-        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+        self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
 
     @authenticate
     def test_unauthorised_fetch_report(self):

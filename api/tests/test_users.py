@@ -11,7 +11,7 @@ class TestUserApi(APITestCase):
         When attempt to get user without being logged in, get 403
         """
         response = self.client.get(reverse("authenticated_user"))
-        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+        self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
 
     @authenticate
     def test_authenticated_fetch_user(self):

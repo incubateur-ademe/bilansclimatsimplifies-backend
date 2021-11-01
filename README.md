@@ -31,6 +31,8 @@ DB_NAME=
 DB_PASSWORD=
 DB_PORT=5432
 DB_HOST=127.0.0.1
+CORS_ORIGIN_WHITELIST='http://localhost:3000'
+CSRF_TRUSTED_ORIGINS='http://localhost:3000'
 ```
 
 ## Tests
