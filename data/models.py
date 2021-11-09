@@ -10,8 +10,13 @@ class Report(models.Model):
             models.UniqueConstraint(fields=["siren", "annee"], name="annual_report"),
         ]
 
+    class Status(models.TextChoices):
+        DRAFT = "brouillon"
+        PUBLISHED = "publié"
+
     creation_date = models.DateTimeField(auto_now_add=True)
     modification_date = models.DateTimeField(auto_now=True)
+    statut = models.CharField(max_length=10, choices=Status.choices, default=Status.DRAFT)
 
     # TODO: double check that we shouldn't CASCADE on_delete
     gestionnaire = models.ForeignKey(get_user_model(), on_delete=models.SET_NULL, blank=True, null=True)

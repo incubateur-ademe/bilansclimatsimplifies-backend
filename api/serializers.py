@@ -12,7 +12,7 @@ class UserSerializer(serializers.ModelSerializer):
 class ReportSerializer(serializers.ModelSerializer):
     class Meta:
         model = Report
-        fields = ["id", "siren", "raison_sociale", "naf", "nombre_salaries", "region", "annee"]
+        fields = ["id", "siren", "raison_sociale", "naf", "nombre_salaries", "region", "annee", "statut"]
 
 
 class EmissionSerializer(serializers.ModelSerializer):

@@ -134,6 +134,21 @@ class TestReportApi(APITestCase):
         self.assertEqual(body["id"], my_report.id)
         self.assertEqual(body["nombreSalaries"], 100)
 
+    @authenticate
+    def test_publish_report(self):
+        """
+        Can publish report
+        """
+        my_report = ReportFactory.create(gestionnaire=authenticate.user)
+
+        self.assertEqual(my_report.statut, Report.Status.DRAFT)
+
+        response = self.client.patch(reverse("report", kwargs={"pk": my_report.id}), {"statut": "publié"})
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        my_report.refresh_from_db()
+        self.assertEqual(my_report.statut, Report.Status.PUBLISHED)
+
     # TODO: manually add poste totals
     # TODO: unauthed
     # TODO: check get bilan id + scope for manually added total returns just the total, no sources
