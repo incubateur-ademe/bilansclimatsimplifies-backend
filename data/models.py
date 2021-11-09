@@ -53,4 +53,6 @@ class Emission(models.Model):
     poste = models.IntegerField(verbose_name="poste")
     note = models.TextField(verbose_name="note", blank=True, null=True)
 
-    # TODO: calculated resultat
+    @property
+    def resultat(self):
+        return self.valeur * 2  # TODO: calculate resultat properly

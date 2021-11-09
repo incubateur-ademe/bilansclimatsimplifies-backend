@@ -18,4 +18,4 @@ class ReportSerializer(serializers.ModelSerializer):
 class EmissionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Emission
-        fields = ["id", "bilan", "poste", "type", "valeur", "unite", "note"]
+        fields = ["id", "bilan", "poste", "type", "valeur", "unite", "note", "resultat"]

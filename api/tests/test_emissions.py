@@ -122,7 +122,7 @@ class TestEmissionApi(APITestCase):
         self.assertEqual(len(body), 2)
         emission = body[0]
         self.assertIn("id", emission)
-        # TODO: self.assertIn("resultat", emission)
+        self.assertIn("resultat", emission)
         self.assertIn("note", emission)
 
     def test_unauthenticated_fetch_emission(self):
@@ -157,8 +157,7 @@ class TestEmissionApi(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         body = response.json()
         self.assertEqual(body["id"], emission.id)
-        self.assertIn("unite", body)
-        # TODO: self.assertIn("resultat", body)
+        self.assertIn("resultat", body)
 
     @authenticate
     def test_update_emission(self):
@@ -176,6 +175,22 @@ class TestEmissionApi(APITestCase):
         self.assertEqual(body["unite"], "ml")
 
     @authenticate
+    def test_cannot_modify_emission_result(self):
+        """
+        Cannot modify emission result
+        """
+        my_report = ReportFactory.create(gestionnaire=authenticate.user)
+        emission = EmissionFactory.create(bilan=my_report, valeur=10)
+        old_emission_result = emission.resultat
+        self.assertNotEqual(old_emission_result, 100)
+
+        response = self.client.patch(reverse("emission", kwargs={"pk": emission.id}), {"resultat": 100})
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        emission.refresh_from_db()
+        self.assertEqual(emission.resultat, old_emission_result)
+
+    @authenticate
     def test_delete_emission(self):
         """
         Can delete emission by id
@@ -187,3 +202,18 @@ class TestEmissionApi(APITestCase):
 
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
         self.assertEqual(Emission.objects.count(), 0)
+
+    @authenticate
+    def test_emission_result_calculation(self):
+        """
+        Test that emission result is 2x the emission value
+        TODO: modify this when no longer using dummy calculation
+        """
+        my_report = ReportFactory.create(gestionnaire=authenticate.user)
+        emission = EmissionFactory.create(bilan=my_report, valeur=100, unite="l")
+
+        response = self.client.get(reverse("emission", kwargs={"pk": emission.id}))
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        body = response.json()
+        self.assertEqual(body["resultat"], 200)
