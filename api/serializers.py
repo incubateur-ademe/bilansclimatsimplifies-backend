@@ -12,7 +12,19 @@ class UserSerializer(serializers.ModelSerializer):
 class ReportSerializer(serializers.ModelSerializer):
     class Meta:
         model = Report
-        fields = ["id", "siren", "raison_sociale", "naf", "nombre_salaries", "region", "annee", "statut"]
+        fields = [
+            "id",
+            "siren",
+            "raison_sociale",
+            "naf",
+            "nombre_salaries",
+            "region",
+            "annee",
+            "statut",
+            "poste_1",
+            "poste_2",
+            "total",
+        ]
 
 
 class EmissionSerializer(serializers.ModelSerializer):

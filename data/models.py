@@ -34,7 +34,17 @@ class Report(models.Model):
 
     annee = models.IntegerField(verbose_name="année")
 
-    # TODO: calculated totals
+    @property
+    def poste_1(self):
+        return sum([emission.resultat for emission in Emission.objects.filter(poste=1, bilan=self)])
+
+    @property
+    def poste_2(self):
+        return sum([emission.resultat for emission in Emission.objects.filter(poste=2, bilan=self)])
+
+    @property
+    def total(self):
+        return sum([emission.resultat for emission in Emission.objects.filter(bilan=self)])
 
 
 class Emission(models.Model):

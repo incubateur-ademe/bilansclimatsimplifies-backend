@@ -2,7 +2,7 @@ from django.urls import reverse
 from rest_framework.test import APITestCase
 from rest_framework import status
 from .utils import authenticate
-from data.factories import ReportFactory, UserFactory
+from data.factories import EmissionFactory, ReportFactory, UserFactory
 from data.models import Report
 
 
@@ -80,10 +80,7 @@ class TestReportApi(APITestCase):
         self.assertIn("siren", body[0])
         self.assertIn("naf", body[0])
         self.assertIn("region", body[0])
-        # TODO:
-        # self.assertIn("poste_1", body[0])
-        # self.assertIn("poste_2", body[0])
-        # self.assertIn("totale", body[0])
+        self.assertIn("total", body[0])
 
     def test_unauthenticated_fetch_report(self):
         """
@@ -116,9 +113,9 @@ class TestReportApi(APITestCase):
         body = response.json()
         self.assertEqual(body["id"], my_report.id)
         self.assertIn("annee", body)
-        # TODO: self.assertIn("poste_1", body)
-        # TODO: self.assertIn("poste_2", body)
-        # TODO: self.assertIn("total", body)
+        self.assertIn("poste1", body)
+        self.assertIn("poste2", body)
+        self.assertIn("total", body)
 
     @authenticate
     def test_update_report(self):
@@ -149,6 +146,27 @@ class TestReportApi(APITestCase):
         my_report.refresh_from_db()
         self.assertEqual(my_report.statut, Report.Status.PUBLISHED)
 
-    # TODO: manually add poste totals
+    @authenticate
+    def test_report_totals(self):
+        """
+        Return totals for each poste and sum of postes
+        """
+        my_report = ReportFactory.create(gestionnaire=authenticate.user)
+        EmissionFactory.create(bilan=my_report, poste=1, valeur=5)
+        EmissionFactory.create(bilan=my_report, poste=1, valeur=10)
+        EmissionFactory.create(bilan=my_report, poste=2, valeur=15)
+        EmissionFactory.create(bilan=my_report, poste=2, valeur=20)
+
+        response = self.client.get(reverse("report", kwargs={"pk": my_report.id}))
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        body = response.json()
+        self.assertEqual(body["total"], my_report.total)
+        self.assertEqual(body["poste1"], my_report.poste_1)
+        self.assertEqual(body["poste2"], my_report.poste_2)
+        self.assertEqual(my_report.total, 100)
+        self.assertEqual(my_report.poste_1, 30)
+        self.assertEqual(my_report.poste_2, 70)
+
     # TODO: unauthed
     # TODO: check get bilan id + scope for manually added total returns just the total, no sources
