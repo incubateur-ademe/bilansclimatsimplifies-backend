@@ -45,7 +45,7 @@ class ReportsView(ListCreateAPIView):
             raise BadRequest()
 
 
-class ReportView(RetrieveUpdateAPIView):
+class ReportView(RetrieveUpdateDestroyAPIView):
     model = Report
     serializer_class = ReportSerializer
     permission_classes = [permissions.IsAuthenticated, CanManageReport]

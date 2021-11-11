@@ -168,5 +168,17 @@ class TestReportApi(APITestCase):
         self.assertEqual(my_report.poste_1, 30)
         self.assertEqual(my_report.poste_2, 70)
 
+    @authenticate
+    def test_delete_report(self):
+        """
+        Can delete report
+        """
+        my_report = ReportFactory.create(gestionnaire=authenticate.user)
+
+        response = self.client.delete(reverse("report", kwargs={"pk": my_report.id}))
+
+        self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
+        self.assertEqual(Report.objects.count(), 0)
+
     # TODO: unauthed
     # TODO: check get bilan id + scope for manually added total returns just the total, no sources
