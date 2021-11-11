@@ -4,6 +4,7 @@ from rest_framework import status
 from .utils import authenticate
 from data.factories import EmissionFactory, ReportFactory, UserFactory
 from data.models import Report
+from decimal import Decimal
 
 
 class TestReportApi(APITestCase):
@@ -150,23 +151,24 @@ class TestReportApi(APITestCase):
     def test_report_totals(self):
         """
         Return totals for each poste and sum of postes
+        # TODO: consider using unit tests to isolate logic from multipliers file
         """
         my_report = ReportFactory.create(gestionnaire=authenticate.user)
-        EmissionFactory.create(bilan=my_report, poste=1, valeur=5)
-        EmissionFactory.create(bilan=my_report, poste=1, valeur=10)
-        EmissionFactory.create(bilan=my_report, poste=2, valeur=15)
-        EmissionFactory.create(bilan=my_report, poste=2, valeur=20)
+        EmissionFactory.create(bilan=my_report, poste=1, valeur=10, type="Anthracite", unite="GJ PCI")
+        EmissionFactory.create(bilan=my_report, poste=1, valeur=10, type="Anthracite", unite="kg")
+        EmissionFactory.create(bilan=my_report, poste=2, valeur=10, type="Articulé", unite="t.km")
+        EmissionFactory.create(bilan=my_report, poste=2, valeur=10, type="Autocar", unite="passager.km")
 
         response = self.client.get(reverse("report", kwargs={"pk": my_report.id}))
 
+        self.assertEqual(my_report.poste_1, Decimal("1013.3"))
+        self.assertEqual(my_report.poste_2, Decimal("0.868"))
+        self.assertEqual(my_report.total, Decimal("1014.168"))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         body = response.json()
-        self.assertEqual(body["total"], my_report.total)
-        self.assertEqual(body["poste1"], my_report.poste_1)
-        self.assertEqual(body["poste2"], my_report.poste_2)
-        self.assertEqual(my_report.total, 100)
-        self.assertEqual(my_report.poste_1, 30)
-        self.assertEqual(my_report.poste_2, 70)
+        self.assertEqual(body["poste1"], 1013.3)
+        self.assertEqual(body["poste2"], 0.868)
+        self.assertEqual(body["total"], 1014.168)
 
     @authenticate
     def test_delete_report(self):

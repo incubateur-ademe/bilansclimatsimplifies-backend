@@ -1,5 +1,6 @@
 from django.contrib.auth import get_user_model
 from django.db import models
+from data.multipliers import get_multipliers
 
 
 class Report(models.Model):
@@ -36,15 +37,19 @@ class Report(models.Model):
 
     @property
     def poste_1(self):
-        return sum([emission.resultat for emission in Emission.objects.filter(poste=1, bilan=self)])
+        return sum(
+            [emission.resultat for emission in Emission.objects.filter(poste=1, bilan=self) if emission.resultat]
+        )
 
     @property
     def poste_2(self):
-        return sum([emission.resultat for emission in Emission.objects.filter(poste=2, bilan=self)])
+        return sum(
+            [emission.resultat for emission in Emission.objects.filter(poste=2, bilan=self) if emission.resultat]
+        )
 
     @property
     def total(self):
-        return sum([emission.resultat for emission in Emission.objects.filter(bilan=self)])
+        return sum([emission.resultat for emission in Emission.objects.filter(bilan=self) if emission.resultat])
 
 
 class Emission(models.Model):
@@ -58,11 +63,14 @@ class Emission(models.Model):
     bilan = models.ForeignKey(Report, on_delete=models.CASCADE)
 
     valeur = models.DecimalField(verbose_name="valeur", max_digits=10, decimal_places=2)  # max 99.999.999,99
-    type = models.CharField(verbose_name="type d'emission", max_length=20)
-    unite = models.CharField(verbose_name="unité", max_length=10)
+    type = models.CharField(verbose_name="type d'emission", max_length=100)
+    unite = models.CharField(verbose_name="unité", max_length=20)
     poste = models.IntegerField(verbose_name="poste")
     note = models.TextField(verbose_name="note", blank=True, null=True)
 
     @property
     def resultat(self):
-        return self.valeur * 2  # TODO: calculate resultat properly
+        multiplier = get_multipliers().get_multiplier(self.type, self.unite)
+        if multiplier:
+            return self.valeur * multiplier
+        return None

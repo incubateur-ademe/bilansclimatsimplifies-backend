@@ -206,14 +206,13 @@ class TestEmissionApi(APITestCase):
     @authenticate
     def test_emission_result_calculation(self):
         """
-        Test that emission result is 2x the emission value
-        TODO: modify this when no longer using dummy calculation
+        Test that emission result is calculated correctly
         """
         my_report = ReportFactory.create(gestionnaire=authenticate.user)
-        emission = EmissionFactory.create(bilan=my_report, valeur=100, unite="l")
+        emission = EmissionFactory.create(bilan=my_report, type="Agglomérés de houille", valeur=1000, unite="kWh PCI")
 
         response = self.client.get(reverse("emission", kwargs={"pk": emission.id}))
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         body = response.json()
-        self.assertEqual(body["resultat"], 200)
+        self.assertEqual(body["resultat"], 345.0)

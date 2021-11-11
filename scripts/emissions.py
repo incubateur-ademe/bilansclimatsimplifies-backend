@@ -34,7 +34,7 @@ def create_multipliers_file(results):
             multipliers[name] = {}
         unit = emission["Unité_français"]
         if unit not in multipliers[name]:
-            multipliers[name][unit] = float(emission["Total_poste_non_décomposé"].replace(",", "."))
+            multipliers[name][unit] = emission["Total_poste_non_décomposé"].replace(",", ".")
             if multipliers[name][unit] == 0:
                 print("Warning: 0 multiplier for {}".format(name))
                 warning_zero += 1
