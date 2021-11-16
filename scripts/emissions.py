@@ -25,8 +25,8 @@ def import_results_from_file(filename):
 
 def create_multipliers_file(results):
     multipliers = {}
-    warning_zero = 0
-    warning_duplicate = 0
+    warning_zero = {}
+    warning_duplicate = {}
 
     for emission in results:
         name = emission["Nom_base_français"]
@@ -36,17 +36,19 @@ def create_multipliers_file(results):
         if unit not in multipliers[name]:
             multipliers[name][unit] = emission["Total_poste_non_décomposé"].replace(",", ".")
             if multipliers[name][unit] == 0:
-                print("Warning: 0 multiplier for {}".format(name))
-                warning_zero += 1
+                warning_zero[name] = warning_zero.get(name, 0) + 1
         else:
-            print("Warning: duplicate unit for {}".format(name))
-            warning_duplicate += 1
+            if name not in warning_duplicate:
+                warning_duplicate[name] = {}
+            warning_duplicate[name][unit] = warning_duplicate[name].get(unit, 0) + 1
 
     with open("auto_multipliers.json", "w", encoding="utf8") as jsonfile:
         json.dump(multipliers, jsonfile, indent=2, ensure_ascii=False)
 
-    print(f"Total zero multipliers: {warning_zero}")
-    print(f"Total duplicates: {warning_duplicate}")
+    print(warning_duplicate)
+    print(warning_zero)
+    print(f"Total zero multipliers: {len(warning_zero.keys())}")
+    print(f"Total duplicates: {len(warning_duplicate.keys())}")
     return multipliers
 
 
