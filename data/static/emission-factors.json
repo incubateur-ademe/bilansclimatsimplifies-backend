@@ -16,7 +16,7 @@
     "kgCO2e/m3.km": "0.0273"
   },
   "Autobus": {
-    "kgCO2e/passager.km": "0"
+    "kgCO2e/passager.km": "0.0838"
   },
   "Autocar": {
     "kgCO2e/passager.km": "0.0237"
@@ -63,13 +63,7 @@
     "kgCO2e/Tep PCS": "15.5",
     "kgCO2e/m3": "0.0162"
   },
-  "Biopropane": {
-    "kgCO2e/kg": "0",
-    "kgCO2e/GJ PCI": "0",
-    "kgCO2e/kWh PCI": "0",
-    "kgCO2e/litre": "0",
-    "kgCO2e/tep PCI": "0"
-  },
+  "Biopropane": {},
   "Bitumes": {
     "kgCO2e/GJ PCI": "81.4",
     "kgCO2e/kWh PCI": "0.293",
@@ -169,9 +163,7 @@
   "Electricité": {
     "kgCO2e/kWh": "0.969"
   },
-  "Électricité": {
-    "kgCO2e/kWh": "0"
-  },
+  "Électricité": {},
   "Essence": {
     "kgCO2e/litre": "2.2",
     "kgCO2e/GJ PCI": "69.3",
@@ -322,9 +314,7 @@
     "kgCO2e/kWh PCI": "0.265",
     "kgCO2e/tep PCI": "3090"
   },
-  "Hydrogène station": {
-    "kgCO2e/kgH2": "0"
-  },
+  "Hydrogène station": {},
   "Kérosène": {
     "kgCO2e/GJ PCI": "71.7",
     "kgCO2e/kg": "3.16",
@@ -359,9 +349,7 @@
     "kgCO2e/litre": "2.48",
     "kgCO2e/tep PCI": "3169"
   },
-  "Métro": {
-    "kgCO2e/passager.km": "0"
-  },
+  "Métro": {},
   "Moto =&lt; 250 cm3": {
     "kgCO2e/km": "0.0495"
   },
@@ -382,10 +370,7 @@
   "Orge": {
     "kgCO2e/ha": "266"
   },
-  "Paille": {
-    "kgCO2e/kWh PCI": "0",
-    "kgCO2e/kg": "0"
-  },
+  "Paille": {},
   "Pétrole Brut": {
     "kgCO2e/GJ PCI": "73.2",
     "kgCO2e/kg": "3.07"
@@ -457,15 +442,11 @@
   "Train": {
     "kgCO2e/t.km": "4.37E-3"
   },
-  "Tramway": {
-    "kgCO2e/passager.km": "0"
-  },
+  "Tramway": {},
   "Trotinnette": {
     "kgCO2e/km": "2.00E-3"
   },
-  "Utilitaire ": {
-    "kgCO2e/km": "0"
-  },
+  "Utilitaire ": {},
   "Vélo": {
     "kgCO2e/km": "2.23E-3"
   },
@@ -491,7 +472,7 @@
     "kgCO2e/passager.km": "0.118"
   },
   "Voiture particulière": {
-    "kgCO2e/km": "0"
+    "kgCO2e/km": "0.106"
   },
   "Vraquier": {
     "kgCO2e/t.km": "6.90E-3"

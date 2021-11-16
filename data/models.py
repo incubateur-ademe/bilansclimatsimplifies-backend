@@ -1,6 +1,6 @@
 from django.contrib.auth import get_user_model
 from django.db import models
-from data.multipliers import get_multipliers
+from data.emission_factors import get_emission_factors
 
 
 class Report(models.Model):
@@ -70,7 +70,7 @@ class Emission(models.Model):
 
     @property
     def resultat(self):
-        multiplier = get_multipliers().get_multiplier(self.type, self.unite)
-        if multiplier:
-            return self.valeur * multiplier
+        factor = get_emission_factors().get_factor(self.type, self.unite)
+        if factor:
+            return self.valeur * factor
         return None

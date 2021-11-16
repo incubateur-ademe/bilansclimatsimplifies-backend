@@ -151,7 +151,7 @@ class TestReportApi(APITestCase):
     def test_report_totals(self):
         """
         Return totals for each poste and sum of postes
-        # TODO: consider using unit tests to isolate logic from multipliers file
+        # TODO: consider using unit tests to isolate logic from emission factors file
         """
         my_report = ReportFactory.create(gestionnaire=authenticate.user)
         EmissionFactory.create(bilan=my_report, poste=1, valeur=10, type="Anthracite", unite="GJ PCI")
