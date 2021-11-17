@@ -1,3 +1,7 @@
+# data/static/emission-factors.json is initially generated from this script.
+# To update the file, run this script and copy the output, auto-emission-factors.json, to data/static/emission-factors.json.
+# Be careful to keep changes that have been made to data/static/emission-factors.json if they're still relevant.
+
 import requests
 import json
 
@@ -39,7 +43,7 @@ def create_emission_factors_file(results):
         if unit not in factors[name]:
             factors[name][unit] = emission_factor
 
-    with open("auto_emission_factors.json", "w", encoding="utf8") as jsonfile:
+    with open("auto-emission-factors.json", "w", encoding="utf8") as jsonfile:
         json.dump(factors, jsonfile, indent=2, ensure_ascii=False)
 
     print(duplicate_fe_by_unit)
