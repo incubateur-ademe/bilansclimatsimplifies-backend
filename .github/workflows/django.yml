@@ -45,5 +45,7 @@ jobs:
           DB_PORT: 5432
           DB_NAME: postgres
           FORCE_HTTPS: False
+          CORS_ORIGIN_WHITELIST: ''
+          CSRF_TRUSTED_ORIGINS: ''
         run: |
           python3 manage.py test
