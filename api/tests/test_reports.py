@@ -182,5 +182,78 @@ class TestReportApi(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
         self.assertEqual(Report.objects.count(), 0)
 
-    # TODO: unauthed
-    # TODO: check get bilan id + scope for manually added total returns just the total, no sources
+    @authenticate
+    def test_manually_added_post_totals(self):
+        """
+        Can choose to add a manual total, and recieve this total instead of the calculated one
+        """
+        my_report = ReportFactory.create(gestionnaire=authenticate.user)
+        EmissionFactory.create(bilan=my_report, poste=1, valeur=10, type="Anthracite", unite="kg")
+        EmissionFactory.create(bilan=my_report, poste=2, valeur=10, type="Articulé", unite="t.km")
+        self.assertNotEqual(my_report.poste_1, Decimal("300"))
+        self.assertNotEqual(my_report.poste_2, Decimal("100"))
+        self.assertNotEqual(my_report.total, Decimal("400"))
+
+        response = self.client.patch(
+            reverse("report", kwargs={"pk": my_report.id}),
+            {"manuelPoste1": 300, "manuelPoste2": 100, "mode": "manuel"},
+        )
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        body = response.json()
+        self.assertEqual(body["poste1"], 300)
+        self.assertEqual(body["poste2"], 100)
+        self.assertEqual(body["total"], 400)
+        self.assertEqual(body["mode"], "manuel")
+
+    @authenticate
+    def test_revert_to_automatic_calculations(self):
+        """
+        Can choose to switch back to automatic calculations after setting manual totals
+        """
+        my_report = ReportFactory.create(gestionnaire=authenticate.user)
+        EmissionFactory.create(bilan=my_report, poste=1, valeur=10, type="Anthracite", unite="kg")
+        EmissionFactory.create(bilan=my_report, poste=2, valeur=10, type="Articulé", unite="t.km")
+        self.assertNotEqual(my_report.poste_1, Decimal("300"))
+        self.assertNotEqual(my_report.poste_2, Decimal("100"))
+        self.assertNotEqual(my_report.total, Decimal("400"))
+
+        self.client.patch(
+            reverse("report", kwargs={"pk": my_report.id}),
+            {"manuelPoste1": 300, "manuelPoste2": 100, "mode": "manuel"},
+        )
+        response = self.client.patch(
+            reverse("report", kwargs={"pk": my_report.id}),
+            {"mode": "auto"},
+        )
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        body = response.json()
+        self.assertNotEqual(body["poste1"], 300)
+        self.assertNotEqual(body["poste2"], 100)
+        self.assertNotEqual(body["total"], 400)
+        self.assertEqual(body["mode"], "auto")
+
+    @authenticate
+    def test_manual_mode_no_totals(self):
+        """
+        If switch to manual mode without adding post totals, recieve undefined
+        """
+        my_report = ReportFactory.create(gestionnaire=authenticate.user)
+        EmissionFactory.create(bilan=my_report, poste=1, valeur=10, type="Anthracite", unite="kg")
+        EmissionFactory.create(bilan=my_report, poste=2, valeur=10, type="Articulé", unite="t.km")
+        self.assertIsNotNone(my_report.poste_1)
+        self.assertIsNotNone(my_report.poste_2)
+        self.assertIsNotNone(my_report.total)
+
+        response = self.client.patch(
+            reverse("report", kwargs={"pk": my_report.id}),
+            {"mode": "manuel"},
+        )
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        body = response.json()
+        self.assertIsNone(body["poste1"])
+        self.assertIsNone(body["poste2"])
+        self.assertIsNone(body["total"])
+        self.assertEqual(body["mode"], "manuel")

@@ -15,6 +15,10 @@ class Report(models.Model):
         DRAFT = "brouillon"
         PUBLISHED = "publié"
 
+    class CalculationMode(models.TextChoices):
+        MANUAL = "manuel"
+        AUTO = "auto"
+
     creation_date = models.DateTimeField(auto_now_add=True)
     modification_date = models.DateTimeField(auto_now=True)
     statut = models.CharField(max_length=10, choices=Status.choices, default=Status.DRAFT)
@@ -35,21 +39,50 @@ class Report(models.Model):
 
     annee = models.IntegerField(verbose_name="année")
 
+    manuel_poste_1 = models.DecimalField(
+        verbose_name="total poste 1 (manuel)",
+        max_digits=10,
+        decimal_places=2,
+        blank=True,
+        null=True,
+    )  # max 99.999.999,99
+    manuel_poste_2 = models.DecimalField(
+        verbose_name="total poste 2 (manuel)",
+        max_digits=10,
+        decimal_places=2,
+        blank=True,
+        null=True,
+    )  # max 99.999.999,99
+    mode = models.CharField(max_length=10, choices=CalculationMode.choices, default=CalculationMode.AUTO)
+
     @property
     def poste_1(self):
-        return sum(
-            [emission.resultat for emission in Emission.objects.filter(poste=1, bilan=self) if emission.resultat]
-        )
+        if self.mode == self.CalculationMode.MANUAL:
+            return self.manuel_poste_1
+        else:
+            return sum(
+                [emission.resultat for emission in Emission.objects.filter(poste=1, bilan=self) if emission.resultat]
+            )
 
     @property
     def poste_2(self):
-        return sum(
-            [emission.resultat for emission in Emission.objects.filter(poste=2, bilan=self) if emission.resultat]
-        )
+        if self.mode == self.CalculationMode.MANUAL:
+            return self.manuel_poste_2
+        else:
+            return sum(
+                [emission.resultat for emission in Emission.objects.filter(poste=2, bilan=self) if emission.resultat]
+            )
 
     @property
     def total(self):
-        return sum([emission.resultat for emission in Emission.objects.filter(bilan=self) if emission.resultat])
+        if self.poste_1 is not None and self.poste_2 is not None:
+            return self.poste_1 + self.poste_2
+        elif self.poste_1 is not None:
+            return self.poste_1
+        elif self.poste_2 is not None:
+            return self.poste_2
+        else:
+            return None
 
 
 class Emission(models.Model):

@@ -24,6 +24,9 @@ class ReportSerializer(serializers.ModelSerializer):
             "poste_1",
             "poste_2",
             "total",
+            "manuel_poste_1",
+            "manuel_poste_2",
+            "mode",
         ]
 
 
