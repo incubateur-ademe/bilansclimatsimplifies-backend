@@ -39,28 +39,30 @@
   "Bateau pousseur": {
     "kgCO2e/t.km": "0.0315"
   },
-  "Betterave": {
-    "kgCO2e/ha": "399"
-  },
   "BioGNC -Biométhane comprimé": {
     "kgCO2e/GJ PCI": "0.434",
-    "kgCO2e/kWhPCI": "2.01E-3",
+    "kgCO2e/kWhPCI": "2.01E-03",
     "kgCO2e/kg BioGNC": "0.02",
     "kgCO2e/m3": "0.016",
     "kgCO2e/tep PCI": "18.1"
   },
   "BioGNL": {
-    "kgCO2e/kWh (PCI)": "7.00E-3"
+    "kgCO2e/kWh (PCI)": "7.00E-03"
+  },
+  "Biodiesel": {
+    "kgCO2e/MJ PCI": "0",
+    "kgCO2e/kWh PCI": "0",
+    "kgCO2e/litre": "0",
+    "kgCO2e/tep PCI": "0",
+    "kgCO2e/tonne": "0"
   },
   "Biométhane": {
     "kgCO2e/GJ PCI": "0.405",
     "kgCO2e/GJ PCS": "0.377",
     "kgCO2e/Tep PCI": "17.5",
     "kgCO2e/Tep PCS": "15.5",
-    "kgCO2e/kWh PCI": "2.93E-3",
-    "kgCO2e/kWh PCS": "2.64E-3",
-    "kgCO2e/kWhPCI": "1.56E-3",
-    "kgCO2e/kWhPCS": "1.08E-3",
+    "kgCO2e/kWhPCI": "1.56E-03",
+    "kgCO2e/kWhPCS": "1.08E-03",
     "kgCO2e/m3": "0.0162"
   },
   "Biopropane": {
@@ -70,13 +72,17 @@
     "kgCO2e/litre": "0",
     "kgCO2e/tep PCI": "0"
   },
-  "Bitumes": {
-    "kgCO2e/GJ PCI": "81.4",
-    "kgCO2e/kWh PCI": "0.293",
-    "kgCO2e/tep PCI": "3412"
+  "Bioéthanol": {
+    "kgCO2e/MJ PCI": "0",
+    "kgCO2e/kWh PCI": "0",
+    "kgCO2e/litre": "0",
+    "kgCO2e/tep PCI": "0",
+    "kgCO2e/tonne": "0"
   },
-  "Blé": {
-    "kgCO2e/ha": "266"
+  "Bitumes": {
+    "kgCO2e/GJ PCI": "81.8",
+    "kgCO2e/kWh PCI": "0.295",
+    "kgCO2e/tep PCI": "3432"
   },
   "Bois bûche": {
     "kgCO2e/kWh PCI": "0.0188",
@@ -89,26 +95,18 @@
     "kgCO2e/tep PCI": "4172"
   },
   "Broyats de cagettes et de pallettes": {
-    "kgCO2e/kWh PCI": "2.97E-4",
-    "kgCO2e/kg": "1.16E-3"
+    "kgCO2e/kWh PCI": "2.97E-04",
+    "kgCO2e/kg": "1.16E-03"
   },
   "Butane": {
-    "kgCO2e/GJ PCI": "63.8",
-    "kgCO2e/kWh PCI": "0.23",
-    "kgCO2e/kg": "3.02",
-    "kgCO2e/litre": "1.76",
-    "kgCO2e/tep PCI": "2682"
+    "kgCO2e/GJ PCI": "64.8",
+    "kgCO2e/kWh PCI": "0.233",
+    "kgCO2e/kg": "2.95",
+    "kgCO2e/litre": "1.73",
+    "kgCO2e/tep PCI": "2722"
   },
   "Camion porteur": {
     "kgCO2e/m3.km": "0.0426"
-  },
-  "Carbureacteur": {
-    "kgCO2e/GJ PCI": "70.2",
-    "kgCO2e/kWh PCI": "0.253",
-    "kgCO2e/kg": "3.11",
-    "kgCO2e/litre": "2.48",
-    "kgCO2e/tep PCI": "2950",
-    "kgCO2e/tonne": "3124"
   },
   "Cargo": {
     "kgCO2e/t.km": "0.012"
@@ -150,9 +148,6 @@
     "kgCO2e/GJ PCI": "96.8",
     "kgCO2e/tep PCI": "4064"
   },
-  "Colza": {
-    "kgCO2e/ha": "266"
-  },
   "Combustible haute viscosité (CHV)": {
     "kgCO2e/GJ PCI": "80.5",
     "kgCO2e/kWh PCI": "0.29",
@@ -161,9 +156,6 @@
   },
   "Cyclomoteur": {
     "kgCO2e/km": "0.0524"
-  },
-  "Electricité": {
-    "kgCO2e/kWh": "0.969"
   },
   "Essence": {
     "kgCO2e/GJ PCI": "69.3",
@@ -174,11 +166,11 @@
     "kgCO2e/tonne": "490"
   },
   "Essence aviation (AvGas)": {
-    "kgCO2e/GJ PCI": "70.2",
-    "kgCO2e/kWh PCI": "0.253",
-    "kgCO2e/kg": "3.11",
+    "kgCO2e/GJ PCI": "71.8",
+    "kgCO2e/kWh PCI": "0.259",
+    "kgCO2e/kg": "3.16",
     "kgCO2e/litre": "2.48",
-    "kgCO2e/tep PCI": "2950",
+    "kgCO2e/tep PCI": "3020",
     "kgCO2e/tonne": "3212"
   },
   "Fioul Lourd": {
@@ -191,10 +183,10 @@
   },
   "Fioul domestique": {
     "kgCO2e/GJ PCI": "75.5",
-    "kgCO2e/kWh PCI": "0.266",
+    "kgCO2e/kWh PCI": "0.272",
     "kgCO2e/kg": "3.17",
-    "kgCO2e/litre": "2.62",
-    "kgCO2e/tep PCI": "3099",
+    "kgCO2e/litre": "2.68",
+    "kgCO2e/tep PCI": "3170",
     "kgCO2e/tonne": "3150"
   },
   "Fioul lourd": {
@@ -210,9 +202,6 @@
   },
   "Fourgon": {
     "kgCO2e/m3.km": "0.144"
-  },
-  "Fraises moyenne": {
-    "kgCO2e/m²": "6.25"
   },
   "GNC, Gaz Naturel Comprimé pour véhicule routier": {
     "kgCO2e/GJ PCI": "52",
@@ -246,13 +235,7 @@
     "kgCO2e/GJ PCI": "268"
   },
   "Gaz naturel": {
-    "kgCO2e/GJ PCI": "56.9",
-    "kgCO2e/GJ PCS": "51.2",
-    "kgCO2e/kWh PCI": "0.205",
-    "kgCO2e/kWh PCS": "0.185",
-    "kgCO2e/m3 (n)": "2.12",
-    "kgCO2e/tep PCI": "2390",
-    "kgCO2e/tep PCS": "2154"
+    "kgCO2e/m3 (n)": "2.12"
   },
   "Gaz naturel - 2015": {
     "kgCO2e/GJ PCI": "52",
@@ -308,22 +291,19 @@
     "kgCO2e/tep PCI": "4036"
   },
   "Hoverboard": {
-    "kgCO2e/heure": "6.25E-3"
+    "kgCO2e/heure": "6.25E-03"
   },
   "Huiles de schistes": {
-    "kgCO2e/GJ PCI": "73.5",
-    "kgCO2e/kWh PCI": "0.265",
-    "kgCO2e/tep PCI": "3090"
-  },
-  "Hydrogène station": {
-    "kgCO2e/kgH2": "0"
+    "kgCO2e/GJ PCI": "73.2",
+    "kgCO2e/kWh PCI": "0.264",
+    "kgCO2e/tep PCI": "3080"
   },
   "Kérosène": {
-    "kgCO2e/GJ PCI": "71.7",
-    "kgCO2e/kWh PCI": "0.258",
+    "kgCO2e/GJ PCI": "71.8",
+    "kgCO2e/kWh PCI": "0.259",
     "kgCO2e/kg": "3.16",
-    "kgCO2e/litre": "2.53",
-    "kgCO2e/tep PCI": "3010",
+    "kgCO2e/litre": "2.55",
+    "kgCO2e/tep PCI": "3020",
     "kgCO2e/tonne": "3256"
   },
   "LFO (Light Fuel Oil)": {
@@ -346,34 +326,25 @@
     "kgCO2e/litre": "2.48",
     "kgCO2e/tep PCI": "3169"
   },
-  "Maïs fourrage": {
-    "kgCO2e/ha": "266"
-  },
-  "Maïs grain": {
-    "kgCO2e/ha": "266"
-  },
-  "Moto &gt; 250 cm3": {
-    "kgCO2e/km": "0.135"
-  },
-  "Moto =&lt; 250 cm3": {
+  "Moto =< 250 cm3": {
     "kgCO2e/km": "0.0495"
+  },
+  "Moto > 250 cm3": {
+    "kgCO2e/km": "0.135"
   },
   "Métro": {
     "kgCO2e/passager.km": "0"
   },
   "Naphta": {
-    "kgCO2e/GJ PCI": "72",
-    "kgCO2e/kWh PCI": "0.259",
-    "kgCO2e/tep PCI": "3022"
+    "kgCO2e/GJ PCI": "73.8",
+    "kgCO2e/kWh PCI": "0.266",
+    "kgCO2e/tep PCI": "3102"
   },
   "Navette fluviale": {
     "kgCO2e/passager.km": "0.051"
   },
   "Navette inter-îles": {
     "kgCO2e/passager.km": "0.34"
-  },
-  "Orge": {
-    "kgCO2e/ha": "266"
   },
   "Paille": {
     "kgCO2e/kWh PCI": "0",
@@ -386,24 +357,15 @@
   "Pneumatiques usagés non réutilisables": {
     "kgCO2e/GJ PCI": "59"
   },
-  "Pois": {
-    "kgCO2e/ha": "266"
-  },
-  "Pommes de terre": {
-    "kgCO2e/ha": "399"
-  },
   "Porte-conteneur": {
-    "kgCO2e/t.km": "5.10E-3"
-  },
-  "Prairies": {
-    "kgCO2e/ha": "173"
+    "kgCO2e/t.km": "5.10E-03"
   },
   "Propane": {
-    "kgCO2e/GJ PCI": "63.8",
-    "kgCO2e/kWh PCI": "0.23",
-    "kgCO2e/kg": "3.02",
-    "kgCO2e/litre": "1.55",
-    "kgCO2e/tep PCI": "2682"
+    "kgCO2e/GJ PCI": "64.8",
+    "kgCO2e/kWh PCI": "0.233",
+    "kgCO2e/kg": "2.97",
+    "kgCO2e/litre": "1.54",
+    "kgCO2e/tep PCI": "2722"
   },
   "Pétrole Brut": {
     "kgCO2e/GJ PCI": "73.2",
@@ -422,17 +384,8 @@
     "kgCO2e/t.km": "0.0927"
   },
   "Sciures et chutes de scieries": {
-    "kgCO2e/kWh PCI": "1.99E-4",
-    "kgCO2e/kg": "4.48E-4"
-  },
-  "Serres chauffées": {
-    "kgCO2e/m²": "79.6"
-  },
-  "Serres horticoles": {
-    "kgCO2e/m²": "38.4"
-  },
-  "Sorgho": {
-    "kgCO2e/ha": "266"
+    "kgCO2e/kWh PCI": "1.99E-04",
+    "kgCO2e/kg": "4.48E-04"
   },
   "Taxi brousse": {
     "kgCO2e/km": "0.49",
@@ -444,26 +397,20 @@
     "kgCO2e/kg": "1.28",
     "kgCO2e/tep PCI": "4637"
   },
-  "Tournesol": {
-    "kgCO2e/ha": "266"
-  },
   "Train": {
-    "kgCO2e/t.km": "4.37E-3"
+    "kgCO2e/t.km": "4.37E-03"
   },
   "Tramway": {
     "kgCO2e/passager.km": "0"
   },
   "Trotinnette": {
-    "kgCO2e/km": "2.00E-3"
+    "kgCO2e/km": "2.00E-03"
   },
-  "Utilitaire ": {
+  "Utilitaire <3,5t": {
     "kgCO2e/km": "0"
   },
   "VUL": {
     "kgCO2e/t.km": "0.541"
-  },
-  "Vignes": {
-    "kgCO2e/ha": "506"
   },
   "Voiture": {
     "kgCO2e/km": "0.0808"
@@ -487,16 +434,13 @@
     "kgCO2e/km": "0"
   },
   "Vraquier": {
-    "kgCO2e/t.km": "6.90E-3"
+    "kgCO2e/t.km": "6.90E-03"
   },
   "Vélo": {
-    "kgCO2e/km": "2.23E-3"
+    "kgCO2e/km": "2.23E-03"
   },
   "coke de pétrole": {
     "kgCO2e/kWh PCI": "0.349",
     "kgCO2e/kg": "3.09"
-  },
-  "Électricité": {
-    "kgCO2e/kWh": "0"
   }
 }

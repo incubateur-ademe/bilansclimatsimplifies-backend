@@ -1,9 +1,12 @@
 # data/static/emission-factors.json is initially generated from this script.
 # To update the file, run this script and copy the output, auto-emission-factors.json, to data/static/emission-factors.json.
 # Be careful to keep changes that have been made to data/static/emission-factors.json if they're still relevant.
+# NB: the pre-commit hooks format the file further. If you would like to see the changes before committing, run `pre-commit run`
+#     on the staged emission-factors.json file.
 
 import requests
 import json
+import csv
 
 
 def ƒetch_emissions():
@@ -18,6 +21,21 @@ def ƒetch_emissions():
             f"There are {body['total']} emissions but only {len(results)} fetched, please revise script/query to get all results"
         )
     return results
+
+
+def read_emissions_file(filename):
+    with open(filename, "r", encoding="utf8") as csvfile:
+        csvreader = csv.reader(csvfile, delimiter=",")
+        headers = next(csvreader)
+        for idx, header in enumerate(headers):
+            headers[idx] = header.replace(" ", "_")
+        results = []
+        for row in csvreader:
+            result = {}
+            for idx, column in enumerate(row):
+                result[headers[idx]] = column
+            results.append(result)
+        return results
 
 
 def create_emission_factors_file(results):
@@ -51,5 +69,6 @@ def create_emission_factors_file(results):
     return factors
 
 
-results = ƒetch_emissions()
+# results = ƒetch_emissions()
+results = read_emissions_file("./Base.Carbone.V20.2_Extrait.BCS-1.csv")
 factors = create_emission_factors_file(results)
