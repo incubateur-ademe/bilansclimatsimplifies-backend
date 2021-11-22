@@ -1,446 +1,1040 @@
 {
   "Agglomérés de houille": {
-    "kgCO2e/GJ PCI": "95.8",
-    "kgCO2e/kWh PCI": "0.345",
-    "kgCO2e/kg": "3.07",
-    "kgCO2e/tep PCI": "4025"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "95.8",
+        "kgCO2e/kWh PCI": "0.345",
+        "kgCO2e/kg": "3.07",
+        "kgCO2e/tep PCI": "4025"
+      }
+    },
+    "poste": "1"
   },
   "Anthracite": {
-    "kgCO2e/GJ PCI": "98.7",
-    "kgCO2e/kWh PCI": "0.356",
-    "kgCO2e/kg": "2.63",
-    "kgCO2e/tep PCI": "4147"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "98.7",
+        "kgCO2e/kWh PCI": "0.356",
+        "kgCO2e/kg": "2.63",
+        "kgCO2e/tep PCI": "4147"
+      }
+    },
+    "poste": "1"
   },
   "Articulé": {
-    "kgCO2e/m3.km": "0.0273",
-    "kgCO2e/t.km": "0.0631"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/m3.km": "0.0273",
+        "kgCO2e/t.km": "0.0631"
+      }
+    },
+    "poste": null
   },
   "Autobus": {
-    "kgCO2e/passager.km": "0"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0"
+      }
+    },
+    "poste": null
   },
   "Autocar": {
-    "kgCO2e/passager.km": "0.0237"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.0237"
+      }
+    },
+    "poste": null
   },
   "Autres produits pétroliers": {
-    "kgCO2e/GJ PCI": "73.8",
-    "kgCO2e/kWh PCI": "0.266",
-    "kgCO2e/tep PCI": "3102"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "73.8",
+        "kgCO2e/kWh PCI": "0.266",
+        "kgCO2e/tep PCI": "3102"
+      }
+    },
+    "poste": "1"
   },
   "Avion cargo": {
-    "kgCO2e/t.km": "1.59"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "1.59"
+      }
+    },
+    "poste": null
   },
   "Avion passagers": {
-    "kgCO2e/peq.km": "0.0841",
-    "kgCO2e/t.km": "0.841"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/peq.km": "0.0841",
+        "kgCO2e/t.km": "0.841"
+      }
+    },
+    "poste": null
   },
   "Bateau automoteur": {
-    "kgCO2e/t.km": "0.0236"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.0236"
+      }
+    },
+    "poste": null
   },
   "Bateau pousseur": {
-    "kgCO2e/t.km": "0.0315"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.0315"
+      }
+    },
+    "poste": null
   },
   "BioGNC -Biométhane comprimé": {
-    "kgCO2e/GJ PCI": "0.434",
-    "kgCO2e/kWhPCI": "2.01E-03",
-    "kgCO2e/kg BioGNC": "0.02",
-    "kgCO2e/m3": "0.016",
-    "kgCO2e/tep PCI": "18.1"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "0.434",
+        "kgCO2e/kWhPCI": "2.01E-03",
+        "kgCO2e/kg BioGNC": "0.02",
+        "kgCO2e/m3": "0.016",
+        "kgCO2e/tep PCI": "18.1"
+      }
+    },
+    "poste": null
   },
   "BioGNL": {
-    "kgCO2e/kWh (PCI)": "7.00E-03"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/kWh (PCI)": "7.00E-03"
+      }
+    },
+    "poste": null
   },
   "Biodiesel": {
-    "kgCO2e/MJ PCI": "0",
-    "kgCO2e/kWh PCI": "0",
-    "kgCO2e/litre": "0",
-    "kgCO2e/tep PCI": "0",
-    "kgCO2e/tonne": "0"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/MJ PCI": "0",
+        "kgCO2e/kWh PCI": "0",
+        "kgCO2e/litre": "0",
+        "kgCO2e/tep PCI": "0",
+        "kgCO2e/tonne": "0"
+      }
+    },
+    "poste": null
   },
   "Biométhane": {
-    "kgCO2e/GJ PCI": "0.405",
-    "kgCO2e/GJ PCS": "0.377",
-    "kgCO2e/Tep PCI": "17.5",
-    "kgCO2e/Tep PCS": "15.5",
-    "kgCO2e/kWhPCI": "1.56E-03",
-    "kgCO2e/kWhPCS": "1.08E-03",
-    "kgCO2e/m3": "0.0162"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "0.405",
+        "kgCO2e/GJ PCS": "0.377",
+        "kgCO2e/Tep PCI": "17.5",
+        "kgCO2e/Tep PCS": "15.5",
+        "kgCO2e/kWhPCI": "1.56E-03",
+        "kgCO2e/kWhPCS": "1.08E-03",
+        "kgCO2e/m3": "0.0162"
+      }
+    },
+    "poste": null
   },
   "Biopropane": {
-    "kgCO2e/GJ PCI": "0",
-    "kgCO2e/kWh PCI": "0",
-    "kgCO2e/kg": "0",
-    "kgCO2e/litre": "0",
-    "kgCO2e/tep PCI": "0"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "0",
+        "kgCO2e/kWh PCI": "0",
+        "kgCO2e/kg": "0",
+        "kgCO2e/litre": "0",
+        "kgCO2e/tep PCI": "0"
+      }
+    },
+    "poste": null
   },
   "Bioéthanol": {
-    "kgCO2e/MJ PCI": "0",
-    "kgCO2e/kWh PCI": "0",
-    "kgCO2e/litre": "0",
-    "kgCO2e/tep PCI": "0",
-    "kgCO2e/tonne": "0"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/MJ PCI": "0",
+        "kgCO2e/kWh PCI": "0",
+        "kgCO2e/litre": "0",
+        "kgCO2e/tep PCI": "0",
+        "kgCO2e/tonne": "0"
+      }
+    },
+    "poste": null
   },
   "Bitumes": {
-    "kgCO2e/GJ PCI": "81.8",
-    "kgCO2e/kWh PCI": "0.295",
-    "kgCO2e/tep PCI": "3432"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "81.8",
+        "kgCO2e/kWh PCI": "0.295",
+        "kgCO2e/tep PCI": "3432"
+      }
+    },
+    "poste": "1"
   },
   "Bois bûche": {
-    "kgCO2e/kWh PCI": "0.0188",
-    "kgCO2e/kg": "0.0726"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/kWh PCI": "0.0188",
+        "kgCO2e/kg": "0.0726"
+      }
+    },
+    "poste": null
   },
   "Briquette de lignite": {
-    "kgCO2e/GJ PCI": "99.2",
-    "kgCO2e/kWh PCI": "0.357",
-    "kgCO2e/kg": "1.69",
-    "kgCO2e/tep PCI": "4172"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "99.2",
+        "kgCO2e/kWh PCI": "0.357",
+        "kgCO2e/kg": "1.69",
+        "kgCO2e/tep PCI": "4172"
+      }
+    },
+    "poste": "1"
   },
   "Broyats de cagettes et de pallettes": {
-    "kgCO2e/kWh PCI": "2.97E-04",
-    "kgCO2e/kg": "1.16E-03"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/kWh PCI": "2.97E-04",
+        "kgCO2e/kg": "1.16E-03"
+      }
+    },
+    "poste": null
   },
   "Butane": {
-    "kgCO2e/GJ PCI": "64.8",
-    "kgCO2e/kWh PCI": "0.233",
-    "kgCO2e/kg": "2.95",
-    "kgCO2e/litre": "1.73",
-    "kgCO2e/tep PCI": "2722"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "64.8",
+        "kgCO2e/kWh PCI": "0.233",
+        "kgCO2e/kg": "2.95",
+        "kgCO2e/litre": "1.73",
+        "kgCO2e/tep PCI": "2722"
+      }
+    },
+    "poste": "1"
   },
   "Camion porteur": {
-    "kgCO2e/m3.km": "0.0426"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/m3.km": "0.0426"
+      }
+    },
+    "poste": null
   },
   "Cargo": {
-    "kgCO2e/t.km": "0.012"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.012"
+      }
+    },
+    "poste": null
   },
   "Cargo inter-îles": {
-    "kgCO2e/t.km": "0.0537"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.0537"
+      }
+    },
+    "poste": null
   },
   "Charbon sous-bitumineux": {
-    "kgCO2e/GJ PCI": "96.8",
-    "kgCO2e/kWh PCI": "0.349",
-    "kgCO2e/kg": "1.94",
-    "kgCO2e/tep PCI": "4065"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "96.8",
+        "kgCO2e/kWh PCI": "0.349",
+        "kgCO2e/kg": "1.94",
+        "kgCO2e/tep PCI": "4065"
+      }
+    },
+    "poste": "1"
   },
   "Charbon à coke": {
-    "kgCO2e/GJ PCI": "95.8",
-    "kgCO2e/kWh PCI": "0.345",
-    "kgCO2e/kg": "2.49",
-    "kgCO2e/tep PCI": "4023"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "95.8",
+        "kgCO2e/kWh PCI": "0.345",
+        "kgCO2e/kg": "2.49",
+        "kgCO2e/tep PCI": "4023"
+      }
+    },
+    "poste": "1"
   },
   "Charbon à vapeur": {
-    "kgCO2e/GJ PCI": "95.8",
-    "kgCO2e/kWh PCI": "0.345",
-    "kgCO2e/kg": "2.49",
-    "kgCO2e/tep PCI": "4025"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "95.8",
+        "kgCO2e/kWh PCI": "0.345",
+        "kgCO2e/kg": "2.49",
+        "kgCO2e/tep PCI": "4025"
+      }
+    },
+    "poste": "1"
   },
   "Coke de houille": {
-    "kgCO2e/GJ PCI": "108",
-    "kgCO2e/kWh PCI": "0.389",
-    "kgCO2e/kg": "3.03",
-    "kgCO2e/tep PCI": "4540"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "108",
+        "kgCO2e/kWh PCI": "0.389",
+        "kgCO2e/kg": "3.03",
+        "kgCO2e/tep PCI": "4540"
+      }
+    },
+    "poste": "1"
   },
   "Coke de lignite": {
-    "kgCO2e/GJ PCI": "109",
-    "kgCO2e/kWh PCI": "0.393",
-    "kgCO2e/kg": "1.86",
-    "kgCO2e/tep PCI": "4582"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "109",
+        "kgCO2e/kWh PCI": "0.393",
+        "kgCO2e/kg": "1.86",
+        "kgCO2e/tep PCI": "4582"
+      }
+    },
+    "poste": "1"
   },
   "Coke de pétrole": {
-    "kgCO2e/GJ PCI": "96.8",
-    "kgCO2e/tep PCI": "4064"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "96.8",
+        "kgCO2e/tep PCI": "4064"
+      }
+    },
+    "poste": "1"
   },
   "Combustible haute viscosité (CHV)": {
-    "kgCO2e/GJ PCI": "80.5",
-    "kgCO2e/kWh PCI": "0.29",
-    "kgCO2e/kg": "3.16",
-    "kgCO2e/tep PCI": "3382"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "80.5",
+        "kgCO2e/kWh PCI": "0.29",
+        "kgCO2e/kg": "3.16",
+        "kgCO2e/tep PCI": "3382"
+      }
+    },
+    "poste": null
   },
   "Cyclomoteur": {
-    "kgCO2e/km": "0.0524"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0.0524"
+      }
+    },
+    "poste": null
   },
   "Essence": {
-    "kgCO2e/GJ PCI": "69.3",
-    "kgCO2e/kWh PCI": "0.249",
-    "kgCO2e/kg": "2.94",
-    "kgCO2e/litre": "2.2",
-    "kgCO2e/tep PCI": "2907",
-    "kgCO2e/tonne": "490"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "69.3",
+        "kgCO2e/kWh PCI": "0.249",
+        "kgCO2e/kg": "2.94",
+        "kgCO2e/litre": "2.2",
+        "kgCO2e/tep PCI": "2907",
+        "kgCO2e/tonne": "490"
+      },
+      "Outre-mer : Guadeloupe, Martinique, Guyane, Corse": {
+        "kgCO2e/kWh PCI": "0.264",
+        "kgCO2e/litre": "2.43",
+        "kgCO2e/tep PCI": "3066",
+        "kgCO2e/tonne": "3212"
+      },
+      "Outre-mer : Nouvelle Calédonie": {
+        "kgCO2e/kWh PCI": "0.264",
+        "kgCO2e/litre": "2.43",
+        "kgCO2e/tep PCI": "3066",
+        "kgCO2e/tonne": "3212"
+      },
+      "Outre-mer : Polynésie Française": {
+        "kgCO2e/kWh PCI": "0.263",
+        "kgCO2e/litre": "2.43",
+        "kgCO2e/tep PCI": "3056",
+        "kgCO2e/tonne": "3212"
+      },
+      "Outre-mer : Réunion": {
+        "kgCO2e/kWh PCI": "0.264",
+        "kgCO2e/litre": "2.43",
+        "kgCO2e/tep PCI": "3066",
+        "kgCO2e/tonne": "3212"
+      }
+    },
+    "poste": null
   },
   "Essence aviation (AvGas)": {
-    "kgCO2e/GJ PCI": "71.8",
-    "kgCO2e/kWh PCI": "0.259",
-    "kgCO2e/kg": "3.16",
-    "kgCO2e/litre": "2.48",
-    "kgCO2e/tep PCI": "3020",
-    "kgCO2e/tonne": "3212"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "71.8",
+        "kgCO2e/kWh PCI": "0.259",
+        "kgCO2e/kg": "3.16",
+        "kgCO2e/litre": "2.48",
+        "kgCO2e/tep PCI": "3020"
+      },
+      "Outre-mer : Polynésie Française": {
+        "kgCO2e/kWh PCI": "0.263",
+        "kgCO2e/litre": "2.43",
+        "kgCO2e/tep PCI": "3056",
+        "kgCO2e/tonne": "3212"
+      }
+    },
+    "poste": "2"
   },
   "Fioul Lourd": {
-    "kgCO2e/GJ PCI": "78.5",
-    "kgCO2e/kWh PCI": "0.283",
-    "kgCO2e/kg": "3.11",
-    "kgCO2e/litre": "2.83",
-    "kgCO2e/tep PCI": "3302",
-    "kgCO2e/tonne": "3120"
+    "facteurs": {
+      "Europe": {
+        "kgCO2e/kg": "3.11"
+      },
+      "France continentale": {
+        "kgCO2e/GJ PCI": "78.5",
+        "kgCO2e/kWh PCI": "0.283",
+        "kgCO2e/kg": "3.14",
+        "kgCO2e/litre": "2.83",
+        "kgCO2e/tep PCI": "3302"
+      },
+      "Outre-mer : Guadeloupe, Martinique, Guyane, Corse": {
+        "kgCO2e/kWh PCI": "0.282",
+        "kgCO2e/litre": "3.12",
+        "kgCO2e/tep PCI": "3276",
+        "kgCO2e/tonne": "3120"
+      },
+      "Outre-mer : Nouvelle Calédonie": {
+        "kgCO2e/kWh PCI": "0.282",
+        "kgCO2e/litre": "3.12",
+        "kgCO2e/tep PCI": "3276",
+        "kgCO2e/tonne": "3120"
+      },
+      "Outre-mer : Polynésie Française": {
+        "kgCO2e/kWh PCI": "0.281",
+        "kgCO2e/litre": "2.81",
+        "kgCO2e/tep PCI": "3265",
+        "kgCO2e/tonne": "3120"
+      },
+      "Outre-mer : Réunion": {
+        "kgCO2e/kWh PCI": "0.282",
+        "kgCO2e/litre": "3.12",
+        "kgCO2e/tep PCI": "3276",
+        "kgCO2e/tonne": "3120"
+      }
+    },
+    "poste": null
   },
   "Fioul domestique": {
-    "kgCO2e/GJ PCI": "75.5",
-    "kgCO2e/kWh PCI": "0.272",
-    "kgCO2e/kg": "3.17",
-    "kgCO2e/litre": "2.68",
-    "kgCO2e/tep PCI": "3170",
-    "kgCO2e/tonne": "3150"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "75.5",
+        "kgCO2e/kWh PCI": "0.272",
+        "kgCO2e/kg": "3.17",
+        "kgCO2e/litre": "2.68",
+        "kgCO2e/tep PCI": "3170"
+      },
+      "Outre-mer : Guadeloupe, Martinique, Guyane, Corse": {
+        "kgCO2e/kWh PCI": "0.271",
+        "kgCO2e/litre": "2.66",
+        "kgCO2e/tep PCI": "3150",
+        "kgCO2e/tonne": "3150"
+      },
+      "Outre-mer : Nouvelle Calédonie": {
+        "kgCO2e/kWh PCI": "0.271",
+        "kgCO2e/litre": "2.66",
+        "kgCO2e/tep PCI": "3150",
+        "kgCO2e/tonne": "3150"
+      },
+      "Outre-mer : Réunion": {
+        "kgCO2e/kWh PCI": "0.271",
+        "kgCO2e/litre": "2.66",
+        "kgCO2e/tep PCI": "3150",
+        "kgCO2e/tonne": "3150"
+      }
+    },
+    "poste": "1"
   },
   "Fioul lourd": {
-    "kgCO2e/GJ PCI": "77.8",
-    "kgCO2e/kWh PCI": "0.28",
-    "kgCO2e/litre": "2.8",
-    "kgCO2e/tep PCI": "3268"
+    "facteurs": {
+      "Europe": {
+        "kgCO2e/GJ PCI": "77.8",
+        "kgCO2e/kWh PCI": "0.28",
+        "kgCO2e/litre": "2.8",
+        "kgCO2e/tep PCI": "3268"
+      }
+    },
+    "poste": "1"
   },
   "Fioul à base de carbone recyclé": {
-    "kgCO2e/GJ PCI": "78.4",
-    "kgCO2e/kWh PCI": "0.275",
-    "kgCO2e/kg": "3.14"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "78.4",
+        "kgCO2e/kWh PCI": "0.275",
+        "kgCO2e/kg": "3.14"
+      }
+    },
+    "poste": null
   },
   "Fourgon": {
-    "kgCO2e/m3.km": "0.144"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/m3.km": "0.144"
+      }
+    },
+    "poste": null
   },
   "GNC, Gaz Naturel Comprimé pour véhicule routier": {
-    "kgCO2e/GJ PCI": "52",
-    "kgCO2e/kWh PCI": "0.187",
-    "kgCO2e/kg": "2.41",
-    "kgCO2e/m3": "1.9",
-    "kgCO2e/tep PCI": "2180"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "52",
+        "kgCO2e/kWh PCI": "0.187",
+        "kgCO2e/kg": "2.41",
+        "kgCO2e/m3": "1.9",
+        "kgCO2e/tep PCI": "2180"
+      }
+    },
+    "poste": null
   },
   "GNL, Gaz Naturel Liquéfié": {
-    "kgCO2e/GJ PCI": "52",
-    "kgCO2e/KWh PCI": "0.187",
-    "kgCO2e/Litre": "1.69",
-    "kgCO2e/TEP PCI": "2186",
-    "kgCO2e/kg": "2.58"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "52",
+        "kgCO2e/KWh PCI": "0.187",
+        "kgCO2e/Litre": "1.69",
+        "kgCO2e/TEP PCI": "2186",
+        "kgCO2e/kg": "2.58"
+      }
+    },
+    "poste": null
   },
   "GPL pour véhicule routier": {
-    "kgCO2e/GJ PCI": "64.8",
-    "kgCO2e/kWh PCI": "0.233",
-    "kgCO2e/kg": "2.96",
-    "kgCO2e/litre": "1.6",
-    "kgCO2e/tep PCI": "2722",
-    "kgCO2e/tonne": "2944"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "64.8",
+        "kgCO2e/kWh PCI": "0.233",
+        "kgCO2e/kg": "2.96",
+        "kgCO2e/litre": "1.6",
+        "kgCO2e/tep PCI": "2722"
+      },
+      "Outre-mer : Guadeloupe, Martinique, Guyane, Corse": {
+        "kgCO2e/kWh PCI": "0.231",
+        "kgCO2e/litre": "1.58",
+        "kgCO2e/tep PCI": "2688",
+        "kgCO2e/tonne": "2944"
+      },
+      "Outre-mer : Nouvelle Calédonie": {
+        "kgCO2e/kWh PCI": "0.231",
+        "kgCO2e/litre": "1.58",
+        "kgCO2e/tep PCI": "2688",
+        "kgCO2e/tonne": "2944"
+      },
+      "Outre-mer : Réunion": {
+        "kgCO2e/kWh PCI": "0.231",
+        "kgCO2e/litre": "1.58",
+        "kgCO2e/tep PCI": "2688",
+        "kgCO2e/tonne": "2944"
+      }
+    },
+    "poste": null
   },
   "Gaz d'aciérie": {
-    "kgCO2e/GJ PCI": "183"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "183"
+      }
+    },
+    "poste": null
   },
   "Gaz de cokerie": {
-    "kgCO2e/GJ PCI": "47.5"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "47.5"
+      }
+    },
+    "poste": "1"
   },
   "Gaz de haut fourneau": {
-    "kgCO2e/GJ PCI": "268"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "268"
+      }
+    },
+    "poste": "1"
   },
   "Gaz naturel": {
-    "kgCO2e/m3 (n)": "2.12"
+    "facteurs": {
+      "France continentale : Type B, nord": {
+        "kgCO2e/m3 (n)": "1.81"
+      },
+      "France continentale : Type H, France continentale sauf nord": {
+        "kgCO2e/m3 (n)": "2.12"
+      }
+    },
+    "poste": null
   },
   "Gaz naturel - 2015": {
-    "kgCO2e/GJ PCI": "52",
-    "kgCO2e/GJ PCS": "46.9",
-    "kgCO2e/TEP PCI": "2180",
-    "kgCO2e/TEP PCS": "1964",
-    "kgCO2e/kWh PCI": "0.187",
-    "kgCO2e/kWh PCS": "0.168",
-    "kgCO2e/m3": "1.81"
+    "facteurs": {
+      "France continentale : France": {
+        "kgCO2e/GJ PCI": "52",
+        "kgCO2e/GJ PCS": "46.9",
+        "kgCO2e/TEP PCI": "2180",
+        "kgCO2e/TEP PCS": "1964",
+        "kgCO2e/kWh PCI": "0.187",
+        "kgCO2e/kWh PCS": "0.168",
+        "kgCO2e/m3": "1.81"
+      }
+    },
+    "poste": null
   },
   "Gazier": {
-    "kgCO2e/t.km": "0.0469"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.0469"
+      }
+    },
+    "poste": null
   },
   "Gazole": {
-    "kgCO2e/GJ PCI": "54.1",
-    "kgCO2e/kWh PCI": "0.195",
-    "kgCO2e/litre": "1.88",
-    "kgCO2e/tep PCI": "2269",
-    "kgCO2e/tonne": "2512"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "54.1",
+        "kgCO2e/kWh PCI": "0.195",
+        "kgCO2e/litre": "1.88",
+        "kgCO2e/tep PCI": "2269",
+        "kgCO2e/tonne": "2512"
+      }
+    },
+    "poste": null
   },
   "Gazole non routier": {
-    "kgCO2e/GJ PCI": "72.7",
-    "kgCO2e/kWh PCI": "0.262",
-    "kgCO2e/kg": "3.09",
-    "kgCO2e/litre": "2.57",
-    "kgCO2e/tep PCI": "3055"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "72.7",
+        "kgCO2e/kWh PCI": "0.262",
+        "kgCO2e/kg": "3.09",
+        "kgCO2e/litre": "2.57",
+        "kgCO2e/tep PCI": "3055"
+      }
+    },
+    "poste": "2"
   },
   "Gazole routier": {
-    "kgCO2e/GJ PCI": "68.2",
-    "kgCO2e/KWh PCI": "0.246",
-    "kgCO2e/Litre": "2.41",
-    "kgCO2e/TEP PCI": "2863",
-    "kgCO2e/kWh PCI": "0.27",
-    "kgCO2e/litre": "2.66",
-    "kgCO2e/tep PCI": "3140",
-    "kgCO2e/tonne": "3150"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "68.2",
+        "kgCO2e/KWh PCI": "0.246",
+        "kgCO2e/Litre": "2.41",
+        "kgCO2e/TEP PCI": "2863",
+        "kgCO2e/kWh PCI": "0.254",
+        "kgCO2e/litre": "2.49",
+        "kgCO2e/tep PCI": "2968",
+        "kgCO2e/tonne": "3337"
+      },
+      "Outre-mer : Guadeloupe, Martinique, Guyane, Corse": {
+        "kgCO2e/kWh PCI": "0.271",
+        "kgCO2e/litre": "2.66",
+        "kgCO2e/tep PCI": "3150",
+        "kgCO2e/tonne": "3150"
+      },
+      "Outre-mer : Nouvelle Calédonie": {
+        "kgCO2e/kWh PCI": "0.271",
+        "kgCO2e/litre": "2.66",
+        "kgCO2e/tep PCI": "3150",
+        "kgCO2e/tonne": "3150"
+      },
+      "Outre-mer : Polynésie Française": {
+        "kgCO2e/kWh PCI": "0.27",
+        "kgCO2e/litre": "2.66",
+        "kgCO2e/tep PCI": "3140",
+        "kgCO2e/tonne": "3150"
+      },
+      "Outre-mer : Réunion": {
+        "kgCO2e/kWh PCI": "0.271",
+        "kgCO2e/litre": "2.66",
+        "kgCO2e/tep PCI": "3150",
+        "kgCO2e/tonne": "3150"
+      }
+    },
+    "poste": "2"
   },
   "Granulés bois": {
-    "kgCO2e/kWh PCI": "0.014",
-    "kgCO2e/kg": "0.0511"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/kWh PCI": "0.014",
+        "kgCO2e/kg": "0.0511"
+      }
+    },
+    "poste": null
   },
   "HFO (Heavy Fuel Oil)": {
-    "kgCO2e/GJ PCI": "78.5",
-    "kgCO2e/kWh PCI": "0.283",
-    "kgCO2e/kg": "3.14",
-    "kgCO2e/litre": "2.48",
-    "kgCO2e/tep PCI": "3302"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "78.5",
+        "kgCO2e/kWh PCI": "0.283",
+        "kgCO2e/kg": "3.14",
+        "kgCO2e/litre": "2.48",
+        "kgCO2e/tep PCI": "3302"
+      }
+    },
+    "poste": null
   },
   "Houille": {
-    "kgCO2e/GJ PCI": "96.1",
-    "kgCO2e/kWh PCI": "0.346",
-    "kgCO2e/kg": "3.08",
-    "kgCO2e/tep PCI": "4036"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "96.1",
+        "kgCO2e/kWh PCI": "0.346",
+        "kgCO2e/kg": "3.08",
+        "kgCO2e/tep PCI": "4036"
+      }
+    },
+    "poste": "1"
   },
   "Hoverboard": {
-    "kgCO2e/heure": "6.25E-03"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/heure": "6.25E-03"
+      }
+    },
+    "poste": null
   },
   "Huiles de schistes": {
-    "kgCO2e/GJ PCI": "73.2",
-    "kgCO2e/kWh PCI": "0.264",
-    "kgCO2e/tep PCI": "3080"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "73.2",
+        "kgCO2e/kWh PCI": "0.264",
+        "kgCO2e/tep PCI": "3080"
+      }
+    },
+    "poste": "1"
   },
   "Kérosène": {
-    "kgCO2e/GJ PCI": "71.8",
-    "kgCO2e/kWh PCI": "0.259",
-    "kgCO2e/kg": "3.16",
-    "kgCO2e/litre": "2.55",
-    "kgCO2e/tep PCI": "3020",
-    "kgCO2e/tonne": "3256"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "71.8",
+        "kgCO2e/kWh PCI": "0.259",
+        "kgCO2e/kg": "3.16",
+        "kgCO2e/litre": "2.55",
+        "kgCO2e/tep PCI": "3020"
+      },
+      "Outre-mer : Polynésie Française": {
+        "kgCO2e/kWh PCI": "0.266",
+        "kgCO2e/litre": "2.77",
+        "kgCO2e/tep PCI": "3098",
+        "kgCO2e/tonne": "3256"
+      }
+    },
+    "poste": null
   },
   "LFO (Light Fuel Oil)": {
-    "kgCO2e/GJ PCI": "75.5",
-    "kgCO2e/kWh PCI": "0.272",
-    "kgCO2e/kg": "3.17",
-    "kgCO2e/litre": "2.48",
-    "kgCO2e/tep PCI": "3169"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "75.5",
+        "kgCO2e/kWh PCI": "0.272",
+        "kgCO2e/kg": "3.17",
+        "kgCO2e/litre": "2.48",
+        "kgCO2e/tep PCI": "3169"
+      }
+    },
+    "poste": null
   },
   "Lignite": {
-    "kgCO2e/GJ PCI": "101",
-    "kgCO2e/kWh PCI": "0.364",
-    "kgCO2e/kg": "1.72",
-    "kgCO2e/tep PCI": "4251"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "101",
+        "kgCO2e/kWh PCI": "0.364",
+        "kgCO2e/kg": "1.72",
+        "kgCO2e/tep PCI": "4251"
+      }
+    },
+    "poste": "1"
   },
   "MDO (Marine Diesel Oil)": {
-    "kgCO2e/GJ PCI": "75.5",
-    "kgCO2e/kWh PCI": "0.272",
-    "kgCO2e/kg": "3.17",
-    "kgCO2e/litre": "2.48",
-    "kgCO2e/tep PCI": "3169"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "75.5",
+        "kgCO2e/kWh PCI": "0.272",
+        "kgCO2e/kg": "3.17",
+        "kgCO2e/litre": "2.48",
+        "kgCO2e/tep PCI": "3169"
+      }
+    },
+    "poste": null
   },
   "Moto =< 250 cm3": {
-    "kgCO2e/km": "0.0495"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0.0495"
+      }
+    },
+    "poste": null
   },
   "Moto > 250 cm3": {
-    "kgCO2e/km": "0.135"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0.135"
+      }
+    },
+    "poste": null
   },
   "Métro": {
-    "kgCO2e/passager.km": "0"
+    "facteurs": {
+      "France continentale : Ile de France": {
+        "kgCO2e/passager.km": "0"
+      }
+    },
+    "poste": null
   },
   "Naphta": {
-    "kgCO2e/GJ PCI": "73.8",
-    "kgCO2e/kWh PCI": "0.266",
-    "kgCO2e/tep PCI": "3102"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "73.8",
+        "kgCO2e/kWh PCI": "0.266",
+        "kgCO2e/tep PCI": "3102"
+      }
+    },
+    "poste": "1"
   },
   "Navette fluviale": {
-    "kgCO2e/passager.km": "0.051"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.051"
+      }
+    },
+    "poste": null
   },
   "Navette inter-îles": {
-    "kgCO2e/passager.km": "0.34"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.34"
+      }
+    },
+    "poste": null
   },
   "Paille": {
-    "kgCO2e/kWh PCI": "0",
-    "kgCO2e/kg": "0"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/kWh PCI": "0",
+        "kgCO2e/kg": "0"
+      }
+    },
+    "poste": "1"
   },
   "Plaquettes forestières": {
-    "kgCO2e/kWh PCI": "0.0132",
-    "kgCO2e/kg": "0.0482"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/kWh PCI": "0.0132",
+        "kgCO2e/kg": "0.0482"
+      }
+    },
+    "poste": "1"
   },
   "Pneumatiques usagés non réutilisables": {
-    "kgCO2e/GJ PCI": "59"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "59"
+      }
+    },
+    "poste": null
   },
   "Porte-conteneur": {
-    "kgCO2e/t.km": "5.10E-03"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "5.10E-03"
+      }
+    },
+    "poste": null
   },
   "Propane": {
-    "kgCO2e/GJ PCI": "64.8",
-    "kgCO2e/kWh PCI": "0.233",
-    "kgCO2e/kg": "2.97",
-    "kgCO2e/litre": "1.54",
-    "kgCO2e/tep PCI": "2722"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "64.8",
+        "kgCO2e/kWh PCI": "0.233",
+        "kgCO2e/kg": "2.97",
+        "kgCO2e/litre": "1.54",
+        "kgCO2e/tep PCI": "2722"
+      }
+    },
+    "poste": "1"
   },
   "Pétrole Brut": {
-    "kgCO2e/GJ PCI": "73.2",
-    "kgCO2e/kg": "3.07"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "73.2",
+        "kgCO2e/kg": "3.07"
+      }
+    },
+    "poste": "1"
   },
   "Pétrolier": {
-    "kgCO2e/t.km": "0.019"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.019"
+      }
+    },
+    "poste": null
   },
   "Rigide": {
-    "kgCO2e/t.km": "0.12"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.12"
+      }
+    },
+    "poste": null
   },
   "Ro-Pax": {
-    "kgCO2e/t.km": "0.19"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.19"
+      }
+    },
+    "poste": null
   },
   "Ro-Ro": {
-    "kgCO2e/t.km": "0.0927"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.0927"
+      }
+    },
+    "poste": null
   },
   "Sciures et chutes de scieries": {
-    "kgCO2e/kWh PCI": "1.99E-04",
-    "kgCO2e/kg": "4.48E-04"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/kWh PCI": "1.99E-04",
+        "kgCO2e/kg": "4.48E-04"
+      }
+    },
+    "poste": null
   },
   "Taxi brousse": {
-    "kgCO2e/km": "0.49",
-    "kgCO2e/passager.km": "0.0318"
+    "facteurs": {
+      "Outre-mer : Mayotte": {
+        "kgCO2e/km": "0.49",
+        "kgCO2e/passager.km": "0.0318"
+      }
+    },
+    "poste": null
   },
   "Tourbe": {
-    "kgCO2e/GJ PCI": "110",
-    "kgCO2e/kWh PCI": "0.398",
-    "kgCO2e/kg": "1.28",
-    "kgCO2e/tep PCI": "4637"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "110",
+        "kgCO2e/kWh PCI": "0.398",
+        "kgCO2e/kg": "1.28",
+        "kgCO2e/tep PCI": "4637"
+      }
+    },
+    "poste": "1"
   },
   "Train": {
-    "kgCO2e/t.km": "4.37E-03"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "4.37E-03"
+      }
+    },
+    "poste": null
   },
   "Tramway": {
-    "kgCO2e/passager.km": "0"
+    "facteurs": {
+      "France continentale : Ile de France": {
+        "kgCO2e/passager.km": "0"
+      }
+    },
+    "poste": null
   },
   "Trotinnette": {
-    "kgCO2e/km": "2.00E-03"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "2.00E-03"
+      }
+    },
+    "poste": null
   },
   "Utilitaire <3,5t": {
-    "kgCO2e/km": "0"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0"
+      }
+    },
+    "poste": null
   },
   "VUL": {
-    "kgCO2e/t.km": "0.541"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.541"
+      }
+    },
+    "poste": null
   },
   "Voiture": {
-    "kgCO2e/km": "0.0808"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0.0808"
+      }
+    },
+    "poste": null
   },
   "Voiture E85": {
-    "kgCO2e/passager.km": "0.0298"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.0298"
+      }
+    },
+    "poste": null
   },
   "Voiture GNV": {
-    "kgCO2e/passager.km": "0.113"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.113"
+      }
+    },
+    "poste": null
   },
   "Voiture GPL": {
-    "kgCO2e/passager.km": "0.118"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.118"
+      }
+    },
+    "poste": null
   },
   "Voiture essence": {
-    "kgCO2e/passager.km": "0.122"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.122"
+      }
+    },
+    "poste": null
   },
   "Voiture gazole": {
-    "kgCO2e/passager.km": "0.112"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.112"
+      }
+    },
+    "poste": null
   },
   "Voiture particulière": {
-    "kgCO2e/km": "0"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0"
+      },
+      "France continentale : France": {
+        "kgCO2e/km": "0"
+      }
+    },
+    "poste": null
   },
   "Vraquier": {
-    "kgCO2e/t.km": "6.90E-03"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "6.90E-03"
+      }
+    },
+    "poste": null
   },
   "Vélo": {
-    "kgCO2e/km": "2.23E-03"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "2.23E-03"
+      }
+    },
+    "poste": null
   },
   "coke de pétrole": {
-    "kgCO2e/kWh PCI": "0.349",
-    "kgCO2e/kg": "3.09"
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/kWh PCI": "0.349",
+        "kgCO2e/kg": "3.09"
+      }
+    },
+    "poste": null
   }
 }

@@ -42,15 +42,32 @@ def create_emission_factors_file(results):
     factors = {}
     duplicate_fe_by_unit = {}
     duplicate_count = 0
+    posts = {}
+    missing_post = []
+
+    with open("./files/posts.json", "r", encoding="utf8") as jsonfile:
+        posts = json.load(jsonfile)
 
     for emission in results:
         name = emission["Nom_base_français"]
         unit = emission["Unité_français"]
         if name not in factors:
-            factors[name] = {}
+            factors[name] = {
+                "facteurs": {},
+            }
+            if name in posts:
+                factors[name]["poste"] = posts[name]
+            else:
+                missing_post.append(name)
+                factors[name]["poste"] = None
+        location = emission["Localisation_géographique"]
+        if emission["Sous-localisation_géographique_français"]:
+            location += " : " + emission["Sous-localisation_géographique_français"]
+        if location not in factors[name]["facteurs"]:
+            factors[name]["facteurs"][location] = {}
 
         # note if there is a duplicate unit for emission type
-        if unit in factors[name]:
+        if unit in factors[name]["facteurs"][location]:
             if name not in duplicate_fe_by_unit:
                 duplicate_fe_by_unit[name] = {}
             duplicate_fe_by_unit[name][unit] = duplicate_fe_by_unit[name].get(unit, 0) + 1
@@ -58,17 +75,18 @@ def create_emission_factors_file(results):
         emission_factor = emission["Total_poste_non_décomposé"].replace(",", ".")
 
         # add to factors
-        if unit not in factors[name]:
-            factors[name][unit] = emission_factor
+        if unit not in factors[name]["facteurs"][location]:
+            factors[name]["facteurs"][location][unit] = emission_factor
 
     with open("auto-emission-factors.json", "w", encoding="utf8") as jsonfile:
         json.dump(factors, jsonfile, indent=2, ensure_ascii=False)
 
     print(duplicate_fe_by_unit)
     print(f"Total duplicates: {duplicate_count}")
+    print(f"Missing posts: {missing_post}")
     return factors
 
 
 # results = ƒetch_emissions()
-results = read_emissions_file("./Base.Carbone.V20.2_Extrait.BCS-1.csv")
+results = read_emissions_file("./files/Base.Carbone.V20.2_Extrait.BCS-1.csv")
 factors = create_emission_factors_file(results)
