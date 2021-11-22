@@ -44,6 +44,7 @@ def create_emission_factors_file(results):
     duplicate_count = 0
     posts = {}
     missing_post = []
+    post_used = []
 
     with open("./files/posts.json", "r", encoding="utf8") as jsonfile:
         posts = json.load(jsonfile)
@@ -57,6 +58,7 @@ def create_emission_factors_file(results):
             }
             if name in posts:
                 factors[name]["poste"] = posts[name]
+                post_used.append(name)
             else:
                 missing_post.append(name)
                 factors[name]["poste"] = None
@@ -84,6 +86,8 @@ def create_emission_factors_file(results):
     print(duplicate_fe_by_unit)
     print(f"Total duplicates: {duplicate_count}")
     print(f"Missing posts: {missing_post}")
+    unused_posts = [name for name in posts.keys() if name not in post_used]
+    print(f"Unused posts: {unused_posts}")
     return factors
 
 

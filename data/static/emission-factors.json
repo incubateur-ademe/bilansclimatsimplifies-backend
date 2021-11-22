@@ -133,7 +133,7 @@
         "kgCO2e/m3": "0.0162"
       }
     },
-    "poste": null
+    "poste": "1"
   },
   "Biopropane": {
     "facteurs": {
@@ -352,7 +352,7 @@
         "kgCO2e/tonne": "3212"
       }
     },
-    "poste": null
+    "poste": "2"
   },
   "Essence aviation (AvGas)": {
     "facteurs": {
@@ -409,7 +409,7 @@
         "kgCO2e/tonne": "3120"
       }
     },
-    "poste": null
+    "poste": "1"
   },
   "Fioul domestique": {
     "facteurs": {
@@ -460,7 +460,7 @@
         "kgCO2e/kg": "3.14"
       }
     },
-    "poste": null
+    "poste": "1"
   },
   "Fourgon": {
     "facteurs": {
@@ -492,7 +492,7 @@
         "kgCO2e/kg": "2.58"
       }
     },
-    "poste": null
+    "poste": "2"
   },
   "GPL pour véhicule routier": {
     "facteurs": {
@@ -530,7 +530,7 @@
         "kgCO2e/GJ PCI": "183"
       }
     },
-    "poste": null
+    "poste": "1"
   },
   "Gaz de cokerie": {
     "facteurs": {
@@ -557,7 +557,7 @@
         "kgCO2e/m3 (n)": "2.12"
       }
     },
-    "poste": null
+    "poste": "1"
   },
   "Gaz naturel - 2015": {
     "facteurs": {
@@ -571,7 +571,7 @@
         "kgCO2e/m3": "1.81"
       }
     },
-    "poste": null
+    "poste": "1"
   },
   "Gazier": {
     "facteurs": {
@@ -591,7 +591,7 @@
         "kgCO2e/tonne": "2512"
       }
     },
-    "poste": null
+    "poste": "2"
   },
   "Gazole non routier": {
     "facteurs": {
@@ -651,7 +651,7 @@
         "kgCO2e/kg": "0.0511"
       }
     },
-    "poste": null
+    "poste": "1"
   },
   "HFO (Heavy Fuel Oil)": {
     "facteurs": {
@@ -663,7 +663,7 @@
         "kgCO2e/tep PCI": "3302"
       }
     },
-    "poste": null
+    "poste": "2"
   },
   "Houille": {
     "facteurs": {
@@ -722,7 +722,7 @@
         "kgCO2e/tep PCI": "3169"
       }
     },
-    "poste": null
+    "poste": "2"
   },
   "Lignite": {
     "facteurs": {
@@ -745,7 +745,7 @@
         "kgCO2e/tep PCI": "3169"
       }
     },
-    "poste": null
+    "poste": "2"
   },
   "Moto =< 250 cm3": {
     "facteurs": {
@@ -821,7 +821,7 @@
         "kgCO2e/GJ PCI": "59"
       }
     },
-    "poste": null
+    "poste": "1"
   },
   "Porte-conteneur": {
     "facteurs": {
@@ -891,7 +891,7 @@
         "kgCO2e/kg": "4.48E-04"
       }
     },
-    "poste": null
+    "poste": "1"
   },
   "Taxi brousse": {
     "facteurs": {
@@ -1035,6 +1035,6 @@
         "kgCO2e/kg": "3.09"
       }
     },
-    "poste": null
+    "poste": "1"
   }
 }
