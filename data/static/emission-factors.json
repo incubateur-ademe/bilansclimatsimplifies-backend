@@ -307,7 +307,7 @@
         "kgCO2e/tep PCI": "3382"
       }
     },
-    "poste": null
+    "poste": "1"
   },
   "Cyclomoteur": {
     "facteurs": {
@@ -480,7 +480,7 @@
         "kgCO2e/tep PCI": "2180"
       }
     },
-    "poste": null
+    "poste": "2"
   },
   "GNL, Gaz Naturel Liquéfié": {
     "facteurs": {
