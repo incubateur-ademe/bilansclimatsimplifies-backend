@@ -4,8 +4,11 @@ from rest_framework import status
 from .utils import authenticate
 from data.factories import ReportFactory, EmissionFactory
 from data.models import Emission
+from data.emission_factors import get_emission_factors
+from unittest.mock import patch
 
 
+@patch.object(get_emission_factors(), "emission_factors", {"Agglomérés de houille": {"kgCO2e/kWh PCI": 0.345}})
 class TestEmissionApi(APITestCase):
     def test_unauthenticated_create_emission(self):
         """
@@ -216,3 +219,27 @@ class TestEmissionApi(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         body = response.json()
         self.assertEqual(body["resultat"], 345.0)
+
+    # update tests to use new emissions file structure
+    # test decimal arithmetic
+    # what kind of numbers are we expecting?
+    # what is expected behaviour if no emission factor to calculate result?
+
+
+class TestEmissionApiRealFactors(APITestCase):
+    @authenticate
+    def test_result_generated(self):
+        """
+        Test that some result is generated. Smoke test to check that dummy file format
+        reflects real file format.
+        """
+        my_report = ReportFactory.create(gestionnaire=authenticate.user)
+        emission = EmissionFactory.create(bilan=my_report, type="Agglomérés de houille", valeur=1000, unite="kWh PCI")
+
+        response = self.client.get(reverse("emission", kwargs={"pk": emission.id}))
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        body = response.json()
+        # actual calculations tested with unit tests above
+        self.assertIsNotNone(body["resultat"])
+        self.assertTrue(body["resultat"] > 0)

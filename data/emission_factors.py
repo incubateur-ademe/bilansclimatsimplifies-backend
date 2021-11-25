@@ -1,3 +1,5 @@
+# Les facteurs d'émission sont définies dans une fichier JSON plutôt qu'un classe de choix en Django
+# car le client veut pouvoir les modifier, et cette méthode ne requiert pas une migration après.
 import json
 import os
 from decimal import Decimal

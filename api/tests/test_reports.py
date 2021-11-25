@@ -152,6 +152,7 @@ class TestReportApi(APITestCase):
         """
         Return totals for each poste and sum of postes
         # TODO: consider using unit tests to isolate logic from emission factors file
+        # TODO: test decimal arithmetic
         """
         my_report = ReportFactory.create(gestionnaire=authenticate.user)
         EmissionFactory.create(bilan=my_report, poste=1, valeur=10, type="Anthracite", unite="GJ PCI")
@@ -203,7 +204,7 @@ class TestReportApi(APITestCase):
         body = response.json()
         self.assertEqual(body["poste1"], 300)
         self.assertEqual(body["poste2"], 100)
-        self.assertEqual(body["total"], 400)
+        self.assertEqual(body["total"], 400)  # TODO: test decimal arithmetic
         self.assertEqual(body["mode"], "manuel")
 
     @authenticate
