@@ -10,6 +10,8 @@ from rest_framework.generics import (
     CreateAPIView,
     ListAPIView,
 )
+from rest_framework.response import Response
+from rest_framework.views import APIView
 from api.serializers import ReportSerializer, UserSerializer, EmissionSerializer
 from data.models import Report, Emission
 from .permissions import CanManageReport, CanManageEmissions
@@ -27,6 +29,16 @@ class AuthenticatedUserView(RetrieveUpdateAPIView):
 
     def get_object(self):
         return self.request.user
+
+
+class AdemeUserView(APIView):
+    """
+    API endpoint that allows users to be viewed or edited.
+    """
+
+    def post(self, request):
+        token = request.data.get("token")
+        return Response({"token": token})
 
 
 class ReportsView(ListCreateAPIView):
