@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     "django.contrib.postgres",
     "rest_framework",
     "corsheaders",
+    "rest_framework_simplejwt",
     "rest_framework.authtoken",
     "api",
     "data",
@@ -160,6 +161,7 @@ REST_FRAMEWORK = {
         "djangorestframework_camel_case.parser.CamelCaseJSONParser",
     ),
     "DEFAULT_AUTHENTICATION_CLASSES": [
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
         "rest_framework.authentication.TokenAuthentication",
         "rest_framework.authentication.SessionAuthentication",
     ],
@@ -173,3 +175,20 @@ else:
     # Don't use this in production
     CORS_ALLOW_ALL_ORIGINS = os.getenv("CORS_ALLOW_ALL_ORIGINS") == "True"
 CSRF_TRUSTED_ORIGINS = [x.strip() for x in os.getenv("CSRF_TRUSTED_ORIGINS").split(",")]
+
+SIMPLE_JWT = {
+    "UPDATE_LAST_LOGIN": False,
+    "ALGORITHM": "RS256",
+    "AUDIENCE": "account",
+    "ISSUER": os.getenv("JWT_ISSUER"),
+    "JWK_URL": os.getenv("JWT_CERTS_URL"),
+    "AUTH_HEADER_TYPES": ("Token",),
+    "AUTH_HEADER_NAME": "HTTP_AUTHORIZATION",
+    "USER_ID_FIELD": "username",
+    "USER_ID_CLAIM": "sub",
+    # OIDC tokens do not fit library types, so skip type checking by using UntypedToken
+    # https://github.com/jazzband/djangorestframework-simplejwt/issues/446
+    "AUTH_TOKEN_CLASSES": ("rest_framework_simplejwt.tokens.UntypedToken",),
+    "TOKEN_TYPE_CLAIM": "typ",
+    "JTI_CLAIM": "jti",
+}

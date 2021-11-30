@@ -11,10 +11,12 @@ from rest_framework.generics import (
     ListAPIView,
 )
 from rest_framework.response import Response
+from rest_framework.status import HTTP_201_CREATED
 from rest_framework.views import APIView
 from api.serializers import ReportSerializer, UserSerializer, EmissionSerializer
 from data.models import Report, Emission
 from .permissions import CanManageReport, CanManageEmissions
+from rest_framework_simplejwt.tokens import UntypedToken
 
 
 class AuthenticatedUserView(RetrieveUpdateAPIView):
@@ -37,8 +39,32 @@ class AdemeUserView(APIView):
     """
 
     def post(self, request):
-        token = request.data.get("token")
-        return Response({"token": token})
+        token = None
+        try:
+            token = self._get_token(request.data["token"])
+        except KeyError:
+            raise BadRequest("Expected 'token' in payload")
+        user = token
+        try:
+            with transaction.atomic():
+                get_user_model().objects.create_user(
+                    username=user["sub"],
+                    email=user["email"],
+                    first_name=user["given_name"],
+                    last_name=user["family_name"],
+                )
+        except IntegrityError:
+            get_user_model().objects.filter(username=user["sub"]).update(
+                email=user["email"],
+                first_name=user["given_name"],
+                last_name=user["family_name"],
+            )
+        return Response({}, status=HTTP_201_CREATED)
+
+    # wrap to allow for patching in tests
+    @staticmethod
+    def _get_token(token):
+        return UntypedToken(token)
 
 
 class ReportsView(ListCreateAPIView):

@@ -8,6 +8,7 @@ On utilise:
 - pip 21.2.4
 - [pre-commit](https://pre-commit.com/)
 - [PostgreSQL 14.0](https://www.postgresql.org/)
+- [Keycloak](https://www.keycloak.org/) pour auth
 
 ## Installer
 
@@ -18,6 +19,8 @@ Créer l'envionnement virtuel pour python : `python -m venv ./venv`
 Activer l'environnement (si nécéssaire) : `source ./venv/bin/activate`. Quand l'env est actif, on vois `(venv)` avant les commandes dans le terminal.
 
 Installer les requirements du projet : `pip install -r requirements.txt`
+
+Lancer keycloak en local `docker run -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin quay.io/keycloak/keycloak:15.0.2` et créer le realm `myrealm`, client, et utilisateur. [En lisant plus du setup](https://www.keycloak.org/getting-started/getting-started-docker).
 
 ## Variables d'environnement
 
@@ -33,6 +36,8 @@ DB_PORT=5432
 DB_HOST=127.0.0.1
 CORS_ORIGIN_WHITELIST='http://localhost:3000'
 CSRF_TRUSTED_ORIGINS='http://localhost:3000'
+JWT_ISSUER="http://localhost:8080/auth/realms/myrealm"
+JWT_CERTS_URL="http://localhost:8080/auth/realms/myrealm/protocol/openid-connect/certs"
 ```
 
 ## Tests

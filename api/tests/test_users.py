@@ -1,8 +1,10 @@
+from django.contrib.auth import get_user_model
 from django.urls import reverse
 from rest_framework.test import APITestCase
 from rest_framework import status
 from .utils import authenticate
 from data.factories import UserFactory
+from unittest.mock import patch
 
 
 class TestUserApi(APITestCase):
@@ -23,3 +25,52 @@ class TestUserApi(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         body = response.json()
         self.assertEqual(body["username"], authenticate.user.username)
+
+    def test_create_ademe_user(self):
+        """
+        A user is created from JWT if it doesn't exist
+        """
+        self.assertEqual(get_user_model().objects.count(), 0)
+        mock_token = {
+            "preferred_username": "test",
+            "email": "test@example.com",
+            "given_name": "Camille",
+            "family_name": "Dupont",
+            "sub": "test-ademe-id",
+        }
+        response = None
+        with patch("api.views.AdemeUserView._get_token", return_value=mock_token):
+            response = self.client.post(reverse("ademe_user"), {"token": "test_token"})
+
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+        self.assertEqual(get_user_model().objects.count(), 1)
+        user = get_user_model().objects.first()
+        # TODO: extend user model to have ademe_id instead of using username field
+        self.assertEqual(user.username, "test-ademe-id")
+        self.assertEqual(user.email, "test@example.com")
+        self.assertEqual(user.first_name, "Camille")
+        self.assertEqual(user.last_name, "Dupont")
+
+    def test_update_ademe_user(self):
+        """
+        An existing user gets updated from JWT on login
+        """
+        UserFactory.create(username="test-ademe-id", email="other@example.com", first_name="Other", last_name="Other")
+        mock_token = {
+            "preferred_username": "test",
+            "email": "test@example.com",
+            "given_name": "Camille",
+            "family_name": "Dupont",
+            "sub": "test-ademe-id",
+        }
+        response = None
+        with patch("api.views.AdemeUserView._get_token", return_value=mock_token):
+            response = self.client.post(reverse("ademe_user"), {"token": "test_token"})
+
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+        self.assertEqual(get_user_model().objects.count(), 1)
+        user = get_user_model().objects.first()
+        self.assertEqual(user.username, "test-ademe-id")
+        self.assertEqual(user.email, "test@example.com")
+        self.assertEqual(user.first_name, "Camille")
+        self.assertEqual(user.last_name, "Dupont")
