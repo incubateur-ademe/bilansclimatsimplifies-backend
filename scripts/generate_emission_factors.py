@@ -45,40 +45,51 @@ def create_emission_factors_file(results):
     posts = {}
     missing_post = []
     post_used = []
+    total_efs_saved = 0
 
     with open("./files/posts.json", "r", encoding="utf8") as jsonfile:
         posts = json.load(jsonfile)
 
     for emission in results:
-        name = emission["Nom_base_français"]
-        unit = emission["Unité_français"]
-        if name not in factors:
-            factors[name] = {
-                "facteurs": {},
-            }
-            if name in posts:
-                factors[name]["poste"] = posts[name]
-                post_used.append(name)
-            else:
-                missing_post.append(name)
-                factors[name]["poste"] = None
+        # Dès la spécification:
+        # "NB sur les FE : si un FE France et Europe existent pour le même combustible,
+        # prendre le FE France uniquement.
+        # Par contre, quand il y a une distinction entre métropole et outre-mer, bien mettre tous les FE par outre-mer.
+        # Attention à ne considérer que le poste « Combustion » des FE pour la valeur à retenir pour le calcul."
         location = emission["Localisation_géographique"]
-        if emission["Sous-localisation_géographique_français"]:
-            location += " : " + emission["Sous-localisation_géographique_français"]
-        if location not in factors[name]["facteurs"]:
-            factors[name]["facteurs"][location] = {}
+        if location == "Europe" or emission["Type_poste"] != "Combustion":
+            continue
+        name = emission["Nom_base_français"]
+        attribute = emission["Nom_attribut_français"]
+        border = emission["Nom_frontière_français"]
+        name_for_post = f"{name}, {attribute}" if attribute else name
+        long_name = f"{name_for_post}, {border}" if border else name_for_post
+        unit = emission["Unité_français"]
+
+        if long_name not in factors:
+            factors[long_name] = {
+                "facteurs": {},
+                "attribut": attribute,
+                "nom": name,
+                "frontière": border,
+                "poste": get_post(posts, name_for_post, name, post_used, missing_post),
+            }
+        location = get_location(emission)
+        if location not in factors[long_name]["facteurs"]:
+            factors[long_name]["facteurs"][location] = {}
 
         # note if there is a duplicate unit for emission type
-        if unit in factors[name]["facteurs"][location]:
-            if name not in duplicate_fe_by_unit:
-                duplicate_fe_by_unit[name] = {}
-            duplicate_fe_by_unit[name][unit] = duplicate_fe_by_unit[name].get(unit, 0) + 1
+        if unit in factors[long_name]["facteurs"][location]:
+            if long_name not in duplicate_fe_by_unit:
+                duplicate_fe_by_unit[long_name] = {}
+            duplicate_fe_by_unit[long_name][unit] = duplicate_fe_by_unit[long_name].get(unit, 0) + 1
             duplicate_count += 1
-        emission_factor = emission["Total_poste_non_décomposé"].replace(",", ".")
 
         # add to factors
-        if unit not in factors[name]["facteurs"][location]:
-            factors[name]["facteurs"][location][unit] = emission_factor
+        emission_factor = emission["Total_poste_non_décomposé"].replace(",", ".")
+        if unit not in factors[long_name]["facteurs"][location]:
+            factors[long_name]["facteurs"][location][unit] = emission_factor
+            total_efs_saved += 1
 
     with open("auto-emission-factors.json", "w", encoding="utf8") as jsonfile:
         json.dump(factors, jsonfile, indent=2, ensure_ascii=False)
@@ -88,7 +99,27 @@ def create_emission_factors_file(results):
     print(f"Missing posts: {missing_post}")
     unused_posts = [name for name in posts.keys() if name not in post_used]
     print(f"Unused posts: {unused_posts}")
+    print(f"Total efs saved: {total_efs_saved}")
     return factors
+
+
+def get_post(posts, name_for_post, name, post_used, missing_post):
+    if name_for_post in posts:
+        post_used.append(name_for_post)
+        return posts[name_for_post]
+    elif name in posts:
+        post_used.append(name)
+        return posts[name]
+    missing_post.append(name_for_post)
+    return None
+
+
+def get_location(emission):
+    location = emission["Localisation_géographique"]
+    sub_location = emission["Sous-localisation_géographique_français"]
+    if sub_location and sub_location != "France":
+        return f"{location} : {sub_location}"
+    return location
 
 
 # results = ƒetch_emissions()
