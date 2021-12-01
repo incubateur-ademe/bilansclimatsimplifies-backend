@@ -40,7 +40,6 @@ def read_emissions_file(filename):
 
 # TODO: Ideal clean up actions
 # - normalise units so don't have kWhPCI, kWh PCI and kWh (PCI) as separate units for example
-# - don't include 'Outre mer :' in outre mer territory names
 def create_emission_factors_file(results):
     factors = {}
     duplicate_fe_by_unit = {}
@@ -121,6 +120,8 @@ def get_post(posts, name_for_post, name, post_used, missing_post):
 def get_location(emission):
     location = emission["Localisation_géographique"]
     sub_location = emission["Sous-localisation_géographique_français"]
+    if location == "Outre-mer":
+        return sub_location
     if sub_location and sub_location != "France":
         return f"{location} : {sub_location}"
     return location

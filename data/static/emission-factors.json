@@ -914,7 +914,7 @@
         "kgCO2e/litre": "2.48",
         "kgCO2e/tep PCI": "3020"
       },
-      "Outre-mer : Polynésie Française": {
+      "Polynésie Française": {
         "kgCO2e/kWh PCI": "0.263",
         "kgCO2e/litre": "2.43",
         "kgCO2e/tep PCI": "3056",
@@ -965,25 +965,25 @@
         "kgCO2e/tep PCI": "2907",
         "kgCO2e/tonne": "2908"
       },
-      "Outre-mer : Guadeloupe, Martinique, Guyane, Corse": {
+      "Guadeloupe, Martinique, Guyane, Corse": {
         "kgCO2e/kWh PCI": "0.264",
         "kgCO2e/litre": "2.43",
         "kgCO2e/tep PCI": "3066",
         "kgCO2e/tonne": "3212"
       },
-      "Outre-mer : Nouvelle Calédonie": {
+      "Nouvelle Calédonie": {
         "kgCO2e/kWh PCI": "0.264",
         "kgCO2e/litre": "2.43",
         "kgCO2e/tep PCI": "3066",
         "kgCO2e/tonne": "3212"
       },
-      "Outre-mer : Polynésie Française": {
+      "Polynésie Française": {
         "kgCO2e/kWh PCI": "0.263",
         "kgCO2e/litre": "2.43",
         "kgCO2e/tep PCI": "3056",
         "kgCO2e/tonne": "3212"
       },
-      "Outre-mer : Réunion": {
+      "Réunion": {
         "kgCO2e/kWh PCI": "0.264",
         "kgCO2e/litre": "2.43",
         "kgCO2e/tep PCI": "3066",
@@ -1004,25 +1004,25 @@
         "kgCO2e/litre": "2.83",
         "kgCO2e/tep PCI": "3302"
       },
-      "Outre-mer : Guadeloupe, Martinique, Guyane, Corse": {
+      "Guadeloupe, Martinique, Guyane, Corse": {
         "kgCO2e/kWh PCI": "0.282",
         "kgCO2e/litre": "3.12",
         "kgCO2e/tep PCI": "3276",
         "kgCO2e/tonne": "3120"
       },
-      "Outre-mer : Nouvelle Calédonie": {
+      "Nouvelle Calédonie": {
         "kgCO2e/kWh PCI": "0.282",
         "kgCO2e/litre": "3.12",
         "kgCO2e/tep PCI": "3276",
         "kgCO2e/tonne": "3120"
       },
-      "Outre-mer : Polynésie Française": {
+      "Polynésie Française": {
         "kgCO2e/kWh PCI": "0.281",
         "kgCO2e/litre": "2.81",
         "kgCO2e/tep PCI": "3265",
         "kgCO2e/tonne": "3120"
       },
-      "Outre-mer : Réunion": {
+      "Réunion": {
         "kgCO2e/kWh PCI": "0.282",
         "kgCO2e/litre": "3.12",
         "kgCO2e/tep PCI": "3276",
@@ -1043,19 +1043,19 @@
         "kgCO2e/litre": "2.68",
         "kgCO2e/tep PCI": "3170"
       },
-      "Outre-mer : Guadeloupe, Martinique, Guyane, Corse": {
+      "Guadeloupe, Martinique, Guyane, Corse": {
         "kgCO2e/kWh PCI": "0.271",
         "kgCO2e/litre": "2.66",
         "kgCO2e/tep PCI": "3150",
         "kgCO2e/tonne": "3150"
       },
-      "Outre-mer : Nouvelle Calédonie": {
+      "Nouvelle Calédonie": {
         "kgCO2e/kWh PCI": "0.271",
         "kgCO2e/litre": "2.66",
         "kgCO2e/tep PCI": "3150",
         "kgCO2e/tonne": "3150"
       },
-      "Outre-mer : Réunion": {
+      "Réunion": {
         "kgCO2e/kWh PCI": "0.271",
         "kgCO2e/litre": "2.66",
         "kgCO2e/tep PCI": "3150",
@@ -1130,19 +1130,19 @@
         "kgCO2e/litre": "1.6",
         "kgCO2e/tep PCI": "2722"
       },
-      "Outre-mer : Guadeloupe, Martinique, Guyane, Corse": {
+      "Guadeloupe, Martinique, Guyane, Corse": {
         "kgCO2e/kWh PCI": "0.231",
         "kgCO2e/litre": "1.58",
         "kgCO2e/tep PCI": "2688",
         "kgCO2e/tonne": "2944"
       },
-      "Outre-mer : Nouvelle Calédonie": {
+      "Nouvelle Calédonie": {
         "kgCO2e/kWh PCI": "0.231",
         "kgCO2e/litre": "1.58",
         "kgCO2e/tep PCI": "2688",
         "kgCO2e/tonne": "2944"
       },
-      "Outre-mer : Réunion": {
+      "Réunion": {
         "kgCO2e/kWh PCI": "0.231",
         "kgCO2e/litre": "1.58",
         "kgCO2e/tep PCI": "2688",
@@ -1257,25 +1257,25 @@
   "Gazole routier": {
     "attribut": "",
     "facteurs": {
-      "Outre-mer : Guadeloupe, Martinique, Guyane, Corse": {
+      "Guadeloupe, Martinique, Guyane, Corse": {
         "kgCO2e/kWh PCI": "0.271",
         "kgCO2e/litre": "2.66",
         "kgCO2e/tep PCI": "3150",
         "kgCO2e/tonne": "3150"
       },
-      "Outre-mer : Nouvelle Calédonie": {
+      "Nouvelle Calédonie": {
         "kgCO2e/kWh PCI": "0.271",
         "kgCO2e/litre": "2.66",
         "kgCO2e/tep PCI": "3150",
         "kgCO2e/tonne": "3150"
       },
-      "Outre-mer : Polynésie Française": {
+      "Polynésie Française": {
         "kgCO2e/kWh PCI": "0.27",
         "kgCO2e/litre": "2.66",
         "kgCO2e/tep PCI": "3140",
         "kgCO2e/tonne": "3150"
       },
-      "Outre-mer : Réunion": {
+      "Réunion": {
         "kgCO2e/kWh PCI": "0.271",
         "kgCO2e/litre": "2.66",
         "kgCO2e/tep PCI": "3150",
@@ -1419,7 +1419,7 @@
         "kgCO2e/litre": "2.55",
         "kgCO2e/tep PCI": "3020"
       },
-      "Outre-mer : Polynésie Française": {
+      "Polynésie Française": {
         "kgCO2e/kWh PCI": "0.266",
         "kgCO2e/litre": "2.77",
         "kgCO2e/tep PCI": "3098",
@@ -2356,7 +2356,7 @@
   "Taxi brousse": {
     "attribut": "",
     "facteurs": {
-      "Outre-mer : Mayotte": {
+      "Mayotte": {
         "kgCO2e/passager.km": "0.0318"
       }
     },
@@ -2367,7 +2367,7 @@
   "Taxi brousse, véhicule plein": {
     "attribut": "véhicule plein",
     "facteurs": {
-      "Outre-mer : Mayotte": {
+      "Mayotte": {
         "kgCO2e/km": "0.49"
       }
     },
@@ -2378,7 +2378,7 @@
   "Taxi brousse, véhicule vide": {
     "attribut": "véhicule vide",
     "facteurs": {
-      "Outre-mer : Mayotte": {
+      "Mayotte": {
         "kgCO2e/km": "0.445"
       }
     },
