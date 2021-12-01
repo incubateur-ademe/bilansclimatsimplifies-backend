@@ -4,8 +4,42 @@ from rest_framework import status
 from .utils import authenticate
 from data.factories import ReportFactory, EmissionFactory
 from data.models import Emission
+from data.emission_factors import get_emission_factors
+from unittest.mock import patch
+
+example_emission_factors = {
+    "Gaz naturel": {
+        "facteurs": {
+            "France continentale": {
+                "kgCO2e/GJ PCI": "0.5",
+            },
+            "Guadeloupe, Martinique, Guyane, Corse": {
+                "kgCO2e/GJ PCI": "2",
+            },
+        },
+    },
+    "Essence, E10": {
+        "facteurs": {
+            "France continentale": {
+                "kgCO2e/kg": "0.1",
+            },
+            "Guadeloupe, Martinique, Guyane, Corse": {
+                "kgCO2e/kg": "0.2",
+            },
+        },
+    },
+    "Essence, E85": {
+        "facteurs": {
+            "France continentale": {
+                "kgCO2e/kg": "0.85",
+            },
+        },
+    },
+}
+# TODO: test frontiere too once confirmed if we need to use it
 
 
+@patch.object(get_emission_factors(), "emission_factors", example_emission_factors)
 class TestEmissionApi(APITestCase):
     def test_unauthenticated_create_emission(self):
         """
@@ -66,6 +100,7 @@ class TestEmissionApi(APITestCase):
     def test_create_emission(self):
         """
         Should be able to create emission for report the authenticated user manages
+        TODO: bad request if doesn't fit in emissions file?
         """
         self.assertEqual(len(Emission.objects.all()), 0)
         my_report = ReportFactory.create(gestionnaire=authenticate.user)
@@ -75,6 +110,7 @@ class TestEmissionApi(APITestCase):
             "type": "petrole",
             "valeur": 100,
             "unite": "l",
+            # TODO: test auto finding poste - shouldn't send it since it is in the file
             "poste": 1,
         }
         response = self.client.post(reverse("emissions"), payload)
@@ -84,11 +120,11 @@ class TestEmissionApi(APITestCase):
         self.assertEqual(len(emissions), 1)
         body = response.json()
         self.assertEqual(body["id"], emissions[0].id)
-        # TODO: check conversion for emission and new total for scope is in response
+        self.assertIn("resultat", body)
 
     def test_unauthenticated_fetch_report_emissions(self):
         """
-        403 if not logged in
+        401 if not logged in
         """
         response = self.client.get(reverse("report_emissions", kwargs={"report_pk": 90}))
         self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
@@ -127,7 +163,7 @@ class TestEmissionApi(APITestCase):
 
     def test_unauthenticated_fetch_emission(self):
         """
-        403 if attempt to fetch emission without logging in
+        401 if attempt to fetch emission without logging in
         """
         response = self.client.get(reverse("emission", kwargs={"pk": 10}))
         self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
@@ -163,6 +199,7 @@ class TestEmissionApi(APITestCase):
     def test_update_emission(self):
         """
         Modify emission by id
+        TODO: reject modification that doesn't fit in emissions file?
         """
         my_report = ReportFactory.create(gestionnaire=authenticate.user)
         emission = EmissionFactory.create(bilan=my_report, unite="l")
@@ -209,10 +246,79 @@ class TestEmissionApi(APITestCase):
         Test that emission result is calculated correctly
         """
         my_report = ReportFactory.create(gestionnaire=authenticate.user)
-        emission = EmissionFactory.create(bilan=my_report, type="Agglomérés de houille", valeur=1000, unite="kWh PCI")
+        # TODO: check if need to store attribute separately to name
+        emission = EmissionFactory.create(
+            bilan=my_report,
+            type="Essence, E10",
+            valeur=1000,
+            unite="kg",
+            localisation="France continentale",
+        )
 
         response = self.client.get(reverse("emission", kwargs={"pk": emission.id}))
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         body = response.json()
-        self.assertEqual(body["resultat"], 345.0)
+        self.assertEqual(body["resultat"], 100.0)
+
+    @authenticate
+    def test_fetch_emission_without_location_one_option(self):
+        """
+        If an emission is saved without a location, and there is only one choice in
+        the file for factors, use that choice
+        """
+        my_report = ReportFactory.create(gestionnaire=authenticate.user)
+        emission = EmissionFactory.create(
+            bilan=my_report, type="Essence, E85", valeur=1000, unite="kg", localisation=None
+        )
+
+        response = self.client.get(reverse("emission", kwargs={"pk": emission.id}))
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        body = response.json()
+        self.assertEqual(body["resultat"], 850.0)
+
+    @authenticate
+    def test_fetch_emission_without_location_multiple_options(self):
+        """
+        If an emission is saved without a location, and there are multiple choices, return null
+        """
+        my_report = ReportFactory.create(gestionnaire=authenticate.user)
+        emission = EmissionFactory.create(
+            bilan=my_report, type="Essence, E10", valeur=1000, unite="kg", localisation=None
+        )
+
+        response = self.client.get(reverse("emission", kwargs={"pk": emission.id}))
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        body = response.json()
+        self.assertEqual(body["resultat"], None)
+
+    # test decimal arithmetic
+    # what kind of numbers are we expecting?
+    # what is expected behaviour if no emission factor to calculate result?
+
+
+class TestEmissionApiRealFactors(APITestCase):
+    @authenticate
+    def test_result_generated(self):
+        """
+        Test that some result is generated. Smoke test to check that dummy file format
+        reflects real file format.
+        """
+        my_report = ReportFactory.create(gestionnaire=authenticate.user)
+        emission = EmissionFactory.create(
+            bilan=my_report,
+            type="Essence, E10",
+            valeur=1000,
+            unite="kg",
+            localisation="France continentale",
+        )
+
+        response = self.client.get(reverse("emission", kwargs={"pk": emission.id}))
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        body = response.json()
+        # actual calculations tested with unit tests above
+        self.assertIsNotNone(body["resultat"])
+        self.assertTrue(body["resultat"] > 0)

@@ -1,502 +1,3108 @@
 {
   "Agglomérés de houille": {
-    "kgCO2e/GJ PCI": "95.8",
-    "kgCO2e/kWh PCI": "0.345",
-    "kgCO2e/kg": "3.07",
-    "kgCO2e/tep PCI": "4025"
+    "attribut": "",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "95.8",
+        "kgCO2e/kWh PCI": "0.345",
+        "kgCO2e/kg": "3.07",
+        "kgCO2e/tep PCI": "4025"
+      }
+    },
+    "frontière": "",
+    "nom": "Agglomérés de houille",
+    "poste": "1"
   },
   "Anthracite": {
-    "kgCO2e/GJ PCI": "98.7",
-    "kgCO2e/kWh PCI": "0.356",
-    "kgCO2e/kg": "2.63",
-    "kgCO2e/tep PCI": "4147"
+    "attribut": "",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "98.7",
+        "kgCO2e/kWh PCI": "0.356",
+        "kgCO2e/kg": "2.63",
+        "kgCO2e/tep PCI": "4147"
+      }
+    },
+    "frontière": "",
+    "nom": "Anthracite",
+    "poste": "1"
   },
-  "Articulé": {
-    "kgCO2e/m3.km": "0.0273",
-    "kgCO2e/t.km": "0.0631"
+  "Articulé, 34 à 40 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
+    "attribut": "34 à 40 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.0631"
+      }
+    },
+    "frontière": "Diesel routier, incorporation 7 % de biodiesel",
+    "nom": "Articulé",
+    "poste": null
   },
-  "Autobus": {
-    "kgCO2e/passager.km": "0"
+  "Articulé, 34 à 40 tonnes, GNC": {
+    "attribut": "34 à 40 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.066"
+      }
+    },
+    "frontière": "GNC",
+    "nom": "Articulé",
+    "poste": null
   },
-  "Autocar": {
-    "kgCO2e/passager.km": "0.0237"
+  "Articulé, 34 à 40 tonnes, GNL": {
+    "attribut": "34 à 40 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.065"
+      }
+    },
+    "frontière": "GNL",
+    "nom": "Articulé",
+    "poste": null
+  },
+  "Articulé, 34 à 40 tonnes, GNL, incorporation bio 20%": {
+    "attribut": "34 à 40 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.052"
+      }
+    },
+    "frontière": "GNL, incorporation bio 20%",
+    "nom": "Articulé",
+    "poste": null
+  },
+  "Articulé, 40 à 44 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
+    "attribut": "40 à 44 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.0541"
+      }
+    },
+    "frontière": "Diesel routier, incorporation 7 % de biodiesel",
+    "nom": "Articulé",
+    "poste": null
+  },
+  "Articulé, 44 à 60 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
+    "attribut": "44 à 60 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.0511"
+      }
+    },
+    "frontière": "Diesel routier, incorporation 7 % de biodiesel",
+    "nom": "Articulé",
+    "poste": null
+  },
+  "Articulé, 60 à 72 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
+    "attribut": "60 à 72 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.0511"
+      }
+    },
+    "frontière": "Diesel routier, incorporation 7 % de biodiesel",
+    "nom": "Articulé",
+    "poste": null
+  },
+  "Articulé, 90 m3": {
+    "attribut": "90 m3",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/m3.km": "0.0273"
+      }
+    },
+    "frontière": "",
+    "nom": "Articulé",
+    "poste": null
+  },
+  "Articulé, < 34 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
+    "attribut": "< 34 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.064"
+      }
+    },
+    "frontière": "Diesel routier, incorporation 7 % de biodiesel",
+    "nom": "Articulé",
+    "poste": null
+  },
+  "Autobus, Electrique": {
+    "attribut": "Electrique",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0"
+      }
+    },
+    "frontière": "",
+    "nom": "Autobus",
+    "poste": null
+  },
+  "Autobus, GNV": {
+    "attribut": "GNV",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.0914"
+      }
+    },
+    "frontière": "",
+    "nom": "Autobus",
+    "poste": null
+  },
+  "Autobus, Gazole": {
+    "attribut": "Gazole",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.0838"
+      }
+    },
+    "frontière": "",
+    "nom": "Autobus",
+    "poste": null
+  },
+  "Autobus, Hybride parallèle": {
+    "attribut": "Hybride parallèle",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.0567"
+      }
+    },
+    "frontière": "",
+    "nom": "Autobus",
+    "poste": null
+  },
+  "Autobus, Hybride série": {
+    "attribut": "Hybride série",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.0536"
+      }
+    },
+    "frontière": "",
+    "nom": "Autobus",
+    "poste": null
+  },
+  "Autocar, Gazole": {
+    "attribut": "Gazole",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.0237"
+      }
+    },
+    "frontière": "",
+    "nom": "Autocar",
+    "poste": null
   },
   "Autres produits pétroliers": {
-    "kgCO2e/GJ PCI": "73.8",
-    "kgCO2e/kWh PCI": "0.266",
-    "kgCO2e/tep PCI": "3102"
+    "attribut": "",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "73.8",
+        "kgCO2e/kWh PCI": "0.266",
+        "kgCO2e/tep PCI": "3102"
+      }
+    },
+    "frontière": "",
+    "nom": "Autres produits pétroliers",
+    "poste": "1"
   },
-  "Avion cargo": {
-    "kgCO2e/t.km": "1.59"
+  "Avion cargo, 10 à 25 tonnes, 500 - 1000 kms, 2018, AVEC trainées": {
+    "attribut": "10 à 25 tonnes, 500 - 1000 kms, 2018",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "1.59"
+      }
+    },
+    "frontière": "AVEC trainées",
+    "nom": "Avion cargo",
+    "poste": null
   },
-  "Avion passagers": {
-    "kgCO2e/peq.km": "0.0841",
-    "kgCO2e/t.km": "0.841"
+  "Avion cargo, 10 à 25 tonnes, <500 kms, 2018, AVEC trainées": {
+    "attribut": "10 à 25 tonnes, <500 kms, 2018",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "1.42"
+      }
+    },
+    "frontière": "AVEC trainées",
+    "nom": "Avion cargo",
+    "poste": null
   },
-  "Bateau automoteur": {
-    "kgCO2e/t.km": "0.0236"
+  "Avion cargo, 26 à 100 tonnes, 500 - 1000 kms, 2018, AVEC trainées": {
+    "attribut": "26 à 100 tonnes, 500 - 1000 kms, 2018",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "1.58"
+      }
+    },
+    "frontière": "AVEC trainées",
+    "nom": "Avion cargo",
+    "poste": null
   },
-  "Bateau pousseur": {
-    "kgCO2e/t.km": "0.0315"
+  "Avion cargo, 26 à 100 tonnes, <500 kms, 2018, AVEC trainées": {
+    "attribut": "26 à 100 tonnes, <500 kms, 2018",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "2.49"
+      }
+    },
+    "frontière": "AVEC trainées",
+    "nom": "Avion cargo",
+    "poste": null
   },
-  "Betterave": {
-    "kgCO2e/ha": "399"
+  "Avion cargo, Plus de 100 tonnes, 1000 - 3500 kms, 2018, AVEC trainées": {
+    "attribut": "Plus de 100 tonnes, 1000 - 3500 kms, 2018",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.796"
+      }
+    },
+    "frontière": "AVEC trainées",
+    "nom": "Avion cargo",
+    "poste": null
   },
-  "BioGNC -Biométhane comprimé": {
-    "kgCO2e/GJ PCI": "0.434",
-    "kgCO2e/kWhPCI": "2.01E-3",
-    "kgCO2e/kg BioGNC": "0.02",
-    "kgCO2e/m3": "0.016",
-    "kgCO2e/tep PCI": "18.1"
+  "Avion cargo, Plus de 100 tonnes, 500 - 1000 kms, 2018, AVEC trainées": {
+    "attribut": "Plus de 100 tonnes, 500 - 1000 kms, 2018",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "1.17"
+      }
+    },
+    "frontière": "AVEC trainées",
+    "nom": "Avion cargo",
+    "poste": null
   },
-  "BioGNL": {
-    "kgCO2e/kWh (PCI)": "7.00E-3"
+  "Avion cargo, Plus de 100 tonnes, <500 kms, 2018, AVEC trainées": {
+    "attribut": "Plus de 100 tonnes, <500 kms, 2018",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "1.59"
+      }
+    },
+    "frontière": "AVEC trainées",
+    "nom": "Avion cargo",
+    "poste": null
   },
-  "Biométhane": {
-    "kgCO2e/GJ PCI": "0.405",
-    "kgCO2e/GJ PCS": "0.377",
-    "kgCO2e/Tep PCI": "17.5",
-    "kgCO2e/Tep PCS": "15.5",
-    "kgCO2e/kWh PCI": "2.93E-3",
-    "kgCO2e/kWh PCS": "2.64E-3",
-    "kgCO2e/kWhPCI": "1.56E-3",
-    "kgCO2e/kWhPCS": "1.08E-3",
-    "kgCO2e/m3": "0.0162"
+  "Avion cargo, Plus de 100 tonnes, >3500 kms, 2018, AVEC trainées": {
+    "attribut": "Plus de 100 tonnes, >3500 kms, 2018",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.494"
+      }
+    },
+    "frontière": "AVEC trainées",
+    "nom": "Avion cargo",
+    "poste": null
   },
-  "Biopropane": {
-    "kgCO2e/GJ PCI": "0",
-    "kgCO2e/kWh PCI": "0",
-    "kgCO2e/kg": "0",
-    "kgCO2e/litre": "0",
-    "kgCO2e/tep PCI": "0"
+  "Avion passagers, 101-220 sièges, 1000-3500 kms, 2018, AVEC trainées": {
+    "attribut": "101-220 sièges, 1000-3500 kms, 2018",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/peq.km": "0.0841",
+        "kgCO2e/t.km": "0.841"
+      }
+    },
+    "frontière": "AVEC trainées",
+    "nom": "Avion passagers",
+    "poste": null
+  },
+  "Avion passagers, 101-220 sièges, 500-1000 kms, 2018, AVEC trainées": {
+    "attribut": "101-220 sièges, 500-1000 kms, 2018",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/peq.km": "0.104",
+        "kgCO2e/t.km": "1.04"
+      }
+    },
+    "frontière": "AVEC trainées",
+    "nom": "Avion passagers",
+    "poste": null
+  },
+  "Avion passagers, 101-220 sièges, <500 kms jet, 2018, AVEC trainées": {
+    "attribut": "101-220 sièges, <500 kms jet, 2018",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/peq.km": "0.138",
+        "kgCO2e/t.km": "1.38"
+      }
+    },
+    "frontière": "AVEC trainées",
+    "nom": "Avion passagers",
+    "poste": null
+  },
+  "Avion passagers, 101-220 sièges, >3500 kms, 2018, AVEC trainées": {
+    "attribut": "101-220 sièges, >3500 kms, 2018",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/peq.km": "0.0949",
+        "kgCO2e/t.km": "0.949"
+      }
+    },
+    "frontière": "AVEC trainées",
+    "nom": "Avion passagers",
+    "poste": null
+  },
+  "Avion passagers, 20-50 sièges, 1000-3500 kms, 2018, AVEC trainées": {
+    "attribut": "20-50 sièges, 1000-3500 kms, 2018",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/peq.km": "0.235",
+        "kgCO2e/t.km": "2.35"
+      }
+    },
+    "frontière": "AVEC trainées",
+    "nom": "Avion passagers",
+    "poste": null
+  },
+  "Avion passagers, 20-50 sièges, 500-1000 kms, 2018, AVEC trainées": {
+    "attribut": "20-50 sièges, 500-1000 kms, 2018",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/peq.km": "0.185",
+        "kgCO2e/t.km": "1.85"
+      }
+    },
+    "frontière": "AVEC trainées",
+    "nom": "Avion passagers",
+    "poste": null
+  },
+  "Avion passagers, 20-50 sièges, <500 kms jet, 2018, AVEC trainées": {
+    "attribut": "20-50 sièges, <500 kms jet, 2018",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/peq.km": "0.239",
+        "kgCO2e/t.km": "2.39"
+      }
+    },
+    "frontière": "AVEC trainées",
+    "nom": "Avion passagers",
+    "poste": null
+  },
+  "Avion passagers, 20-50 sièges, <500 kms turboprop, 2018, AVEC trainées": {
+    "attribut": "20-50 sièges, <500 kms turboprop, 2018",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/peq.km": "0.165",
+        "kgCO2e/t.km": "1.65"
+      }
+    },
+    "frontière": "AVEC trainées",
+    "nom": "Avion passagers",
+    "poste": null
+  },
+  "Avion passagers, 51-100 sièges, 1000-3500 kms, 2018, AVEC trainées": {
+    "attribut": "51-100 sièges, 1000-3500 kms, 2018",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/peq.km": "0.12",
+        "kgCO2e/t.km": "1.2"
+      }
+    },
+    "frontière": "AVEC trainées",
+    "nom": "Avion passagers",
+    "poste": null
+  },
+  "Avion passagers, 51-100 sièges, 500-1000 kms, 2018, AVEC trainées": {
+    "attribut": "51-100 sièges, 500-1000 kms, 2018",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/peq.km": "0.152",
+        "kgCO2e/t.km": "1.52"
+      }
+    },
+    "frontière": "AVEC trainées",
+    "nom": "Avion passagers",
+    "poste": null
+  },
+  "Avion passagers, 51-100 sièges, <500 kms  jet, 2018, AVEC trainées": {
+    "attribut": "51-100 sièges, <500 kms  jet, 2018",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/peq.km": "0.199",
+        "kgCO2e/t.km": "2"
+      }
+    },
+    "frontière": "AVEC trainées",
+    "nom": "Avion passagers",
+    "poste": null
+  },
+  "Avion passagers, 51-100 sièges, <500 kms  turboprop, 2018, AVEC trainées": {
+    "attribut": "51-100 sièges, <500 kms  turboprop, 2018",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/peq.km": "0.117",
+        "kgCO2e/t.km": "1.17"
+      }
+    },
+    "frontière": "AVEC trainées",
+    "nom": "Avion passagers",
+    "poste": null
+  },
+  "Avion passagers, >220 sièges, 1000-3500 kms, 2018, AVEC trainées": {
+    "attribut": ">220 sièges, 1000-3500 kms, 2018",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/peq.km": "0.0807",
+        "kgCO2e/t.km": "0.807"
+      }
+    },
+    "frontière": "AVEC trainées",
+    "nom": "Avion passagers",
+    "poste": null
+  },
+  "Avion passagers, >220 sièges, >3500 kms, 2018, AVEC trainées": {
+    "attribut": ">220 sièges, >3500 kms, 2018",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/peq.km": "0.0686",
+        "kgCO2e/t.km": "0.686"
+      }
+    },
+    "frontière": "AVEC trainées",
+    "nom": "Avion passagers",
+    "poste": null
+  },
+  "Avion passagers, Court courrier, 2018, AVEC trainées": {
+    "attribut": "Court courrier, 2018",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/peq.km": "0.117",
+        "kgCO2e/t.km": "1.17"
+      }
+    },
+    "frontière": "AVEC trainées",
+    "nom": "Avion passagers",
+    "poste": null
+  },
+  "Avion passagers, Long courrier, 2018, AVEC trainées": {
+    "attribut": "Long courrier, 2018",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/peq.km": "0.0687",
+        "kgCO2e/t.km": "0.687"
+      }
+    },
+    "frontière": "AVEC trainées",
+    "nom": "Avion passagers",
+    "poste": null
+  },
+  "Avion passagers, Moyen courrier, 2018, AVEC trainées": {
+    "attribut": "Moyen courrier, 2018",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/peq.km": "0.0847",
+        "kgCO2e/t.km": "0.847"
+      }
+    },
+    "frontière": "AVEC trainées",
+    "nom": "Avion passagers",
+    "poste": null
+  },
+  "Bateau automoteur, 1 000 à 1499 TPL": {
+    "attribut": "1 000 à 1499 TPL",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.0236"
+      }
+    },
+    "frontière": "",
+    "nom": "Bateau automoteur",
+    "poste": null
+  },
+  "Bateau automoteur, 1 500 à 2 999 TPL": {
+    "attribut": "1 500 à 2 999 TPL",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.0154"
+      }
+    },
+    "frontière": "",
+    "nom": "Bateau automoteur",
+    "poste": null
+  },
+  "Bateau automoteur, 400 à 649 TPL": {
+    "attribut": "400 à 649 TPL",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.0285"
+      }
+    },
+    "frontière": "",
+    "nom": "Bateau automoteur",
+    "poste": null
+  },
+  "Bateau automoteur, 650 à 999 TPL": {
+    "attribut": "650 à 999 TPL",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.0205"
+      }
+    },
+    "frontière": "",
+    "nom": "Bateau automoteur",
+    "poste": null
+  },
+  "Bateau automoteur, < 400 TPL": {
+    "attribut": "< 400 TPL",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.0262"
+      }
+    },
+    "frontière": "",
+    "nom": "Bateau automoteur",
+    "poste": null
+  },
+  "Bateau automoteur, > 3 000 TPL": {
+    "attribut": "> 3 000 TPL",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.011"
+      }
+    },
+    "frontière": "",
+    "nom": "Bateau automoteur",
+    "poste": null
+  },
+  "Bateau pousseur, < 880 kW": {
+    "attribut": "< 880 kW",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.0315"
+      }
+    },
+    "frontière": "",
+    "nom": "Bateau pousseur",
+    "poste": null
+  },
+  "Bateau pousseur, > 880 kW": {
+    "attribut": "> 880 kW",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "8.80E-03"
+      }
+    },
+    "frontière": "",
+    "nom": "Bateau pousseur",
+    "poste": null
+  },
+  "BioGNC -Biométhane comprimé, Pour véhicule routier, Mix Moyen": {
+    "attribut": "Pour véhicule routier",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "0.434",
+        "kgCO2e/kWhPCI": "2.01E-03",
+        "kgCO2e/kg BioGNC": "0.02",
+        "kgCO2e/m3": "0.016",
+        "kgCO2e/tep PCI": "18.1"
+      }
+    },
+    "frontière": "Mix Moyen",
+    "nom": "BioGNC -Biométhane comprimé",
+    "poste": null
+  },
+  "BioGNL, Carburant, Issu d'épuration cryogénique de biogaz": {
+    "attribut": "Carburant",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/kWh (PCI)": "7.00E-03"
+      }
+    },
+    "frontière": "Issu d'épuration cryogénique de biogaz",
+    "nom": "BioGNL",
+    "poste": null
+  },
+  "Biométhane, Injecté dans les réseaux, Mix moyen": {
+    "attribut": "Injecté dans les réseaux",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "0.405",
+        "kgCO2e/GJ PCS": "0.377",
+        "kgCO2e/Tep PCI": "17.5",
+        "kgCO2e/Tep PCS": "15.5",
+        "kgCO2e/kWhPCI": "1.56E-03",
+        "kgCO2e/kWhPCS": "1.08E-03",
+        "kgCO2e/m3": "0.0162"
+      }
+    },
+    "frontière": "Mix moyen",
+    "nom": "Biométhane",
+    "poste": "1"
+  },
+  "Biopropane, mix annuel 2020": {
+    "attribut": "mix annuel 2020",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "0",
+        "kgCO2e/kWh PCI": "0",
+        "kgCO2e/kg": "0",
+        "kgCO2e/litre": "0",
+        "kgCO2e/tep PCI": "0"
+      }
+    },
+    "frontière": "",
+    "nom": "Biopropane",
+    "poste": "2"
   },
   "Bitumes": {
-    "kgCO2e/GJ PCI": "81.4",
-    "kgCO2e/kWh PCI": "0.293",
-    "kgCO2e/tep PCI": "3412"
+    "attribut": "",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "81.8",
+        "kgCO2e/kWh PCI": "0.295",
+        "kgCO2e/tep PCI": "3432"
+      }
+    },
+    "frontière": "",
+    "nom": "Bitumes",
+    "poste": "1"
   },
-  "Blé": {
-    "kgCO2e/ha": "266"
-  },
-  "Bois bûche": {
-    "kgCO2e/kWh PCI": "0.0188",
-    "kgCO2e/kg": "0.0726"
+  "Bois bûche, 20% d'humidité": {
+    "attribut": "20% d'humidité",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/kWh PCI": "0.0188",
+        "kgCO2e/kg": "0.0726"
+      }
+    },
+    "frontière": "",
+    "nom": "Bois bûche",
+    "poste": "1"
   },
   "Briquette de lignite": {
-    "kgCO2e/GJ PCI": "99.2",
-    "kgCO2e/kWh PCI": "0.357",
-    "kgCO2e/kg": "1.69",
-    "kgCO2e/tep PCI": "4172"
+    "attribut": "",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "99.2",
+        "kgCO2e/kWh PCI": "0.357",
+        "kgCO2e/kg": "1.69",
+        "kgCO2e/tep PCI": "4172"
+      }
+    },
+    "frontière": "",
+    "nom": "Briquette de lignite",
+    "poste": "1"
   },
-  "Broyats de cagettes et de pallettes": {
-    "kgCO2e/kWh PCI": "2.97E-4",
-    "kgCO2e/kg": "1.16E-3"
+  "Broyats de cagettes et de pallettes, 20% d'humidité": {
+    "attribut": "20% d'humidité",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/kWh PCI": "2.97E-04",
+        "kgCO2e/kg": "1.16E-03"
+      }
+    },
+    "frontière": "",
+    "nom": "Broyats de cagettes et de pallettes",
+    "poste": "1"
   },
-  "Butane": {
-    "kgCO2e/GJ PCI": "63.8",
-    "kgCO2e/kWh PCI": "0.23",
-    "kgCO2e/kg": "3.02",
-    "kgCO2e/litre": "1.76",
-    "kgCO2e/tep PCI": "2682"
+  "Butane, inclus maritime": {
+    "attribut": "inclus maritime",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "64.8",
+        "kgCO2e/kWh PCI": "0.233",
+        "kgCO2e/kg": "2.95",
+        "kgCO2e/litre": "1.73",
+        "kgCO2e/tep PCI": "2722"
+      }
+    },
+    "frontière": "",
+    "nom": "Butane",
+    "poste": "1"
   },
-  "Camion porteur": {
-    "kgCO2e/m3.km": "0.0426"
+  "Camion porteur, 45 m3": {
+    "attribut": "45 m3",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/m3.km": "0.0426"
+      }
+    },
+    "frontière": "",
+    "nom": "Camion porteur",
+    "poste": null
   },
-  "Carbureacteur": {
-    "kgCO2e/GJ PCI": "70.2",
-    "kgCO2e/kWh PCI": "0.253",
-    "kgCO2e/kg": "3.11",
-    "kgCO2e/litre": "2.48",
-    "kgCO2e/tep PCI": "2950",
-    "kgCO2e/tonne": "3124"
+  "Cargo inter-îles, Mayotte-Anjouan, Donnée 2009": {
+    "attribut": "Mayotte-Anjouan",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.0537"
+      }
+    },
+    "frontière": "Donnée 2009",
+    "nom": "Cargo inter-îles",
+    "poste": null
   },
-  "Cargo": {
-    "kgCO2e/t.km": "0.012"
+  "Cargo inter-îles, Petit Terre-Grande Terre, Donnée 2009": {
+    "attribut": "Petit Terre-Grande Terre",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.0892"
+      }
+    },
+    "frontière": "Donnée 2009",
+    "nom": "Cargo inter-îles",
+    "poste": null
   },
-  "Cargo inter-îles": {
-    "kgCO2e/t.km": "0.0537"
+  "Cargo inter-îles, Polynésie, Donnée 2009": {
+    "attribut": "Polynésie",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.019"
+      }
+    },
+    "frontière": "Donnée 2009",
+    "nom": "Cargo inter-îles",
+    "poste": null
   },
-  "Charbon sous-bitumineux": {
-    "kgCO2e/GJ PCI": "96.8",
-    "kgCO2e/kWh PCI": "0.349",
-    "kgCO2e/kg": "1.94",
-    "kgCO2e/tep PCI": "4065"
+  "Cargo, 10 000 à 20 000 tonnes, HFO-MGO": {
+    "attribut": "10 000 à 20 000 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.012"
+      }
+    },
+    "frontière": "HFO-MGO",
+    "nom": "Cargo",
+    "poste": null
   },
-  "Charbon à coke": {
-    "kgCO2e/GJ PCI": "95.8",
-    "kgCO2e/kWh PCI": "0.345",
-    "kgCO2e/kg": "2.49",
-    "kgCO2e/tep PCI": "4023"
+  "Cargo, < 10 000 tonnes, HFO-MGO": {
+    "attribut": "< 10 000 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.0174"
+      }
+    },
+    "frontière": "HFO-MGO",
+    "nom": "Cargo",
+    "poste": null
   },
-  "Charbon à vapeur": {
-    "kgCO2e/GJ PCI": "95.8",
-    "kgCO2e/kWh PCI": "0.345",
-    "kgCO2e/kg": "2.49",
-    "kgCO2e/tep PCI": "4025"
+  "Charbon sous-bitumineux, PCS entre 17 435 et 23 865 kJ/kg": {
+    "attribut": "PCS entre 17 435 et 23 865 kJ/kg",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "96.8",
+        "kgCO2e/kWh PCI": "0.349",
+        "kgCO2e/kg": "1.94",
+        "kgCO2e/tep PCI": "4065"
+      }
+    },
+    "frontière": "",
+    "nom": "Charbon sous-bitumineux",
+    "poste": "1"
+  },
+  "Charbon à coke, PCS supérieur à 23865 kJ/kg": {
+    "attribut": "PCS supérieur à 23865 kJ/kg",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "95.8",
+        "kgCO2e/kWh PCI": "0.345",
+        "kgCO2e/kg": "2.49",
+        "kgCO2e/tep PCI": "4023"
+      }
+    },
+    "frontière": "",
+    "nom": "Charbon à coke",
+    "poste": "1"
+  },
+  "Charbon à vapeur, PCS supérieur à 23865 kJ/kg": {
+    "attribut": "PCS supérieur à 23865 kJ/kg",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "95.8",
+        "kgCO2e/kWh PCI": "0.345",
+        "kgCO2e/kg": "2.49",
+        "kgCO2e/tep PCI": "4025"
+      }
+    },
+    "frontière": "",
+    "nom": "Charbon à vapeur",
+    "poste": "1"
   },
   "Coke de houille": {
-    "kgCO2e/GJ PCI": "108",
-    "kgCO2e/kWh PCI": "0.389",
-    "kgCO2e/kg": "3.03",
-    "kgCO2e/tep PCI": "4540"
+    "attribut": "",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "108",
+        "kgCO2e/kWh PCI": "0.389",
+        "kgCO2e/kg": "3.03",
+        "kgCO2e/tep PCI": "4540"
+      }
+    },
+    "frontière": "",
+    "nom": "Coke de houille",
+    "poste": "1"
   },
   "Coke de lignite": {
-    "kgCO2e/GJ PCI": "109",
-    "kgCO2e/kWh PCI": "0.393",
-    "kgCO2e/kg": "1.86",
-    "kgCO2e/tep PCI": "4582"
+    "attribut": "",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "109",
+        "kgCO2e/kWh PCI": "0.393",
+        "kgCO2e/kg": "1.86",
+        "kgCO2e/tep PCI": "4582"
+      }
+    },
+    "frontière": "",
+    "nom": "Coke de lignite",
+    "poste": "1"
   },
   "Coke de pétrole": {
-    "kgCO2e/GJ PCI": "96.8",
-    "kgCO2e/tep PCI": "4064"
-  },
-  "Colza": {
-    "kgCO2e/ha": "266"
+    "attribut": "",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "96.8",
+        "kgCO2e/tep PCI": "4064"
+      }
+    },
+    "frontière": "",
+    "nom": "Coke de pétrole",
+    "poste": "1"
   },
   "Combustible haute viscosité (CHV)": {
-    "kgCO2e/GJ PCI": "80.5",
-    "kgCO2e/kWh PCI": "0.29",
-    "kgCO2e/kg": "3.16",
-    "kgCO2e/tep PCI": "3382"
+    "attribut": "",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "80.5",
+        "kgCO2e/kWh PCI": "0.29",
+        "kgCO2e/kg": "3.16",
+        "kgCO2e/tep PCI": "3382"
+      }
+    },
+    "frontière": "",
+    "nom": "Combustible haute viscosité (CHV)",
+    "poste": "1"
   },
-  "Cyclomoteur": {
-    "kgCO2e/km": "0.0524"
+  "Cyclomoteur, Mixte, 2018": {
+    "attribut": "Mixte",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0.0524"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Cyclomoteur",
+    "poste": null
   },
-  "Electricité": {
-    "kgCO2e/kWh": "0.969"
+  "Cyclomoteur, Rural, 2018": {
+    "attribut": "Rural",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0.0524"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Cyclomoteur",
+    "poste": null
   },
-  "Essence": {
-    "kgCO2e/GJ PCI": "69.3",
-    "kgCO2e/kWh PCI": "0.249",
-    "kgCO2e/kg": "2.94",
-    "kgCO2e/litre": "2.2",
-    "kgCO2e/tep PCI": "2907",
-    "kgCO2e/tonne": "490"
+  "Cyclomoteur, Urbain, 2018": {
+    "attribut": "Urbain",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0.0524"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Cyclomoteur",
+    "poste": null
   },
   "Essence aviation (AvGas)": {
-    "kgCO2e/GJ PCI": "70.2",
-    "kgCO2e/kWh PCI": "0.253",
-    "kgCO2e/kg": "3.11",
-    "kgCO2e/litre": "2.48",
-    "kgCO2e/tep PCI": "2950",
-    "kgCO2e/tonne": "3212"
+    "attribut": "",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "71.8",
+        "kgCO2e/kWh PCI": "0.259",
+        "kgCO2e/kg": "3.16",
+        "kgCO2e/litre": "2.48",
+        "kgCO2e/tep PCI": "3020"
+      },
+      "Polynésie Française": {
+        "kgCO2e/kWh PCI": "0.263",
+        "kgCO2e/litre": "2.43",
+        "kgCO2e/tep PCI": "3056",
+        "kgCO2e/tonne": "3212"
+      }
+    },
+    "frontière": "",
+    "nom": "Essence aviation (AvGas)",
+    "poste": "2"
   },
-  "Fioul Lourd": {
-    "kgCO2e/GJ PCI": "78.5",
-    "kgCO2e/kWh PCI": "0.283",
-    "kgCO2e/kg": "3.11",
-    "kgCO2e/litre": "2.83",
-    "kgCO2e/tep PCI": "3302",
-    "kgCO2e/tonne": "3120"
+  "Essence, E10": {
+    "attribut": "E10",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "69.3",
+        "kgCO2e/kWh PCI": "0.249",
+        "kgCO2e/kg": "2.94",
+        "kgCO2e/litre": "2.2",
+        "kgCO2e/tep PCI": "2907"
+      }
+    },
+    "frontière": "",
+    "nom": "Essence",
+    "poste": "2"
+  },
+  "Essence, E85": {
+    "attribut": "E85",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "16.1",
+        "kgCO2e/kWh PCI": "0.058",
+        "kgCO2e/litre": "0.366",
+        "kgCO2e/tep PCI": "676",
+        "kgCO2e/tonne": "490"
+      }
+    },
+    "frontière": "",
+    "nom": "Essence",
+    "poste": "2"
+  },
+  "Essence, Supercarburant sans plomb (95, 95-E10, 98)": {
+    "attribut": "Supercarburant sans plomb (95, 95-E10, 98)",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "69.2",
+        "kgCO2e/kWh PCI": "0.254",
+        "kgCO2e/litre": "2.21",
+        "kgCO2e/tep PCI": "2907",
+        "kgCO2e/tonne": "2908"
+      },
+      "Guadeloupe, Martinique, Guyane, Corse": {
+        "kgCO2e/kWh PCI": "0.264",
+        "kgCO2e/litre": "2.43",
+        "kgCO2e/tep PCI": "3066",
+        "kgCO2e/tonne": "3212"
+      },
+      "Nouvelle Calédonie": {
+        "kgCO2e/kWh PCI": "0.264",
+        "kgCO2e/litre": "2.43",
+        "kgCO2e/tep PCI": "3066",
+        "kgCO2e/tonne": "3212"
+      },
+      "Polynésie Française": {
+        "kgCO2e/kWh PCI": "0.263",
+        "kgCO2e/litre": "2.43",
+        "kgCO2e/tep PCI": "3056",
+        "kgCO2e/tonne": "3212"
+      },
+      "Réunion": {
+        "kgCO2e/kWh PCI": "0.264",
+        "kgCO2e/litre": "2.43",
+        "kgCO2e/tep PCI": "3066",
+        "kgCO2e/tonne": "3212"
+      }
+    },
+    "frontière": "",
+    "nom": "Essence",
+    "poste": "2"
+  },
+  "Fioul Lourd, commercial": {
+    "attribut": "commercial",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "78.5",
+        "kgCO2e/kWh PCI": "0.283",
+        "kgCO2e/kg": "3.14",
+        "kgCO2e/litre": "2.83",
+        "kgCO2e/tep PCI": "3302"
+      },
+      "Guadeloupe, Martinique, Guyane, Corse": {
+        "kgCO2e/kWh PCI": "0.282",
+        "kgCO2e/litre": "3.12",
+        "kgCO2e/tep PCI": "3276",
+        "kgCO2e/tonne": "3120"
+      },
+      "Nouvelle Calédonie": {
+        "kgCO2e/kWh PCI": "0.282",
+        "kgCO2e/litre": "3.12",
+        "kgCO2e/tep PCI": "3276",
+        "kgCO2e/tonne": "3120"
+      },
+      "Polynésie Française": {
+        "kgCO2e/kWh PCI": "0.281",
+        "kgCO2e/litre": "2.81",
+        "kgCO2e/tep PCI": "3265",
+        "kgCO2e/tonne": "3120"
+      },
+      "Réunion": {
+        "kgCO2e/kWh PCI": "0.282",
+        "kgCO2e/litre": "3.12",
+        "kgCO2e/tep PCI": "3276",
+        "kgCO2e/tonne": "3120"
+      }
+    },
+    "frontière": "",
+    "nom": "Fioul Lourd",
+    "poste": "1"
   },
   "Fioul domestique": {
-    "kgCO2e/GJ PCI": "75.5",
-    "kgCO2e/kWh PCI": "0.266",
-    "kgCO2e/kg": "3.17",
-    "kgCO2e/litre": "2.62",
-    "kgCO2e/tep PCI": "3099",
-    "kgCO2e/tonne": "3150"
+    "attribut": "",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "75.5",
+        "kgCO2e/kWh PCI": "0.272",
+        "kgCO2e/kg": "3.17",
+        "kgCO2e/litre": "2.68",
+        "kgCO2e/tep PCI": "3170"
+      },
+      "Guadeloupe, Martinique, Guyane, Corse": {
+        "kgCO2e/kWh PCI": "0.271",
+        "kgCO2e/litre": "2.66",
+        "kgCO2e/tep PCI": "3150",
+        "kgCO2e/tonne": "3150"
+      },
+      "Nouvelle Calédonie": {
+        "kgCO2e/kWh PCI": "0.271",
+        "kgCO2e/litre": "2.66",
+        "kgCO2e/tep PCI": "3150",
+        "kgCO2e/tonne": "3150"
+      },
+      "Réunion": {
+        "kgCO2e/kWh PCI": "0.271",
+        "kgCO2e/litre": "2.66",
+        "kgCO2e/tep PCI": "3150",
+        "kgCO2e/tonne": "3150"
+      }
+    },
+    "frontière": "",
+    "nom": "Fioul domestique",
+    "poste": "1"
   },
-  "Fioul lourd": {
-    "kgCO2e/GJ PCI": "77.8",
-    "kgCO2e/kWh PCI": "0.28",
-    "kgCO2e/litre": "2.8",
-    "kgCO2e/tep PCI": "3268"
+  "Fioul à base de carbone recyclé, VALORTEC, Basse teneur en soufre": {
+    "attribut": "VALORTEC",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "78.4",
+        "kgCO2e/kWh PCI": "0.275",
+        "kgCO2e/kg": "3.14"
+      }
+    },
+    "frontière": "Basse teneur en soufre",
+    "nom": "Fioul à base de carbone recyclé",
+    "poste": "1"
   },
-  "Fioul à base de carbone recyclé": {
-    "kgCO2e/GJ PCI": "78.4",
-    "kgCO2e/kWh PCI": "0.275",
-    "kgCO2e/kg": "3.14"
-  },
-  "Fourgon": {
-    "kgCO2e/m3.km": "0.144"
-  },
-  "Fraises moyenne": {
-    "kgCO2e/m²": "6.25"
+  "Fourgon, 8 m3": {
+    "attribut": "8 m3",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/m3.km": "0.144"
+      }
+    },
+    "frontière": "",
+    "nom": "Fourgon",
+    "poste": null
   },
   "GNC, Gaz Naturel Comprimé pour véhicule routier": {
-    "kgCO2e/GJ PCI": "52",
-    "kgCO2e/kWh PCI": "0.187",
-    "kgCO2e/kg": "2.41",
-    "kgCO2e/m3": "1.9",
-    "kgCO2e/tep PCI": "2180"
+    "attribut": "",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "52",
+        "kgCO2e/kWh PCI": "0.187",
+        "kgCO2e/kg": "2.41",
+        "kgCO2e/m3": "1.9",
+        "kgCO2e/tep PCI": "2180"
+      }
+    },
+    "frontière": "",
+    "nom": "GNC, Gaz Naturel Comprimé pour véhicule routier",
+    "poste": "2"
   },
-  "GNL, Gaz Naturel Liquéfié": {
-    "kgCO2e/GJ PCI": "52",
-    "kgCO2e/KWh PCI": "0.187",
-    "kgCO2e/Litre": "1.69",
-    "kgCO2e/TEP PCI": "2186",
-    "kgCO2e/kg": "2.58"
+  "GNL, Gaz Naturel Liquéfié, (inclus routier, maritime et fluvial)": {
+    "attribut": "(inclus routier, maritime et fluvial)",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "52",
+        "kgCO2e/KWh PCI": "0.187",
+        "kgCO2e/Litre": "1.69",
+        "kgCO2e/TEP PCI": "2186",
+        "kgCO2e/kg": "2.58"
+      }
+    },
+    "frontière": "",
+    "nom": "GNL, Gaz Naturel Liquéfié",
+    "poste": "2"
   },
   "GPL pour véhicule routier": {
-    "kgCO2e/GJ PCI": "64.8",
-    "kgCO2e/kWh PCI": "0.233",
-    "kgCO2e/kg": "2.96",
-    "kgCO2e/litre": "1.6",
-    "kgCO2e/tep PCI": "2722",
-    "kgCO2e/tonne": "2944"
+    "attribut": "",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "64.8",
+        "kgCO2e/kWh PCI": "0.233",
+        "kgCO2e/kg": "2.96",
+        "kgCO2e/litre": "1.6",
+        "kgCO2e/tep PCI": "2722"
+      },
+      "Guadeloupe, Martinique, Guyane, Corse": {
+        "kgCO2e/kWh PCI": "0.231",
+        "kgCO2e/litre": "1.58",
+        "kgCO2e/tep PCI": "2688",
+        "kgCO2e/tonne": "2944"
+      },
+      "Nouvelle Calédonie": {
+        "kgCO2e/kWh PCI": "0.231",
+        "kgCO2e/litre": "1.58",
+        "kgCO2e/tep PCI": "2688",
+        "kgCO2e/tonne": "2944"
+      },
+      "Réunion": {
+        "kgCO2e/kWh PCI": "0.231",
+        "kgCO2e/litre": "1.58",
+        "kgCO2e/tep PCI": "2688",
+        "kgCO2e/tonne": "2944"
+      }
+    },
+    "frontière": "",
+    "nom": "GPL pour véhicule routier",
+    "poste": "2"
   },
   "Gaz d'aciérie": {
-    "kgCO2e/GJ PCI": "183"
+    "attribut": "",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "183"
+      }
+    },
+    "frontière": "",
+    "nom": "Gaz d'aciérie",
+    "poste": "1"
   },
   "Gaz de cokerie": {
-    "kgCO2e/GJ PCI": "47.5"
+    "attribut": "",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "47.5"
+      }
+    },
+    "frontière": "",
+    "nom": "Gaz de cokerie",
+    "poste": "1"
   },
   "Gaz de haut fourneau": {
-    "kgCO2e/GJ PCI": "268"
+    "attribut": "",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "268"
+      }
+    },
+    "frontière": "",
+    "nom": "Gaz de haut fourneau",
+    "poste": "1"
   },
   "Gaz naturel": {
-    "kgCO2e/GJ PCI": "56.9",
-    "kgCO2e/GJ PCS": "51.2",
-    "kgCO2e/kWh PCI": "0.205",
-    "kgCO2e/kWh PCS": "0.185",
-    "kgCO2e/m3 (n)": "2.12",
-    "kgCO2e/tep PCI": "2390",
-    "kgCO2e/tep PCS": "2154"
+    "attribut": "",
+    "facteurs": {
+      "France continentale : Type B, nord": {
+        "kgCO2e/m3 (n)": "1.81"
+      },
+      "France continentale : Type H, France continentale sauf nord": {
+        "kgCO2e/m3 (n)": "2.12"
+      }
+    },
+    "frontière": "",
+    "nom": "Gaz naturel",
+    "poste": "1"
   },
-  "Gaz naturel - 2015": {
-    "kgCO2e/GJ PCI": "52",
-    "kgCO2e/GJ PCS": "46.9",
-    "kgCO2e/TEP PCI": "2180",
-    "kgCO2e/TEP PCS": "1964",
-    "kgCO2e/kWh PCI": "0.187",
-    "kgCO2e/kWh PCS": "0.168",
-    "kgCO2e/m3": "1.81"
+  "Gaz naturel - 2015, mix moyen, consommation": {
+    "attribut": "mix moyen",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "52",
+        "kgCO2e/GJ PCS": "46.9",
+        "kgCO2e/TEP PCI": "2180",
+        "kgCO2e/TEP PCS": "1964",
+        "kgCO2e/kWh PCI": "0.187",
+        "kgCO2e/kWh PCS": "0.168",
+        "kgCO2e/m3": "1.81"
+      }
+    },
+    "frontière": "consommation",
+    "nom": "Gaz naturel - 2015",
+    "poste": "1"
   },
-  "Gazier": {
-    "kgCO2e/t.km": "0.0469"
+  "Gazier, Petit GPL, Donnée 2009": {
+    "attribut": "Petit GPL",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.0469"
+      }
+    },
+    "frontière": "Donnée 2009",
+    "nom": "Gazier",
+    "poste": null
   },
-  "Gazole": {
-    "kgCO2e/GJ PCI": "54.1",
-    "kgCO2e/kWh PCI": "0.195",
-    "kgCO2e/litre": "1.88",
-    "kgCO2e/tep PCI": "2269",
-    "kgCO2e/tonne": "2512"
+  "Gazier, VLGC (Very Large Gas Carrier), Donnée 2009": {
+    "attribut": "VLGC (Very Large Gas Carrier)",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.0127"
+      }
+    },
+    "frontière": "Donnée 2009",
+    "nom": "Gazier",
+    "poste": null
   },
   "Gazole non routier": {
-    "kgCO2e/GJ PCI": "72.7",
-    "kgCO2e/kWh PCI": "0.262",
-    "kgCO2e/kg": "3.09",
-    "kgCO2e/litre": "2.57",
-    "kgCO2e/tep PCI": "3055"
+    "attribut": "",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "72.7",
+        "kgCO2e/kWh PCI": "0.262",
+        "kgCO2e/kg": "3.09",
+        "kgCO2e/litre": "2.57",
+        "kgCO2e/tep PCI": "3055"
+      }
+    },
+    "frontière": "",
+    "nom": "Gazole non routier",
+    "poste": "2"
   },
   "Gazole routier": {
-    "kgCO2e/GJ PCI": "68.2",
-    "kgCO2e/KWh PCI": "0.246",
-    "kgCO2e/Litre": "2.41",
-    "kgCO2e/TEP PCI": "2863",
-    "kgCO2e/kWh PCI": "0.27",
-    "kgCO2e/litre": "2.66",
-    "kgCO2e/tep PCI": "3140",
-    "kgCO2e/tonne": "3150"
+    "attribut": "",
+    "facteurs": {
+      "Guadeloupe, Martinique, Guyane, Corse": {
+        "kgCO2e/kWh PCI": "0.271",
+        "kgCO2e/litre": "2.66",
+        "kgCO2e/tep PCI": "3150",
+        "kgCO2e/tonne": "3150"
+      },
+      "Nouvelle Calédonie": {
+        "kgCO2e/kWh PCI": "0.271",
+        "kgCO2e/litre": "2.66",
+        "kgCO2e/tep PCI": "3150",
+        "kgCO2e/tonne": "3150"
+      },
+      "Polynésie Française": {
+        "kgCO2e/kWh PCI": "0.27",
+        "kgCO2e/litre": "2.66",
+        "kgCO2e/tep PCI": "3140",
+        "kgCO2e/tonne": "3150"
+      },
+      "Réunion": {
+        "kgCO2e/kWh PCI": "0.271",
+        "kgCO2e/litre": "2.66",
+        "kgCO2e/tep PCI": "3150",
+        "kgCO2e/tonne": "3150"
+      }
+    },
+    "frontière": "",
+    "nom": "Gazole routier",
+    "poste": "2"
   },
-  "Granulés bois": {
-    "kgCO2e/kWh PCI": "0.014",
-    "kgCO2e/kg": "0.0511"
+  "Gazole routier, B10": {
+    "attribut": "B10",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "68.2",
+        "kgCO2e/KWh PCI": "0.246",
+        "kgCO2e/Litre": "2.41",
+        "kgCO2e/TEP PCI": "2863"
+      }
+    },
+    "frontière": "",
+    "nom": "Gazole routier",
+    "poste": "2"
   },
-  "HFO (Heavy Fuel Oil)": {
-    "kgCO2e/GJ PCI": "78.5",
-    "kgCO2e/kWh PCI": "0.283",
-    "kgCO2e/kg": "3.14",
-    "kgCO2e/litre": "2.48",
-    "kgCO2e/tep PCI": "3302"
+  "Gazole routier, B100": {
+    "attribut": "B100",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "0",
+        "kgCO2e/KWh PCI": "0",
+        "kgCO2e/Litre": "0",
+        "kgCO2e/TEP PCI": "0"
+      }
+    },
+    "frontière": "",
+    "nom": "Gazole routier",
+    "poste": "2"
   },
-  "Houille": {
-    "kgCO2e/GJ PCI": "96.1",
-    "kgCO2e/kWh PCI": "0.346",
-    "kgCO2e/kg": "3.08",
-    "kgCO2e/tep PCI": "4036"
+  "Gazole routier, B7": {
+    "attribut": "B7",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "70.6",
+        "kgCO2e/kWh PCI": "0.254",
+        "kgCO2e/litre": "2.49",
+        "kgCO2e/tep PCI": "2968",
+        "kgCO2e/tonne": "3337"
+      }
+    },
+    "frontière": "",
+    "nom": "Gazole routier",
+    "poste": "2"
+  },
+  "Gazole, B30": {
+    "attribut": "B30",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "54.1",
+        "kgCO2e/kWh PCI": "0.195",
+        "kgCO2e/litre": "1.88",
+        "kgCO2e/tep PCI": "2269",
+        "kgCO2e/tonne": "2512"
+      }
+    },
+    "frontière": "",
+    "nom": "Gazole",
+    "poste": "2"
+  },
+  "Granulés bois, 8% d'humidité": {
+    "attribut": "8% d'humidité",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/kWh PCI": "0.014",
+        "kgCO2e/kg": "0.0511"
+      }
+    },
+    "frontière": "",
+    "nom": "Granulés bois",
+    "poste": "1"
+  },
+  "HFO (Heavy Fuel Oil), ISO 8217 classes RME à RMK": {
+    "attribut": "ISO 8217 classes RME à RMK",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "78.5",
+        "kgCO2e/kWh PCI": "0.283",
+        "kgCO2e/kg": "3.14",
+        "kgCO2e/litre": "2.48",
+        "kgCO2e/tep PCI": "3302"
+      }
+    },
+    "frontière": "",
+    "nom": "HFO (Heavy Fuel Oil)",
+    "poste": "2"
+  },
+  "Houille, PCS supérieur à 23865 kJ/kg": {
+    "attribut": "PCS supérieur à 23865 kJ/kg",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "96.1",
+        "kgCO2e/kWh PCI": "0.346",
+        "kgCO2e/kg": "3.08",
+        "kgCO2e/tep PCI": "4036"
+      }
+    },
+    "frontière": "",
+    "nom": "Houille",
+    "poste": "1"
   },
   "Hoverboard": {
-    "kgCO2e/heure": "6.25E-3"
+    "attribut": "",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/heure": "6.25E-03"
+      }
+    },
+    "frontière": "",
+    "nom": "Hoverboard",
+    "poste": null
   },
   "Huiles de schistes": {
-    "kgCO2e/GJ PCI": "73.5",
-    "kgCO2e/kWh PCI": "0.265",
-    "kgCO2e/tep PCI": "3090"
+    "attribut": "",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "73.2",
+        "kgCO2e/kWh PCI": "0.264",
+        "kgCO2e/tep PCI": "3080"
+      }
+    },
+    "frontière": "",
+    "nom": "Huiles de schistes",
+    "poste": "1"
   },
-  "Hydrogène station": {
-    "kgCO2e/kgH2": "0"
+  "Kérosène, jet A1 ou A": {
+    "attribut": "jet A1 ou A",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "71.8",
+        "kgCO2e/kWh PCI": "0.259",
+        "kgCO2e/kg": "3.16",
+        "kgCO2e/litre": "2.55",
+        "kgCO2e/tep PCI": "3020"
+      },
+      "Polynésie Française": {
+        "kgCO2e/kWh PCI": "0.266",
+        "kgCO2e/litre": "2.77",
+        "kgCO2e/tep PCI": "3098",
+        "kgCO2e/tonne": "3256"
+      }
+    },
+    "frontière": "",
+    "nom": "Kérosène",
+    "poste": "2"
   },
-  "Kérosène": {
-    "kgCO2e/GJ PCI": "71.7",
-    "kgCO2e/kWh PCI": "0.258",
-    "kgCO2e/kg": "3.16",
-    "kgCO2e/litre": "2.53",
-    "kgCO2e/tep PCI": "3010",
-    "kgCO2e/tonne": "3256"
+  "LFO (Light Fuel Oil), ISO 8217 classes RMA à RMD (maritime)": {
+    "attribut": "ISO 8217 classes RMA à RMD (maritime)",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "75.5",
+        "kgCO2e/kWh PCI": "0.272",
+        "kgCO2e/kg": "3.17",
+        "kgCO2e/litre": "2.48",
+        "kgCO2e/tep PCI": "3169"
+      }
+    },
+    "frontière": "",
+    "nom": "LFO (Light Fuel Oil)",
+    "poste": "2"
   },
-  "LFO (Light Fuel Oil)": {
-    "kgCO2e/GJ PCI": "75.5",
-    "kgCO2e/kWh PCI": "0.272",
-    "kgCO2e/kg": "3.17",
-    "kgCO2e/litre": "2.48",
-    "kgCO2e/tep PCI": "3169"
+  "Lignite, PCS inférieur à 17435 kJ/kg": {
+    "attribut": "PCS inférieur à 17435 kJ/kg",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "101",
+        "kgCO2e/kWh PCI": "0.364",
+        "kgCO2e/kg": "1.72",
+        "kgCO2e/tep PCI": "4251"
+      }
+    },
+    "frontière": "",
+    "nom": "Lignite",
+    "poste": "1"
   },
-  "Lignite": {
-    "kgCO2e/GJ PCI": "101",
-    "kgCO2e/kWh PCI": "0.364",
-    "kgCO2e/kg": "1.72",
-    "kgCO2e/tep PCI": "4251"
+  "MDO (Marine Diesel Oil), ISO 8217 classes DMX à DMC": {
+    "attribut": "ISO 8217 classes DMX à DMC",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "75.5",
+        "kgCO2e/kWh PCI": "0.272",
+        "kgCO2e/kg": "3.17",
+        "kgCO2e/litre": "2.48",
+        "kgCO2e/tep PCI": "3169"
+      }
+    },
+    "frontière": "",
+    "nom": "MDO (Marine Diesel Oil)",
+    "poste": "2"
   },
-  "MDO (Marine Diesel Oil)": {
-    "kgCO2e/GJ PCI": "75.5",
-    "kgCO2e/kWh PCI": "0.272",
-    "kgCO2e/kg": "3.17",
-    "kgCO2e/litre": "2.48",
-    "kgCO2e/tep PCI": "3169"
+  "Moto =< 250 cm3, Mixte, 2018": {
+    "attribut": "Mixte",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0.0495"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Moto =< 250 cm3",
+    "poste": null
   },
-  "Maïs fourrage": {
-    "kgCO2e/ha": "266"
+  "Moto =< 250 cm3, Rural, 2018": {
+    "attribut": "Rural",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0.0517"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Moto =< 250 cm3",
+    "poste": null
   },
-  "Maïs grain": {
-    "kgCO2e/ha": "266"
+  "Moto =< 250 cm3, Urbain, 2018": {
+    "attribut": "Urbain",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0.0472"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Moto =< 250 cm3",
+    "poste": null
   },
-  "Moto &gt; 250 cm3": {
-    "kgCO2e/km": "0.135"
+  "Moto > 250 cm3, Mixte, 2018": {
+    "attribut": "Mixte",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0.135"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Moto > 250 cm3",
+    "poste": null
   },
-  "Moto =&lt; 250 cm3": {
-    "kgCO2e/km": "0.0495"
+  "Moto > 250 cm3, Rural, 2018": {
+    "attribut": "Rural",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0.124"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Moto > 250 cm3",
+    "poste": null
   },
-  "Métro": {
-    "kgCO2e/passager.km": "0"
+  "Moto > 250 cm3, Urbain, 2018": {
+    "attribut": "Urbain",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0.137"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Moto > 250 cm3",
+    "poste": null
+  },
+  "Métro, 2019, Ile de France": {
+    "attribut": "2019",
+    "facteurs": {
+      "France continentale : Ile de France": {
+        "kgCO2e/passager.km": "0"
+      }
+    },
+    "frontière": "Ile de France",
+    "nom": "Métro",
+    "poste": null
   },
   "Naphta": {
-    "kgCO2e/GJ PCI": "72",
-    "kgCO2e/kWh PCI": "0.259",
-    "kgCO2e/tep PCI": "3022"
+    "attribut": "",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "73.8",
+        "kgCO2e/kWh PCI": "0.266",
+        "kgCO2e/tep PCI": "3102"
+      }
+    },
+    "frontière": "",
+    "nom": "Naphta",
+    "poste": "1"
   },
-  "Navette fluviale": {
-    "kgCO2e/passager.km": "0.051"
+  "Navette fluviale, Donnée 2009": {
+    "attribut": "Donnée 2009",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.051"
+      }
+    },
+    "frontière": "",
+    "nom": "Navette fluviale",
+    "poste": null
   },
-  "Navette inter-îles": {
-    "kgCO2e/passager.km": "0.34"
+  "Navette inter-îles, Mayotte-Anjouan": {
+    "attribut": "Mayotte-Anjouan",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.34"
+      }
+    },
+    "frontière": "",
+    "nom": "Navette inter-îles",
+    "poste": null
   },
-  "Orge": {
-    "kgCO2e/ha": "266"
+  "Navette inter-îles, Petit Terre-Grande Terre": {
+    "attribut": "Petit Terre-Grande Terre",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.275"
+      }
+    },
+    "frontière": "",
+    "nom": "Navette inter-îles",
+    "poste": null
   },
-  "Paille": {
-    "kgCO2e/kWh PCI": "0",
-    "kgCO2e/kg": "0"
+  "Navette inter-îles, Polynésie": {
+    "attribut": "Polynésie",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.198"
+      }
+    },
+    "frontière": "",
+    "nom": "Navette inter-îles",
+    "poste": null
   },
-  "Plaquettes forestières": {
-    "kgCO2e/kWh PCI": "0.0132",
-    "kgCO2e/kg": "0.0482"
+  "Paille, 10% d'humidité": {
+    "attribut": "10% d'humidité",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/kWh PCI": "0",
+        "kgCO2e/kg": "0"
+      }
+    },
+    "frontière": "",
+    "nom": "Paille",
+    "poste": "1"
   },
-  "Pneumatiques usagés non réutilisables": {
-    "kgCO2e/GJ PCI": "59"
+  "Plaquettes forestières, 25% d'humidité": {
+    "attribut": "25% d'humidité",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/kWh PCI": "0.0132",
+        "kgCO2e/kg": "0.0482"
+      }
+    },
+    "frontière": "",
+    "nom": "Plaquettes forestières",
+    "poste": "1"
   },
-  "Pois": {
-    "kgCO2e/ha": "266"
+  "Pneumatiques usagés non réutilisables, Mix combustible moyen": {
+    "attribut": "Mix combustible moyen",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "59"
+      }
+    },
+    "frontière": "",
+    "nom": "Pneumatiques usagés non réutilisables",
+    "poste": "1"
   },
-  "Pommes de terre": {
-    "kgCO2e/ha": "399"
+  "Pneumatiques usagés non réutilisables, Poids Lourds": {
+    "attribut": "Poids Lourds",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "43"
+      }
+    },
+    "frontière": "",
+    "nom": "Pneumatiques usagés non réutilisables",
+    "poste": "1"
   },
-  "Porte-conteneur": {
-    "kgCO2e/t.km": "5.10E-3"
+  "Pneumatiques usagés non réutilisables, Véhicules Légers": {
+    "attribut": "Véhicules Légers",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "62"
+      }
+    },
+    "frontière": "",
+    "nom": "Pneumatiques usagés non réutilisables",
+    "poste": "1"
   },
-  "Prairies": {
-    "kgCO2e/ha": "173"
+  "Porte-conteneur, Dry, Asie - Europe du Nord": {
+    "attribut": "Dry",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "5.10E-03"
+      }
+    },
+    "frontière": "Asie - Europe du Nord",
+    "nom": "Porte-conteneur",
+    "poste": null
   },
-  "Propane": {
-    "kgCO2e/GJ PCI": "63.8",
-    "kgCO2e/kWh PCI": "0.23",
-    "kgCO2e/kg": "3.02",
-    "kgCO2e/litre": "1.55",
-    "kgCO2e/tep PCI": "2682"
+  "Porte-conteneur, Dry, Asie - Méditerranée": {
+    "attribut": "Dry",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "6.40E-03"
+      }
+    },
+    "frontière": "Asie - Méditerranée",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Dry, Autres liaisons détaillées": {
+    "attribut": "Dry",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.012"
+      }
+    },
+    "frontière": "Autres liaisons détaillées",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Dry, Autres liaisons majeures": {
+    "attribut": "Dry",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "8.80E-03"
+      }
+    },
+    "frontière": "Autres liaisons majeures",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Dry, Europe - Afrique": {
+    "attribut": "Dry",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "1.00E-02"
+      }
+    },
+    "frontière": "Europe - Afrique",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Dry, Europe - Amérique du Sud et Centrale": {
+    "attribut": "Dry",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "8.10E-03"
+      }
+    },
+    "frontière": "Europe - Amérique du Sud et Centrale",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Dry, Europe - Moyen-Orient et Inde": {
+    "attribut": "Dry",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "6.60E-03"
+      }
+    },
+    "frontière": "Europe - Moyen-Orient et Inde",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Dry, Europe - Océanie": {
+    "attribut": "Dry",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.011"
+      }
+    },
+    "frontière": "Europe - Océanie",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Dry, Europe du Nord - Amérique du Nord, façade atlantique": {
+    "attribut": "Dry",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "1.00E-02"
+      }
+    },
+    "frontière": "Europe du Nord - Amérique du Nord, façade atlantique",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Dry, Europe du Nord - Amérique du Nord, façade pacifique": {
+    "attribut": "Dry",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "9.70E-03"
+      }
+    },
+    "frontière": "Europe du Nord - Amérique du Nord, façade pacifique",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Dry, Europe du Nord - Médtierranée": {
+    "attribut": "Dry",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "1.00E-02"
+      }
+    },
+    "frontière": "Europe du Nord - Médtierranée",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Dry, Intra Europe du Nord": {
+    "attribut": "Dry",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.014"
+      }
+    },
+    "frontière": "Intra Europe du Nord",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Dry, Intra Méditerranée": {
+    "attribut": "Dry",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.015"
+      }
+    },
+    "frontière": "Intra Méditerranée",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Dry, Méditerranée - Amérique du Nord, façade atlantique": {
+    "attribut": "Dry",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "1.00E-02"
+      }
+    },
+    "frontière": "Méditerranée - Amérique du Nord, façade atlantique",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Dry, Méditerranée - Amérique du Nord, façade pacifique": {
+    "attribut": "Dry",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "8.60E-03"
+      }
+    },
+    "frontière": "Méditerranée - Amérique du Nord, façade pacifique",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Dry, Trans-Atlantique": {
+    "attribut": "Dry",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "9.80E-03"
+      }
+    },
+    "frontière": "Trans-Atlantique",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Dry, Trans-Suez": {
+    "attribut": "Dry",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "6.80E-03"
+      }
+    },
+    "frontière": "Trans-Suez",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Dry, Valeur moyenne": {
+    "attribut": "Dry",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "7.80E-03"
+      }
+    },
+    "frontière": "Valeur moyenne",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Reefer, Asie - Europe du Nord": {
+    "attribut": "Reefer",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "1.00E-02"
+      }
+    },
+    "frontière": "Asie - Europe du Nord",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Reefer, Asie - Méditerranée": {
+    "attribut": "Reefer",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.012"
+      }
+    },
+    "frontière": "Asie - Méditerranée",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Reefer, Autres liaisons détaillées": {
+    "attribut": "Reefer",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.019"
+      }
+    },
+    "frontière": "Autres liaisons détaillées",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Reefer, Autres liaisons majeures": {
+    "attribut": "Reefer",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.014"
+      }
+    },
+    "frontière": "Autres liaisons majeures",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Reefer, Europe - Afrique": {
+    "attribut": "Reefer",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.017"
+      }
+    },
+    "frontière": "Europe - Afrique",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Reefer, Europe - Amérique du Sud et Centrale": {
+    "attribut": "Reefer",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.014"
+      }
+    },
+    "frontière": "Europe - Amérique du Sud et Centrale",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Reefer, Europe - Moyen-Orient et Inde": {
+    "attribut": "Reefer",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.012"
+      }
+    },
+    "frontière": "Europe - Moyen-Orient et Inde",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Reefer, Europe - Océanie": {
+    "attribut": "Reefer",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.016"
+      }
+    },
+    "frontière": "Europe - Océanie",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Reefer, Europe du Nord - Amérique du Nord, façade atlantique": {
+    "attribut": "Reefer",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.015"
+      }
+    },
+    "frontière": "Europe du Nord - Amérique du Nord, façade atlantique",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Reefer, Europe du Nord - Amérique du Nord, façade pacifique": {
+    "attribut": "Reefer",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.015"
+      }
+    },
+    "frontière": "Europe du Nord - Amérique du Nord, façade pacifique",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Reefer, Europe du Nord - Médtierranée": {
+    "attribut": "Reefer",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.017"
+      }
+    },
+    "frontière": "Europe du Nord - Médtierranée",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Reefer, Intra Europe du Nord": {
+    "attribut": "Reefer",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.022"
+      }
+    },
+    "frontière": "Intra Europe du Nord",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Reefer, Intra Méditerranée": {
+    "attribut": "Reefer",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.025"
+      }
+    },
+    "frontière": "Intra Méditerranée",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Reefer, Méditerranée - Amérique du Nord, façade atlantique": {
+    "attribut": "Reefer",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.016"
+      }
+    },
+    "frontière": "Méditerranée - Amérique du Nord, façade atlantique",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Reefer, Méditerranée - Amérique du Nord, façade pacifique": {
+    "attribut": "Reefer",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.014"
+      }
+    },
+    "frontière": "Méditerranée - Amérique du Nord, façade pacifique",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Reefer, Trans-Atlantique": {
+    "attribut": "Reefer",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.015"
+      }
+    },
+    "frontière": "Trans-Atlantique",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Reefer, Trans-Suez": {
+    "attribut": "Reefer",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.013"
+      }
+    },
+    "frontière": "Trans-Suez",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Porte-conteneur, Reefer, Valeur moyenne": {
+    "attribut": "Reefer",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.013"
+      }
+    },
+    "frontière": "Valeur moyenne",
+    "nom": "Porte-conteneur",
+    "poste": null
+  },
+  "Propane, inclus maritime": {
+    "attribut": "inclus maritime",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "64.8",
+        "kgCO2e/kWh PCI": "0.233",
+        "kgCO2e/kg": "2.97",
+        "kgCO2e/litre": "1.54",
+        "kgCO2e/tep PCI": "2722"
+      }
+    },
+    "frontière": "",
+    "nom": "Propane",
+    "poste": "1"
   },
   "Pétrole Brut": {
-    "kgCO2e/GJ PCI": "73.2",
-    "kgCO2e/kg": "3.07"
+    "attribut": "",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "73.2",
+        "kgCO2e/kg": "3.07"
+      }
+    },
+    "frontière": "",
+    "nom": "Pétrole Brut",
+    "poste": "1"
   },
-  "Pétrolier": {
-    "kgCO2e/t.km": "0.019"
+  "Pétrolier, 5 000 à 60 000 tonnes, HFO-MGO": {
+    "attribut": "5 000 à 60 000 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.019"
+      }
+    },
+    "frontière": "HFO-MGO",
+    "nom": "Pétrolier",
+    "poste": null
   },
-  "Rigide": {
-    "kgCO2e/t.km": "0.12"
+  "Pétrolier, 60 000 à 200 000 tonnes, HFO-MGO": {
+    "attribut": "60 000 à 200 000 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "8.09E-03"
+      }
+    },
+    "frontière": "HFO-MGO",
+    "nom": "Pétrolier",
+    "poste": null
   },
-  "Ro-Pax": {
-    "kgCO2e/t.km": "0.19"
+  "Pétrolier, < 5 000 tonnes, HFO-MGO": {
+    "attribut": "< 5 000 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.056"
+      }
+    },
+    "frontière": "HFO-MGO",
+    "nom": "Pétrolier",
+    "poste": null
   },
-  "Ro-Ro": {
-    "kgCO2e/t.km": "0.0927"
+  "Pétrolier, > 200 000 tonnes, GNL": {
+    "attribut": "> 200 000 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "1.90E-03"
+      }
+    },
+    "frontière": "GNL",
+    "nom": "Pétrolier",
+    "poste": null
   },
-  "Sciures et chutes de scieries": {
-    "kgCO2e/kWh PCI": "1.99E-4",
-    "kgCO2e/kg": "4.48E-4"
+  "Pétrolier, > 200 000 tonnes, HFO-MGO": {
+    "attribut": "> 200 000 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "2.40E-03"
+      }
+    },
+    "frontière": "HFO-MGO",
+    "nom": "Pétrolier",
+    "poste": null
   },
-  "Serres chauffées": {
-    "kgCO2e/m²": "79.6"
+  "Rigide, 12 à 20 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
+    "attribut": "12 à 20 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.12"
+      }
+    },
+    "frontière": "Diesel routier, incorporation 7 % de biodiesel",
+    "nom": "Rigide",
+    "poste": null
   },
-  "Serres horticoles": {
-    "kgCO2e/m²": "38.4"
+  "Rigide, 12 à 20 tonnes, GNC": {
+    "attribut": "12 à 20 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.13"
+      }
+    },
+    "frontière": "GNC",
+    "nom": "Rigide",
+    "poste": null
   },
-  "Sorgho": {
-    "kgCO2e/ha": "266"
+  "Rigide, 12 à 20 tonnes, GNL": {
+    "attribut": "12 à 20 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.13"
+      }
+    },
+    "frontière": "GNL",
+    "nom": "Rigide",
+    "poste": null
+  },
+  "Rigide, 20 à 26 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
+    "attribut": "20 à 26 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.0242"
+      }
+    },
+    "frontière": "Diesel routier, incorporation 7 % de biodiesel",
+    "nom": "Rigide",
+    "poste": null
+  },
+  "Rigide, 20 à 26 tonnes, GNC": {
+    "attribut": "20 à 26 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.12"
+      }
+    },
+    "frontière": "GNC",
+    "nom": "Rigide",
+    "poste": null
+  },
+  "Rigide, 20 à 26 tonnes, GNL": {
+    "attribut": "20 à 26 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.14"
+      }
+    },
+    "frontière": "GNL",
+    "nom": "Rigide",
+    "poste": null
+  },
+  "Rigide, 26 à 32 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
+    "attribut": "26 à 32 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.0781"
+      }
+    },
+    "frontière": "Diesel routier, incorporation 7 % de biodiesel",
+    "nom": "Rigide",
+    "poste": null
+  },
+  "Rigide, 3,5 à 7,5 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
+    "attribut": "3,5 à 7,5 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.294"
+      }
+    },
+    "frontière": "Diesel routier, incorporation 7 % de biodiesel",
+    "nom": "Rigide",
+    "poste": null
+  },
+  "Rigide, 3,5 à 7,5 tonnes, Electrique": {
+    "attribut": "3,5 à 7,5 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0"
+      }
+    },
+    "frontière": "Electrique",
+    "nom": "Rigide",
+    "poste": null
+  },
+  "Rigide, 3,5 à 7,5 tonnes, GNC": {
+    "attribut": "3,5 à 7,5 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.31"
+      }
+    },
+    "frontière": "GNC",
+    "nom": "Rigide",
+    "poste": null
+  },
+  "Rigide, 3,5 à 7,5 tonnes, Hybride parallèle": {
+    "attribut": "3,5 à 7,5 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.22"
+      }
+    },
+    "frontière": "Hybride parallèle",
+    "nom": "Rigide",
+    "poste": null
+  },
+  "Rigide, 3,5 à 7,5 tonnes, Hybride série": {
+    "attribut": "3,5 à 7,5 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.24"
+      }
+    },
+    "frontière": "Hybride série",
+    "nom": "Rigide",
+    "poste": null
+  },
+  "Rigide, 7,5 à 12 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
+    "attribut": "7,5 à 12 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.186"
+      }
+    },
+    "frontière": "Diesel routier, incorporation 7 % de biodiesel",
+    "nom": "Rigide",
+    "poste": null
+  },
+  "Rigide, 7,5 à 12 tonnes, GNC": {
+    "attribut": "7,5 à 12 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.19"
+      }
+    },
+    "frontière": "GNC",
+    "nom": "Rigide",
+    "poste": null
+  },
+  "Ro-Pax, HFO-MGO": {
+    "attribut": "",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.19"
+      }
+    },
+    "frontière": "HFO-MGO",
+    "nom": "Ro-Pax",
+    "poste": null
+  },
+  "Ro-Ro, Camions et Remorques, HFO-MGO": {
+    "attribut": "Camions et Remorques",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.0927"
+      }
+    },
+    "frontière": "HFO-MGO",
+    "nom": "Ro-Ro",
+    "poste": null
+  },
+  "Ro-Ro, Chargement moyen, HFO-MGO": {
+    "attribut": "Chargement moyen",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.0418"
+      }
+    },
+    "frontière": "HFO-MGO",
+    "nom": "Ro-Ro",
+    "poste": null
+  },
+  "Ro-Ro, Remorques uniquement, HFO-MGO": {
+    "attribut": "Remorques uniquement",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.0628"
+      }
+    },
+    "frontière": "HFO-MGO",
+    "nom": "Ro-Ro",
+    "poste": null
+  },
+  "Sciures et chutes de scieries, 50% d'humidité": {
+    "attribut": "50% d'humidité",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/kWh PCI": "1.99E-04",
+        "kgCO2e/kg": "4.48E-04"
+      }
+    },
+    "frontière": "",
+    "nom": "Sciures et chutes de scieries",
+    "poste": "1"
   },
   "Taxi brousse": {
-    "kgCO2e/km": "0.49",
-    "kgCO2e/passager.km": "0.0318"
+    "attribut": "",
+    "facteurs": {
+      "Mayotte": {
+        "kgCO2e/passager.km": "0.0318"
+      }
+    },
+    "frontière": "",
+    "nom": "Taxi brousse",
+    "poste": null
+  },
+  "Taxi brousse, véhicule plein": {
+    "attribut": "véhicule plein",
+    "facteurs": {
+      "Mayotte": {
+        "kgCO2e/km": "0.49"
+      }
+    },
+    "frontière": "",
+    "nom": "Taxi brousse",
+    "poste": null
+  },
+  "Taxi brousse, véhicule vide": {
+    "attribut": "véhicule vide",
+    "facteurs": {
+      "Mayotte": {
+        "kgCO2e/km": "0.445"
+      }
+    },
+    "frontière": "",
+    "nom": "Taxi brousse",
+    "poste": null
   },
   "Tourbe": {
-    "kgCO2e/GJ PCI": "110",
-    "kgCO2e/kWh PCI": "0.398",
-    "kgCO2e/kg": "1.28",
-    "kgCO2e/tep PCI": "4637"
+    "attribut": "",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "110",
+        "kgCO2e/kWh PCI": "0.398",
+        "kgCO2e/kg": "1.28",
+        "kgCO2e/tep PCI": "4637"
+      }
+    },
+    "frontière": "",
+    "nom": "Tourbe",
+    "poste": "1"
   },
-  "Tournesol": {
-    "kgCO2e/ha": "266"
+  "Train, Motorisation moyenne, Chargement dense": {
+    "attribut": "Motorisation moyenne",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "4.37E-03"
+      }
+    },
+    "frontière": "Chargement dense",
+    "nom": "Train",
+    "poste": null
   },
-  "Train": {
-    "kgCO2e/t.km": "4.37E-3"
+  "Train, Motorisation moyenne, Chargement léger": {
+    "attribut": "Motorisation moyenne",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "6.51E-03"
+      }
+    },
+    "frontière": "Chargement léger",
+    "nom": "Train",
+    "poste": null
   },
-  "Tramway": {
-    "kgCO2e/passager.km": "0"
+  "Train, Motorisation moyenne, Chargement moyen": {
+    "attribut": "Motorisation moyenne",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "5.05E-03"
+      }
+    },
+    "frontière": "Chargement moyen",
+    "nom": "Train",
+    "poste": null
   },
-  "Trotinnette": {
-    "kgCO2e/km": "2.00E-3"
+  "Train, Traction diesel, Chargement dense": {
+    "attribut": "Traction diesel",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.0192"
+      }
+    },
+    "frontière": "Chargement dense",
+    "nom": "Train",
+    "poste": null
   },
-  "Utilitaire ": {
-    "kgCO2e/km": "0"
+  "Train, Traction diesel, Chargement léger": {
+    "attribut": "Traction diesel",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.0286"
+      }
+    },
+    "frontière": "Chargement léger",
+    "nom": "Train",
+    "poste": null
   },
-  "VUL": {
-    "kgCO2e/t.km": "0.541"
+  "Train, Traction diesel, Chargement moyen": {
+    "attribut": "Traction diesel",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.0222"
+      }
+    },
+    "frontière": "Chargement moyen",
+    "nom": "Train",
+    "poste": null
   },
-  "Vignes": {
-    "kgCO2e/ha": "506"
+  "Train, Traction électrique, Chargement dense": {
+    "attribut": "Traction électrique",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "6.59E-04"
+      }
+    },
+    "frontière": "Chargement dense",
+    "nom": "Train",
+    "poste": null
   },
-  "Voiture": {
-    "kgCO2e/km": "0.0808"
+  "Train, Traction électrique, Chargement léger": {
+    "attribut": "Traction électrique",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "9.84E-04"
+      }
+    },
+    "frontière": "Chargement léger",
+    "nom": "Train",
+    "poste": null
   },
-  "Voiture E85": {
-    "kgCO2e/passager.km": "0.0298"
+  "Train, Traction électrique, Chargement moyen": {
+    "attribut": "Traction électrique",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "7.63E-04"
+      }
+    },
+    "frontière": "Chargement moyen",
+    "nom": "Train",
+    "poste": null
   },
-  "Voiture GNV": {
-    "kgCO2e/passager.km": "0.113"
+  "Tramway, 2019, Ile de France": {
+    "attribut": "2019",
+    "facteurs": {
+      "France continentale : Ile de France": {
+        "kgCO2e/passager.km": "0"
+      }
+    },
+    "frontière": "Ile de France",
+    "nom": "Tramway",
+    "poste": null
   },
-  "Voiture GPL": {
-    "kgCO2e/passager.km": "0.118"
+  "Trotinnette, électrique": {
+    "attribut": "électrique",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "2.00E-03"
+      }
+    },
+    "frontière": "",
+    "nom": "Trotinnette",
+    "poste": null
   },
-  "Voiture essence": {
-    "kgCO2e/passager.km": "0.122"
+  "Utilitaire <3,5t, Hydrogène SMR biométhane centralisé": {
+    "attribut": "",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0"
+      }
+    },
+    "frontière": "Hydrogène SMR biométhane centralisé",
+    "nom": "Utilitaire <3,5t",
+    "poste": null
   },
-  "Voiture gazole": {
-    "kgCO2e/passager.km": "0.112"
+  "Utilitaire <3,5t, Hydrogène SMR gaz naturel centralisé": {
+    "attribut": "",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0"
+      }
+    },
+    "frontière": "Hydrogène SMR gaz naturel centralisé",
+    "nom": "Utilitaire <3,5t",
+    "poste": null
   },
-  "Voiture particulière": {
-    "kgCO2e/km": "0"
+  "Utilitaire <3,5t, Hydrogène électrolyse décentralisée mix EnR": {
+    "attribut": "",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0"
+      }
+    },
+    "frontière": "Hydrogène électrolyse décentralisée mix EnR",
+    "nom": "Utilitaire <3,5t",
+    "poste": null
   },
-  "Vraquier": {
-    "kgCO2e/t.km": "6.90E-3"
+  "Utilitaire <3,5t, Hydrogène électrolyse décentralisée mix France": {
+    "attribut": "",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0"
+      }
+    },
+    "frontière": "Hydrogène électrolyse décentralisée mix France",
+    "nom": "Utilitaire <3,5t",
+    "poste": null
   },
-  "Vélo": {
-    "kgCO2e/km": "2.23E-3"
+  "VUL, < 3,5 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
+    "attribut": "< 3,5 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.541"
+      }
+    },
+    "frontière": "Diesel routier, incorporation 7 % de biodiesel",
+    "nom": "VUL",
+    "poste": null
+  },
+  "VUL, < 3,5 tonnes, Essence": {
+    "attribut": "< 3,5 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.85"
+      }
+    },
+    "frontière": "Essence",
+    "nom": "VUL",
+    "poste": null
+  },
+  "VUL, < 3,5 tonnes, GNC": {
+    "attribut": "< 3,5 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.54"
+      }
+    },
+    "frontière": "GNC",
+    "nom": "VUL",
+    "poste": null
+  },
+  "VUL, < 3,5 tonnes, GPL": {
+    "attribut": "< 3,5 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.59"
+      }
+    },
+    "frontière": "GPL",
+    "nom": "VUL",
+    "poste": null
+  },
+  "Voiture E85, Courte distance, 2018": {
+    "attribut": "Courte distance",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.0298"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Voiture E85",
+    "poste": null
+  },
+  "Voiture E85, Longue distance, 2018": {
+    "attribut": "Longue distance",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.0168"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Voiture E85",
+    "poste": null
+  },
+  "Voiture E85, Mixte, 2018": {
+    "attribut": "Mixte",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.0249"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Voiture E85",
+    "poste": null
+  },
+  "Voiture GNV, Courte distance, 2018": {
+    "attribut": "Courte distance",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.113"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Voiture GNV",
+    "poste": null
+  },
+  "Voiture GNV, Longue distance, 2018": {
+    "attribut": "Longue distance",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.072"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Voiture GNV",
+    "poste": null
+  },
+  "Voiture GNV, Mixte, 2018": {
+    "attribut": "Mixte",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.099"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Voiture GNV",
+    "poste": null
+  },
+  "Voiture GPL, Courte distance, 2018": {
+    "attribut": "Courte distance",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.118"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Voiture GPL",
+    "poste": null
+  },
+  "Voiture GPL, Longue distance, 2018": {
+    "attribut": "Longue distance",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.075"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Voiture GPL",
+    "poste": null
+  },
+  "Voiture GPL, Mixte, 2018": {
+    "attribut": "Mixte",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.103"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Voiture GPL",
+    "poste": null
+  },
+  "Voiture essence, Courte distance, 2018": {
+    "attribut": "Courte distance",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.122"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Voiture essence",
+    "poste": null
+  },
+  "Voiture essence, Longue distance, 2018": {
+    "attribut": "Longue distance",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.0685"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Voiture essence",
+    "poste": null
+  },
+  "Voiture essence, Mixte, 2018": {
+    "attribut": "Mixte",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.101"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Voiture essence",
+    "poste": null
+  },
+  "Voiture gazole, Courte distance, 2018": {
+    "attribut": "Courte distance",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.112"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Voiture gazole",
+    "poste": null
+  },
+  "Voiture gazole, Longue distance, 2018": {
+    "attribut": "Longue distance",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.0635"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Voiture gazole",
+    "poste": null
+  },
+  "Voiture gazole, Mixte, 2018": {
+    "attribut": "Mixte",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/passager.km": "0.0935"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Voiture gazole",
+    "poste": null
+  },
+  "Voiture particulière, Berline, Hydrogène SMR GN centralisé": {
+    "attribut": "Berline",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0"
+      }
+    },
+    "frontière": "Hydrogène SMR GN centralisé",
+    "nom": "Voiture particulière",
+    "poste": null
+  },
+  "Voiture particulière, Berline, Hydrogène SMR biométhane centralisé": {
+    "attribut": "Berline",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0"
+      }
+    },
+    "frontière": "Hydrogène SMR biométhane centralisé",
+    "nom": "Voiture particulière",
+    "poste": null
+  },
+  "Voiture particulière, Berline, Hydrogène électrolyse lix EnR décentralisée": {
+    "attribut": "Berline",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0"
+      }
+    },
+    "frontière": "Hydrogène électrolyse lix EnR décentralisée",
+    "nom": "Voiture particulière",
+    "poste": null
+  },
+  "Voiture particulière, Berline, Hydrogène électrolyse mix France décentralisée": {
+    "attribut": "Berline",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0"
+      }
+    },
+    "frontière": "Hydrogène électrolyse mix France décentralisée",
+    "nom": "Voiture particulière",
+    "poste": null
+  },
+  "Voiture particulière, Coeur de gamme - Véhicule compact, Electrique": {
+    "attribut": "Coeur de gamme - Véhicule compact",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0"
+      }
+    },
+    "frontière": "Electrique",
+    "nom": "Voiture particulière",
+    "poste": null
+  },
+  "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride rechargeable, plug in-hybrid, P2/prius": {
+    "attribut": "Coeur de gamme - Véhicule compact",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0"
+      }
+    },
+    "frontière": "Hybride rechargeable, plug in-hybrid, P2/prius",
+    "nom": "Voiture particulière",
+    "poste": null
+  },
+  "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, full, P2": {
+    "attribut": "Coeur de gamme - Véhicule compact",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0.106"
+      }
+    },
+    "frontière": "Hybride, full, P2",
+    "nom": "Voiture particulière",
+    "poste": null
+  },
+  "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, full, Prius": {
+    "attribut": "Coeur de gamme - Véhicule compact",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0.078"
+      }
+    },
+    "frontière": "Hybride, full, Prius",
+    "nom": "Voiture particulière",
+    "poste": null
+  },
+  "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, mild, diesel": {
+    "attribut": "Coeur de gamme - Véhicule compact",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0.148"
+      }
+    },
+    "frontière": "Hybride, mild, diesel",
+    "nom": "Voiture particulière",
+    "poste": null
+  },
+  "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, mild, essence": {
+    "attribut": "Coeur de gamme - Véhicule compact",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0.151"
+      }
+    },
+    "frontière": "Hybride, mild, essence",
+    "nom": "Voiture particulière",
+    "poste": null
+  },
+  "Voiture particulière, Entrée de gamme - Véhicule léger, Electrique": {
+    "attribut": "Entrée de gamme - Véhicule léger",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0"
+      }
+    },
+    "frontière": "Electrique",
+    "nom": "Voiture particulière",
+    "poste": null
+  },
+  "Voiture particulière, Entrée de gamme - Véhicule léger, Hybride rechargeable avec alimentation auxilliaire de puissance": {
+    "attribut": "Entrée de gamme - Véhicule léger",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0"
+      }
+    },
+    "frontière": "Hybride rechargeable avec alimentation auxilliaire de puissance",
+    "nom": "Voiture particulière",
+    "poste": null
+  },
+  "Voiture particulière, Entrée de gamme - Véhicule léger, Hybride, mild essence": {
+    "attribut": "Entrée de gamme - Véhicule léger",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0.113"
+      }
+    },
+    "frontière": "Hybride, mild essence",
+    "nom": "Voiture particulière",
+    "poste": null
+  },
+  "Voiture particulière, Haut de gamme - Berline, Electrique": {
+    "attribut": "Haut de gamme - Berline",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0"
+      }
+    },
+    "frontière": "Electrique",
+    "nom": "Voiture particulière",
+    "poste": null
+  },
+  "Voiture particulière, Haut de gamme - Berline, Hybride rechargeable, plug in-hybrid, P2 / Prius": {
+    "attribut": "Haut de gamme - Berline",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0"
+      }
+    },
+    "frontière": "Hybride rechargeable, plug in-hybrid, P2 / Prius",
+    "nom": "Voiture particulière",
+    "poste": null
+  },
+  "Voiture particulière, Haut de gamme - Berline, Hybride, full P2": {
+    "attribut": "Haut de gamme - Berline",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0.149"
+      }
+    },
+    "frontière": "Hybride, full P2",
+    "nom": "Voiture particulière",
+    "poste": null
+  },
+  "Voiture particulière, Haut de gamme - Berline, Hybride, full Prius": {
+    "attribut": "Haut de gamme - Berline",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0.111"
+      }
+    },
+    "frontière": "Hybride, full Prius",
+    "nom": "Voiture particulière",
+    "poste": null
+  },
+  "Voiture particulière, Haut de gamme - Berline, Hybride, mild diesel": {
+    "attribut": "Haut de gamme - Berline",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0.186"
+      }
+    },
+    "frontière": "Hybride, mild diesel",
+    "nom": "Voiture particulière",
+    "poste": null
+  },
+  "Voiture particulière, Haut de gamme - Berline, Hybride, mild essence": {
+    "attribut": "Haut de gamme - Berline",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0.232"
+      }
+    },
+    "frontière": "Hybride, mild essence",
+    "nom": "Voiture particulière",
+    "poste": null
+  },
+  "Voiture, Motorisation E85, 2018": {
+    "attribut": "Motorisation E85",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0.0808"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Voiture",
+    "poste": null
+  },
+  "Voiture, Motorisation GNV, 2018": {
+    "attribut": "Motorisation GNV",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0.159"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Voiture",
+    "poste": null
+  },
+  "Voiture, Motorisation GPL, 2018": {
+    "attribut": "Motorisation GPL",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0.165"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Voiture",
+    "poste": null
+  },
+  "Voiture, Motorisation essence, 2018": {
+    "attribut": "Motorisation essence",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0.162"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Voiture",
+    "poste": null
+  },
+  "Voiture, Motorisation gazole, 2018": {
+    "attribut": "Motorisation gazole",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "0.15"
+      }
+    },
+    "frontière": "2018",
+    "nom": "Voiture",
+    "poste": null
+  },
+  "Vraquier, 10 000 à 100 000 tonnes, HFO - MGO": {
+    "attribut": "10 000 à 100 000 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "6.90E-03"
+      }
+    },
+    "frontière": "HFO - MGO",
+    "nom": "Vraquier",
+    "poste": null
+  },
+  "Vraquier, < 10 000 tonnes, GNL": {
+    "attribut": "< 10 000 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "2.00E-03"
+      }
+    },
+    "frontière": "GNL",
+    "nom": "Vraquier",
+    "poste": null
+  },
+  "Vraquier, < 10 000 tonnes, HFO - MGO": {
+    "attribut": "< 10 000 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "0.03"
+      }
+    },
+    "frontière": "HFO - MGO",
+    "nom": "Vraquier",
+    "poste": null
+  },
+  "Vraquier, > 100 000 tonnes, HFO - MGO": {
+    "attribut": "> 100 000 tonnes",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/t.km": "2.70E-03"
+      }
+    },
+    "frontière": "HFO - MGO",
+    "nom": "Vraquier",
+    "poste": null
+  },
+  "Vélo, à assistance électrique": {
+    "attribut": "à assistance électrique",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/km": "2.23E-03"
+      }
+    },
+    "frontière": "",
+    "nom": "Vélo",
+    "poste": null
   },
   "coke de pétrole": {
-    "kgCO2e/kWh PCI": "0.349",
-    "kgCO2e/kg": "3.09"
-  },
-  "Électricité": {
-    "kgCO2e/kWh": "0"
+    "attribut": "",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/kWh PCI": "0.349",
+        "kgCO2e/kg": "3.09"
+      }
+    },
+    "frontière": "",
+    "nom": "coke de pétrole",
+    "poste": "1"
   }
 }

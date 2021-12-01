@@ -4,3 +4,4 @@ TODO.md
 .env
 scripts/*.json
 .DS_Store
+.vscode/launch.json

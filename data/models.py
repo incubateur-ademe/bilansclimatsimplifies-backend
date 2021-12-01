@@ -97,13 +97,14 @@ class Emission(models.Model):
 
     valeur = models.DecimalField(verbose_name="valeur", max_digits=10, decimal_places=2)  # max 99.999.999,99
     type = models.CharField(verbose_name="type d'emission", max_length=100)
+    localisation = models.CharField(verbose_name="localisation", max_length=100, blank=True, null=True)
     unite = models.CharField(verbose_name="unité", max_length=20)
     poste = models.IntegerField(verbose_name="poste")
     note = models.TextField(verbose_name="note", blank=True, null=True)
 
     @property
     def resultat(self):
-        factor = get_emission_factors().get_factor(self.type, self.unite)
+        factor = get_emission_factors().get_factor(self.type, self.unite, self.localisation)
         if factor:
             return self.valeur * factor
         return None
