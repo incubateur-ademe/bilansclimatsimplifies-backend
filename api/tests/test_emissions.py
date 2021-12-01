@@ -28,6 +28,13 @@ example_emission_factors = {
             },
         },
     },
+    "Essence, E85": {
+        "facteurs": {
+            "France continentale": {
+                "kgCO2e/kg": "0.85",
+            },
+        },
+    },
 }
 # TODO: test frontiere too once confirmed if we need to use it
 
@@ -103,6 +110,7 @@ class TestEmissionApi(APITestCase):
             "type": "petrole",
             "valeur": 100,
             "unite": "l",
+            # TODO: test auto finding poste - shouldn't send it since it is in the file
             "poste": 1,
         }
         response = self.client.post(reverse("emissions"), payload)
@@ -112,7 +120,7 @@ class TestEmissionApi(APITestCase):
         self.assertEqual(len(emissions), 1)
         body = response.json()
         self.assertEqual(body["id"], emissions[0].id)
-        # TODO: check conversion for emission and new total for scope is in response
+        self.assertIn("resultat", body)
 
     def test_unauthenticated_fetch_report_emissions(self):
         """
@@ -253,12 +261,42 @@ class TestEmissionApi(APITestCase):
         body = response.json()
         self.assertEqual(body["resultat"], 100.0)
 
-    # TODO: tests for no localisation & either only one local in file or multiple
+    @authenticate
+    def test_fetch_emission_without_location_one_option(self):
+        """
+        If an emission is saved without a location, and there is only one choice in
+        the file for factors, use that choice
+        """
+        my_report = ReportFactory.create(gestionnaire=authenticate.user)
+        emission = EmissionFactory.create(
+            bilan=my_report, type="Essence, E85", valeur=1000, unite="kg", localisation=None
+        )
+
+        response = self.client.get(reverse("emission", kwargs={"pk": emission.id}))
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        body = response.json()
+        self.assertEqual(body["resultat"], 850.0)
+
+    @authenticate
+    def test_fetch_emission_without_location_multiple_options(self):
+        """
+        If an emission is saved without a location, and there are multiple choices, return null
+        """
+        my_report = ReportFactory.create(gestionnaire=authenticate.user)
+        emission = EmissionFactory.create(
+            bilan=my_report, type="Essence, E10", valeur=1000, unite="kg", localisation=None
+        )
+
+        response = self.client.get(reverse("emission", kwargs={"pk": emission.id}))
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        body = response.json()
+        self.assertEqual(body["resultat"], None)
 
     # test decimal arithmetic
     # what kind of numbers are we expecting?
     # what is expected behaviour if no emission factor to calculate result?
-    # TODO: test auto finding poste - no need to send in payload since it is in the file
 
 
 class TestEmissionApiRealFactors(APITestCase):
