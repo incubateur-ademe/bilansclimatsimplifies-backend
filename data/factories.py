@@ -28,8 +28,10 @@ class EmissionFactory(factory.django.DjangoModelFactory):
         model = Emission
 
     bilan = factory.SubFactory(ReportFactory)
+    # could improve by using more realisic values for poste, type, localisation, unite
     poste = factory.Faker("random_int", min=1, max=2)
     type = factory.Faker("pystr", min_chars=4, max_chars=10)
+    localisation = factory.Faker("pystr", min_chars=4, max_chars=10)
     valeur = factory.Faker("random_int", min=1, max=1000)
     unite = factory.Faker("pystr", min_chars=1, max_chars=3)
     note = factory.Faker("text", max_nb_chars=20)

@@ -38,6 +38,9 @@ def read_emissions_file(filename):
         return results
 
 
+# TODO: Ideal clean up actions
+# - normalise units so don't have kWhPCI, kWh PCI and kWh (PCI) as separate units for example
+# - don't include 'Outre mer :' in outre mer territory names
 def create_emission_factors_file(results):
     factors = {}
     duplicate_fe_by_unit = {}
@@ -99,7 +102,8 @@ def create_emission_factors_file(results):
     print(f"Missing posts: {missing_post}")
     unused_posts = [name for name in posts.keys() if name not in post_used]
     print(f"Unused posts: {unused_posts}")
-    print(f"Total efs saved: {total_efs_saved}")
+    print(f"Total efs saved: {total_efs_saved}")  # should be 506
+    print(f"Total types: {len(factors.keys())}")
     return factors
 
 
