@@ -7,6 +7,8 @@ from data.models import Report
 from decimal import Decimal
 from data.emission_factors import get_emission_factors
 from unittest.mock import patch
+from django.utils import timezone
+from datetime import timedelta
 
 
 class TestReportApi(APITestCase):
@@ -137,17 +139,20 @@ class TestReportApi(APITestCase):
     @authenticate
     def test_publish_report(self):
         """
-        Can publish report
+        Can publish report and automatically set publication date
+        NB: if there are further edits, publication date is updated with the latest edit date
         """
         my_report = ReportFactory.create(gestionnaire=authenticate.user)
 
         self.assertEqual(my_report.statut, Report.Status.DRAFT)
+        self.assertEqual(my_report.publication_date, None)
 
         response = self.client.patch(reverse("report", kwargs={"pk": my_report.id}), {"statut": "publié"})
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         my_report.refresh_from_db()
         self.assertEqual(my_report.statut, Report.Status.PUBLISHED)
+        self.assertTrue(timezone.now() - my_report.publication_date < timedelta(days=1))
 
     example_emission_factors = {
         "Gaz naturel": {

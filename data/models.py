@@ -4,6 +4,7 @@ from data.emission_factors import get_emission_factors
 from django.contrib.auth.models import AbstractUser
 from data.insee_naf_division_choices import NafDivision
 from data.region_choices import Region
+from django.utils import timezone
 
 
 class User(AbstractUser):
@@ -28,6 +29,7 @@ class Report(models.Model):
 
     creation_date = models.DateTimeField(auto_now_add=True)
     modification_date = models.DateTimeField(auto_now=True)
+    publication_date = models.DateTimeField(blank=True, null=True)
     statut = models.CharField(max_length=10, choices=Status.choices, default=Status.DRAFT)
 
     # TODO: double check that we shouldn't CASCADE on_delete
@@ -96,6 +98,11 @@ class Report(models.Model):
             return self.poste_2
         else:
             return None
+
+    def save(self, *args, **kwargs):
+        if self.statut == self.Status.PUBLISHED:
+            self.publication_date = timezone.now()
+        super().save(*args, **kwargs)
 
 
 class Emission(models.Model):
