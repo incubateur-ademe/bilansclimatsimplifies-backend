@@ -45,8 +45,8 @@ class TestUserApi(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         self.assertEqual(get_user_model().objects.count(), 1)
         user = get_user_model().objects.first()
-        # TODO: extend user model to have ademe_id instead of using username field
-        self.assertEqual(user.username, "test-ademe-id")
+        self.assertEqual(user.ademe_id, "test-ademe-id")
+        self.assertEqual(user.username, "test")
         self.assertEqual(user.email, "test@example.com")
         self.assertEqual(user.first_name, "Camille")
         self.assertEqual(user.last_name, "Dupont")
@@ -55,7 +55,13 @@ class TestUserApi(APITestCase):
         """
         An existing user gets updated from JWT on login
         """
-        UserFactory.create(username="test-ademe-id", email="other@example.com", first_name="Other", last_name="Other")
+        UserFactory.create(
+            ademe_id="test-ademe-id",
+            username="other",
+            email="other@example.com",
+            first_name="Other",
+            last_name="Other",
+        )
         mock_token = {
             "preferred_username": "test",
             "email": "test@example.com",
@@ -70,7 +76,8 @@ class TestUserApi(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         self.assertEqual(get_user_model().objects.count(), 1)
         user = get_user_model().objects.first()
-        self.assertEqual(user.username, "test-ademe-id")
+        self.assertEqual(user.ademe_id, "test-ademe-id")
+        self.assertEqual(user.username, "test")
         self.assertEqual(user.email, "test@example.com")
         self.assertEqual(user.first_name, "Camille")
         self.assertEqual(user.last_name, "Dupont")

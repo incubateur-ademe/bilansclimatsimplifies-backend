@@ -1,6 +1,13 @@
 from django.contrib.auth import get_user_model
 from django.db import models
 from data.emission_factors import get_emission_factors
+from django.contrib.auth.models import AbstractUser
+from data.insee_naf_division_choices import NafDivision
+from data.region_choices import Region
+
+
+class User(AbstractUser):
+    ademe_id = models.CharField(verbose_name="identifiant ADEME", max_length=255, blank=True, null=True)
 
 
 class Report(models.Model):
@@ -28,13 +35,19 @@ class Report(models.Model):
 
     # company fields
     raison_sociale = models.TextField(verbose_name="raison sociale")
-    # TODO: consider writing a validator for min = 0 max = 1000 (our scope: 50-500)
+    # TODO: validate min = 1 and max = 1000 (our scope: 50-500) ?
     nombre_salaries = models.IntegerField(verbose_name="nombre de salariés", blank=True, null=True)
+    # TODO: add luhn validation
     siren = models.CharField(verbose_name="siren", max_length=9)
-    # TODO: maybe make this choices
-    region = models.CharField(verbose_name="région du siège", blank=True, null=True, max_length=40)
+    region = models.CharField(
+        verbose_name="région du siège", blank=True, null=True, choices=Region.choices, max_length=4
+    )
     naf = models.CharField(
-        verbose_name="code NAF (nomenclature d'activités française)", blank=True, null=True, max_length=20
+        verbose_name="code NAF (nomenclature d'activités française)",
+        blank=True,
+        null=True,
+        choices=NafDivision.choices,
+        max_length=4,
     )
 
     annee = models.IntegerField(verbose_name="année")

@@ -44,20 +44,22 @@ class AdemeUserView(APIView):
             token = self._get_token(request.data["token"])
         except KeyError:
             raise BadRequest("Expected 'token' in payload")
-        user = token
+        user_payload = token
         try:
             with transaction.atomic():
-                get_user_model().objects.create_user(
-                    username=user["sub"],
-                    email=user["email"],
-                    first_name=user["given_name"],
-                    last_name=user["family_name"],
-                )
-        except IntegrityError:
-            get_user_model().objects.filter(username=user["sub"]).update(
-                email=user["email"],
-                first_name=user["given_name"],
-                last_name=user["family_name"],
+                user = get_user_model().objects.get(ademe_id=user_payload["sub"])
+                user.username = user_payload["preferred_username"]
+                user.email = user_payload["email"]
+                user.first_name = user_payload["given_name"]
+                user.last_name = user_payload["family_name"]
+                user.save()
+        except get_user_model().DoesNotExist:
+            get_user_model().objects.create_user(
+                ademe_id=user_payload["sub"],
+                username=user_payload["preferred_username"],
+                email=user_payload["email"],
+                first_name=user_payload["given_name"],
+                last_name=user_payload["family_name"],
             )
         return Response({}, status=HTTP_201_CREATED)
 

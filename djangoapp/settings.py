@@ -29,6 +29,8 @@ SECURE_SSL_REDIRECT = os.getenv("FORCE_HTTPS") == "True"
 CSRF_COOKIE_SECURE = os.getenv("FORCE_HTTPS") == "True"
 SESSION_COOKIE_SECURE = os.getenv("FORCE_HTTPS") == "True"
 
+AUTH_USER_MODEL = "data.User"
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG") == "True"
 
@@ -48,7 +50,6 @@ INSTALLED_APPS = [
     "rest_framework",
     "corsheaders",
     "rest_framework_simplejwt",
-    "rest_framework.authtoken",
     "api",
     "data",
 ]
@@ -162,7 +163,6 @@ REST_FRAMEWORK = {
     ),
     "DEFAULT_AUTHENTICATION_CLASSES": [
         "rest_framework_simplejwt.authentication.JWTAuthentication",
-        "rest_framework.authentication.TokenAuthentication",
         "rest_framework.authentication.SessionAuthentication",
     ],
 }
