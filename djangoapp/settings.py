@@ -184,7 +184,7 @@ SIMPLE_JWT = {
     "JWK_URL": os.getenv("JWT_CERTS_URL"),
     "AUTH_HEADER_TYPES": ("Token",),
     "AUTH_HEADER_NAME": "HTTP_AUTHORIZATION",
-    "USER_ID_FIELD": "username",
+    "USER_ID_FIELD": "ademe_id",
     "USER_ID_CLAIM": "sub",
     # OIDC tokens do not fit library types, so skip type checking by using UntypedToken
     # https://github.com/jazzband/djangorestframework-simplejwt/issues/446
