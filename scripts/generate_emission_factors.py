@@ -53,13 +53,11 @@ def create_emission_factors_file(results):
         posts = json.load(jsonfile)
 
     for emission in results:
-        # Dès la spécification:
+        # Dès la spécification :
         # "NB sur les FE : si un FE France et Europe existent pour le même combustible,
         # prendre le FE France uniquement.
-        # Par contre, quand il y a une distinction entre métropole et outre-mer, bien mettre tous les FE par outre-mer.
-        # Attention à ne considérer que le poste « Combustion » des FE pour la valeur à retenir pour le calcul."
         location = emission["Localisation_géographique"]
-        if location == "Europe" or emission["Type_poste"] != "Combustion":
+        if location == "Europe":
             continue
         name = emission["Nom_base_français"]
         attribute = emission["Nom_attribut_français"]
@@ -69,12 +67,14 @@ def create_emission_factors_file(results):
         unit = emission["Unité_français"]
 
         if long_name not in factors:
+            additional_info = get_additional_info(posts, name_for_post, name, post_used, missing_post)
             factors[long_name] = {
                 "facteurs": {},
                 "attribut": attribute,
                 "nom": name,
                 "frontière": border,
-                "poste": get_post(posts, name_for_post, name, post_used, missing_post),
+                "poste": additional_info["poste"] if additional_info else None,
+                "groupe": additional_info["groupe"] if additional_info else None,
             }
         location = get_location(emission)
         if location not in factors[long_name]["facteurs"]:
@@ -101,12 +101,12 @@ def create_emission_factors_file(results):
     print(f"Missing posts: {missing_post}")
     unused_posts = [name for name in posts.keys() if name not in post_used]
     print(f"Unused posts: {unused_posts}")
-    print(f"Total efs saved: {total_efs_saved}")  # should be 506
+    print(f"Total efs saved: {total_efs_saved}")  # should be 522
     print(f"Total types: {len(factors.keys())}")
     return factors
 
 
-def get_post(posts, name_for_post, name, post_used, missing_post):
+def get_additional_info(posts, name_for_post, name, post_used, missing_post):
     if name_for_post in posts:
         post_used.append(name_for_post)
         return posts[name_for_post]

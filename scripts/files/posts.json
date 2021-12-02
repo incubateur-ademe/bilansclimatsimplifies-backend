@@ -1,101 +1,406 @@
 {
-  "Agglomérés de houille": "1",
-  "Anthracite": "1",
-  "Articulé": "2",
-  "Autobus": "2",
-  "Autres produits pétroliers": "1",
-  "Avion cargo": "2",
-  "Avion passagers": "2",
-  "Bateau automoteur": "2",
-  "BioGNC -Biométhane comprimé, Pour véhicule routier": "2",
-  "BioGNC pour véhicule routier": "2",
-  "BioGNL": "2",
-  "Biodiesel, sans changement d'affectation des sols": "1",
-  "Biométhane": "1",
-  "Biopropane": "1",
-  "Bioéthanol, sans changement d'affectation des sols": "1",
-  "Bitumes": "1",
-  "Bois bûche": "1",
-  "Briquette de lignite": "1",
-  "Broyats de cagettes et de pallettes": "1",
-  "Butane": "1",
-  "Camion porteur, 45 m3": "2",
-  "Carburéacteur jet B": "2",
-  "Cargo": "2",
-  "Cargo inter-îles": "2",
-  "Charbon sous-bitumineux": "1",
-  "Charbon à coke": "1",
-  "Charbon à vapeur": "1",
-  "Coke de houille": "1",
-  "Coke de lignite": "1",
-  "Coke de pétrole": "1",
-  "Combustible haute viscosité (CHV)": "1",
-  "Cyclomoteur": "2",
-  "Essence": "2",
-  "Essence aviation (AvGas)": "2",
-  "Essence, E10": "2",
-  "Essence, E85": "2",
-  "Essence, Supercarburant sans plomb (95, 95-E10, 98)": "2",
-  "Fioul Lourd": "1",
-  "Fioul domestique": "1",
-  "Fioul à base de carbone recyclé": "1",
-  "Fourgon": "2",
-  "GNC, Gaz Naturel Comprimé pour véhicule routier": "2",
-  "GNL, Gaz Naturel Liquéfié": "2",
-  "GPL pour véhicule routier": "2",
-  "Gaz d'aciérie": "1",
-  "Gaz de cokerie": "1",
-  "Gaz de haut fourneau": "1",
-  "Gaz naturel": "1",
-  "Gaz naturel - 2015": "1",
-  "Gazier": "2",
-  "Gazole": "2",
-  "Gazole non routier": "2",
-  "Gazole routier": "2",
-  "Gazole routier, B10": "2",
-  "Gazole routier, B100": "2",
-  "Gazole routier, B7": "2",
-  "Gazole, B30": "2",
-  "Granulés bois": "1",
-  "HFO (Heavy Fuel Oil)": "2",
-  "Houille": "1",
-  "Huiles de schistes": "1",
-  "Kérosène, jet A1 ou A": "2",
-  "LFO (Light Fuel Oil)": "2",
-  "Lignite": "1",
-  "MDO (Marine Diesel Oil)": "2",
-  "Moto =< 250 cm3": "2",
-  "Moto > 250 cm3": "2",
-  "Métro": "2",
-  "Naphta": "1",
-  "Navette fluviale": "2",
-  "Navette inter-îles": "2",
-  "Paille": "1",
-  "Plaquettes forestières": "1",
-  "Pneumatiques usagés non réutilisables": "1",
-  "Porte-conteneur": "2",
-  "Propane": "1",
-  "Pétrole Brut": "1",
-  "Pétrolier": "2",
-  "Rigide": "2",
-  "Ro-Pax": "2",
-  "Ro-Ro": "2",
-  "Sciures et chutes de scieries": "1",
-  "Taxi brousse": "2",
-  "Tourbe": "1",
-  "Train": "2",
-  "Tramway": "2",
-  "Trotinnette": "2",
-  "Utilitaire <3,5t": "2",
-  "VUL": "2",
-  "Voiture": "2",
-  "Voiture E85": "2",
-  "Voiture GNV": "2",
-  "Voiture GPL": "2",
-  "Voiture essence": "2",
-  "Voiture gazole": "2",
-  "Voiture particulière": "2",
-  "Vraquier": "2",
-  "Vélo": "2",
-  "coke de pétrole": "1"
+  "Agglomérés de houille": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Anthracite": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Articulé": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Autobus": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Autocar": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Autres produits pétroliers": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Avion cargo": {
+    "groupe": "Non routier",
+    "poste": "2"
+  },
+  "Avion passagers": {
+    "groupe": "Non routier",
+    "poste": "2"
+  },
+  "Bateau automoteur": {
+    "groupe": "Non routier",
+    "poste": "2"
+  },
+  "Bateau pousseur": {
+    "groupe": "Non routier",
+    "poste": "2"
+  },
+  "BioGNC -Biométhane comprimé, Pour véhicule routier": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "BioGNC pour véhicule routier": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "BioGNL": {
+    "groupe": "Non routier",
+    "poste": "2"
+  },
+  "Biodiesel, sans changement d'affectation des sols": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Biométhane": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Biopropane": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Bioéthanol, sans changement d'affectation des sols": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Bitumes": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Bois bûche": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Briquette de lignite": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Broyats de cagettes et de pallettes": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Butane": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Camion porteur, 45 m3": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Carburéacteur jet B": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Cargo": {
+    "groupe": "Non routier",
+    "poste": "2"
+  },
+  "Cargo inter-îles": {
+    "groupe": "Non routier",
+    "poste": "2"
+  },
+  "Charbon sous-bitumineux": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Charbon à coke": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Charbon à vapeur": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Coke de houille": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Coke de lignite": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Coke de pétrole": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Combustible haute viscosité (CHV)": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Cyclomoteur": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Essence": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Essence aviation (AvGas)": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Essence, E10": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Essence, E85": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Essence, Supercarburant sans plomb (95, 95-E10, 98)": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Fioul Lourd": {
+    "groupe": "Les plus utilisés",
+    "poste": "1"
+  },
+  "Fioul domestique": {
+    "groupe": "Les plus utilisés",
+    "poste": "1"
+  },
+  "Fioul à base de carbone recyclé": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Fourgon": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "GNC, Gaz Naturel Comprimé pour véhicule routier": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "GNL, Gaz Naturel Liquéfié": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "GPL pour véhicule routier": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Gaz d'aciérie": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Gaz de cokerie": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Gaz de haut fourneau": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Gaz naturel": {
+    "groupe": "Les plus utilisés",
+    "poste": "1"
+  },
+  "Gaz naturel - 2015": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Gazier": {
+    "groupe": "Non routier",
+    "poste": "2"
+  },
+  "Gazole": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Gazole non routier": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Gazole routier": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Gazole routier, B10": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Gazole routier, B100": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Gazole routier, B7": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Gazole, B30": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Granulés bois": {
+    "groupe": "Les plus utilisés",
+    "poste": "1"
+  },
+  "HFO (Heavy Fuel Oil)": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Houille": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Huiles de schistes": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Kérosène, jet A1 ou A": {
+    "groupe": "Non routier",
+    "poste": "2"
+  },
+  "LFO (Light Fuel Oil)": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Lignite": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "MDO (Marine Diesel Oil)": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Moto =< 250 cm3": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Moto > 250 cm3": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Métro": {
+    "groupe": "Non routier",
+    "poste": "2"
+  },
+  "Naphta": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Navette fluviale": {
+    "groupe": "Non routier",
+    "poste": "2"
+  },
+  "Navette inter-îles": {
+    "groupe": "Non routier",
+    "poste": "2"
+  },
+  "Paille": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Plaquettes forestières": {
+    "groupe": "Les plus utilisés",
+    "poste": "1"
+  },
+  "Pneumatiques usagés non réutilisables": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Porte-conteneur": {
+    "groupe": "Non routier",
+    "poste": "2"
+  },
+  "Propane": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Pétrole Brut": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Pétrolier": {
+    "groupe": "Non routier",
+    "poste": "2"
+  },
+  "Rigide": {
+    "groupe": "Non routier",
+    "poste": "2"
+  },
+  "Ro-Pax": {
+    "groupe": "Non routier",
+    "poste": "2"
+  },
+  "Ro-Ro": {
+    "groupe": "Non routier",
+    "poste": "2"
+  },
+  "Sciures et chutes de scieries": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Taxi brousse": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Tourbe": {
+    "groupe": "",
+    "poste": "1"
+  },
+  "Train": {
+    "groupe": "Non routier",
+    "poste": "2"
+  },
+  "Tramway": {
+    "groupe": "Non routier",
+    "poste": "2"
+  },
+  "Trotinnette": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Utilitaire <3,5t": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "VUL": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Voiture": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Voiture E85": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Voiture GNV": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Voiture GPL": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Voiture essence": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Voiture gazole": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Voiture particulière": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "Vraquier": {
+    "groupe": "Non routier",
+    "poste": "2"
+  },
+  "Vélo": {
+    "groupe": "Routier",
+    "poste": "2"
+  },
+  "coke de pétrole": {
+    "groupe": "",
+    "poste": "1"
+  }
 }
