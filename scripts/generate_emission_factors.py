@@ -142,9 +142,6 @@ def add_shortest_name(factors):
         factors, name_and_attribute, lambda factor: not factor.get("nom_court_unique") and factor.get("attribut")
     )
     try_adding_short_name(
-        factors, name_and_border, lambda factor: not factor.get("nom_court_unique") and factor.get("frontière")
-    )
-    try_adding_short_name(
         factors,
         name_and_attribute_and_border,
         lambda factor: not factor.get("nom_court_unique") and factor.get("attribut") and factor.get("frontière"),

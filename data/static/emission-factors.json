@@ -36,7 +36,7 @@
     },
     "groupe": "Routier",
     "nom": "Articulé",
-    "nom_court_unique": "Articulé, Diesel routier, incorporation 7 % de biodiesel",
+    "nom_court_unique": "Articulé, 34 à 40 tonnes, Diesel routier, incorporation 7 % de biodiesel",
     "poste": "2"
   },
   "Articulé, 34 à 40 tonnes, GNC": {
@@ -48,7 +48,7 @@
     },
     "groupe": "Routier",
     "nom": "Articulé",
-    "nom_court_unique": "Articulé, GNC",
+    "nom_court_unique": "Articulé, 34 à 40 tonnes, GNC",
     "poste": "2"
   },
   "Articulé, 34 à 40 tonnes, GNL": {
@@ -60,7 +60,7 @@
     },
     "groupe": "Routier",
     "nom": "Articulé",
-    "nom_court_unique": "Articulé, GNL",
+    "nom_court_unique": "Articulé, 34 à 40 tonnes, GNL",
     "poste": "2"
   },
   "Articulé, 34 à 40 tonnes, GNL, incorporation bio 20%": {
@@ -72,7 +72,7 @@
     },
     "groupe": "Routier",
     "nom": "Articulé",
-    "nom_court_unique": "Articulé, GNL, incorporation bio 20%",
+    "nom_court_unique": "Articulé, 34 à 40 tonnes, GNL, incorporation bio 20%",
     "poste": "2"
   },
   "Articulé, 40 à 44 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
@@ -2317,7 +2317,7 @@
     },
     "groupe": "Non routier",
     "nom": "Pétrolier",
-    "nom_court_unique": "Pétrolier, GNL",
+    "nom_court_unique": "Pétrolier, > 200 000 tonnes, GNL",
     "poste": "2"
   },
   "Pétrolier, > 200 000 tonnes, HFO-MGO": {
@@ -2329,7 +2329,7 @@
     },
     "groupe": "Non routier",
     "nom": "Pétrolier",
-    "nom_court_unique": "Pétrolier, HFO-MGO",
+    "nom_court_unique": "Pétrolier, > 200 000 tonnes, HFO-MGO",
     "poste": "2"
   },
   "Rigide, 12 à 20 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
@@ -2437,7 +2437,7 @@
     },
     "groupe": "Non routier",
     "nom": "Rigide",
-    "nom_court_unique": "Rigide, Electrique",
+    "nom_court_unique": "Rigide, 3,5 à 7,5 tonnes, Electrique",
     "poste": "2"
   },
   "Rigide, 3,5 à 7,5 tonnes, GNC": {
@@ -2461,7 +2461,7 @@
     },
     "groupe": "Non routier",
     "nom": "Rigide",
-    "nom_court_unique": "Rigide, Hybride parallèle",
+    "nom_court_unique": "Rigide, 3,5 à 7,5 tonnes, Hybride parallèle",
     "poste": "2"
   },
   "Rigide, 3,5 à 7,5 tonnes, Hybride série": {
@@ -2473,7 +2473,7 @@
     },
     "groupe": "Non routier",
     "nom": "Rigide",
-    "nom_court_unique": "Rigide, Hybride série",
+    "nom_court_unique": "Rigide, 3,5 à 7,5 tonnes, Hybride série",
     "poste": "2"
   },
   "Rigide, 7,5 à 12 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
@@ -2799,7 +2799,7 @@
     },
     "groupe": "Routier",
     "nom": "VUL",
-    "nom_court_unique": "VUL, Diesel routier, incorporation 7 % de biodiesel",
+    "nom_court_unique": "VUL, < 3,5 tonnes, Diesel routier, incorporation 7 % de biodiesel",
     "poste": "2"
   },
   "VUL, < 3,5 tonnes, Essence": {
@@ -2811,7 +2811,7 @@
     },
     "groupe": "Routier",
     "nom": "VUL",
-    "nom_court_unique": "VUL, Essence",
+    "nom_court_unique": "VUL, < 3,5 tonnes, Essence",
     "poste": "2"
   },
   "VUL, < 3,5 tonnes, GNC": {
@@ -2823,7 +2823,7 @@
     },
     "groupe": "Routier",
     "nom": "VUL",
-    "nom_court_unique": "VUL, GNC",
+    "nom_court_unique": "VUL, < 3,5 tonnes, GNC",
     "poste": "2"
   },
   "VUL, < 3,5 tonnes, GPL": {
@@ -2835,7 +2835,7 @@
     },
     "groupe": "Routier",
     "nom": "VUL",
-    "nom_court_unique": "VUL, GPL",
+    "nom_court_unique": "VUL, < 3,5 tonnes, GPL",
     "poste": "2"
   },
   "Voiture E85, Courte distance, 2018": {
@@ -3027,7 +3027,7 @@
     },
     "groupe": "Routier",
     "nom": "Voiture particulière",
-    "nom_court_unique": "Voiture particulière, Hydrogène SMR GN centralisé",
+    "nom_court_unique": "Voiture particulière, Berline, Hydrogène SMR GN centralisé",
     "poste": "2"
   },
   "Voiture particulière, Berline, Hydrogène SMR biométhane centralisé": {
@@ -3039,7 +3039,7 @@
     },
     "groupe": "Routier",
     "nom": "Voiture particulière",
-    "nom_court_unique": "Voiture particulière, Hydrogène SMR biométhane centralisé",
+    "nom_court_unique": "Voiture particulière, Berline, Hydrogène SMR biométhane centralisé",
     "poste": "2"
   },
   "Voiture particulière, Berline, Hydrogène électrolyse lix EnR décentralisée": {
@@ -3051,7 +3051,7 @@
     },
     "groupe": "Routier",
     "nom": "Voiture particulière",
-    "nom_court_unique": "Voiture particulière, Hydrogène électrolyse lix EnR décentralisée",
+    "nom_court_unique": "Voiture particulière, Berline, Hydrogène électrolyse lix EnR décentralisée",
     "poste": "2"
   },
   "Voiture particulière, Berline, Hydrogène électrolyse mix France décentralisée": {
@@ -3063,7 +3063,7 @@
     },
     "groupe": "Routier",
     "nom": "Voiture particulière",
-    "nom_court_unique": "Voiture particulière, Hydrogène électrolyse mix France décentralisée",
+    "nom_court_unique": "Voiture particulière, Berline, Hydrogène électrolyse mix France décentralisée",
     "poste": "2"
   },
   "Voiture particulière, Coeur de gamme - Véhicule compact, Electrique": {
@@ -3087,7 +3087,7 @@
     },
     "groupe": "Routier",
     "nom": "Voiture particulière",
-    "nom_court_unique": "Voiture particulière, Hybride rechargeable, plug in-hybrid, P2/prius",
+    "nom_court_unique": "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride rechargeable, plug in-hybrid, P2/prius",
     "poste": "2"
   },
   "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, full, P2": {
@@ -3099,7 +3099,7 @@
     },
     "groupe": "Routier",
     "nom": "Voiture particulière",
-    "nom_court_unique": "Voiture particulière, Hybride, full, P2",
+    "nom_court_unique": "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, full, P2",
     "poste": "2"
   },
   "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, full, Prius": {
@@ -3111,7 +3111,7 @@
     },
     "groupe": "Routier",
     "nom": "Voiture particulière",
-    "nom_court_unique": "Voiture particulière, Hybride, full, Prius",
+    "nom_court_unique": "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, full, Prius",
     "poste": "2"
   },
   "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, mild, diesel": {
@@ -3123,7 +3123,7 @@
     },
     "groupe": "Routier",
     "nom": "Voiture particulière",
-    "nom_court_unique": "Voiture particulière, Hybride, mild, diesel",
+    "nom_court_unique": "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, mild, diesel",
     "poste": "2"
   },
   "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, mild, essence": {
@@ -3135,7 +3135,7 @@
     },
     "groupe": "Routier",
     "nom": "Voiture particulière",
-    "nom_court_unique": "Voiture particulière, Hybride, mild, essence",
+    "nom_court_unique": "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, mild, essence",
     "poste": "2"
   },
   "Voiture particulière, Entrée de gamme - Véhicule léger, Electrique": {
@@ -3159,7 +3159,7 @@
     },
     "groupe": "Routier",
     "nom": "Voiture particulière",
-    "nom_court_unique": "Voiture particulière, Hybride rechargeable avec alimentation auxilliaire de puissance",
+    "nom_court_unique": "Voiture particulière, Entrée de gamme - Véhicule léger, Hybride rechargeable avec alimentation auxilliaire de puissance",
     "poste": "2"
   },
   "Voiture particulière, Entrée de gamme - Véhicule léger, Hybride, mild essence": {
@@ -3195,7 +3195,7 @@
     },
     "groupe": "Routier",
     "nom": "Voiture particulière",
-    "nom_court_unique": "Voiture particulière, Hybride rechargeable, plug in-hybrid, P2 / Prius",
+    "nom_court_unique": "Voiture particulière, Haut de gamme - Berline, Hybride rechargeable, plug in-hybrid, P2 / Prius",
     "poste": "2"
   },
   "Voiture particulière, Haut de gamme - Berline, Hybride, full P2": {
@@ -3207,7 +3207,7 @@
     },
     "groupe": "Routier",
     "nom": "Voiture particulière",
-    "nom_court_unique": "Voiture particulière, Hybride, full P2",
+    "nom_court_unique": "Voiture particulière, Haut de gamme - Berline, Hybride, full P2",
     "poste": "2"
   },
   "Voiture particulière, Haut de gamme - Berline, Hybride, full Prius": {
@@ -3219,7 +3219,7 @@
     },
     "groupe": "Routier",
     "nom": "Voiture particulière",
-    "nom_court_unique": "Voiture particulière, Hybride, full Prius",
+    "nom_court_unique": "Voiture particulière, Haut de gamme - Berline, Hybride, full Prius",
     "poste": "2"
   },
   "Voiture particulière, Haut de gamme - Berline, Hybride, mild diesel": {
@@ -3231,7 +3231,7 @@
     },
     "groupe": "Routier",
     "nom": "Voiture particulière",
-    "nom_court_unique": "Voiture particulière, Hybride, mild diesel",
+    "nom_court_unique": "Voiture particulière, Haut de gamme - Berline, Hybride, mild diesel",
     "poste": "2"
   },
   "Voiture particulière, Haut de gamme - Berline, Hybride, mild essence": {
@@ -3327,7 +3327,7 @@
     },
     "groupe": "Non routier",
     "nom": "Vraquier",
-    "nom_court_unique": "Vraquier, GNL",
+    "nom_court_unique": "Vraquier, < 10 000 tonnes, GNL",
     "poste": "2"
   },
   "Vraquier, < 10 000 tonnes, HFO - MGO": {
@@ -3339,7 +3339,7 @@
     },
     "groupe": "Non routier",
     "nom": "Vraquier",
-    "nom_court_unique": "Vraquier, HFO - MGO",
+    "nom_court_unique": "Vraquier, < 10 000 tonnes, HFO - MGO",
     "poste": "2"
   },
   "Vraquier, > 100 000 tonnes, HFO - MGO": {
