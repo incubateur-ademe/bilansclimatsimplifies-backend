@@ -59,23 +59,26 @@ def create_emission_factors_file(results):
         location = emission["Localisation_géographique"]
         if location == "Europe":
             continue
+
         name = emission["Nom_base_français"]
         attribute = emission["Nom_attribut_français"]
         border = emission["Nom_frontière_français"]
-        name_for_post = f"{name}, {attribute}" if attribute else name
-        long_name = f"{name_for_post}, {border}" if border else name_for_post
+        name_with_attribute = f"{name}, {attribute}" if attribute else name
+        long_name = f"{name_with_attribute}, {border}" if border else name_with_attribute
+
         unit = emission["Unité_français"]
 
         if long_name not in factors:
-            additional_info = get_additional_info(posts, name_for_post, name, post_used, missing_post)
+            additional_info = get_additional_info(posts, emission, post_used, missing_post)
             factors[long_name] = {
                 "facteurs": {},
-                "attribut": attribute,
                 "nom": name,
+                "attribut": attribute,
                 "frontière": border,
                 "poste": additional_info["poste"] if additional_info else None,
                 "groupe": additional_info["groupe"] if additional_info else None,
             }
+
         location = get_location(emission)
         if location not in factors[long_name]["facteurs"]:
             factors[long_name]["facteurs"][location] = {}
@@ -93,6 +96,8 @@ def create_emission_factors_file(results):
             factors[long_name]["facteurs"][location][unit] = emission_factor
             total_efs_saved += 1
 
+    add_shortest_name(factors)
+
     with open("auto-emission-factors.json", "w", encoding="utf8") as jsonfile:
         json.dump(factors, jsonfile, indent=2, ensure_ascii=False)
 
@@ -106,7 +111,11 @@ def create_emission_factors_file(results):
     return factors
 
 
-def get_additional_info(posts, name_for_post, name, post_used, missing_post):
+def get_additional_info(posts, emission, post_used, missing_post):
+    name = emission["Nom_base_français"]
+    attribute = emission["Nom_attribut_français"]
+    name_for_post = f"{name}, {attribute}" if attribute else name
+
     if name_for_post in posts:
         post_used.append(name_for_post)
         return posts[name_for_post]
@@ -125,6 +134,63 @@ def get_location(emission):
     if sub_location and sub_location != "France":
         return f"{location} : {sub_location}"
     return location
+
+
+def add_shortest_name(factors):
+    try_adding_short_name(factors, lambda factor: factor["nom"], lambda factor: True)
+    try_adding_short_name(
+        factors, name_and_attribute, lambda factor: not factor.get("nom_court_unique") and factor.get("attribut")
+    )
+    try_adding_short_name(
+        factors, name_and_border, lambda factor: not factor.get("nom_court_unique") and factor.get("frontière")
+    )
+    try_adding_short_name(
+        factors,
+        name_and_attribute_and_border,
+        lambda factor: not factor.get("nom_court_unique") and factor.get("attribut") and factor.get("frontière"),
+    )
+    for (key, factor) in factors.items():
+        if not factor.get("nom_court_unique"):
+            factor["nom_court_unique"] = key  # key must be unique, so take that as fallback
+        attribute = factor["attribut"]
+        frontier = factor["frontière"]
+        del factor["attribut"]
+        del factor["frontière"]
+        if attribute and frontier:
+            factor["detail"] = f"{attribute}, {frontier}"
+        elif attribute:
+            factor["detail"] = attribute
+        elif frontier:
+            factor["detail"] = frontier
+
+
+def name_and_attribute(factor):
+    return f"{factor['nom']}, {factor['attribut']}"
+
+
+def name_and_border(factor):
+    return f"{factor['nom']}, {factor['frontière']}"
+
+
+def name_and_attribute_and_border(factor):
+    return f"{factor['nom']}, {factor['attribut']}, {factor['frontière']}"
+
+
+def try_adding_short_name(factors, name_func, valid_data):
+    unique_names = {}
+    duplicate_names = []
+    for (key, factor) in factors.items():
+        if not valid_data(factor):
+            continue
+        name = name_func(factor)
+        if name not in unique_names:
+            if name not in duplicate_names:
+                unique_names[name] = key
+        else:
+            del unique_names[name]
+            duplicate_names.append(name)
+    for key in unique_names.values():
+        factors[key]["nom_court_unique"] = name_func(factors[key])
 
 
 # results = ƒetch_emissions()
