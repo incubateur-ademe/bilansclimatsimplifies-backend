@@ -5,6 +5,7 @@ from django.contrib.auth.models import AbstractUser
 from data.insee_naf_division_choices import NafDivision
 from data.region_choices import Region
 from django.utils import timezone
+from decimal import Decimal, ROUND_HALF_UP
 
 
 class User(AbstractUser):
@@ -52,41 +53,44 @@ class Report(models.Model):
         max_length=4,
     )
 
+    # validate year?
     annee = models.IntegerField(verbose_name="année")
 
-    manuel_poste_1 = models.DecimalField(
+    manuel_poste_1 = models.IntegerField(
         verbose_name="total poste 1 (manuel)",
-        max_digits=10,
-        decimal_places=2,
         blank=True,
         null=True,
-    )  # max 99.999.999,99
-    manuel_poste_2 = models.DecimalField(
+    )
+    manuel_poste_2 = models.IntegerField(
         verbose_name="total poste 2 (manuel)",
-        max_digits=10,
-        decimal_places=2,
         blank=True,
         null=True,
-    )  # max 99.999.999,99
+    )
     mode = models.CharField(max_length=10, choices=CalculationMode.choices, default=CalculationMode.AUTO)
+
+    def sum_post(self, post):
+        results = [
+            emission.resultat for emission in Emission.objects.filter(poste=post, bilan=self) if emission.resultat
+        ]
+        if len(results):
+            # don't rely on int rounding which rounds 0.5 to 0, use Decimal quantize instead
+            return int(sum(results).quantize(Decimal("1"), rounding=ROUND_HALF_UP))
+        else:
+            return 0
 
     @property
     def poste_1(self):
         if self.mode == self.CalculationMode.MANUAL:
             return self.manuel_poste_1
         else:
-            return sum(
-                [emission.resultat for emission in Emission.objects.filter(poste=1, bilan=self) if emission.resultat]
-            )
+            return self.sum_post(1)
 
     @property
     def poste_2(self):
         if self.mode == self.CalculationMode.MANUAL:
             return self.manuel_poste_2
         else:
-            return sum(
-                [emission.resultat for emission in Emission.objects.filter(poste=2, bilan=self) if emission.resultat]
-            )
+            return self.sum_post(2)
 
     @property
     def total(self):
@@ -126,5 +130,5 @@ class Emission(models.Model):
     def resultat(self):
         factor = get_emission_factors().get_factor(self.type, self.unite, self.localisation)
         if factor:
-            return self.valeur * factor
+            return Decimal(self.valeur * factor).quantize(Decimal("0.1"), rounding=ROUND_HALF_UP)
         return None

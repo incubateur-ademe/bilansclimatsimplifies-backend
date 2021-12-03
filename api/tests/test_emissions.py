@@ -294,8 +294,22 @@ class TestEmissionApi(APITestCase):
         body = response.json()
         self.assertEqual(body["resultat"], None)
 
-    # test decimal arithmetic
-    # what kind of numbers are we expecting?
+    @authenticate
+    def test_round_result_1_sig_fig(self):
+        """
+        Test that result is rounded to 1 sig fig
+        """
+        my_report = ReportFactory.create(gestionnaire=authenticate.user)
+        emission = EmissionFactory.create(
+            bilan=my_report, type="Essence, E85", valeur=1, unite="kg", localisation=None
+        )
+
+        response = self.client.get(reverse("emission", kwargs={"pk": emission.id}))
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        body = response.json()
+        self.assertEqual(body["resultat"], 0.9)
+
     # what is expected behaviour if no emission factor to calculate result?
 
 

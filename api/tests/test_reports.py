@@ -4,7 +4,6 @@ from rest_framework import status
 from .utils import authenticate
 from data.factories import EmissionFactory, ReportFactory, UserFactory
 from data.models import Report
-from decimal import Decimal
 from data.emission_factors import get_emission_factors
 from unittest.mock import patch
 from django.utils import timezone
@@ -182,7 +181,6 @@ class TestReportApi(APITestCase):
     def test_report_totals(self):
         """
         Return totals for each poste and sum of postes
-        # TODO: test decimal arithmetic
         """
         my_report = ReportFactory.create(gestionnaire=authenticate.user)
         EmissionFactory.create(
@@ -209,14 +207,37 @@ class TestReportApi(APITestCase):
         )
 
         response = self.client.get(reverse("report", kwargs={"pk": my_report.id}))
-        self.assertEqual(my_report.poste_1, Decimal("25"))
-        self.assertEqual(my_report.poste_2, Decimal("3"))
-        self.assertEqual(my_report.total, Decimal("28"))
+        self.assertEqual(my_report.poste_1, 25)
+        self.assertEqual(my_report.poste_2, 3)
+        self.assertEqual(my_report.total, 28)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         body = response.json()
         self.assertEqual(body["poste1"], 25)
         self.assertEqual(body["poste2"], 3)
         self.assertEqual(body["total"], 28)
+
+    @patch.object(get_emission_factors(), "emission_factors", example_emission_factors)
+    @authenticate
+    def test_report_totals_rounded(self):
+        """
+        Test that post and report totals are rounded to nearest integer
+        """
+        my_report = ReportFactory.create(gestionnaire=authenticate.user)
+        EmissionFactory.create(
+            bilan=my_report, valeur=1, type="Gaz naturel", unite="GJ PCI", localisation="France continentale", poste=1
+        )
+        EmissionFactory.create(
+            bilan=my_report,
+            valeur=1,
+            type="Essence, E10",
+            unite="GJ PCI",
+            localisation="Guadeloupe, Martinique, Guyane, Corse",
+            poste=2,
+        )
+
+        self.assertEqual(my_report.poste_1, 1)
+        self.assertEqual(my_report.poste_2, 0)
+        self.assertEqual(my_report.total, 1)
 
     @authenticate
     def test_delete_report(self):
@@ -238,9 +259,9 @@ class TestReportApi(APITestCase):
         my_report = ReportFactory.create(gestionnaire=authenticate.user)
         EmissionFactory.create(bilan=my_report, poste=1, valeur=10, type="Anthracite", unite="kg")
         EmissionFactory.create(bilan=my_report, poste=2, valeur=10, type="Articulé", unite="t.km")
-        self.assertNotEqual(my_report.poste_1, Decimal("300"))
-        self.assertNotEqual(my_report.poste_2, Decimal("100"))
-        self.assertNotEqual(my_report.total, Decimal("400"))
+        self.assertNotEqual(my_report.poste_1, 300)
+        self.assertNotEqual(my_report.poste_2, 100)
+        self.assertNotEqual(my_report.total, 400)
 
         response = self.client.patch(
             reverse("report", kwargs={"pk": my_report.id}),
@@ -251,7 +272,7 @@ class TestReportApi(APITestCase):
         body = response.json()
         self.assertEqual(body["poste1"], 300)
         self.assertEqual(body["poste2"], 100)
-        self.assertEqual(body["total"], 400)  # TODO: test decimal arithmetic
+        self.assertEqual(body["total"], 400)
         self.assertEqual(body["mode"], "manuel")
 
     @authenticate
@@ -262,9 +283,6 @@ class TestReportApi(APITestCase):
         my_report = ReportFactory.create(gestionnaire=authenticate.user)
         EmissionFactory.create(bilan=my_report, poste=1, valeur=10, type="Anthracite", unite="kg")
         EmissionFactory.create(bilan=my_report, poste=2, valeur=10, type="Articulé", unite="t.km")
-        self.assertNotEqual(my_report.poste_1, Decimal("300"))
-        self.assertNotEqual(my_report.poste_2, Decimal("100"))
-        self.assertNotEqual(my_report.total, Decimal("400"))
 
         self.client.patch(
             reverse("report", kwargs={"pk": my_report.id}),
