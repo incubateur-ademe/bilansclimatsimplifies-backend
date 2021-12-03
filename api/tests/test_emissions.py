@@ -108,16 +108,26 @@ class TestEmissionApi(APITestCase):
         payload = {
             "bilan": my_report.id,
             "type": "petrole",
+            "sous_type": "<3000 tonne",
             "valeur": 100,
             "unite": "l",
             # TODO: test auto finding poste - shouldn't send it since it is in the file
             "poste": 1,
+            "note": "Utilisé par le client",
         }
         response = self.client.post(reverse("emissions"), payload)
 
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         emissions = Emission.objects.all()
         self.assertEqual(len(emissions), 1)
+        emission = emissions[0]
+        self.assertEqual(emission.bilan, my_report)
+        self.assertEqual(emission.type, "petrole")
+        self.assertEqual(emission.sous_type, "<3000 tonne")
+        self.assertEqual(emission.valeur, 100)
+        self.assertEqual(emission.unite, "l")
+        self.assertEqual(emission.poste, 1)
+        self.assertEqual(emission.note, "Utilisé par le client")
         body = response.json()
         self.assertEqual(body["id"], emissions[0].id)
         self.assertIn("resultat", body)
@@ -246,10 +256,10 @@ class TestEmissionApi(APITestCase):
         Test that emission result is calculated correctly
         """
         my_report = ReportFactory.create(gestionnaire=authenticate.user)
-        # TODO: check if need to store attribute separately to name
         emission = EmissionFactory.create(
             bilan=my_report,
-            type="Essence, E10",
+            type="Essence",
+            sous_type="E10",
             valeur=1000,
             unite="kg",
             localisation="France continentale",
@@ -269,7 +279,7 @@ class TestEmissionApi(APITestCase):
         """
         my_report = ReportFactory.create(gestionnaire=authenticate.user)
         emission = EmissionFactory.create(
-            bilan=my_report, type="Essence, E85", valeur=1000, unite="kg", localisation=None
+            bilan=my_report, type="Essence", sous_type="E85", valeur=1000, unite="kg", localisation=None
         )
 
         response = self.client.get(reverse("emission", kwargs={"pk": emission.id}))
@@ -285,7 +295,7 @@ class TestEmissionApi(APITestCase):
         """
         my_report = ReportFactory.create(gestionnaire=authenticate.user)
         emission = EmissionFactory.create(
-            bilan=my_report, type="Essence, E10", valeur=1000, unite="kg", localisation=None
+            bilan=my_report, type="Essence", sous_type="E10", valeur=1000, unite="kg", localisation=None
         )
 
         response = self.client.get(reverse("emission", kwargs={"pk": emission.id}))
@@ -301,7 +311,7 @@ class TestEmissionApi(APITestCase):
         """
         my_report = ReportFactory.create(gestionnaire=authenticate.user)
         emission = EmissionFactory.create(
-            bilan=my_report, type="Essence, E85", valeur=1, unite="kg", localisation=None
+            bilan=my_report, type="Essence", sous_type="E85", valeur=1, unite="kg", localisation=None
         )
 
         response = self.client.get(reverse("emission", kwargs={"pk": emission.id}))
@@ -323,7 +333,8 @@ class TestEmissionApiRealFactors(APITestCase):
         my_report = ReportFactory.create(gestionnaire=authenticate.user)
         emission = EmissionFactory.create(
             bilan=my_report,
-            type="Essence, E10",
+            type="Essence",
+            sous_type="E10",
             valeur=1000,
             unite="kg",
             localisation="France continentale",

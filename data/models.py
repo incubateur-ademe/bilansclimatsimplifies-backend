@@ -121,6 +121,7 @@ class Emission(models.Model):
 
     valeur = models.DecimalField(verbose_name="valeur", max_digits=10, decimal_places=2)  # max 99.999.999,99
     type = models.CharField(verbose_name="type d'emission", max_length=100)
+    sous_type = models.CharField(verbose_name="détail", blank=True, null=True, max_length=255)
     localisation = models.CharField(verbose_name="localisation", max_length=100, blank=True, null=True)
     unite = models.CharField(verbose_name="unité", max_length=20)
     poste = models.IntegerField(verbose_name="poste")
@@ -128,7 +129,14 @@ class Emission(models.Model):
 
     @property
     def resultat(self):
-        factor = get_emission_factors().get_factor(self.type, self.unite, self.localisation)
+        factor = get_emission_factors().get_factor(self.factor_key, self.unite, self.localisation)
         if factor:
             return Decimal(self.valeur * factor).quantize(Decimal("0.1"), rounding=ROUND_HALF_UP)
         return None
+
+    @property
+    def factor_key(self):
+        if self.sous_type:
+            return f"{self.type}, {self.sous_type}"
+        else:
+            return self.type
