@@ -30,6 +30,29 @@ class ReportSerializer(serializers.ModelSerializer):
         ]
 
 
+class PrivateReportExportSerializer(serializers.ModelSerializer):
+    gestionnaire = UserSerializer(read_only=True)
+
+    class Meta:
+        model = Report
+        fields = [
+            "siren",
+            "raison_sociale",
+            "naf",
+            "nombre_salaries",
+            "region",
+            "annee",
+            "statut",
+            "poste_1",
+            "poste_2",
+            "total",
+            "mode",
+            "creation_date",
+            "publication_date",
+            "gestionnaire",
+        ]
+
+
 class EmissionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Emission

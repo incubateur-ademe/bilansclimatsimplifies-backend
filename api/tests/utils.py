@@ -13,3 +13,13 @@ def authenticate(func):
         return func(*args, **kwargs)
 
     return authenticate_and_func
+
+
+def authenticate_staff(func):
+    @functools.wraps(func)
+    def authenticate_and_func(*args, **kwargs):
+        authenticate.user = UserFactory.create(is_staff=True)
+        args[0].client.force_login(user=authenticate.user)
+        return func(*args, **kwargs)
+
+    return authenticate_and_func

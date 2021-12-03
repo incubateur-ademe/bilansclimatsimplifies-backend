@@ -1,6 +1,7 @@
 from django.contrib.auth import get_user_model
 from django.core.exceptions import BadRequest
 from django.db import IntegrityError, transaction
+from django.utils import timezone
 from rest_framework import permissions
 from rest_framework.exceptions import NotFound
 from rest_framework.generics import (
@@ -13,10 +14,12 @@ from rest_framework.generics import (
 from rest_framework.response import Response
 from rest_framework.status import HTTP_201_CREATED
 from rest_framework.views import APIView
-from api.serializers import ReportSerializer, UserSerializer, EmissionSerializer
+from api.serializers import ReportSerializer, PrivateReportExportSerializer
+from api.serializers import UserSerializer, EmissionSerializer
 from data.models import Report, Emission
 from .permissions import CanManageReport, CanManageEmissions
 from rest_framework_simplejwt.tokens import UntypedToken
+from rest_framework_csv import renderers as r
 
 
 class AuthenticatedUserView(RetrieveUpdateAPIView):
@@ -126,3 +129,40 @@ class EmissionView(RetrieveUpdateDestroyAPIView):
     serializer_class = EmissionSerializer
     permission_classes = [permissions.IsAuthenticated, CanManageEmissions]
     queryset = Emission.objects.all()
+
+
+class ExportRenderer(r.CSVRenderer):
+    header = [
+        "siren",
+        "annee",
+        "raison_sociale",
+        "region",
+        "naf",
+        "nombre_salaries",
+        "mode",
+        "poste_1",
+        "poste_2",
+        "total",
+        "statut",
+        "creation_date",
+        "publication_date",
+        "gestionnaire.email",
+        "gestionnaire.first_name",
+        "gestionnaire.last_name",
+    ]
+
+
+class PrivateExportView(ListAPIView):
+    renderer_classes = (ExportRenderer,)
+    model = Report
+    serializer_class = PrivateReportExportSerializer
+    queryset = Report.objects.all()
+    permission_classes = [permissions.IsAdminUser]
+
+    def finalize_response(self, request, response, *args, **kwargs):
+        response["Content-Disposition"] = "attachment; filename=%s" % (self.get_filename())
+        return super().finalize_response(request, response, *args, **kwargs)
+
+    def get_filename(self):
+        timestamp = timezone.now().strftime("%Y-%m-%d")
+        return f"bilans_climat_simplifies_{timestamp}.csv"
