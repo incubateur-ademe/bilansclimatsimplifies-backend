@@ -15,7 +15,7 @@ djangorestframework==3.12.4
 djangorestframework-camel-case==1.2.0
 djangorestframework-csv==2.1.1
 djangorestframework-simplejwt==5.0.0
-factory-boy==3.2.0
+factory-boy==3.2.1
 Faker==9.3.1
 flake8==4.0.1
 idna==3.3
