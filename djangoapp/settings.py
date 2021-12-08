@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt",
     "api",
     "data",
+    "django_nose",
 ]
 
 MIDDLEWARE = [
@@ -194,3 +195,15 @@ SIMPLE_JWT = {
     "TOKEN_TYPE_CLAIM": "typ",
     "JTI_CLAIM": "jti",
 }
+
+# Test coverage
+# Use nose to run all tests
+TEST_RUNNER = "django_nose.NoseTestSuiteRunner"
+
+# Tell nose to measure coverage on the data and api apps
+NOSE_ARGS = [
+    "--with-coverage",
+    "--cover-package=api,data",
+    "--cover-html",
+    "--cover-branches",
+]

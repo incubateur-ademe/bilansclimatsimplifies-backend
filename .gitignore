@@ -6,3 +6,5 @@ scripts/*.json
 .DS_Store
 .vscode/launch.json
 /static
+.coverage
+/cover

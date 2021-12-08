@@ -82,3 +82,10 @@ class TestUserApi(APITestCase):
         self.assertEqual(user.email, "test@example.com")
         self.assertEqual(user.first_name, "Camille")
         self.assertEqual(user.last_name, "Dupont")
+
+    def test_missing_token(self):
+        """
+        400 if token missing on POST
+        """
+        response = self.client.post(reverse("ademe_user"), {})
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)

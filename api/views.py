@@ -109,13 +109,10 @@ class EmissionsView(CreateAPIView):
 
     @transaction.atomic
     def perform_create(self, serializer):
-        try:
-            report = serializer.validated_data["bilan"]
-            if report.gestionnaire != self.request.user:
-                raise NotFound()
-            serializer.save()
-        except IntegrityError:
-            raise BadRequest()
+        report = serializer.validated_data["bilan"]
+        if report.gestionnaire != self.request.user:
+            raise NotFound()
+        serializer.save()
 
 
 class EmissionView(RetrieveUpdateDestroyAPIView):

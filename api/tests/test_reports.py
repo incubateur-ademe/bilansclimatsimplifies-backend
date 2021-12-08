@@ -71,7 +71,7 @@ class TestReportApi(APITestCase):
         """
         If attempt to create a report with same siren+year as another, return 400
         """
-        siren = "123456789"
+        siren = "910546308"
         year = 2020
         ReportFactory.create(siren=siren, annee=year)
 
@@ -84,7 +84,6 @@ class TestReportApi(APITestCase):
         response = self.client.post(reverse("reports"), payload)
 
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
-        # TODO: check error message
         reports = Report.objects.all()
         self.assertEqual(len(reports), 1)
 

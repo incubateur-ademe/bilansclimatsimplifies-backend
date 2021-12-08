@@ -18,8 +18,6 @@ def luhn_validation(code):
     Performs length and Luhn validation
     (https://portal.hardis-group.com/pages/viewpage.action?pageId=120357227)
     """
-    if code is None or code == "":
-        return
     if len(code) != 9:
         raise ValidationError("9 caractères numériques sont attendus")
     odd_digits = [int(n) for n in code[-1::-2]]
@@ -112,12 +110,8 @@ class Report(models.Model):
 
     @property
     def total(self):
-        if self.poste_1 is not None and self.poste_2 is not None:
-            return self.poste_1 + self.poste_2
-        elif self.poste_1 is not None:
-            return self.poste_1
-        elif self.poste_2 is not None:
-            return self.poste_2
+        if self.poste_1 is not None or self.poste_2 is not None:
+            return (self.poste_1 or 0) + (self.poste_2 or 0)
         else:
             return None
 

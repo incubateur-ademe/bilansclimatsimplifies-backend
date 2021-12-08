@@ -1,0 +1,15 @@
+[run]
+omit =
+    */migrations/*
+    data/insee_naf_division_choices.py
+    data/region_choices.py
+    data/admin.py
+
+
+[report]
+show_missing = True
+omit =
+    */migrations/*
+    data/insee_naf_division_choices.py
+    data/region_choices.py
+    data/admin.py
