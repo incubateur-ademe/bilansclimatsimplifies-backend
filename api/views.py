@@ -21,6 +21,7 @@ from .permissions import CanManageReport, CanManageEmissions
 from rest_framework_simplejwt.tokens import UntypedToken
 from rest_framework_csv import renderers as r
 from .utils import camelize
+from data.emission_factors import get_emission_factors
 
 
 class AdemeUserView(APIView):
@@ -159,3 +160,8 @@ class PrivateExportView(ListAPIView):
     def get_filename(self):
         timestamp = timezone.now().strftime("%Y-%m-%d")
         return f"bilans_climat_simplifies_{timestamp}.csv"
+
+
+class EmissionFactorsFile(APIView):
+    def get(self, _):
+        return JsonResponse(get_emission_factors().emission_factors, status=status.HTTP_200_OK)
