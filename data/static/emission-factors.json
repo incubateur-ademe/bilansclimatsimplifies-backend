@@ -10,8 +10,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "type": "Agglomérés de houille"
+    "poste": "1"
   },
   "Anthracite": {
     "affichage": "Anthracite",
@@ -24,8 +23,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "type": "Anthracite"
+    "poste": "1"
   },
   "Articulé, 34 à 40 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
     "affichage": "Articulé, 34 à 40 tonnes, Diesel routier, incorporation 7 % de biodiesel",
@@ -35,9 +33,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "34 à 40 tonnes, Diesel routier, incorporation 7 % de biodiesel",
-    "type": "Articulé"
+    "poste": "2"
   },
   "Articulé, 34 à 40 tonnes, GNC": {
     "affichage": "Articulé, 34 à 40 tonnes, GNC",
@@ -47,9 +43,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "34 à 40 tonnes, GNC",
-    "type": "Articulé"
+    "poste": "2"
   },
   "Articulé, 34 à 40 tonnes, GNL": {
     "affichage": "Articulé, 34 à 40 tonnes, GNL",
@@ -59,9 +53,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "34 à 40 tonnes, GNL",
-    "type": "Articulé"
+    "poste": "2"
   },
   "Articulé, 34 à 40 tonnes, GNL, incorporation bio 20%": {
     "affichage": "Articulé, 34 à 40 tonnes, GNL, incorporation bio 20%",
@@ -71,9 +63,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "34 à 40 tonnes, GNL, incorporation bio 20%",
-    "type": "Articulé"
+    "poste": "2"
   },
   "Articulé, 40 à 44 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
     "affichage": "Articulé, 40 à 44 tonnes",
@@ -83,9 +73,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "40 à 44 tonnes, Diesel routier, incorporation 7 % de biodiesel",
-    "type": "Articulé"
+    "poste": "2"
   },
   "Articulé, 44 à 60 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
     "affichage": "Articulé, 44 à 60 tonnes",
@@ -95,9 +83,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "44 à 60 tonnes, Diesel routier, incorporation 7 % de biodiesel",
-    "type": "Articulé"
+    "poste": "2"
   },
   "Articulé, 60 à 72 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
     "affichage": "Articulé, 60 à 72 tonnes",
@@ -107,9 +93,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "60 à 72 tonnes, Diesel routier, incorporation 7 % de biodiesel",
-    "type": "Articulé"
+    "poste": "2"
   },
   "Articulé, 90 m3": {
     "affichage": "Articulé, 90 m3",
@@ -119,9 +103,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "90 m3",
-    "type": "Articulé"
+    "poste": "2"
   },
   "Articulé, < 34 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
     "affichage": "Articulé, < 34 tonnes",
@@ -131,9 +113,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "< 34 tonnes, Diesel routier, incorporation 7 % de biodiesel",
-    "type": "Articulé"
+    "poste": "2"
   },
   "Autobus, Electrique": {
     "affichage": "Autobus, Electrique",
@@ -143,9 +123,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Electrique",
-    "type": "Autobus"
+    "poste": "2"
   },
   "Autobus, GNV": {
     "affichage": "Autobus, GNV",
@@ -155,9 +133,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "GNV",
-    "type": "Autobus"
+    "poste": "2"
   },
   "Autobus, Gazole": {
     "affichage": "Autobus, Gazole",
@@ -167,9 +143,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Gazole",
-    "type": "Autobus"
+    "poste": "2"
   },
   "Autobus, Hybride parallèle": {
     "affichage": "Autobus, Hybride parallèle",
@@ -179,9 +153,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Hybride parallèle",
-    "type": "Autobus"
+    "poste": "2"
   },
   "Autobus, Hybride série": {
     "affichage": "Autobus, Hybride série",
@@ -191,9 +163,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Hybride série",
-    "type": "Autobus"
+    "poste": "2"
   },
   "Autocar, Gazole": {
     "affichage": "Autocar",
@@ -203,9 +173,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Gazole",
-    "type": "Autocar"
+    "poste": "2"
   },
   "Autres produits pétroliers": {
     "affichage": "Autres produits pétroliers",
@@ -217,8 +185,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "type": "Autres produits pétroliers"
+    "poste": "1"
   },
   "Avion cargo, 10 à 25 tonnes, 500 - 1000 kms, 2018, AVEC trainées": {
     "affichage": "Avion cargo, 10 à 25 tonnes, 500 - 1000 kms, 2018",
@@ -228,9 +195,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "10 à 25 tonnes, 500 - 1000 kms, 2018, AVEC trainées",
-    "type": "Avion cargo"
+    "poste": "2"
   },
   "Avion cargo, 10 à 25 tonnes, <500 kms, 2018, AVEC trainées": {
     "affichage": "Avion cargo, 10 à 25 tonnes, <500 kms, 2018",
@@ -240,9 +205,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "10 à 25 tonnes, <500 kms, 2018, AVEC trainées",
-    "type": "Avion cargo"
+    "poste": "2"
   },
   "Avion cargo, 26 à 100 tonnes, 500 - 1000 kms, 2018, AVEC trainées": {
     "affichage": "Avion cargo, 26 à 100 tonnes, 500 - 1000 kms, 2018",
@@ -252,9 +215,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "26 à 100 tonnes, 500 - 1000 kms, 2018, AVEC trainées",
-    "type": "Avion cargo"
+    "poste": "2"
   },
   "Avion cargo, 26 à 100 tonnes, <500 kms, 2018, AVEC trainées": {
     "affichage": "Avion cargo, 26 à 100 tonnes, <500 kms, 2018",
@@ -264,9 +225,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "26 à 100 tonnes, <500 kms, 2018, AVEC trainées",
-    "type": "Avion cargo"
+    "poste": "2"
   },
   "Avion cargo, Plus de 100 tonnes, 1000 - 3500 kms, 2018, AVEC trainées": {
     "affichage": "Avion cargo, Plus de 100 tonnes, 1000 - 3500 kms, 2018",
@@ -276,9 +235,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Plus de 100 tonnes, 1000 - 3500 kms, 2018, AVEC trainées",
-    "type": "Avion cargo"
+    "poste": "2"
   },
   "Avion cargo, Plus de 100 tonnes, 500 - 1000 kms, 2018, AVEC trainées": {
     "affichage": "Avion cargo, Plus de 100 tonnes, 500 - 1000 kms, 2018",
@@ -288,9 +245,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Plus de 100 tonnes, 500 - 1000 kms, 2018, AVEC trainées",
-    "type": "Avion cargo"
+    "poste": "2"
   },
   "Avion cargo, Plus de 100 tonnes, <500 kms, 2018, AVEC trainées": {
     "affichage": "Avion cargo, Plus de 100 tonnes, <500 kms, 2018",
@@ -300,9 +255,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Plus de 100 tonnes, <500 kms, 2018, AVEC trainées",
-    "type": "Avion cargo"
+    "poste": "2"
   },
   "Avion cargo, Plus de 100 tonnes, >3500 kms, 2018, AVEC trainées": {
     "affichage": "Avion cargo, Plus de 100 tonnes, >3500 kms, 2018",
@@ -312,9 +265,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Plus de 100 tonnes, >3500 kms, 2018, AVEC trainées",
-    "type": "Avion cargo"
+    "poste": "2"
   },
   "Avion passagers, 101-220 sièges, 1000-3500 kms, 2018, AVEC trainées": {
     "affichage": "Avion passagers, 101-220 sièges, 1000-3500 kms, 2018",
@@ -325,9 +276,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "101-220 sièges, 1000-3500 kms, 2018, AVEC trainées",
-    "type": "Avion passagers"
+    "poste": "2"
   },
   "Avion passagers, 101-220 sièges, 500-1000 kms, 2018, AVEC trainées": {
     "affichage": "Avion passagers, 101-220 sièges, 500-1000 kms, 2018",
@@ -338,9 +287,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "101-220 sièges, 500-1000 kms, 2018, AVEC trainées",
-    "type": "Avion passagers"
+    "poste": "2"
   },
   "Avion passagers, 101-220 sièges, <500 kms jet, 2018, AVEC trainées": {
     "affichage": "Avion passagers, 101-220 sièges, <500 kms jet, 2018",
@@ -351,9 +298,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "101-220 sièges, <500 kms jet, 2018, AVEC trainées",
-    "type": "Avion passagers"
+    "poste": "2"
   },
   "Avion passagers, 101-220 sièges, >3500 kms, 2018, AVEC trainées": {
     "affichage": "Avion passagers, 101-220 sièges, >3500 kms, 2018",
@@ -364,9 +309,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "101-220 sièges, >3500 kms, 2018, AVEC trainées",
-    "type": "Avion passagers"
+    "poste": "2"
   },
   "Avion passagers, 20-50 sièges, 1000-3500 kms, 2018, AVEC trainées": {
     "affichage": "Avion passagers, 20-50 sièges, 1000-3500 kms, 2018",
@@ -377,9 +320,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "20-50 sièges, 1000-3500 kms, 2018, AVEC trainées",
-    "type": "Avion passagers"
+    "poste": "2"
   },
   "Avion passagers, 20-50 sièges, 500-1000 kms, 2018, AVEC trainées": {
     "affichage": "Avion passagers, 20-50 sièges, 500-1000 kms, 2018",
@@ -390,9 +331,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "20-50 sièges, 500-1000 kms, 2018, AVEC trainées",
-    "type": "Avion passagers"
+    "poste": "2"
   },
   "Avion passagers, 20-50 sièges, <500 kms jet, 2018, AVEC trainées": {
     "affichage": "Avion passagers, 20-50 sièges, <500 kms jet, 2018",
@@ -403,9 +342,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "20-50 sièges, <500 kms jet, 2018, AVEC trainées",
-    "type": "Avion passagers"
+    "poste": "2"
   },
   "Avion passagers, 20-50 sièges, <500 kms turboprop, 2018, AVEC trainées": {
     "affichage": "Avion passagers, 20-50 sièges, <500 kms turboprop, 2018",
@@ -416,9 +353,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "20-50 sièges, <500 kms turboprop, 2018, AVEC trainées",
-    "type": "Avion passagers"
+    "poste": "2"
   },
   "Avion passagers, 51-100 sièges, 1000-3500 kms, 2018, AVEC trainées": {
     "affichage": "Avion passagers, 51-100 sièges, 1000-3500 kms, 2018",
@@ -429,9 +364,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "51-100 sièges, 1000-3500 kms, 2018, AVEC trainées",
-    "type": "Avion passagers"
+    "poste": "2"
   },
   "Avion passagers, 51-100 sièges, 500-1000 kms, 2018, AVEC trainées": {
     "affichage": "Avion passagers, 51-100 sièges, 500-1000 kms, 2018",
@@ -442,9 +375,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "51-100 sièges, 500-1000 kms, 2018, AVEC trainées",
-    "type": "Avion passagers"
+    "poste": "2"
   },
   "Avion passagers, 51-100 sièges, <500 kms  jet, 2018, AVEC trainées": {
     "affichage": "Avion passagers, 51-100 sièges, <500 kms  jet, 2018",
@@ -455,9 +386,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "51-100 sièges, <500 kms  jet, 2018, AVEC trainées",
-    "type": "Avion passagers"
+    "poste": "2"
   },
   "Avion passagers, 51-100 sièges, <500 kms  turboprop, 2018, AVEC trainées": {
     "affichage": "Avion passagers, 51-100 sièges, <500 kms  turboprop, 2018",
@@ -468,9 +397,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "51-100 sièges, <500 kms  turboprop, 2018, AVEC trainées",
-    "type": "Avion passagers"
+    "poste": "2"
   },
   "Avion passagers, >220 sièges, 1000-3500 kms, 2018, AVEC trainées": {
     "affichage": "Avion passagers, >220 sièges, 1000-3500 kms, 2018",
@@ -481,9 +408,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": ">220 sièges, 1000-3500 kms, 2018, AVEC trainées",
-    "type": "Avion passagers"
+    "poste": "2"
   },
   "Avion passagers, >220 sièges, >3500 kms, 2018, AVEC trainées": {
     "affichage": "Avion passagers, >220 sièges, >3500 kms, 2018",
@@ -494,9 +419,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": ">220 sièges, >3500 kms, 2018, AVEC trainées",
-    "type": "Avion passagers"
+    "poste": "2"
   },
   "Avion passagers, Court courrier, 2018, AVEC trainées": {
     "affichage": "Avion passagers, Court courrier, 2018",
@@ -507,9 +430,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Court courrier, 2018, AVEC trainées",
-    "type": "Avion passagers"
+    "poste": "2"
   },
   "Avion passagers, Long courrier, 2018, AVEC trainées": {
     "affichage": "Avion passagers, Long courrier, 2018",
@@ -520,9 +441,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Long courrier, 2018, AVEC trainées",
-    "type": "Avion passagers"
+    "poste": "2"
   },
   "Avion passagers, Moyen courrier, 2018, AVEC trainées": {
     "affichage": "Avion passagers, Moyen courrier, 2018",
@@ -533,9 +452,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Moyen courrier, 2018, AVEC trainées",
-    "type": "Avion passagers"
+    "poste": "2"
   },
   "Bateau automoteur, 1 000 à 1499 TPL": {
     "affichage": "Bateau automoteur, 1 000 à 1499 TPL",
@@ -545,9 +462,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "1 000 à 1499 TPL",
-    "type": "Bateau automoteur"
+    "poste": "2"
   },
   "Bateau automoteur, 1 500 à 2 999 TPL": {
     "affichage": "Bateau automoteur, 1 500 à 2 999 TPL",
@@ -557,9 +472,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "1 500 à 2 999 TPL",
-    "type": "Bateau automoteur"
+    "poste": "2"
   },
   "Bateau automoteur, 400 à 649 TPL": {
     "affichage": "Bateau automoteur, 400 à 649 TPL",
@@ -569,9 +482,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "400 à 649 TPL",
-    "type": "Bateau automoteur"
+    "poste": "2"
   },
   "Bateau automoteur, 650 à 999 TPL": {
     "affichage": "Bateau automoteur, 650 à 999 TPL",
@@ -581,9 +492,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "650 à 999 TPL",
-    "type": "Bateau automoteur"
+    "poste": "2"
   },
   "Bateau automoteur, < 400 TPL": {
     "affichage": "Bateau automoteur, < 400 TPL",
@@ -593,9 +502,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "< 400 TPL",
-    "type": "Bateau automoteur"
+    "poste": "2"
   },
   "Bateau automoteur, > 3 000 TPL": {
     "affichage": "Bateau automoteur, > 3 000 TPL",
@@ -605,9 +512,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "> 3 000 TPL",
-    "type": "Bateau automoteur"
+    "poste": "2"
   },
   "Bateau pousseur, < 880 kW": {
     "affichage": "Bateau pousseur, < 880 kW",
@@ -617,9 +522,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "< 880 kW",
-    "type": "Bateau pousseur"
+    "poste": "2"
   },
   "Bateau pousseur, > 880 kW": {
     "affichage": "Bateau pousseur, > 880 kW",
@@ -629,9 +532,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "> 880 kW",
-    "type": "Bateau pousseur"
+    "poste": "2"
   },
   "BioGNC -Biométhane comprimé, Pour véhicule routier, Mix Moyen": {
     "affichage": "BioGNC -Biométhane comprimé",
@@ -645,9 +546,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Pour véhicule routier, Mix Moyen",
-    "type": "BioGNC -Biométhane comprimé"
+    "poste": "2"
   },
   "BioGNL, Carburant, Issu d'épuration cryogénique de biogaz": {
     "affichage": "BioGNL",
@@ -657,9 +556,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Carburant, Issu d'épuration cryogénique de biogaz",
-    "type": "BioGNL"
+    "poste": "2"
   },
   "Biodiesel, Mix moyen, sans changement d'affectation des sols": {
     "affichage": "Biodiesel, Mix moyen",
@@ -669,9 +566,7 @@
       }
     },
     "groupe": null,
-    "poste": null,
-    "soustype": "Mix moyen, sans changement d'affectation des sols",
-    "type": "Biodiesel"
+    "poste": null
   },
   "Biodiesel, sans changement d'affectation des sols": {
     "affichage": "Biodiesel, sans changement d'affectation des sols",
@@ -684,9 +579,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "soustype": "sans changement d'affectation des sols",
-    "type": "Biodiesel"
+    "poste": "1"
   },
   "Biométhane, Injecté dans les réseaux, Mix moyen": {
     "affichage": "Biométhane",
@@ -702,9 +595,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "soustype": "Injecté dans les réseaux, Mix moyen",
-    "type": "Biométhane"
+    "poste": "1"
   },
   "Biopropane, mix annuel 2020": {
     "affichage": "Biopropane",
@@ -718,9 +609,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "soustype": "mix annuel 2020",
-    "type": "Biopropane"
+    "poste": "1"
   },
   "Bioéthanol, sans changement d'affectation des sols": {
     "affichage": "Bioéthanol",
@@ -734,9 +623,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "soustype": "sans changement d'affectation des sols",
-    "type": "Bioéthanol"
+    "poste": "1"
   },
   "Bitumes": {
     "affichage": "Bitumes",
@@ -748,8 +635,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "type": "Bitumes"
+    "poste": "1"
   },
   "Bois bûche, 20% d'humidité": {
     "affichage": "Bois bûche",
@@ -760,9 +646,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "soustype": "20% d'humidité",
-    "type": "Bois bûche"
+    "poste": "1"
   },
   "Briquette de lignite": {
     "affichage": "Briquette de lignite",
@@ -775,8 +659,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "type": "Briquette de lignite"
+    "poste": "1"
   },
   "Broyats de cagettes et de pallettes, 20% d'humidité": {
     "affichage": "Broyats de cagettes et de pallettes",
@@ -787,9 +670,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "soustype": "20% d'humidité",
-    "type": "Broyats de cagettes et de pallettes"
+    "poste": "1"
   },
   "Butane, inclus maritime": {
     "affichage": "Butane",
@@ -803,9 +684,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "soustype": "inclus maritime",
-    "type": "Butane"
+    "poste": "1"
   },
   "Camion porteur, 45 m3": {
     "affichage": "Camion porteur",
@@ -815,9 +694,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "45 m3",
-    "type": "Camion porteur"
+    "poste": "2"
   },
   "Cargo inter-îles, Mayotte-Anjouan, Donnée 2009": {
     "affichage": "Cargo inter-îles, Mayotte-Anjouan",
@@ -827,9 +704,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Mayotte-Anjouan, Donnée 2009",
-    "type": "Cargo inter-îles"
+    "poste": "2"
   },
   "Cargo inter-îles, Petit Terre-Grande Terre, Donnée 2009": {
     "affichage": "Cargo inter-îles, Petit Terre-Grande Terre",
@@ -839,9 +714,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Petit Terre-Grande Terre, Donnée 2009",
-    "type": "Cargo inter-îles"
+    "poste": "2"
   },
   "Cargo inter-îles, Polynésie, Donnée 2009": {
     "affichage": "Cargo inter-îles, Polynésie",
@@ -851,9 +724,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Polynésie, Donnée 2009",
-    "type": "Cargo inter-îles"
+    "poste": "2"
   },
   "Cargo, 10 000 à 20 000 tonnes, HFO-MGO": {
     "affichage": "Cargo, 10 000 à 20 000 tonnes",
@@ -863,9 +734,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "10 000 à 20 000 tonnes, HFO-MGO",
-    "type": "Cargo"
+    "poste": "2"
   },
   "Cargo, < 10 000 tonnes, HFO-MGO": {
     "affichage": "Cargo, < 10 000 tonnes",
@@ -875,9 +744,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "< 10 000 tonnes, HFO-MGO",
-    "type": "Cargo"
+    "poste": "2"
   },
   "Charbon sous-bitumineux, PCS entre 17 435 et 23 865 kJ/kg": {
     "affichage": "Charbon sous-bitumineux",
@@ -890,9 +757,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "soustype": "PCS entre 17 435 et 23 865 kJ/kg",
-    "type": "Charbon sous-bitumineux"
+    "poste": "1"
   },
   "Charbon à coke, PCS supérieur à 23865 kJ/kg": {
     "affichage": "Charbon à coke",
@@ -905,9 +770,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "soustype": "PCS supérieur à 23865 kJ/kg",
-    "type": "Charbon à coke"
+    "poste": "1"
   },
   "Charbon à vapeur, PCS supérieur à 23865 kJ/kg": {
     "affichage": "Charbon à vapeur",
@@ -920,9 +783,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "soustype": "PCS supérieur à 23865 kJ/kg",
-    "type": "Charbon à vapeur"
+    "poste": "1"
   },
   "Coke de houille": {
     "affichage": "Coke de houille",
@@ -935,8 +796,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "type": "Coke de houille"
+    "poste": "1"
   },
   "Coke de lignite": {
     "affichage": "Coke de lignite",
@@ -949,8 +809,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "type": "Coke de lignite"
+    "poste": "1"
   },
   "Coke de pétrole": {
     "affichage": "Coke de pétrole",
@@ -961,8 +820,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "type": "Coke de pétrole"
+    "poste": "1"
   },
   "Combustible haute viscosité (CHV)": {
     "affichage": "Combustible haute viscosité (CHV)",
@@ -975,8 +833,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "type": "Combustible haute viscosité (CHV)"
+    "poste": "1"
   },
   "Cyclomoteur, Mixte, 2018": {
     "affichage": "Cyclomoteur, Mixte",
@@ -986,9 +843,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Mixte, 2018",
-    "type": "Cyclomoteur"
+    "poste": "2"
   },
   "Cyclomoteur, Rural, 2018": {
     "affichage": "Cyclomoteur, Rural",
@@ -998,9 +853,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Rural, 2018",
-    "type": "Cyclomoteur"
+    "poste": "2"
   },
   "Cyclomoteur, Urbain, 2018": {
     "affichage": "Cyclomoteur, Urbain",
@@ -1010,9 +863,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Urbain, 2018",
-    "type": "Cyclomoteur"
+    "poste": "2"
   },
   "Essence aviation (AvGas)": {
     "affichage": "Essence aviation (AvGas)",
@@ -1032,8 +883,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "type": "Essence aviation (AvGas)"
+    "poste": "2"
   },
   "Essence, E10": {
     "affichage": "Essence, E10",
@@ -1047,9 +897,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "E10",
-    "type": "Essence"
+    "poste": "2"
   },
   "Essence, E85": {
     "affichage": "Essence, E85",
@@ -1063,9 +911,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "E85",
-    "type": "Essence"
+    "poste": "2"
   },
   "Essence, Supercarburant sans plomb (95, 95-E10, 98)": {
     "affichage": "Essence, Supercarburant sans plomb (95, 95-E10, 98)",
@@ -1103,9 +949,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Supercarburant sans plomb (95, 95-E10, 98)",
-    "type": "Essence"
+    "poste": "2"
   },
   "Fioul Lourd, commercial": {
     "affichage": "Fioul Lourd",
@@ -1143,9 +987,7 @@
       }
     },
     "groupe": "Les plus utilisés",
-    "poste": "1",
-    "soustype": "commercial",
-    "type": "Fioul Lourd"
+    "poste": "1"
   },
   "Fioul domestique": {
     "affichage": "Fioul domestique",
@@ -1177,8 +1019,7 @@
       }
     },
     "groupe": "Les plus utilisés",
-    "poste": "1",
-    "type": "Fioul domestique"
+    "poste": "1"
   },
   "Fioul à base de carbone recyclé, VALORTEC, Basse teneur en soufre": {
     "affichage": "Fioul à base de carbone recyclé",
@@ -1190,9 +1031,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "soustype": "VALORTEC, Basse teneur en soufre",
-    "type": "Fioul à base de carbone recyclé"
+    "poste": "1"
   },
   "Fourgon, 8 m3": {
     "affichage": "Fourgon",
@@ -1202,9 +1041,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "8 m3",
-    "type": "Fourgon"
+    "poste": "2"
   },
   "GNC, Gaz Naturel Comprimé pour véhicule routier": {
     "affichage": "GNC, Gaz Naturel Comprimé pour véhicule routier",
@@ -1218,8 +1055,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "type": "GNC, Gaz Naturel Comprimé pour véhicule routier"
+    "poste": "2"
   },
   "GNL, Gaz Naturel Liquéfié, (inclus routier, maritime et fluvial)": {
     "affichage": "GNL, Gaz Naturel Liquéfié",
@@ -1233,9 +1069,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "(inclus routier, maritime et fluvial)",
-    "type": "GNL, Gaz Naturel Liquéfié"
+    "poste": "2"
   },
   "GPL pour véhicule routier": {
     "affichage": "GPL pour véhicule routier",
@@ -1267,8 +1101,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "type": "GPL pour véhicule routier"
+    "poste": "2"
   },
   "Gaz d'aciérie": {
     "affichage": "Gaz d'aciérie",
@@ -1278,8 +1111,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "type": "Gaz d'aciérie"
+    "poste": "1"
   },
   "Gaz de cokerie": {
     "affichage": "Gaz de cokerie",
@@ -1289,8 +1121,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "type": "Gaz de cokerie"
+    "poste": "1"
   },
   "Gaz de haut fourneau": {
     "affichage": "Gaz de haut fourneau",
@@ -1300,8 +1131,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "type": "Gaz de haut fourneau"
+    "poste": "1"
   },
   "Gaz naturel": {
     "affichage": "Gaz naturel",
@@ -1314,8 +1144,7 @@
       }
     },
     "groupe": "Les plus utilisés",
-    "poste": "1",
-    "type": "Gaz naturel"
+    "poste": "1"
   },
   "Gaz naturel - 2015, mix moyen, consommation": {
     "affichage": "Gaz naturel - 2015",
@@ -1331,9 +1160,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "soustype": "mix moyen, consommation",
-    "type": "Gaz naturel - 2015"
+    "poste": "1"
   },
   "Gazier, Petit GPL, Donnée 2009": {
     "affichage": "Gazier, Petit GPL",
@@ -1343,9 +1170,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Petit GPL, Donnée 2009",
-    "type": "Gazier"
+    "poste": "2"
   },
   "Gazier, VLGC (Very Large Gas Carrier), Donnée 2009": {
     "affichage": "Gazier, VLGC (Very Large Gas Carrier)",
@@ -1355,9 +1180,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "VLGC (Very Large Gas Carrier), Donnée 2009",
-    "type": "Gazier"
+    "poste": "2"
   },
   "Gazole non routier": {
     "affichage": "Gazole non routier",
@@ -1371,8 +1194,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "type": "Gazole non routier"
+    "poste": "2"
   },
   "Gazole routier": {
     "affichage": "Gazole routier",
@@ -1403,8 +1225,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "type": "Gazole routier"
+    "poste": "2"
   },
   "Gazole routier, B10": {
     "affichage": "Gazole routier, B10",
@@ -1417,9 +1238,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "B10",
-    "type": "Gazole routier"
+    "poste": "2"
   },
   "Gazole routier, B100": {
     "affichage": "Gazole routier, B100",
@@ -1432,9 +1251,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "B100",
-    "type": "Gazole routier"
+    "poste": "2"
   },
   "Gazole routier, B7": {
     "affichage": "Gazole routier, B7",
@@ -1448,9 +1265,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "B7",
-    "type": "Gazole routier"
+    "poste": "2"
   },
   "Gazole, B30": {
     "affichage": "Gazole",
@@ -1464,9 +1279,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "B30",
-    "type": "Gazole"
+    "poste": "2"
   },
   "Granulés bois, 8% d'humidité": {
     "affichage": "Granulés bois",
@@ -1477,9 +1290,7 @@
       }
     },
     "groupe": "Les plus utilisés",
-    "poste": "1",
-    "soustype": "8% d'humidité",
-    "type": "Granulés bois"
+    "poste": "1"
   },
   "HFO (Heavy Fuel Oil), ISO 8217 classes RME à RMK": {
     "affichage": "HFO (Heavy Fuel Oil)",
@@ -1493,9 +1304,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "ISO 8217 classes RME à RMK",
-    "type": "HFO (Heavy Fuel Oil)"
+    "poste": "2"
   },
   "Houille, PCS supérieur à 23865 kJ/kg": {
     "affichage": "Houille",
@@ -1508,9 +1317,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "soustype": "PCS supérieur à 23865 kJ/kg",
-    "type": "Houille"
+    "poste": "1"
   },
   "Hoverboard": {
     "affichage": "Hoverboard",
@@ -1520,8 +1327,7 @@
       }
     },
     "groupe": null,
-    "poste": null,
-    "type": "Hoverboard"
+    "poste": null
   },
   "Huiles de schistes": {
     "affichage": "Huiles de schistes",
@@ -1533,8 +1339,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "type": "Huiles de schistes"
+    "poste": "1"
   },
   "Kérosène, jet A1 ou A": {
     "affichage": "Kérosène",
@@ -1554,9 +1359,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "jet A1 ou A",
-    "type": "Kérosène"
+    "poste": "2"
   },
   "LFO (Light Fuel Oil), ISO 8217 classes RMA à RMD (maritime)": {
     "affichage": "LFO (Light Fuel Oil)",
@@ -1570,9 +1373,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "ISO 8217 classes RMA à RMD (maritime)",
-    "type": "LFO (Light Fuel Oil)"
+    "poste": "2"
   },
   "Lignite, PCS inférieur à 17435 kJ/kg": {
     "affichage": "Lignite",
@@ -1585,9 +1386,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "soustype": "PCS inférieur à 17435 kJ/kg",
-    "type": "Lignite"
+    "poste": "1"
   },
   "MDO (Marine Diesel Oil), ISO 8217 classes DMX à DMC": {
     "affichage": "MDO (Marine Diesel Oil)",
@@ -1601,9 +1400,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "ISO 8217 classes DMX à DMC",
-    "type": "MDO (Marine Diesel Oil)"
+    "poste": "2"
   },
   "Moto =< 250 cm3, Mixte, 2018": {
     "affichage": "Moto =< 250 cm3, Mixte",
@@ -1613,9 +1410,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Mixte, 2018",
-    "type": "Moto =< 250 cm3"
+    "poste": "2"
   },
   "Moto =< 250 cm3, Rural, 2018": {
     "affichage": "Moto =< 250 cm3, Rural",
@@ -1625,9 +1420,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Rural, 2018",
-    "type": "Moto =< 250 cm3"
+    "poste": "2"
   },
   "Moto =< 250 cm3, Urbain, 2018": {
     "affichage": "Moto =< 250 cm3, Urbain",
@@ -1637,9 +1430,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Urbain, 2018",
-    "type": "Moto =< 250 cm3"
+    "poste": "2"
   },
   "Moto > 250 cm3, Mixte, 2018": {
     "affichage": "Moto > 250 cm3, Mixte",
@@ -1649,9 +1440,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Mixte, 2018",
-    "type": "Moto > 250 cm3"
+    "poste": "2"
   },
   "Moto > 250 cm3, Rural, 2018": {
     "affichage": "Moto > 250 cm3, Rural",
@@ -1661,9 +1450,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Rural, 2018",
-    "type": "Moto > 250 cm3"
+    "poste": "2"
   },
   "Moto > 250 cm3, Urbain, 2018": {
     "affichage": "Moto > 250 cm3, Urbain",
@@ -1673,9 +1460,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Urbain, 2018",
-    "type": "Moto > 250 cm3"
+    "poste": "2"
   },
   "Métro, 2019, Ile de France": {
     "affichage": "Métro",
@@ -1685,9 +1470,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "2019, Ile de France",
-    "type": "Métro"
+    "poste": "2"
   },
   "Naphta": {
     "affichage": "Naphta",
@@ -1699,8 +1482,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "type": "Naphta"
+    "poste": "1"
   },
   "Navette fluviale, Donnée 2009": {
     "affichage": "Navette fluviale",
@@ -1710,9 +1492,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Donnée 2009",
-    "type": "Navette fluviale"
+    "poste": "2"
   },
   "Navette inter-îles, Mayotte-Anjouan": {
     "affichage": "Navette inter-îles, Mayotte-Anjouan",
@@ -1722,9 +1502,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Mayotte-Anjouan",
-    "type": "Navette inter-îles"
+    "poste": "2"
   },
   "Navette inter-îles, Petit Terre-Grande Terre": {
     "affichage": "Navette inter-îles, Petit Terre-Grande Terre",
@@ -1734,9 +1512,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Petit Terre-Grande Terre",
-    "type": "Navette inter-îles"
+    "poste": "2"
   },
   "Navette inter-îles, Polynésie": {
     "affichage": "Navette inter-îles, Polynésie",
@@ -1746,9 +1522,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Polynésie",
-    "type": "Navette inter-îles"
+    "poste": "2"
   },
   "Paille, 10% d'humidité": {
     "affichage": "Paille",
@@ -1759,9 +1533,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "soustype": "10% d'humidité",
-    "type": "Paille"
+    "poste": "1"
   },
   "Plaquettes forestières, 25% d'humidité": {
     "affichage": "Plaquettes forestières",
@@ -1772,9 +1544,7 @@
       }
     },
     "groupe": "Les plus utilisés",
-    "poste": "1",
-    "soustype": "25% d'humidité",
-    "type": "Plaquettes forestières"
+    "poste": "1"
   },
   "Pneumatiques usagés non réutilisables, Mix combustible moyen": {
     "affichage": "Pneumatiques usagés non réutilisables, Mix combustible moyen",
@@ -1784,9 +1554,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "soustype": "Mix combustible moyen",
-    "type": "Pneumatiques usagés non réutilisables"
+    "poste": "1"
   },
   "Pneumatiques usagés non réutilisables, Poids Lourds": {
     "affichage": "Pneumatiques usagés non réutilisables, Poids Lourds",
@@ -1796,9 +1564,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "soustype": "Poids Lourds",
-    "type": "Pneumatiques usagés non réutilisables"
+    "poste": "1"
   },
   "Pneumatiques usagés non réutilisables, Véhicules Légers": {
     "affichage": "Pneumatiques usagés non réutilisables, Véhicules Légers",
@@ -1808,9 +1574,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "soustype": "Véhicules Légers",
-    "type": "Pneumatiques usagés non réutilisables"
+    "poste": "1"
   },
   "Porte-conteneur, Dry, Asie - Europe du Nord": {
     "affichage": "Porte-conteneur, Dry, Asie - Europe du Nord",
@@ -1820,9 +1584,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Dry, Asie - Europe du Nord",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Dry, Asie - Méditerranée": {
     "affichage": "Porte-conteneur, Dry, Asie - Méditerranée",
@@ -1832,9 +1594,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Dry, Asie - Méditerranée",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Dry, Autres liaisons détaillées": {
     "affichage": "Porte-conteneur, Dry, Autres liaisons détaillées",
@@ -1844,9 +1604,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Dry, Autres liaisons détaillées",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Dry, Autres liaisons majeures": {
     "affichage": "Porte-conteneur, Dry, Autres liaisons majeures",
@@ -1856,9 +1614,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Dry, Autres liaisons majeures",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Dry, Europe - Afrique": {
     "affichage": "Porte-conteneur, Dry, Europe - Afrique",
@@ -1868,9 +1624,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Dry, Europe - Afrique",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Dry, Europe - Amérique du Sud et Centrale": {
     "affichage": "Porte-conteneur, Dry, Europe - Amérique du Sud et Centrale",
@@ -1880,9 +1634,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Dry, Europe - Amérique du Sud et Centrale",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Dry, Europe - Moyen-Orient et Inde": {
     "affichage": "Porte-conteneur, Dry, Europe - Moyen-Orient et Inde",
@@ -1892,9 +1644,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Dry, Europe - Moyen-Orient et Inde",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Dry, Europe - Océanie": {
     "affichage": "Porte-conteneur, Dry, Europe - Océanie",
@@ -1904,9 +1654,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Dry, Europe - Océanie",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Dry, Europe du Nord - Amérique du Nord, façade atlantique": {
     "affichage": "Porte-conteneur, Dry, Europe du Nord - Amérique du Nord, façade atlantique",
@@ -1916,9 +1664,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Dry, Europe du Nord - Amérique du Nord, façade atlantique",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Dry, Europe du Nord - Amérique du Nord, façade pacifique": {
     "affichage": "Porte-conteneur, Dry, Europe du Nord - Amérique du Nord, façade pacifique",
@@ -1928,9 +1674,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Dry, Europe du Nord - Amérique du Nord, façade pacifique",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Dry, Europe du Nord - Médtierranée": {
     "affichage": "Porte-conteneur, Dry, Europe du Nord - Médtierranée",
@@ -1940,9 +1684,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Dry, Europe du Nord - Médtierranée",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Dry, Intra Europe du Nord": {
     "affichage": "Porte-conteneur, Dry, Intra Europe du Nord",
@@ -1952,9 +1694,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Dry, Intra Europe du Nord",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Dry, Intra Méditerranée": {
     "affichage": "Porte-conteneur, Dry, Intra Méditerranée",
@@ -1964,9 +1704,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Dry, Intra Méditerranée",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Dry, Méditerranée - Amérique du Nord, façade atlantique": {
     "affichage": "Porte-conteneur, Dry, Méditerranée - Amérique du Nord, façade atlantique",
@@ -1976,9 +1714,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Dry, Méditerranée - Amérique du Nord, façade atlantique",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Dry, Méditerranée - Amérique du Nord, façade pacifique": {
     "affichage": "Porte-conteneur, Dry, Méditerranée - Amérique du Nord, façade pacifique",
@@ -1988,9 +1724,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Dry, Méditerranée - Amérique du Nord, façade pacifique",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Dry, Trans-Atlantique": {
     "affichage": "Porte-conteneur, Dry, Trans-Atlantique",
@@ -2000,9 +1734,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Dry, Trans-Atlantique",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Dry, Trans-Suez": {
     "affichage": "Porte-conteneur, Dry, Trans-Suez",
@@ -2012,9 +1744,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Dry, Trans-Suez",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Dry, Valeur moyenne": {
     "affichage": "Porte-conteneur, Dry, Valeur moyenne",
@@ -2024,9 +1754,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Dry, Valeur moyenne",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Reefer, Asie - Europe du Nord": {
     "affichage": "Porte-conteneur, Reefer, Asie - Europe du Nord",
@@ -2036,9 +1764,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Reefer, Asie - Europe du Nord",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Reefer, Asie - Méditerranée": {
     "affichage": "Porte-conteneur, Reefer, Asie - Méditerranée",
@@ -2048,9 +1774,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Reefer, Asie - Méditerranée",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Reefer, Autres liaisons détaillées": {
     "affichage": "Porte-conteneur, Reefer, Autres liaisons détaillées",
@@ -2060,9 +1784,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Reefer, Autres liaisons détaillées",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Reefer, Autres liaisons majeures": {
     "affichage": "Porte-conteneur, Reefer, Autres liaisons majeures",
@@ -2072,9 +1794,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Reefer, Autres liaisons majeures",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Reefer, Europe - Afrique": {
     "affichage": "Porte-conteneur, Reefer, Europe - Afrique",
@@ -2084,9 +1804,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Reefer, Europe - Afrique",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Reefer, Europe - Amérique du Sud et Centrale": {
     "affichage": "Porte-conteneur, Reefer, Europe - Amérique du Sud et Centrale",
@@ -2096,9 +1814,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Reefer, Europe - Amérique du Sud et Centrale",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Reefer, Europe - Moyen-Orient et Inde": {
     "affichage": "Porte-conteneur, Reefer, Europe - Moyen-Orient et Inde",
@@ -2108,9 +1824,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Reefer, Europe - Moyen-Orient et Inde",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Reefer, Europe - Océanie": {
     "affichage": "Porte-conteneur, Reefer, Europe - Océanie",
@@ -2120,9 +1834,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Reefer, Europe - Océanie",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Reefer, Europe du Nord - Amérique du Nord, façade atlantique": {
     "affichage": "Porte-conteneur, Reefer, Europe du Nord - Amérique du Nord, façade atlantique",
@@ -2132,9 +1844,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Reefer, Europe du Nord - Amérique du Nord, façade atlantique",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Reefer, Europe du Nord - Amérique du Nord, façade pacifique": {
     "affichage": "Porte-conteneur, Reefer, Europe du Nord - Amérique du Nord, façade pacifique",
@@ -2144,9 +1854,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Reefer, Europe du Nord - Amérique du Nord, façade pacifique",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Reefer, Europe du Nord - Médtierranée": {
     "affichage": "Porte-conteneur, Reefer, Europe du Nord - Médtierranée",
@@ -2156,9 +1864,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Reefer, Europe du Nord - Médtierranée",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Reefer, Intra Europe du Nord": {
     "affichage": "Porte-conteneur, Reefer, Intra Europe du Nord",
@@ -2168,9 +1874,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Reefer, Intra Europe du Nord",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Reefer, Intra Méditerranée": {
     "affichage": "Porte-conteneur, Reefer, Intra Méditerranée",
@@ -2180,9 +1884,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Reefer, Intra Méditerranée",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Reefer, Méditerranée - Amérique du Nord, façade atlantique": {
     "affichage": "Porte-conteneur, Reefer, Méditerranée - Amérique du Nord, façade atlantique",
@@ -2192,9 +1894,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Reefer, Méditerranée - Amérique du Nord, façade atlantique",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Reefer, Méditerranée - Amérique du Nord, façade pacifique": {
     "affichage": "Porte-conteneur, Reefer, Méditerranée - Amérique du Nord, façade pacifique",
@@ -2204,9 +1904,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Reefer, Méditerranée - Amérique du Nord, façade pacifique",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Reefer, Trans-Atlantique": {
     "affichage": "Porte-conteneur, Reefer, Trans-Atlantique",
@@ -2216,9 +1914,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Reefer, Trans-Atlantique",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Reefer, Trans-Suez": {
     "affichage": "Porte-conteneur, Reefer, Trans-Suez",
@@ -2228,9 +1924,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Reefer, Trans-Suez",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Porte-conteneur, Reefer, Valeur moyenne": {
     "affichage": "Porte-conteneur, Reefer, Valeur moyenne",
@@ -2240,9 +1934,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Reefer, Valeur moyenne",
-    "type": "Porte-conteneur"
+    "poste": "2"
   },
   "Propane, inclus maritime": {
     "affichage": "Propane",
@@ -2256,9 +1948,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "soustype": "inclus maritime",
-    "type": "Propane"
+    "poste": "1"
   },
   "Pétrole Brut": {
     "affichage": "Pétrole Brut",
@@ -2269,8 +1959,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "type": "Pétrole Brut"
+    "poste": "1"
   },
   "Pétrolier, 5 000 à 60 000 tonnes, HFO-MGO": {
     "affichage": "Pétrolier, 5 000 à 60 000 tonnes",
@@ -2280,9 +1969,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "5 000 à 60 000 tonnes, HFO-MGO",
-    "type": "Pétrolier"
+    "poste": "2"
   },
   "Pétrolier, 60 000 à 200 000 tonnes, HFO-MGO": {
     "affichage": "Pétrolier, 60 000 à 200 000 tonnes",
@@ -2292,9 +1979,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "60 000 à 200 000 tonnes, HFO-MGO",
-    "type": "Pétrolier"
+    "poste": "2"
   },
   "Pétrolier, < 5 000 tonnes, HFO-MGO": {
     "affichage": "Pétrolier, < 5 000 tonnes",
@@ -2304,9 +1989,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "< 5 000 tonnes, HFO-MGO",
-    "type": "Pétrolier"
+    "poste": "2"
   },
   "Pétrolier, > 200 000 tonnes, GNL": {
     "affichage": "Pétrolier, > 200 000 tonnes, GNL",
@@ -2316,9 +1999,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "> 200 000 tonnes, GNL",
-    "type": "Pétrolier"
+    "poste": "2"
   },
   "Pétrolier, > 200 000 tonnes, HFO-MGO": {
     "affichage": "Pétrolier, > 200 000 tonnes, HFO-MGO",
@@ -2328,9 +2009,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "> 200 000 tonnes, HFO-MGO",
-    "type": "Pétrolier"
+    "poste": "2"
   },
   "Rigide, 12 à 20 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
     "affichage": "Rigide, 12 à 20 tonnes, Diesel routier, incorporation 7 % de biodiesel",
@@ -2340,9 +2019,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "12 à 20 tonnes, Diesel routier, incorporation 7 % de biodiesel",
-    "type": "Rigide"
+    "poste": "2"
   },
   "Rigide, 12 à 20 tonnes, GNC": {
     "affichage": "Rigide, 12 à 20 tonnes, GNC",
@@ -2352,9 +2029,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "12 à 20 tonnes, GNC",
-    "type": "Rigide"
+    "poste": "2"
   },
   "Rigide, 12 à 20 tonnes, GNL": {
     "affichage": "Rigide, 12 à 20 tonnes, GNL",
@@ -2364,9 +2039,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "12 à 20 tonnes, GNL",
-    "type": "Rigide"
+    "poste": "2"
   },
   "Rigide, 20 à 26 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
     "affichage": "Rigide, 20 à 26 tonnes, Diesel routier, incorporation 7 % de biodiesel",
@@ -2376,9 +2049,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "20 à 26 tonnes, Diesel routier, incorporation 7 % de biodiesel",
-    "type": "Rigide"
+    "poste": "2"
   },
   "Rigide, 20 à 26 tonnes, GNC": {
     "affichage": "Rigide, 20 à 26 tonnes, GNC",
@@ -2388,9 +2059,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "20 à 26 tonnes, GNC",
-    "type": "Rigide"
+    "poste": "2"
   },
   "Rigide, 20 à 26 tonnes, GNL": {
     "affichage": "Rigide, 20 à 26 tonnes, GNL",
@@ -2400,9 +2069,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "20 à 26 tonnes, GNL",
-    "type": "Rigide"
+    "poste": "2"
   },
   "Rigide, 26 à 32 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
     "affichage": "Rigide, 26 à 32 tonnes",
@@ -2412,9 +2079,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "26 à 32 tonnes, Diesel routier, incorporation 7 % de biodiesel",
-    "type": "Rigide"
+    "poste": "2"
   },
   "Rigide, 3,5 à 7,5 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
     "affichage": "Rigide, 3,5 à 7,5 tonnes, Diesel routier, incorporation 7 % de biodiesel",
@@ -2424,9 +2089,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "3,5 à 7,5 tonnes, Diesel routier, incorporation 7 % de biodiesel",
-    "type": "Rigide"
+    "poste": "2"
   },
   "Rigide, 3,5 à 7,5 tonnes, Electrique": {
     "affichage": "Rigide, 3,5 à 7,5 tonnes, Electrique",
@@ -2436,9 +2099,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "3,5 à 7,5 tonnes, Electrique",
-    "type": "Rigide"
+    "poste": "2"
   },
   "Rigide, 3,5 à 7,5 tonnes, GNC": {
     "affichage": "Rigide, 3,5 à 7,5 tonnes, GNC",
@@ -2448,9 +2109,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "3,5 à 7,5 tonnes, GNC",
-    "type": "Rigide"
+    "poste": "2"
   },
   "Rigide, 3,5 à 7,5 tonnes, Hybride parallèle": {
     "affichage": "Rigide, 3,5 à 7,5 tonnes, Hybride parallèle",
@@ -2460,9 +2119,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "3,5 à 7,5 tonnes, Hybride parallèle",
-    "type": "Rigide"
+    "poste": "2"
   },
   "Rigide, 3,5 à 7,5 tonnes, Hybride série": {
     "affichage": "Rigide, 3,5 à 7,5 tonnes, Hybride série",
@@ -2472,9 +2129,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "3,5 à 7,5 tonnes, Hybride série",
-    "type": "Rigide"
+    "poste": "2"
   },
   "Rigide, 7,5 à 12 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
     "affichage": "Rigide, 7,5 à 12 tonnes, Diesel routier, incorporation 7 % de biodiesel",
@@ -2484,9 +2139,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "7,5 à 12 tonnes, Diesel routier, incorporation 7 % de biodiesel",
-    "type": "Rigide"
+    "poste": "2"
   },
   "Rigide, 7,5 à 12 tonnes, GNC": {
     "affichage": "Rigide, 7,5 à 12 tonnes, GNC",
@@ -2496,9 +2149,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "7,5 à 12 tonnes, GNC",
-    "type": "Rigide"
+    "poste": "2"
   },
   "Ro-Pax, HFO-MGO": {
     "affichage": "Ro-Pax",
@@ -2508,9 +2159,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "HFO-MGO",
-    "type": "Ro-Pax"
+    "poste": "2"
   },
   "Ro-Ro, Camions et Remorques, HFO-MGO": {
     "affichage": "Ro-Ro, Camions et Remorques",
@@ -2520,9 +2169,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Camions et Remorques, HFO-MGO",
-    "type": "Ro-Ro"
+    "poste": "2"
   },
   "Ro-Ro, Chargement moyen, HFO-MGO": {
     "affichage": "Ro-Ro, Chargement moyen",
@@ -2532,9 +2179,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Chargement moyen, HFO-MGO",
-    "type": "Ro-Ro"
+    "poste": "2"
   },
   "Ro-Ro, Remorques uniquement, HFO-MGO": {
     "affichage": "Ro-Ro, Remorques uniquement",
@@ -2544,9 +2189,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Remorques uniquement, HFO-MGO",
-    "type": "Ro-Ro"
+    "poste": "2"
   },
   "Sciures et chutes de scieries, 50% d'humidité": {
     "affichage": "Sciures et chutes de scieries",
@@ -2557,9 +2200,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "soustype": "50% d'humidité",
-    "type": "Sciures et chutes de scieries"
+    "poste": "1"
   },
   "Taxi brousse": {
     "affichage": "Taxi brousse",
@@ -2569,8 +2210,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "type": "Taxi brousse"
+    "poste": "2"
   },
   "Taxi brousse, véhicule plein": {
     "affichage": "Taxi brousse, véhicule plein",
@@ -2580,9 +2220,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "véhicule plein",
-    "type": "Taxi brousse"
+    "poste": "2"
   },
   "Taxi brousse, véhicule vide": {
     "affichage": "Taxi brousse, véhicule vide",
@@ -2592,9 +2230,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "véhicule vide",
-    "type": "Taxi brousse"
+    "poste": "2"
   },
   "Tourbe": {
     "affichage": "Tourbe",
@@ -2607,8 +2243,7 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "type": "Tourbe"
+    "poste": "1"
   },
   "Train, Motorisation moyenne, Chargement dense": {
     "affichage": "Train, Motorisation moyenne, Chargement dense",
@@ -2618,9 +2253,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Motorisation moyenne, Chargement dense",
-    "type": "Train"
+    "poste": "2"
   },
   "Train, Motorisation moyenne, Chargement léger": {
     "affichage": "Train, Motorisation moyenne, Chargement léger",
@@ -2630,9 +2263,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Motorisation moyenne, Chargement léger",
-    "type": "Train"
+    "poste": "2"
   },
   "Train, Motorisation moyenne, Chargement moyen": {
     "affichage": "Train, Motorisation moyenne, Chargement moyen",
@@ -2642,9 +2273,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Motorisation moyenne, Chargement moyen",
-    "type": "Train"
+    "poste": "2"
   },
   "Train, Traction diesel, Chargement dense": {
     "affichage": "Train, Traction diesel, Chargement dense",
@@ -2654,9 +2283,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Traction diesel, Chargement dense",
-    "type": "Train"
+    "poste": "2"
   },
   "Train, Traction diesel, Chargement léger": {
     "affichage": "Train, Traction diesel, Chargement léger",
@@ -2666,9 +2293,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Traction diesel, Chargement léger",
-    "type": "Train"
+    "poste": "2"
   },
   "Train, Traction diesel, Chargement moyen": {
     "affichage": "Train, Traction diesel, Chargement moyen",
@@ -2678,9 +2303,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Traction diesel, Chargement moyen",
-    "type": "Train"
+    "poste": "2"
   },
   "Train, Traction électrique, Chargement dense": {
     "affichage": "Train, Traction électrique, Chargement dense",
@@ -2690,9 +2313,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Traction électrique, Chargement dense",
-    "type": "Train"
+    "poste": "2"
   },
   "Train, Traction électrique, Chargement léger": {
     "affichage": "Train, Traction électrique, Chargement léger",
@@ -2702,9 +2323,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Traction électrique, Chargement léger",
-    "type": "Train"
+    "poste": "2"
   },
   "Train, Traction électrique, Chargement moyen": {
     "affichage": "Train, Traction électrique, Chargement moyen",
@@ -2714,9 +2333,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "Traction électrique, Chargement moyen",
-    "type": "Train"
+    "poste": "2"
   },
   "Tramway, 2019, Ile de France": {
     "affichage": "Tramway",
@@ -2726,9 +2343,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "2019, Ile de France",
-    "type": "Tramway"
+    "poste": "2"
   },
   "Trotinnette, électrique": {
     "affichage": "Trotinnette",
@@ -2738,9 +2353,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "électrique",
-    "type": "Trotinnette"
+    "poste": "2"
   },
   "Utilitaire <3,5t, Hydrogène SMR biométhane centralisé": {
     "affichage": "Utilitaire <3,5t, Hydrogène SMR biométhane centralisé",
@@ -2750,9 +2363,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Hydrogène SMR biométhane centralisé",
-    "type": "Utilitaire <3,5t"
+    "poste": "2"
   },
   "Utilitaire <3,5t, Hydrogène SMR gaz naturel centralisé": {
     "affichage": "Utilitaire <3,5t, Hydrogène SMR gaz naturel centralisé",
@@ -2762,9 +2373,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Hydrogène SMR gaz naturel centralisé",
-    "type": "Utilitaire <3,5t"
+    "poste": "2"
   },
   "Utilitaire <3,5t, Hydrogène électrolyse décentralisée mix EnR": {
     "affichage": "Utilitaire <3,5t, Hydrogène électrolyse décentralisée mix EnR",
@@ -2774,9 +2383,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Hydrogène électrolyse décentralisée mix EnR",
-    "type": "Utilitaire <3,5t"
+    "poste": "2"
   },
   "Utilitaire <3,5t, Hydrogène électrolyse décentralisée mix France": {
     "affichage": "Utilitaire <3,5t, Hydrogène électrolyse décentralisée mix France",
@@ -2786,9 +2393,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Hydrogène électrolyse décentralisée mix France",
-    "type": "Utilitaire <3,5t"
+    "poste": "2"
   },
   "VUL, < 3,5 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
     "affichage": "VUL, < 3,5 tonnes, Diesel routier, incorporation 7 % de biodiesel",
@@ -2798,9 +2403,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "< 3,5 tonnes, Diesel routier, incorporation 7 % de biodiesel",
-    "type": "VUL"
+    "poste": "2"
   },
   "VUL, < 3,5 tonnes, Essence": {
     "affichage": "VUL, < 3,5 tonnes, Essence",
@@ -2810,9 +2413,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "< 3,5 tonnes, Essence",
-    "type": "VUL"
+    "poste": "2"
   },
   "VUL, < 3,5 tonnes, GNC": {
     "affichage": "VUL, < 3,5 tonnes, GNC",
@@ -2822,9 +2423,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "< 3,5 tonnes, GNC",
-    "type": "VUL"
+    "poste": "2"
   },
   "VUL, < 3,5 tonnes, GPL": {
     "affichage": "VUL, < 3,5 tonnes, GPL",
@@ -2834,9 +2433,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "< 3,5 tonnes, GPL",
-    "type": "VUL"
+    "poste": "2"
   },
   "Voiture E85, Courte distance, 2018": {
     "affichage": "Voiture E85, Courte distance",
@@ -2846,9 +2443,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Courte distance, 2018",
-    "type": "Voiture E85"
+    "poste": "2"
   },
   "Voiture E85, Longue distance, 2018": {
     "affichage": "Voiture E85, Longue distance",
@@ -2858,9 +2453,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Longue distance, 2018",
-    "type": "Voiture E85"
+    "poste": "2"
   },
   "Voiture E85, Mixte, 2018": {
     "affichage": "Voiture E85, Mixte",
@@ -2870,9 +2463,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Mixte, 2018",
-    "type": "Voiture E85"
+    "poste": "2"
   },
   "Voiture GNV, Courte distance, 2018": {
     "affichage": "Voiture GNV, Courte distance",
@@ -2882,9 +2473,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Courte distance, 2018",
-    "type": "Voiture GNV"
+    "poste": "2"
   },
   "Voiture GNV, Longue distance, 2018": {
     "affichage": "Voiture GNV, Longue distance",
@@ -2894,9 +2483,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Longue distance, 2018",
-    "type": "Voiture GNV"
+    "poste": "2"
   },
   "Voiture GNV, Mixte, 2018": {
     "affichage": "Voiture GNV, Mixte",
@@ -2906,9 +2493,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Mixte, 2018",
-    "type": "Voiture GNV"
+    "poste": "2"
   },
   "Voiture GPL, Courte distance, 2018": {
     "affichage": "Voiture GPL, Courte distance",
@@ -2918,9 +2503,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Courte distance, 2018",
-    "type": "Voiture GPL"
+    "poste": "2"
   },
   "Voiture GPL, Longue distance, 2018": {
     "affichage": "Voiture GPL, Longue distance",
@@ -2930,9 +2513,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Longue distance, 2018",
-    "type": "Voiture GPL"
+    "poste": "2"
   },
   "Voiture GPL, Mixte, 2018": {
     "affichage": "Voiture GPL, Mixte",
@@ -2942,9 +2523,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Mixte, 2018",
-    "type": "Voiture GPL"
+    "poste": "2"
   },
   "Voiture essence, Courte distance, 2018": {
     "affichage": "Voiture essence, Courte distance",
@@ -2954,9 +2533,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Courte distance, 2018",
-    "type": "Voiture essence"
+    "poste": "2"
   },
   "Voiture essence, Longue distance, 2018": {
     "affichage": "Voiture essence, Longue distance",
@@ -2966,9 +2543,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Longue distance, 2018",
-    "type": "Voiture essence"
+    "poste": "2"
   },
   "Voiture essence, Mixte, 2018": {
     "affichage": "Voiture essence, Mixte",
@@ -2978,9 +2553,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Mixte, 2018",
-    "type": "Voiture essence"
+    "poste": "2"
   },
   "Voiture gazole, Courte distance, 2018": {
     "affichage": "Voiture gazole, Courte distance",
@@ -2990,9 +2563,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Courte distance, 2018",
-    "type": "Voiture gazole"
+    "poste": "2"
   },
   "Voiture gazole, Longue distance, 2018": {
     "affichage": "Voiture gazole, Longue distance",
@@ -3002,9 +2573,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Longue distance, 2018",
-    "type": "Voiture gazole"
+    "poste": "2"
   },
   "Voiture gazole, Mixte, 2018": {
     "affichage": "Voiture gazole, Mixte",
@@ -3014,9 +2583,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Mixte, 2018",
-    "type": "Voiture gazole"
+    "poste": "2"
   },
   "Voiture particulière, Berline, Hydrogène SMR GN centralisé": {
     "affichage": "Voiture particulière, Berline, Hydrogène SMR GN centralisé",
@@ -3026,9 +2593,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Berline, Hydrogène SMR GN centralisé",
-    "type": "Voiture particulière"
+    "poste": "2"
   },
   "Voiture particulière, Berline, Hydrogène SMR biométhane centralisé": {
     "affichage": "Voiture particulière, Berline, Hydrogène SMR biométhane centralisé",
@@ -3038,9 +2603,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Berline, Hydrogène SMR biométhane centralisé",
-    "type": "Voiture particulière"
+    "poste": "2"
   },
   "Voiture particulière, Berline, Hydrogène électrolyse lix EnR décentralisée": {
     "affichage": "Voiture particulière, Berline, Hydrogène électrolyse lix EnR décentralisée",
@@ -3050,9 +2613,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Berline, Hydrogène électrolyse lix EnR décentralisée",
-    "type": "Voiture particulière"
+    "poste": "2"
   },
   "Voiture particulière, Berline, Hydrogène électrolyse mix France décentralisée": {
     "affichage": "Voiture particulière, Berline, Hydrogène électrolyse mix France décentralisée",
@@ -3062,9 +2623,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Berline, Hydrogène électrolyse mix France décentralisée",
-    "type": "Voiture particulière"
+    "poste": "2"
   },
   "Voiture particulière, Coeur de gamme - Véhicule compact, Electrique": {
     "affichage": "Voiture particulière, Coeur de gamme - Véhicule compact, Electrique",
@@ -3074,9 +2633,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Coeur de gamme - Véhicule compact, Electrique",
-    "type": "Voiture particulière"
+    "poste": "2"
   },
   "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride rechargeable, plug in-hybrid, P2/prius": {
     "affichage": "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride rechargeable, plug in-hybrid, P2/prius",
@@ -3086,9 +2643,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Coeur de gamme - Véhicule compact, Hybride rechargeable, plug in-hybrid, P2/prius",
-    "type": "Voiture particulière"
+    "poste": "2"
   },
   "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, full, P2": {
     "affichage": "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, full, P2",
@@ -3098,9 +2653,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Coeur de gamme - Véhicule compact, Hybride, full, P2",
-    "type": "Voiture particulière"
+    "poste": "2"
   },
   "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, full, Prius": {
     "affichage": "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, full, Prius",
@@ -3110,9 +2663,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Coeur de gamme - Véhicule compact, Hybride, full, Prius",
-    "type": "Voiture particulière"
+    "poste": "2"
   },
   "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, mild, diesel": {
     "affichage": "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, mild, diesel",
@@ -3122,9 +2673,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Coeur de gamme - Véhicule compact, Hybride, mild, diesel",
-    "type": "Voiture particulière"
+    "poste": "2"
   },
   "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, mild, essence": {
     "affichage": "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, mild, essence",
@@ -3134,9 +2683,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Coeur de gamme - Véhicule compact, Hybride, mild, essence",
-    "type": "Voiture particulière"
+    "poste": "2"
   },
   "Voiture particulière, Entrée de gamme - Véhicule léger, Electrique": {
     "affichage": "Voiture particulière, Entrée de gamme - Véhicule léger, Electrique",
@@ -3146,9 +2693,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Entrée de gamme - Véhicule léger, Electrique",
-    "type": "Voiture particulière"
+    "poste": "2"
   },
   "Voiture particulière, Entrée de gamme - Véhicule léger, Hybride rechargeable avec alimentation auxilliaire de puissance": {
     "affichage": "Voiture particulière, Entrée de gamme - Véhicule léger, Hybride rechargeable avec alimentation auxilliaire de puissance",
@@ -3158,9 +2703,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Entrée de gamme - Véhicule léger, Hybride rechargeable avec alimentation auxilliaire de puissance",
-    "type": "Voiture particulière"
+    "poste": "2"
   },
   "Voiture particulière, Entrée de gamme - Véhicule léger, Hybride, mild essence": {
     "affichage": "Voiture particulière, Entrée de gamme - Véhicule léger, Hybride, mild essence",
@@ -3170,9 +2713,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Entrée de gamme - Véhicule léger, Hybride, mild essence",
-    "type": "Voiture particulière"
+    "poste": "2"
   },
   "Voiture particulière, Haut de gamme - Berline, Electrique": {
     "affichage": "Voiture particulière, Haut de gamme - Berline, Electrique",
@@ -3182,9 +2723,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Haut de gamme - Berline, Electrique",
-    "type": "Voiture particulière"
+    "poste": "2"
   },
   "Voiture particulière, Haut de gamme - Berline, Hybride rechargeable, plug in-hybrid, P2 / Prius": {
     "affichage": "Voiture particulière, Haut de gamme - Berline, Hybride rechargeable, plug in-hybrid, P2 / Prius",
@@ -3194,9 +2733,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Haut de gamme - Berline, Hybride rechargeable, plug in-hybrid, P2 / Prius",
-    "type": "Voiture particulière"
+    "poste": "2"
   },
   "Voiture particulière, Haut de gamme - Berline, Hybride, full P2": {
     "affichage": "Voiture particulière, Haut de gamme - Berline, Hybride, full P2",
@@ -3206,9 +2743,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Haut de gamme - Berline, Hybride, full P2",
-    "type": "Voiture particulière"
+    "poste": "2"
   },
   "Voiture particulière, Haut de gamme - Berline, Hybride, full Prius": {
     "affichage": "Voiture particulière, Haut de gamme - Berline, Hybride, full Prius",
@@ -3218,9 +2753,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Haut de gamme - Berline, Hybride, full Prius",
-    "type": "Voiture particulière"
+    "poste": "2"
   },
   "Voiture particulière, Haut de gamme - Berline, Hybride, mild diesel": {
     "affichage": "Voiture particulière, Haut de gamme - Berline, Hybride, mild diesel",
@@ -3230,9 +2763,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Haut de gamme - Berline, Hybride, mild diesel",
-    "type": "Voiture particulière"
+    "poste": "2"
   },
   "Voiture particulière, Haut de gamme - Berline, Hybride, mild essence": {
     "affichage": "Voiture particulière, Haut de gamme - Berline, Hybride, mild essence",
@@ -3242,9 +2773,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Haut de gamme - Berline, Hybride, mild essence",
-    "type": "Voiture particulière"
+    "poste": "2"
   },
   "Voiture, Motorisation E85, 2018": {
     "affichage": "Voiture, Motorisation E85",
@@ -3254,9 +2783,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Motorisation E85, 2018",
-    "type": "Voiture"
+    "poste": "2"
   },
   "Voiture, Motorisation GNV, 2018": {
     "affichage": "Voiture, Motorisation GNV",
@@ -3266,9 +2793,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Motorisation GNV, 2018",
-    "type": "Voiture"
+    "poste": "2"
   },
   "Voiture, Motorisation GPL, 2018": {
     "affichage": "Voiture, Motorisation GPL",
@@ -3278,9 +2803,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Motorisation GPL, 2018",
-    "type": "Voiture"
+    "poste": "2"
   },
   "Voiture, Motorisation essence, 2018": {
     "affichage": "Voiture, Motorisation essence",
@@ -3290,9 +2813,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Motorisation essence, 2018",
-    "type": "Voiture"
+    "poste": "2"
   },
   "Voiture, Motorisation gazole, 2018": {
     "affichage": "Voiture, Motorisation gazole",
@@ -3302,9 +2823,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "Motorisation gazole, 2018",
-    "type": "Voiture"
+    "poste": "2"
   },
   "Vraquier, 10 000 à 100 000 tonnes, HFO - MGO": {
     "affichage": "Vraquier, 10 000 à 100 000 tonnes",
@@ -3314,9 +2833,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "10 000 à 100 000 tonnes, HFO - MGO",
-    "type": "Vraquier"
+    "poste": "2"
   },
   "Vraquier, < 10 000 tonnes, GNL": {
     "affichage": "Vraquier, < 10 000 tonnes, GNL",
@@ -3326,9 +2843,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "< 10 000 tonnes, GNL",
-    "type": "Vraquier"
+    "poste": "2"
   },
   "Vraquier, < 10 000 tonnes, HFO - MGO": {
     "affichage": "Vraquier, < 10 000 tonnes, HFO - MGO",
@@ -3338,9 +2853,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "< 10 000 tonnes, HFO - MGO",
-    "type": "Vraquier"
+    "poste": "2"
   },
   "Vraquier, > 100 000 tonnes, HFO - MGO": {
     "affichage": "Vraquier, > 100 000 tonnes",
@@ -3350,9 +2863,7 @@
       }
     },
     "groupe": "Non routier",
-    "poste": "2",
-    "soustype": "> 100 000 tonnes, HFO - MGO",
-    "type": "Vraquier"
+    "poste": "2"
   },
   "Vélo, à assistance électrique": {
     "affichage": "Vélo",
@@ -3362,9 +2873,7 @@
       }
     },
     "groupe": "Routier",
-    "poste": "2",
-    "soustype": "à assistance électrique",
-    "type": "Vélo"
+    "poste": "2"
   },
   "coke de pétrole": {
     "affichage": "coke de pétrole",
@@ -3375,7 +2884,6 @@
       }
     },
     "groupe": "",
-    "poste": "1",
-    "type": "coke de pétrole"
+    "poste": "1"
   }
 }

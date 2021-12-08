@@ -149,16 +149,9 @@ def add_display_name(factors):
     for (key, factor) in factors.items():
         if not factor.get("affichage"):
             factor["affichage"] = key  # key must be unique, so take that as fallback
-        attribute = factor["attribut"]
-        frontier = factor["frontière"]
         del factor["attribut"]
         del factor["frontière"]
-        if attribute and frontier:
-            factor["soustype"] = f"{attribute}, {frontier}"
-        elif attribute:
-            factor["soustype"] = attribute
-        elif frontier:
-            factor["soustype"] = frontier
+        del factor["type"]
 
 
 def name_and_attribute(factor):

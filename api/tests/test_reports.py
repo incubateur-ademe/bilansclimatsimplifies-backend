@@ -197,8 +197,7 @@ class TestReportApi(APITestCase):
         EmissionFactory.create(
             bilan=my_report,
             valeur=10,
-            type="Essence",
-            sous_type="E10",
+            type="Essence, E10",
             unite="kg",
             localisation="France continentale",
             poste=2,
@@ -206,8 +205,7 @@ class TestReportApi(APITestCase):
         EmissionFactory.create(
             bilan=my_report,
             valeur=10,
-            type="Essence",
-            sous_type="E10",
+            type="Essence, E10",
             unite="kg",
             localisation="Guadeloupe, Martinique, Guyane, Corse",
             poste=2,
@@ -236,8 +234,7 @@ class TestReportApi(APITestCase):
         EmissionFactory.create(
             bilan=my_report,
             valeur=1,
-            type="Essence",
-            sous_type="E10",
+            type="Essence, E10",
             unite="GJ PCI",
             localisation="Guadeloupe, Martinique, Guyane, Corse",
             poste=2,
