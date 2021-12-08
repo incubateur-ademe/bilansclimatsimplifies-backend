@@ -31,16 +31,40 @@ class TestReportApi(APITestCase):
 
         payload = {
             "raisonSociale": "My company",
-            "siren": "123456789",
+            "siren": "910546308",
             "nombreSalaries": 200,
             "annee": 2020,
         }
         response = self.client.post(reverse("reports"), payload)
 
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
-        # TODO: self.assertEqual(response.json()["id"], reports[0].id)
         reports = Report.objects.all()
         self.assertEqual(len(reports), 1)
+
+    @authenticate
+    def test_siren_validated(self):
+        """
+        SIREN should be validated by length and with luhn alogrithm
+        """
+        payload = {
+            "raisonSociale": "My company",
+            "siren": "12",
+            "nombreSalaries": 200,
+            "annee": 2020,
+        }
+        response = self.client.post(reverse("reports"), payload)
+
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+
+        payload = {
+            "raisonSociale": "My company",
+            "siren": "123456789",
+            "nombreSalaries": 200,
+            "annee": 2020,
+        }
+        response = self.client.post(reverse("reports"), payload)
+
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
 
     @authenticate
     def test_authenticated_create_duplicate_report(self):

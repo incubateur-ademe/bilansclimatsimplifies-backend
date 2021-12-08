@@ -38,7 +38,11 @@ CORS_ORIGIN_WHITELIST='http://localhost:3000'
 CSRF_TRUSTED_ORIGINS='http://localhost:3000'
 JWT_ISSUER="http://localhost:8080/auth/realms/myrealm"
 JWT_CERTS_URL="http://localhost:8080/auth/realms/myrealm/protocol/openid-connect/certs"
+STATIC_FILES_PATH="static/"
+STATIC_URL_PREFIX="/static"
 ```
+
+Les variables `STATIC_` sont réquis par clevercloud.
 
 ## Tests
 

@@ -2,6 +2,7 @@ from django.contrib.auth import get_user_model
 from django.db import models
 from data.emission_factors import get_emission_factors
 from django.contrib.auth.models import AbstractUser
+from django.core.exceptions import ValidationError
 from data.insee_naf_division_choices import NafDivision
 from data.region_choices import Region
 from django.utils import timezone
@@ -10,6 +11,26 @@ from decimal import Decimal, ROUND_HALF_UP
 
 class User(AbstractUser):
     ademe_id = models.CharField(verbose_name="identifiant ADEME", max_length=255, blank=True, null=True)
+
+
+def luhn_validation(code):
+    """
+    Performs length and Luhn validation
+    (https://portal.hardis-group.com/pages/viewpage.action?pageId=120357227)
+    """
+    if code is None or code == "":
+        return
+    if len(code) != 9:
+        raise ValidationError("9 caractères numériques sont attendus")
+    odd_digits = [int(n) for n in code[-1::-2]]
+    even_digits = [int(n) for n in code[-2::-2]]
+    checksum = sum(odd_digits)
+    for digit in even_digits:
+        checksum += sum(int(n) for n in str(digit * 2))
+    luhn_checksum_valid = checksum % 10 == 0
+
+    if not luhn_checksum_valid:
+        raise ValidationError("Le numéro SIREN n'est pas valide.")
 
 
 class Report(models.Model):
@@ -38,10 +59,8 @@ class Report(models.Model):
 
     # company fields
     raison_sociale = models.TextField(verbose_name="raison sociale")
-    # TODO: validate min = 1 and max = 1000 (our scope: 50-500) ?
     nombre_salaries = models.IntegerField(verbose_name="nombre de salariés", blank=True, null=True)
-    # TODO: add luhn validation
-    siren = models.CharField(verbose_name="siren", max_length=9)
+    siren = models.CharField(verbose_name="siren", max_length=9, validators=[luhn_validation])
     region = models.CharField(
         verbose_name="région du siège", blank=True, null=True, choices=Region.choices, max_length=4
     )
@@ -53,7 +72,6 @@ class Report(models.Model):
         max_length=4,
     )
 
-    # validate year?
     annee = models.IntegerField(verbose_name="année")
 
     manuel_poste_1 = models.IntegerField(

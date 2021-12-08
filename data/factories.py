@@ -1,6 +1,9 @@
 import factory
+from factory import fuzzy
 from django.contrib.auth import get_user_model
 from .models import Report, Emission
+from data.insee_naf_division_choices import NafDivision
+from data.region_choices import Region
 
 
 class UserFactory(factory.django.DjangoModelFactory):
@@ -22,6 +25,9 @@ class ReportFactory(factory.django.DjangoModelFactory):
     raison_sociale = factory.Faker("company")
     siren = factory.Faker("pystr", min_chars=9, max_chars=9)
     annee = factory.Faker("year")
+    naf = fuzzy.FuzzyChoice(list(NafDivision))
+    region = fuzzy.FuzzyChoice(list(Region))
+    nombre_salaries = factory.Faker("random_int", min=1, max=500)
 
 
 class EmissionFactory(factory.django.DjangoModelFactory):
