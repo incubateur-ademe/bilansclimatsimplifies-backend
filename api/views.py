@@ -144,6 +144,13 @@ class ExportRenderer(r.CSVRenderer):
         "gestionnaire.first_name",
         "gestionnaire.last_name",
     ]
+    labels = {
+        "poste_1": "poste_1_tCO2e",
+        "poste_2": "poste_2_tCO2e",
+        "total": "total_tCO2e",
+        "gestionnaire.first_name": "gestionnaire.prenom",
+        "gestionnaire.last_name": "gestionnaire.nom",
+    }
 
 
 class PrivateExportView(ListAPIView):

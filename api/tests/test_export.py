@@ -42,7 +42,7 @@ class TestPrivateExport(APITestCase):
         self.assertEqual(len(body), 4)
         self.assertEqual(
             body[0],
-            "siren,annee,raison_sociale,region,naf,nombre_salaries,mode,poste_1,poste_2,total,statut,creation_date,publication_date,gestionnaire.email,gestionnaire.first_name,gestionnaire.last_name",
+            "siren,annee,raison_sociale,region,naf,nombre_salaries,mode,poste_1_tCO2e,poste_2_tCO2e,total_tCO2e,statut,creation_date,publication_date,gestionnaire.email,gestionnaire.prenom,gestionnaire.nom",
         )
         self.assertTrue(body[1].startswith("515277358,2020,Alice's Company,01,03,50,manuel,100,200,300,publié,"))
         self.assertTrue(body[1].endswith(",alice@example.com,Alice,Smith"))
