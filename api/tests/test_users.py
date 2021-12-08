@@ -12,7 +12,7 @@ class TestUserApi(APITestCase):
         """
         When attempt to get user without being logged in, get 403
         """
-        response = self.client.get(reverse("authenticated_user"))
+        response = self.client.get(reverse("ademe_user"))
         self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
 
     @authenticate
@@ -21,10 +21,11 @@ class TestUserApi(APITestCase):
         If authenticated, should see only own details
         """
         UserFactory.create(username="other")
-        response = self.client.get(reverse("authenticated_user"))
+        response = self.client.get(reverse("ademe_user"))
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         body = response.json()
         self.assertEqual(body["username"], authenticate.user.username)
+        self.assertIn("isStaff", body)
 
     def test_create_ademe_user(self):
         """

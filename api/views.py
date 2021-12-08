@@ -1,12 +1,12 @@
 from django.contrib.auth import get_user_model
 from django.core.exceptions import BadRequest
 from django.db import IntegrityError, transaction
+from django.http.response import JsonResponse
 from django.utils import timezone
-from rest_framework import permissions
-from rest_framework.exceptions import NotFound
+from rest_framework import permissions, status
+from rest_framework.exceptions import NotFound, NotAuthenticated
 from rest_framework.generics import (
     ListCreateAPIView,
-    RetrieveUpdateAPIView,
     RetrieveUpdateDestroyAPIView,
     CreateAPIView,
     ListAPIView,
@@ -20,26 +20,19 @@ from data.models import Report, Emission
 from .permissions import CanManageReport, CanManageEmissions
 from rest_framework_simplejwt.tokens import UntypedToken
 from rest_framework_csv import renderers as r
-
-
-class AuthenticatedUserView(RetrieveUpdateAPIView):
-    """
-    API endpoint that allows users to be viewed or edited.
-    """
-
-    model = get_user_model()
-    serializer_class = UserSerializer
-    permission_classes = [permissions.IsAuthenticated]
-    queryset = get_user_model().objects.all()
-
-    def get_object(self):
-        return self.request.user
+from .utils import camelize
 
 
 class AdemeUserView(APIView):
     """
     API endpoint that allows users to be viewed or edited.
     """
+
+    def get(self, _):
+        if not self.request.user.is_authenticated:
+            raise NotAuthenticated()
+        data = UserSerializer(self.request.user).data
+        return JsonResponse(camelize(data), status=status.HTTP_200_OK)
 
     def post(self, request):
         token = None
