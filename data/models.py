@@ -31,6 +31,7 @@ def luhn_validation(code):
         raise ValidationError("Le numéro SIREN n'est pas valide.")
 
 
+# NB: parts of this model are used by the public export, take care when changing it.
 class Report(models.Model):
     class Meta:
         verbose_name = "bilan"
