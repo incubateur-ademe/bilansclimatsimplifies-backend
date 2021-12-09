@@ -68,6 +68,7 @@ class PublicReportExportSerializer(serializers.ModelSerializer):
             "poste_1",
             "poste_2",
             "total",
+            "publication_date",
         ]
         read_only_fields = fields
 

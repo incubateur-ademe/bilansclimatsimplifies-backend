@@ -14,6 +14,7 @@ class ExportRenderer(r.CSVRenderer):
         "region",
         "naf",
         "nombre_salaries",
+        "publication_date",
         "poste_1",
         "poste_2",
         "total",

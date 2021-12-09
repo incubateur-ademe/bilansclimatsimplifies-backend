@@ -90,7 +90,7 @@ class TestPublicExport(APITestCase):
         self.assertTrue(post_mocker.last_request.headers["content-type"].startswith("multipart/form-data; boundary="))
         print(post_mocker.last_request.text)
         self.assertTrue(
-            "siren,annee,raison_sociale,region,naf,nombre_salaries,poste_1_tCO2e,poste_2_tCO2e,total_tCO2e"
+            "siren,annee,raison_sociale,region,naf,nombre_salaries,publication_date,poste_1_tCO2e,poste_2_tCO2e,total_tCO2e"
             in post_mocker.last_request.text
         )
         self.assertTrue("515277358" in post_mocker.last_request.text)
