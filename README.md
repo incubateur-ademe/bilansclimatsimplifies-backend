@@ -40,6 +40,8 @@ JWT_ISSUER="http://localhost:8080/auth/realms/myrealm"
 JWT_CERTS_URL="http://localhost:8080/auth/realms/myrealm/protocol/openid-connect/certs"
 STATIC_FILES_PATH="static/"
 STATIC_URL_PREFIX="/static"
+KOUMOUL_API_KEY=
+KOUMOUL_API_URL="https://koumoul.com/data-fair/api/v1/datasets/bilans-climat-simplifies/"
 ```
 
 Les variables `STATIC_` sont réquis par clevercloud.

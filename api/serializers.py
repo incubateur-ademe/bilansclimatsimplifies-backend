@@ -55,6 +55,23 @@ class PrivateReportExportSerializer(serializers.ModelSerializer):
         read_only_fields = fields
 
 
+class PublicReportExportSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Report
+        fields = [
+            "siren",
+            "raison_sociale",
+            "naf",
+            "nombre_salaries",
+            "region",
+            "annee",
+            "poste_1",
+            "poste_2",
+            "total",
+        ]
+        read_only_fields = fields
+
+
 class EmissionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Emission

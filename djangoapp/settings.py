@@ -36,6 +36,9 @@ DEBUG = os.getenv("DEBUG") == "True"
 
 ALLOWED_HOSTS = [x.strip() for x in os.getenv("ALLOWED_HOSTS").split(",")]
 
+# Other env variables
+KOUMOUL_API_KEY = os.getenv("KOUMOUL_API_KEY")
+KOUMOUL_API_URL = os.getenv("KOUMOUL_API_URL")
 
 # Application definition
 
