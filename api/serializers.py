@@ -76,5 +76,5 @@ class PublicReportExportSerializer(serializers.ModelSerializer):
 class EmissionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Emission
-        fields = ["id", "bilan", "poste", "type", "valeur", "unite", "note", "resultat"]
+        fields = ["id", "bilan", "poste", "type", "localisation", "valeur", "unite", "note", "resultat"]
         read_only_fields = ["id", "resultat"]

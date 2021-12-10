@@ -107,7 +107,8 @@ class TestEmissionApi(APITestCase):
 
         payload = {
             "bilan": my_report.id,
-            "type": "petrole",
+            "type": "Essence, E10",
+            "localisation": "Guadeloupe, Martinique, Guyane, Corse",
             "valeur": 100,
             "unite": "l",
             # TODO: test auto finding poste - shouldn't send it since it is in the file
@@ -121,7 +122,8 @@ class TestEmissionApi(APITestCase):
         self.assertEqual(len(emissions), 1)
         emission = emissions[0]
         self.assertEqual(emission.bilan, my_report)
-        self.assertEqual(emission.type, "petrole")
+        self.assertEqual(emission.type, "Essence, E10")
+        self.assertEqual(emission.localisation, "Guadeloupe, Martinique, Guyane, Corse")
         self.assertEqual(emission.valeur, 100)
         self.assertEqual(emission.unite, "l")
         self.assertEqual(emission.poste, 1)
