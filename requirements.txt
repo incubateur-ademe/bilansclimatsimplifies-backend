@@ -8,7 +8,7 @@ click==8.0.3
 coverage==6.2
 cryptography==36.0.0
 Deprecated==1.2.13
-Django==3.2.8
+Django==3.2.10
 django-cors-headers==3.10.0
 django-nose==1.4.7
 djangorestframework==3.12.4
