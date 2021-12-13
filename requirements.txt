@@ -3,7 +3,7 @@ astkit==0.5.4
 black==21.9b0
 certifi==2021.10.8
 cffi==1.15.0
-charset-normalizer==2.0.7
+charset-normalizer==2.0.9
 click==8.0.3
 coverage==6.2
 cryptography==36.0.0
@@ -16,7 +16,7 @@ djangorestframework-camel-case==1.2.0
 djangorestframework-csv==2.1.1
 djangorestframework-simplejwt==5.0.0
 factory-boy==3.2.1
-Faker==9.3.1
+Faker==10.0.0
 flake8==4.0.1
 idna==3.3
 importlib-metadata==4.8.1
