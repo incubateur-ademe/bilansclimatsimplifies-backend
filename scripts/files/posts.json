@@ -39,11 +39,7 @@
     "groupe": "Non routier",
     "poste": "2"
   },
-  "BioGNC -Biométhane comprimé, Pour véhicule routier": {
-    "groupe": "Routier",
-    "poste": "2"
-  },
-  "BioGNC pour véhicule routier": {
+  "BioGNC -Biométhane comprimé": {
     "groupe": "Routier",
     "poste": "2"
   },
@@ -143,18 +139,6 @@
     "groupe": "Routier",
     "poste": "2"
   },
-  "Essence, E10": {
-    "groupe": "Routier",
-    "poste": "2"
-  },
-  "Essence, E85": {
-    "groupe": "Routier",
-    "poste": "2"
-  },
-  "Essence, Supercarburant sans plomb (95, 95-E10, 98)": {
-    "groupe": "Routier",
-    "poste": "2"
-  },
   "Fioul Lourd": {
     "groupe": "Les plus utilisés",
     "poste": "1"
@@ -216,22 +200,6 @@
     "poste": "2"
   },
   "Gazole routier": {
-    "groupe": "Routier",
-    "poste": "2"
-  },
-  "Gazole routier, B10": {
-    "groupe": "Routier",
-    "poste": "2"
-  },
-  "Gazole routier, B100": {
-    "groupe": "Routier",
-    "poste": "2"
-  },
-  "Gazole routier, B7": {
-    "groupe": "Routier",
-    "poste": "2"
-  },
-  "Gazole, B30": {
     "groupe": "Routier",
     "poste": "2"
   },
