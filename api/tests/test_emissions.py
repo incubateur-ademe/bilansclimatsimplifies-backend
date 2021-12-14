@@ -36,7 +36,6 @@ example_emission_factors = {
         },
     },
 }
-# TODO: test frontiere too once confirmed if we need to use it
 
 
 @patch.object(get_emission_factors(), "emission_factors", example_emission_factors)

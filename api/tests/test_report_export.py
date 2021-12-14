@@ -11,9 +11,9 @@ import requests_mock
 from api.management.commands.publicexport import update_public_export
 
 
-class TestPrivateExport(APITestCase):
+class TestPrivateReportExport(APITestCase):
     @authenticate_staff
-    def test_csv_export(self):
+    def test_csv_report_export(self):
         """
         Test that private endpoint returns csv file of data
         """
@@ -51,14 +51,14 @@ class TestPrivateExport(APITestCase):
         self.assertTrue(body[1].endswith(",alice@example.com,Alice,Smith"))
 
     @authenticate
-    def test_non_staff_rejected(self):
+    def test_only_staff_access_report_export(self):
         """
         Test that non-staff users are rejected
         """
         response = self.client.get(reverse("private-csv-export"))
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 
-    def test_unauthenticated_rejected(self):
+    def test_unauthenticated_user_rejected_report_export(self):
         """
         Test that unauthenticated users are rejected
         """

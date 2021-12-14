@@ -141,7 +141,11 @@ class Emission(models.Model):
 
     @property
     def resultat(self):
-        factor = get_emission_factors().get_factor(self.type, self.unite, self.localisation)
+        factor = self.facteur_d_emission
         if factor:
             return Decimal(self.valeur * factor).quantize(Decimal("0.1"), rounding=ROUND_HALF_UP)
         return None
+
+    @property
+    def facteur_d_emission(self):
+        return get_emission_factors().get_factor(self.type, self.unite, self.localisation)

@@ -78,3 +78,9 @@ class EmissionSerializer(serializers.ModelSerializer):
         model = Emission
         fields = ["id", "bilan", "poste", "type", "localisation", "valeur", "unite", "note", "resultat"]
         read_only_fields = ["id", "resultat"]
+
+
+class EmissionExportSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Emission
+        fields = ["poste", "type", "localisation", "valeur", "unite", "note", "resultat", "facteur_d_emission"]

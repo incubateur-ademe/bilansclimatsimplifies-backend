@@ -15,7 +15,7 @@ from rest_framework.response import Response
 from rest_framework.status import HTTP_201_CREATED
 from rest_framework.views import APIView
 from api.serializers import ReportSerializer, PrivateReportExportSerializer
-from api.serializers import UserSerializer, EmissionSerializer
+from api.serializers import UserSerializer, EmissionSerializer, EmissionExportSerializer
 from data.models import Report, Emission
 from .permissions import CanManageReport, CanManageEmissions
 from rest_framework_simplejwt.tokens import UntypedToken
@@ -122,7 +122,7 @@ class EmissionView(RetrieveUpdateDestroyAPIView):
     queryset = Emission.objects.all()
 
 
-class ExportRenderer(r.CSVRenderer):
+class ReportExportRenderer(r.CSVRenderer):
     header = [
         "siren",
         "annee",
@@ -151,7 +151,7 @@ class ExportRenderer(r.CSVRenderer):
 
 
 class PrivateExportView(ListAPIView):
-    renderer_classes = (ExportRenderer,)
+    renderer_classes = (ReportExportRenderer,)
     model = Report
     serializer_class = PrivateReportExportSerializer
     queryset = Report.objects.all()
@@ -164,6 +164,37 @@ class PrivateExportView(ListAPIView):
     def get_filename(self):
         timestamp = timezone.now().strftime("%Y-%m-%d")
         return f"bilans_climat_simplifies_{timestamp}.csv"
+
+
+class EmissionExportRenderer(r.CSVRenderer):
+    header = ["type", "valeur", "unite", "facteur_d_emission", "resultat", "poste", "localisation", "note"]
+    labels = {
+        "resultat": "resultat_kgCO2e",
+    }
+
+
+class EmissionsExportView(ListAPIView):
+    renderer_classes = (EmissionExportRenderer,)
+    model = Emission
+    serializer_class = EmissionExportSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get_queryset(self):
+        report_id = self.request.parser_context.get("kwargs").get("report_pk")
+        report = Report.objects.get(pk=report_id)
+        if report.gestionnaire != self.request.user:
+            raise NotFound()
+        return Emission.objects.filter(bilan=report_id)
+
+    def finalize_response(self, request, response, *args, **kwargs):
+        if response.status_code == 200:
+            response["Content-Disposition"] = "attachment; filename=%s" % (self.get_filename())
+        return super().finalize_response(request, response, *args, **kwargs)
+
+    def get_filename(self):
+        report_id = self.request.parser_context.get("kwargs").get("report_pk")
+        report = Report.objects.get(pk=report_id)
+        return f"export_{report.siren}_{report.annee}.csv"
 
 
 class EmissionFactorsFile(APIView):
