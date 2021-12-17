@@ -22,9 +22,9 @@ def verbose_report_fieldname_dict():
     return {
         **labels,
         **{
-            "poste_1": "Poste 1 kgCO2e",
-            "poste_2": "Poste 2 kgCO2e",
-            "total": "Total kgCO2e",
+            "poste_1_t": "Poste 1 tCO2e",
+            "poste_2_t": "Poste 2 tCO2e",
+            "total_t": "Total tCO2e",
         },
     }
 
@@ -63,9 +63,9 @@ class PrivateReportExportSerializer(serializers.ModelSerializer):
             "region",
             "annee",
             "statut",
-            "poste_1",
-            "poste_2",
-            "total",
+            "poste_1_t",
+            "poste_2_t",
+            "total_t",
             "mode",
             "creation_date",
             "publication_date",
@@ -87,9 +87,9 @@ class PublicReportExportSerializer(serializers.ModelSerializer):
             "nombre_salaries",
             "region",
             "annee",
-            "poste_1",
-            "poste_2",
-            "total",
+            "poste_1_t",
+            "poste_2_t",
+            "total_t",
             "publication_date",
         ]
         read_only_fields = fields

@@ -45,11 +45,10 @@ class TestPrivateReportExport(APITestCase):
         self.assertEqual(len(body), 4)
         self.assertEqual(
             body[0],
-            # TODO: t to kg
             # TODO: text for codes région & NAF
-            "SIREN,Année de reporting,Raison sociale,Code région,Code NAF,Nombre de salariés,Mode de publication,Poste 1 kgCO2e,Poste 2 kgCO2e,Total kgCO2e,Statut,Date de création,Date de publication,Email du créateur du bilan,Prénom du créateur du bilan,Nom du créateur du bilan",
+            "SIREN,Année de reporting,Raison sociale,Code région,Code NAF,Nombre de salariés,Mode de publication,Poste 1 tCO2e,Poste 2 tCO2e,Total tCO2e,Statut,Date de création,Date de publication,Email du créateur du bilan,Prénom du créateur du bilan,Nom du créateur du bilan",
         )
-        self.assertTrue(body[1].startswith("515277358,2020,Alice's Company,01,03,50,manuel,100,200,300,publié,"))
+        self.assertTrue(body[1].startswith("515277358,2020,Alice's Company,01,03,50,manuel,0.1,0.2,0.3,publié,"))
         self.assertTrue(body[1].endswith(",alice@example.com,Alice,Smith"))
 
     @authenticate
@@ -90,9 +89,8 @@ class TestPublicExport(APITestCase):
         self.assertTrue(post_mocker.called_once)
         self.assertTrue(post_mocker.last_request.headers["x-api-key"] == "asecurekey")
         self.assertTrue(post_mocker.last_request.headers["content-type"].startswith("multipart/form-data; boundary="))
-        print(post_mocker.last_request.text)
         self.assertTrue(
-            "SIREN,Année de reporting,Raison sociale,Code région,Code NAF,Nombre de salariés,Date de publication,Poste 1 kgCO2e,Poste 2 kgCO2e,Total kgCO2e"
+            "SIREN,Année de reporting,Raison sociale,Code région,Code NAF,Nombre de salariés,Date de publication,Poste 1 tCO2e,Poste 2 tCO2e,Total tCO2e"
             in post_mocker.last_request.text
         )
         self.assertTrue("515277358" in post_mocker.last_request.text)

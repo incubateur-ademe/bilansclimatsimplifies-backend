@@ -15,9 +15,9 @@ class ExportRenderer(r.CSVRenderer):
         "naf",
         "nombre_salaries",
         "publication_date",
-        "poste_1",
-        "poste_2",
-        "total",
+        "poste_1_t",
+        "poste_2_t",
+        "total_t",
     ]
     labels = PublicReportExportSerializer.get_labels()
 

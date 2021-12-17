@@ -108,11 +108,19 @@ class Report(models.Model):
             return self.sum_post(1)
 
     @property
+    def poste_1_t(self):
+        return kg_to_t(self.poste_1)
+
+    @property
     def poste_2(self):
         if self.mode == self.CalculationMode.MANUAL:
             return self.manuel_poste_2
         else:
             return self.sum_post(2)
+
+    @property
+    def poste_2_t(self):
+        return kg_to_t(self.poste_2)
 
     @property
     def total(self):
@@ -121,10 +129,18 @@ class Report(models.Model):
         else:
             return None
 
+    @property
+    def total_t(self):
+        return kg_to_t(self.total)
+
     def save(self, *args, **kwargs):
         if self.statut == self.Status.PUBLISHED:
             self.publication_date = timezone.now()
         super().save(*args, **kwargs)
+
+
+def kg_to_t(value):
+    return value / 1000
 
 
 class Emission(models.Model):
