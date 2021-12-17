@@ -140,7 +140,7 @@ class Report(models.Model):
 
 
 def kg_to_t(value):
-    return value / 1000
+    return value / 1000 if value is not None else None
 
 
 class Emission(models.Model):

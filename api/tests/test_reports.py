@@ -351,3 +351,20 @@ class TestReportApi(APITestCase):
         self.assertIsNone(body["poste2"])
         self.assertIsNone(body["total"])
         self.assertEqual(body["mode"], "manuel")
+
+    def test_tonne_conversion(self):
+        """
+        Check that total conversions from kg to tonne are accurate
+        """
+        report = ReportFactory.create(
+            mode=Report.CalculationMode.MANUAL,
+            manuel_poste_1=111,
+            manuel_poste_2=200,
+        )
+        self.assertEqual(report.poste_1_t, 0.111)
+        self.assertEqual(report.poste_2_t, 0.2)
+        self.assertEqual(report.total_t, 0.311)
+        # check don't get exception when converting None values
+        report = ReportFactory.create(mode=Report.CalculationMode.MANUAL)
+        self.assertIsNone(report.poste_1)
+        self.assertIsNone(report.poste_1_t)
