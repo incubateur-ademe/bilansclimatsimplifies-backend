@@ -565,8 +565,8 @@
         "kgCO2e/MJ PCI": "0"
       }
     },
-    "groupe": null,
-    "poste": null
+    "groupe": "",
+    "poste": "1"
   },
   "Biodiesel, sans changement d'affectation des sols": {
     "affichage": "Biodiesel, sans changement d'affectation des sols",
