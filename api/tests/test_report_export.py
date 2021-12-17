@@ -45,7 +45,9 @@ class TestPrivateReportExport(APITestCase):
         self.assertEqual(len(body), 4)
         self.assertEqual(
             body[0],
-            "siren,annee,raison_sociale,region,naf,nombre_salaries,mode,poste_1_tCO2e,poste_2_tCO2e,total_tCO2e,statut,creation_date,publication_date,gestionnaire.email,gestionnaire.prenom,gestionnaire.nom",
+            # TODO: t to kg
+            # TODO: text for codes région & NAF
+            "SIREN,Année de reporting,Raison sociale,Code région,Code NAF,Nombre de salariés,Mode de publication,Poste 1 kgCO2e,Poste 2 kgCO2e,Total kgCO2e,Statut,Date de création,Date de publication,Email du créateur du bilan,Prénom du créateur du bilan,Nom du créateur du bilan",
         )
         self.assertTrue(body[1].startswith("515277358,2020,Alice's Company,01,03,50,manuel,100,200,300,publié,"))
         self.assertTrue(body[1].endswith(",alice@example.com,Alice,Smith"))
@@ -90,7 +92,7 @@ class TestPublicExport(APITestCase):
         self.assertTrue(post_mocker.last_request.headers["content-type"].startswith("multipart/form-data; boundary="))
         print(post_mocker.last_request.text)
         self.assertTrue(
-            "siren,annee,raison_sociale,region,naf,nombre_salaries,publication_date,poste_1_tCO2e,poste_2_tCO2e,total_tCO2e"
+            "SIREN,Année de reporting,Raison sociale,Code région,Code NAF,Nombre de salariés,Date de publication,Poste 1 kgCO2e,Poste 2 kgCO2e,Total kgCO2e"
             in post_mocker.last_request.text
         )
         self.assertTrue("515277358" in post_mocker.last_request.text)

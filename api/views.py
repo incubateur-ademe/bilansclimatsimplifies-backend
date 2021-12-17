@@ -122,7 +122,7 @@ class EmissionView(RetrieveUpdateDestroyAPIView):
     queryset = Emission.objects.all()
 
 
-class ReportExportRenderer(r.CSVRenderer):
+class PrivateReportExportRenderer(r.CSVRenderer):
     header = [
         "siren",
         "annee",
@@ -142,16 +142,17 @@ class ReportExportRenderer(r.CSVRenderer):
         "gestionnaire.last_name",
     ]
     labels = {
-        "poste_1": "poste_1_tCO2e",
-        "poste_2": "poste_2_tCO2e",
-        "total": "total_tCO2e",
-        "gestionnaire.first_name": "gestionnaire.prenom",
-        "gestionnaire.last_name": "gestionnaire.nom",
+        **PrivateReportExportSerializer.get_labels(),
+        **{
+            "gestionnaire.email": "Email du créateur du bilan",
+            "gestionnaire.first_name": "Prénom du créateur du bilan",
+            "gestionnaire.last_name": "Nom du créateur du bilan",
+        },
     }
 
 
 class PrivateExportView(ListAPIView):
-    renderer_classes = (ReportExportRenderer,)
+    renderer_classes = (PrivateReportExportRenderer,)
     model = Report
     serializer_class = PrivateReportExportSerializer
     queryset = Report.objects.all()
@@ -168,9 +169,7 @@ class PrivateExportView(ListAPIView):
 
 class EmissionExportRenderer(r.CSVRenderer):
     header = ["type", "valeur", "unite", "facteur_d_emission", "resultat", "poste", "localisation", "note"]
-    labels = {
-        "resultat": "resultat_kgCO2e",
-    }
+    labels = EmissionExportSerializer.get_labels()
 
 
 class EmissionsExportView(ListAPIView):

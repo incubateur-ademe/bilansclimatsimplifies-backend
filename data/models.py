@@ -48,30 +48,30 @@ class Report(models.Model):
         MANUAL = "manuel"
         AUTO = "auto"
 
-    creation_date = models.DateTimeField(auto_now_add=True)
+    creation_date = models.DateTimeField(auto_now_add=True, verbose_name="date de création")
     modification_date = models.DateTimeField(auto_now=True)
-    publication_date = models.DateTimeField(blank=True, null=True)
-    statut = models.CharField(max_length=10, choices=Status.choices, default=Status.DRAFT)
+    publication_date = models.DateTimeField(blank=True, null=True, verbose_name="date de publication")
+    statut = models.CharField(max_length=10, choices=Status.choices, default=Status.DRAFT, verbose_name="statut")
 
     # TODO: double check that we shouldn't CASCADE on_delete
-    gestionnaire = models.ForeignKey(get_user_model(), on_delete=models.SET_NULL, blank=True, null=True)
+    gestionnaire = models.ForeignKey(
+        get_user_model(), on_delete=models.SET_NULL, blank=True, null=True, verbose_name="créateur du bilan"
+    )
 
     # company fields
     raison_sociale = models.TextField(verbose_name="raison sociale")
     nombre_salaries = models.IntegerField(verbose_name="nombre de salariés", blank=True, null=True)
-    siren = models.CharField(verbose_name="siren", max_length=9, validators=[luhn_validation])
-    region = models.CharField(
-        verbose_name="région du siège", blank=True, null=True, choices=Region.choices, max_length=4
-    )
+    siren = models.CharField(verbose_name="SIREN", max_length=9, validators=[luhn_validation])
+    region = models.CharField(verbose_name="code région", blank=True, null=True, choices=Region.choices, max_length=4)
     naf = models.CharField(
-        verbose_name="code NAF (nomenclature d'activités française)",
+        verbose_name="code NAF",
         blank=True,
         null=True,
         choices=NafDivision.choices,
         max_length=4,
     )
 
-    annee = models.IntegerField(verbose_name="année")
+    annee = models.IntegerField(verbose_name="année de reporting")
 
     manuel_poste_1 = models.IntegerField(
         verbose_name="total poste 1 (manuel)",
@@ -83,7 +83,12 @@ class Report(models.Model):
         blank=True,
         null=True,
     )
-    mode = models.CharField(max_length=10, choices=CalculationMode.choices, default=CalculationMode.AUTO)
+    mode = models.CharField(
+        max_length=10,
+        choices=CalculationMode.choices,
+        default=CalculationMode.AUTO,
+        verbose_name="mode de publication",
+    )
 
     def sum_post(self, post):
         results = [
@@ -133,7 +138,7 @@ class Emission(models.Model):
     bilan = models.ForeignKey(Report, on_delete=models.CASCADE)
 
     valeur = models.DecimalField(verbose_name="valeur", max_digits=10, decimal_places=2)  # max 99.999.999,99
-    type = models.CharField(verbose_name="type d'emission", max_length=100)
+    type = models.CharField(verbose_name="type d'émission", max_length=100)
     localisation = models.CharField(verbose_name="localisation", max_length=100, blank=True, null=True)
     unite = models.CharField(verbose_name="unité", max_length=20)
     poste = models.IntegerField(verbose_name="poste")

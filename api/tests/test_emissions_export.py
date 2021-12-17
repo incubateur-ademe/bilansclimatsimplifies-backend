@@ -81,7 +81,8 @@ class TestPrivateReportExport(APITestCase):
         self.assertEqual(len(body), 4)
         self.assertEqual(
             body[0],
-            "type,valeur,unite,facteur_d_emission,resultat_kgCO2e,poste,localisation,note",
+            # TODO: ton not kg
+            "Type d'émission,Valeur,Unité,Facteur d'émission,Résultat kgCO2e,Poste,Localisation,Note",
         )
         self.assertEqual(
             body[1],

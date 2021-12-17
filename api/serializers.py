@@ -10,6 +10,25 @@ class UserSerializer(serializers.ModelSerializer):
         read_only_fields = fields
 
 
+def verbose_fieldname_dict(model):
+    return {
+        f.name: (f.verbose_name[0].upper() + f.verbose_name[1:]) for f in model._meta.fields + model._meta.many_to_many
+    }
+
+
+def verbose_report_fieldname_dict():
+    labels = verbose_fieldname_dict(Report)
+    # the following are computed properties that can't be given a verbose_name so have to be treated manually
+    return {
+        **labels,
+        **{
+            "poste_1": "Poste 1 kgCO2e",
+            "poste_2": "Poste 2 kgCO2e",
+            "total": "Total kgCO2e",
+        },
+    }
+
+
 class ReportSerializer(serializers.ModelSerializer):
     class Meta:
         model = Report
@@ -54,6 +73,9 @@ class PrivateReportExportSerializer(serializers.ModelSerializer):
         ]
         read_only_fields = fields
 
+    def get_labels():
+        return verbose_report_fieldname_dict()
+
 
 class PublicReportExportSerializer(serializers.ModelSerializer):
     class Meta:
@@ -72,6 +94,9 @@ class PublicReportExportSerializer(serializers.ModelSerializer):
         ]
         read_only_fields = fields
 
+    def get_labels():
+        return verbose_report_fieldname_dict()
+
 
 class EmissionSerializer(serializers.ModelSerializer):
     class Meta:
@@ -84,3 +109,9 @@ class EmissionExportSerializer(serializers.ModelSerializer):
     class Meta:
         model = Emission
         fields = ["poste", "type", "localisation", "valeur", "unite", "note", "resultat", "facteur_d_emission"]
+
+    def get_labels():
+        return {
+            **verbose_fieldname_dict(Emission),
+            **{"resultat": "Résultat kgCO2e", "facteur_d_emission": "Facteur d'émission"},
+        }

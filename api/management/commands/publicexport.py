@@ -19,11 +19,7 @@ class ExportRenderer(r.CSVRenderer):
         "poste_2",
         "total",
     ]
-    labels = {
-        "poste_1": "poste_1_tCO2e",
-        "poste_2": "poste_2_tCO2e",
-        "total": "total_tCO2e",
-    }
+    labels = PublicReportExportSerializer.get_labels()
 
 
 def update_public_export():

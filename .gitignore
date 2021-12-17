@@ -8,3 +8,4 @@ scripts/*.json
 /static
 .coverage
 /cover
+*.code-workspace
