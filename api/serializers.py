@@ -1,6 +1,8 @@
 from django.contrib.auth import get_user_model
 from rest_framework import serializers
+from data.insee_naf_division_choices import NafDivision
 from data.models import Report, Emission
+from data.region_choices import Region
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -52,6 +54,8 @@ class ReportSerializer(serializers.ModelSerializer):
 
 class PrivateReportExportSerializer(serializers.ModelSerializer):
     gestionnaire = UserSerializer(read_only=True)
+    nom_naf = serializers.CharField(source="naf", read_only=True)
+    nom_region = serializers.CharField(source="region", read_only=True)
 
     class Meta:
         model = Report
@@ -59,8 +63,10 @@ class PrivateReportExportSerializer(serializers.ModelSerializer):
             "siren",
             "raison_sociale",
             "naf",
+            "nom_naf",
             "nombre_salaries",
             "region",
+            "nom_region",
             "annee",
             "statut",
             "poste_1_t",
@@ -73,19 +79,30 @@ class PrivateReportExportSerializer(serializers.ModelSerializer):
         ]
         read_only_fields = fields
 
+    def to_representation(self, instance):
+        ret = super().to_representation(instance)
+        ret["nom_naf"] = NafDivision(ret["nom_naf"]).label
+        ret["nom_region"] = Region(ret["nom_region"]).label
+        return ret
+
     def get_labels():
-        return verbose_report_fieldname_dict()
+        return {**verbose_report_fieldname_dict(), **{"nom_naf": "Division NAF", "nom_region": "Nom région"}}
 
 
 class PublicReportExportSerializer(serializers.ModelSerializer):
+    nom_naf = serializers.CharField(source="naf", read_only=True)
+    nom_region = serializers.CharField(source="region", read_only=True)
+
     class Meta:
         model = Report
         fields = [
             "siren",
             "raison_sociale",
             "naf",
+            "nom_naf",
             "nombre_salaries",
             "region",
+            "nom_region",
             "annee",
             "poste_1_t",
             "poste_2_t",
@@ -94,8 +111,14 @@ class PublicReportExportSerializer(serializers.ModelSerializer):
         ]
         read_only_fields = fields
 
+    def to_representation(self, instance):
+        ret = super().to_representation(instance)
+        ret["nom_naf"] = NafDivision(ret["nom_naf"]).label
+        ret["nom_region"] = Region(ret["nom_region"]).label
+        return ret
+
     def get_labels():
-        return verbose_report_fieldname_dict()
+        return {**verbose_report_fieldname_dict(), **{"nom_naf": "Division NAF", "nom_region": "Nom région"}}
 
 
 class EmissionSerializer(serializers.ModelSerializer):
