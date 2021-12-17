@@ -696,6 +696,44 @@
     "groupe": "Routier",
     "poste": "2"
   },
+  "Carbureacteur, large coupe (jet B)": {
+    "affichage": "Carbureacteur",
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/GJ PCI": "71.8",
+        "kgCO2e/kWh PCI": "0.259",
+        "kgCO2e/kg": "3.16",
+        "kgCO2e/litre": "2.48",
+        "kgCO2e/tep PCI": "3020"
+      },
+      "Guadeloupe, Martinique, Guyane, Corse": {
+        "kgCO2e/kWh PCI": "0.267",
+        "kgCO2e/litre": "2.5",
+        "kgCO2e/tep PCI": "3108",
+        "kgCO2e/tonne": "3124"
+      },
+      "Nouvelle Calédonie": {
+        "kgCO2e/kWh PCI": "0.267",
+        "kgCO2e/litre": "2.5",
+        "kgCO2e/tep PCI": "3108",
+        "kgCO2e/tonne": "3124"
+      },
+      "Polynésie Française": {
+        "kgCO2e/kWh PCI": "0.256",
+        "kgCO2e/litre": "2.5",
+        "kgCO2e/tep PCI": "2972",
+        "kgCO2e/tonne": "3124"
+      },
+      "Réunion": {
+        "kgCO2e/kWh PCI": "0.267",
+        "kgCO2e/litre": "2.5",
+        "kgCO2e/tep PCI": "3108",
+        "kgCO2e/tonne": "3124"
+      }
+    },
+    "groupe": "Routier",
+    "poste": "2"
+  },
   "Cargo inter-îles, Mayotte-Anjouan, Donnée 2009": {
     "affichage": "Cargo inter-îles, Mayotte-Anjouan",
     "facteurs": {
