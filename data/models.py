@@ -45,8 +45,8 @@ class Report(models.Model):
         PUBLISHED = "publié"
 
     class CalculationMode(models.TextChoices):
-        MANUAL = "manuel"
-        AUTO = "auto"
+        MANUAL = "manuel", "Déclaré"
+        AUTO = "auto", "Calculé"
 
     creation_date = models.DateTimeField(auto_now_add=True, verbose_name="date de création")
     modification_date = models.DateTimeField(auto_now=True)

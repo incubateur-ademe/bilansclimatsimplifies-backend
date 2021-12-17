@@ -83,6 +83,7 @@ class PrivateReportExportSerializer(serializers.ModelSerializer):
         ret = super().to_representation(instance)
         ret["nom_naf"] = NafDivision(ret["nom_naf"]).label
         ret["nom_region"] = Region(ret["nom_region"]).label
+        ret["mode"] = Report.CalculationMode(ret["mode"]).label
         return ret
 
     def get_labels():

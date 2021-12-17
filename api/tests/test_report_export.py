@@ -49,7 +49,7 @@ class TestPrivateReportExport(APITestCase):
         )
         self.assertTrue(
             body[1].startswith(
-                "515277358,2020,Alice's Company,01,Guadeloupe,03,Pêche et aquaculture,50,manuel,0.1,0.2,0.3,publié,"
+                "515277358,2020,Alice's Company,01,Guadeloupe,03,Pêche et aquaculture,50,Déclaré,0.1,0.2,0.3,publié,"
             )
         )
         self.assertTrue(body[1].endswith(",alice@example.com,Alice,Smith"))
