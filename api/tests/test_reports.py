@@ -368,3 +368,63 @@ class TestReportApi(APITestCase):
         report = ReportFactory.create(mode=Report.CalculationMode.MANUAL)
         self.assertIsNone(report.poste_1)
         self.assertIsNone(report.poste_1_t)
+
+    @authenticate
+    def test_invalid_report_year(self):
+        """
+        Year of report should be between 2 years ago and this year
+        """
+        self.assertEqual(len(Report.objects.all()), 0)
+        this_year = timezone.now().year
+        self.assertGreaterEqual(this_year, 2021)
+
+        payload = {
+            "raisonSociale": "My company",
+            "siren": "910546308",
+            "annee": this_year - 3,
+        }
+        response = self.client.post(reverse("reports"), payload)
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertIn("annee", response.json())
+
+        payload = {
+            "raisonSociale": "My company",
+            "siren": "910546308",
+            "annee": this_year + 1,
+        }
+        response = self.client.post(reverse("reports"), payload)
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertIn("annee", response.json())
+
+        reports = Report.objects.all()
+        self.assertEqual(len(reports), 0)
+
+    @authenticate
+    def test_invalid_employee_count(self):
+        """
+        Number of employees should be in valid range
+        """
+        self.assertEqual(len(Report.objects.all()), 0)
+
+        payload = {
+            "raisonSociale": "My company",
+            "siren": "910546308",
+            "annee": 2021,
+            "nombre_salaries": 49,
+        }
+        response = self.client.post(reverse("reports"), payload)
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertIn("nombreSalaries", response.json())
+
+        payload = {
+            "raisonSociale": "My company",
+            "siren": "910546308",
+            "annee": 2021,
+            "nombre_salaries": 501,
+        }
+        response = self.client.post(reverse("reports"), payload)
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertIn("nombreSalaries", response.json())
+
+        reports = Report.objects.all()
+        self.assertEqual(len(reports), 0)

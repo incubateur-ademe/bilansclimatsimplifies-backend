@@ -7,6 +7,7 @@ from data.insee_naf_division_choices import NafDivision
 from data.region_choices import Region
 from django.utils import timezone
 from decimal import Decimal, ROUND_HALF_UP
+from .validators import validate_employee_count, validate_report_year
 
 
 class User(AbstractUser):
@@ -60,7 +61,12 @@ class Report(models.Model):
 
     # company fields
     raison_sociale = models.TextField(verbose_name="raison sociale")
-    nombre_salaries = models.IntegerField(verbose_name="nombre de salariés", blank=True, null=True)
+    nombre_salaries = models.IntegerField(
+        verbose_name="nombre de salariés",
+        blank=True,
+        null=True,
+        validators=[validate_employee_count],
+    )
     siren = models.CharField(verbose_name="SIREN", max_length=9, validators=[luhn_validation])
     region = models.CharField(verbose_name="code région", blank=True, null=True, choices=Region.choices, max_length=4)
     naf = models.CharField(
@@ -71,7 +77,10 @@ class Report(models.Model):
         max_length=4,
     )
 
-    annee = models.IntegerField(verbose_name="année de reporting")
+    annee = models.IntegerField(
+        verbose_name="année de reporting",
+        validators=[validate_report_year],
+    )
 
     manuel_poste_1 = models.IntegerField(
         verbose_name="total poste 1 (manuel)",
