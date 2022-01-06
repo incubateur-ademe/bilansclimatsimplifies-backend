@@ -8,7 +8,7 @@
     "poste": "1"
   },
   "Articulé": {
-    "classification": "carburant",
+    "classification": "véhicule",
     "groupe": "Routier",
     "poste": "2"
   },
@@ -57,6 +57,7 @@
     "poste": "2"
   },
   "Biodiesel, Mix moyen": {
+    "classification": "carburant",
     "groupe": [
       "",
       "Routier"
@@ -67,6 +68,7 @@
     ]
   },
   "Biodiesel, sans changement d'affectation des sols": {
+    "classification": "carburant",
     "groupe": [
       "",
       "Routier"
@@ -85,6 +87,7 @@
     "poste": "1"
   },
   "Bioéthanol, sans changement d'affectation des sols": {
+    "classification": "carburant",
     "groupe": [
       "",
       "Routier"
@@ -121,7 +124,7 @@
   },
   "Carbureacteur": {
     "classification": "carburant",
-    "groupe": "Routier",
+    "groupe": "Non routier",
     "poste": "2"
   },
   "Cargo": {
@@ -174,7 +177,7 @@
   },
   "Essence aviation (AvGas)": {
     "classification": "carburant",
-    "groupe": "Routier",
+    "groupe": "Non routier",
     "poste": "2"
   },
   "Fioul Lourd": {
@@ -190,7 +193,7 @@
     "poste": "1"
   },
   "Fourgon": {
-    "classification": "carburant",
+    "classification": "véhicule",
     "groupe": "Routier",
     "poste": "2"
   },
@@ -241,7 +244,7 @@
   },
   "Gazole non routier": {
     "classification": "carburant",
-    "groupe": "Routier",
+    "groupe": "Non routier",
     "poste": "2"
   },
   "Gazole routier": {
@@ -282,7 +285,7 @@
   },
   "MDO (Marine Diesel Oil)": {
     "classification": "carburant",
-    "groupe": "Routier",
+    "groupe": "Non routier",
     "poste": "2"
   },
   "Moto =< 250 cm3": {

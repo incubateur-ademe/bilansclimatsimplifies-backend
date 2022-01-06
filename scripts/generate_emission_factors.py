@@ -48,6 +48,7 @@ def create_emission_factors_file(results):
     missing_post = []
     post_used = []
     total_efs_saved = 0
+    ignored = 0
 
     with open("./files/posts.json", "r", encoding="utf8") as jsonfile:
         posts = json.load(jsonfile)
@@ -58,6 +59,7 @@ def create_emission_factors_file(results):
         # prendre le FE France uniquement.
         location = emission["Localisation_géographique"]
         if location == "Europe":
+            ignored += 1
             continue
 
         emission_type = emission["Nom_base_français"]
@@ -92,6 +94,7 @@ def create_emission_factors_file(results):
                 duplicate_fe_by_unit[emission_key] = {}
             duplicate_fe_by_unit[emission_key][unit] = duplicate_fe_by_unit[emission_key].get(unit, 0) + 1
             duplicate_count += 1
+            continue
 
         # add to factors
         emission_factor = emission["Total_poste_non_décomposé"].replace(",", ".")
@@ -105,11 +108,12 @@ def create_emission_factors_file(results):
         json.dump(factors, jsonfile, indent=2, ensure_ascii=False)
 
     print(duplicate_fe_by_unit)
+    print(f"Total ignored: {ignored}")
     print(f"Total duplicates: {duplicate_count}")
     print(f"Missing posts: {missing_post}")
     unused_posts = [name for name in posts.keys() if name not in post_used]
     print(f"Unused posts: {unused_posts}")
-    print(f"Total efs saved: {total_efs_saved}")  # should be 522
+    print(f"Total efs saved: {total_efs_saved}")
     print(f"Total types: {len(factors.keys())}")
     return factors
 

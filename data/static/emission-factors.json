@@ -29,7 +29,7 @@
   },
   "Articulé, 34 à 40 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
     "affichage": "Articulé, 34 à 40 tonnes, Diesel routier, incorporation 7 % de biodiesel",
-    "classification": "carburant",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0631"
@@ -40,7 +40,7 @@
   },
   "Articulé, 34 à 40 tonnes, GNC": {
     "affichage": "Articulé, 34 à 40 tonnes, GNC",
-    "classification": "carburant",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.066"
@@ -51,7 +51,7 @@
   },
   "Articulé, 34 à 40 tonnes, GNL": {
     "affichage": "Articulé, 34 à 40 tonnes, GNL",
-    "classification": "carburant",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.065"
@@ -62,7 +62,7 @@
   },
   "Articulé, 34 à 40 tonnes, GNL, incorporation bio 20%": {
     "affichage": "Articulé, 34 à 40 tonnes, GNL, incorporation bio 20%",
-    "classification": "carburant",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.052"
@@ -73,7 +73,7 @@
   },
   "Articulé, 40 à 44 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
     "affichage": "Articulé, 40 à 44 tonnes",
-    "classification": "carburant",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0541"
@@ -84,7 +84,7 @@
   },
   "Articulé, 44 à 60 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
     "affichage": "Articulé, 44 à 60 tonnes",
-    "classification": "carburant",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0511"
@@ -95,7 +95,7 @@
   },
   "Articulé, 60 à 72 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
     "affichage": "Articulé, 60 à 72 tonnes",
-    "classification": "carburant",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0511"
@@ -106,7 +106,7 @@
   },
   "Articulé, 90 m3": {
     "affichage": "Articulé, 90 m3",
-    "classification": "carburant",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/m3.km": "0.0273"
@@ -117,7 +117,7 @@
   },
   "Articulé, < 34 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
     "affichage": "Articulé, < 34 tonnes",
-    "classification": "carburant",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.064"
@@ -613,7 +613,7 @@
   },
   "Biodiesel, Mix moyen, sans changement d'affectation des sols": {
     "affichage": "Biodiesel, Mix moyen",
-    "classification": null,
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/MJ PCI": "0"
@@ -630,7 +630,7 @@
   },
   "Biodiesel, sans changement d'affectation des sols": {
     "affichage": "Biodiesel, sans changement d'affectation des sols",
-    "classification": null,
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/kWh PCI": "0",
@@ -682,7 +682,7 @@
   },
   "Bioéthanol, sans changement d'affectation des sols": {
     "affichage": "Bioéthanol",
-    "classification": null,
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/MJ PCI": "0",
@@ -814,7 +814,7 @@
         "kgCO2e/tonne": "3124"
       }
     },
-    "groupe": "Routier",
+    "groupe": "Non routier",
     "poste": "2"
   },
   "Cargo inter-îles, Mayotte-Anjouan, Donnée 2009": {
@@ -1019,7 +1019,7 @@
         "kgCO2e/tonne": "3212"
       }
     },
-    "groupe": "Routier",
+    "groupe": "Non routier",
     "poste": "2"
   },
   "Essence, E10": {
@@ -1178,7 +1178,7 @@
   },
   "Fourgon, 8 m3": {
     "affichage": "Fourgon",
-    "classification": "carburant",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/m3.km": "0.144"
@@ -1356,7 +1356,7 @@
         "kgCO2e/tep PCI": "3055"
       }
     },
-    "groupe": "Routier",
+    "groupe": "Non routier",
     "poste": "2"
   },
   "Gazole routier": {
@@ -1576,7 +1576,7 @@
         "kgCO2e/tep PCI": "3169"
       }
     },
-    "groupe": "Routier",
+    "groupe": "Non routier",
     "poste": "2"
   },
   "Moto =< 250 cm3, Mixte, 2018": {
