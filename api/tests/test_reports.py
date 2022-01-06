@@ -55,6 +55,7 @@ class TestReportApi(APITestCase):
         response = self.client.post(reverse("reports"), payload)
 
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertIn("siren", response.json())
 
         payload = {
             "raisonSociale": "My company",
@@ -65,6 +66,7 @@ class TestReportApi(APITestCase):
         response = self.client.post(reverse("reports"), payload)
 
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertIn("siren", response.json())
 
     @authenticate
     def test_authenticated_create_duplicate_report(self):
@@ -84,6 +86,9 @@ class TestReportApi(APITestCase):
         response = self.client.post(reverse("reports"), payload)
 
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertEqual(
+            response.json()["nonFieldErrors"][0], "Les champs siren, annee doivent former un ensemble unique."
+        )
         reports = Report.objects.all()
         self.assertEqual(len(reports), 1)
 

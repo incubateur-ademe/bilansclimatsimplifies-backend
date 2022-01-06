@@ -3,6 +3,7 @@ from rest_framework import serializers
 from data.insee_naf_division_choices import NafDivision
 from data.models import Report, Emission
 from data.region_choices import Region
+from rest_framework.validators import UniqueTogetherValidator
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -50,6 +51,7 @@ class ReportSerializer(serializers.ModelSerializer):
             "manuel_poste_2",
             "mode",
         ]
+        validators = [UniqueTogetherValidator(queryset=Report.objects.all(), fields=["siren", "annee"])]
 
 
 class PrivateReportExportSerializer(serializers.ModelSerializer):
