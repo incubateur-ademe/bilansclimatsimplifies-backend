@@ -110,7 +110,6 @@ class TestEmissionApi(APITestCase):
             "localisation": "Guadeloupe, Martinique, Guyane, Corse",
             "valeur": 100,
             "unite": "l",
-            # TODO: test auto finding poste - shouldn't send it since it is in the file
             "poste": 1,
             "note": "Utilisé par le client",
         }

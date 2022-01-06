@@ -8,14 +8,17 @@
     "poste": "1"
   },
   "Articulé": {
+    "classification": "carburant",
     "groupe": "Routier",
     "poste": "2"
   },
   "Autobus": {
+    "classification": "véhicule",
     "groupe": "Routier",
     "poste": "2"
   },
   "Autocar": {
+    "classification": "véhicule",
     "groupe": "Routier",
     "poste": "2"
   },
@@ -24,36 +27,54 @@
     "poste": "1"
   },
   "Avion cargo": {
+    "classification": "véhicule",
     "groupe": "Non routier",
     "poste": "2"
   },
   "Avion passagers": {
+    "classification": "véhicule",
     "groupe": "Non routier",
     "poste": "2"
   },
   "Bateau automoteur": {
+    "classification": "véhicule",
     "groupe": "Non routier",
     "poste": "2"
   },
   "Bateau pousseur": {
+    "classification": "véhicule",
     "groupe": "Non routier",
     "poste": "2"
   },
   "BioGNC -Biométhane comprimé": {
+    "classification": "carburant",
     "groupe": "Routier",
     "poste": "2"
   },
   "BioGNL": {
+    "classification": "carburant",
     "groupe": "Non routier",
     "poste": "2"
   },
   "Biodiesel, Mix moyen": {
-    "groupe": "",
-    "poste": "1"
+    "groupe": [
+      "",
+      "Routier"
+    ],
+    "poste": [
+      "1",
+      "2"
+    ]
   },
   "Biodiesel, sans changement d'affectation des sols": {
-    "groupe": "",
-    "poste": "1"
+    "groupe": [
+      "",
+      "Routier"
+    ],
+    "poste": [
+      "1",
+      "2"
+    ]
   },
   "Biométhane": {
     "groupe": "",
@@ -64,8 +85,14 @@
     "poste": "1"
   },
   "Bioéthanol, sans changement d'affectation des sols": {
-    "groupe": "",
-    "poste": "1"
+    "groupe": [
+      "",
+      "Routier"
+    ],
+    "poste": [
+      "1",
+      "2"
+    ]
   },
   "Bitumes": {
     "groupe": "",
@@ -88,18 +115,22 @@
     "poste": "1"
   },
   "Camion porteur, 45 m3": {
+    "classification": "véhicule",
     "groupe": "Routier",
     "poste": "2"
   },
   "Carbureacteur": {
+    "classification": "carburant",
     "groupe": "Routier",
     "poste": "2"
   },
   "Cargo": {
+    "classification": "véhicule",
     "groupe": "Non routier",
     "poste": "2"
   },
   "Cargo inter-îles": {
+    "classification": "véhicule",
     "groupe": "Non routier",
     "poste": "2"
   },
@@ -132,14 +163,17 @@
     "poste": "1"
   },
   "Cyclomoteur": {
+    "classification": "véhicule",
     "groupe": "Routier",
     "poste": "2"
   },
   "Essence": {
+    "classification": "carburant",
     "groupe": "Routier",
     "poste": "2"
   },
   "Essence aviation (AvGas)": {
+    "classification": "carburant",
     "groupe": "Routier",
     "poste": "2"
   },
@@ -156,18 +190,22 @@
     "poste": "1"
   },
   "Fourgon": {
+    "classification": "carburant",
     "groupe": "Routier",
     "poste": "2"
   },
   "GNC, Gaz Naturel Comprimé pour véhicule routier": {
+    "classification": "carburant",
     "groupe": "Routier",
     "poste": "2"
   },
   "GNL, Gaz Naturel Liquéfié": {
+    "classification": "carburant",
     "groupe": "Routier",
     "poste": "2"
   },
   "GPL pour véhicule routier": {
+    "classification": "carburant",
     "groupe": "Routier",
     "poste": "2"
   },
@@ -184,26 +222,30 @@
     "poste": "1"
   },
   "Gaz naturel": {
-    "groupe": "Les plus utilisés",
-    "poste": "1"
-  },
-  "Gaz naturel - 2015": {
     "groupe": "",
     "poste": "1"
   },
+  "Gaz naturel - 2015": {
+    "groupe": "Les plus utilisés",
+    "poste": "1"
+  },
   "Gazier": {
+    "classification": "carburant",
     "groupe": "Non routier",
     "poste": "2"
   },
   "Gazole": {
+    "classification": "carburant",
     "groupe": "Routier",
     "poste": "2"
   },
   "Gazole non routier": {
+    "classification": "carburant",
     "groupe": "Routier",
     "poste": "2"
   },
   "Gazole routier": {
+    "classification": "carburant",
     "groupe": "Routier",
     "poste": "2"
   },
@@ -212,6 +254,7 @@
     "poste": "1"
   },
   "HFO (Heavy Fuel Oil)": {
+    "classification": "carburant",
     "groupe": "Routier",
     "poste": "2"
   },
@@ -224,10 +267,12 @@
     "poste": "1"
   },
   "Kérosène, jet A1 ou A": {
+    "classification": "carburant",
     "groupe": "Non routier",
     "poste": "2"
   },
   "LFO (Light Fuel Oil)": {
+    "classification": "carburant",
     "groupe": "Routier",
     "poste": "2"
   },
@@ -236,18 +281,22 @@
     "poste": "1"
   },
   "MDO (Marine Diesel Oil)": {
+    "classification": "carburant",
     "groupe": "Routier",
     "poste": "2"
   },
   "Moto =< 250 cm3": {
+    "classification": "véhicule",
     "groupe": "Routier",
     "poste": "2"
   },
   "Moto > 250 cm3": {
+    "classification": "véhicule",
     "groupe": "Routier",
     "poste": "2"
   },
   "Métro": {
+    "classification": "véhicule",
     "groupe": "Non routier",
     "poste": "2"
   },
@@ -256,10 +305,12 @@
     "poste": "1"
   },
   "Navette fluviale": {
+    "classification": "véhicule",
     "groupe": "Non routier",
     "poste": "2"
   },
   "Navette inter-îles": {
+    "classification": "véhicule",
     "groupe": "Non routier",
     "poste": "2"
   },
@@ -276,6 +327,7 @@
     "poste": "1"
   },
   "Porte-conteneur": {
+    "classification": "véhicule",
     "groupe": "Non routier",
     "poste": "2"
   },
@@ -288,18 +340,22 @@
     "poste": "1"
   },
   "Pétrolier": {
+    "classification": "véhicule",
     "groupe": "Non routier",
     "poste": "2"
   },
   "Rigide": {
+    "classification": "véhicule",
     "groupe": "Non routier",
     "poste": "2"
   },
   "Ro-Pax": {
+    "classification": "véhicule",
     "groupe": "Non routier",
     "poste": "2"
   },
   "Ro-Ro": {
+    "classification": "véhicule",
     "groupe": "Non routier",
     "poste": "2"
   },
@@ -308,6 +364,7 @@
     "poste": "1"
   },
   "Taxi brousse": {
+    "classification": "véhicule",
     "groupe": "Routier",
     "poste": "2"
   },
@@ -316,58 +373,72 @@
     "poste": "1"
   },
   "Train": {
+    "classification": "véhicule",
     "groupe": "Non routier",
     "poste": "2"
   },
   "Tramway": {
+    "classification": "véhicule",
     "groupe": "Non routier",
     "poste": "2"
   },
   "Trotinnette": {
+    "classification": "véhicule",
     "groupe": "Routier",
     "poste": "2"
   },
   "Utilitaire <3,5t": {
+    "classification": "véhicule",
     "groupe": "Routier",
     "poste": "2"
   },
   "VUL": {
+    "classification": "véhicule",
     "groupe": "Routier",
     "poste": "2"
   },
   "Voiture": {
+    "classification": "véhicule",
     "groupe": "Routier",
     "poste": "2"
   },
   "Voiture E85": {
+    "classification": "véhicule",
     "groupe": "Routier",
     "poste": "2"
   },
   "Voiture GNV": {
+    "classification": "véhicule",
     "groupe": "Routier",
     "poste": "2"
   },
   "Voiture GPL": {
+    "classification": "véhicule",
     "groupe": "Routier",
     "poste": "2"
   },
   "Voiture essence": {
+    "classification": "véhicule",
     "groupe": "Routier",
     "poste": "2"
   },
   "Voiture gazole": {
+    "classification": "véhicule",
     "groupe": "Routier",
     "poste": "2"
   },
   "Voiture particulière": {
+    "classification": "véhicule",
     "groupe": "Routier",
     "poste": "2"
   },
   "Vraquier": {
+    "classification": "véhicule",
     "groupe": "Non routier",
     "poste": "2"
   },
   "Vélo": {
+    "classification": "véhicule",
     "groupe": "Routier",
     "poste": "2"
   },

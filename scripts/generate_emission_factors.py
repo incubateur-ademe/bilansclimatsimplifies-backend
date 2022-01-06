@@ -77,6 +77,9 @@ def create_emission_factors_file(results):
                 "frontière": border,
                 "poste": additional_info["poste"] if additional_info else None,
                 "groupe": additional_info["groupe"] if additional_info else None,
+                "classification": additional_info["classification"]
+                if additional_info and "classification" in additional_info
+                else None,
             }
 
         location = get_location(emission)

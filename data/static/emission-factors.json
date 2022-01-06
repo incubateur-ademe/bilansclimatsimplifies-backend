@@ -1,6 +1,7 @@
 {
   "Agglomérés de houille": {
     "affichage": "Agglomérés de houille",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "95.8",
@@ -14,6 +15,7 @@
   },
   "Anthracite": {
     "affichage": "Anthracite",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "98.7",
@@ -27,6 +29,7 @@
   },
   "Articulé, 34 à 40 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
     "affichage": "Articulé, 34 à 40 tonnes, Diesel routier, incorporation 7 % de biodiesel",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0631"
@@ -37,6 +40,7 @@
   },
   "Articulé, 34 à 40 tonnes, GNC": {
     "affichage": "Articulé, 34 à 40 tonnes, GNC",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.066"
@@ -47,6 +51,7 @@
   },
   "Articulé, 34 à 40 tonnes, GNL": {
     "affichage": "Articulé, 34 à 40 tonnes, GNL",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.065"
@@ -57,6 +62,7 @@
   },
   "Articulé, 34 à 40 tonnes, GNL, incorporation bio 20%": {
     "affichage": "Articulé, 34 à 40 tonnes, GNL, incorporation bio 20%",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.052"
@@ -67,6 +73,7 @@
   },
   "Articulé, 40 à 44 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
     "affichage": "Articulé, 40 à 44 tonnes",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0541"
@@ -77,6 +84,7 @@
   },
   "Articulé, 44 à 60 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
     "affichage": "Articulé, 44 à 60 tonnes",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0511"
@@ -87,6 +95,7 @@
   },
   "Articulé, 60 à 72 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
     "affichage": "Articulé, 60 à 72 tonnes",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0511"
@@ -97,6 +106,7 @@
   },
   "Articulé, 90 m3": {
     "affichage": "Articulé, 90 m3",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/m3.km": "0.0273"
@@ -107,6 +117,7 @@
   },
   "Articulé, < 34 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
     "affichage": "Articulé, < 34 tonnes",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.064"
@@ -117,6 +128,7 @@
   },
   "Autobus, Electrique": {
     "affichage": "Autobus, Electrique",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/passager.km": "0"
@@ -127,6 +139,7 @@
   },
   "Autobus, GNV": {
     "affichage": "Autobus, GNV",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/passager.km": "0.0914"
@@ -137,6 +150,7 @@
   },
   "Autobus, Gazole": {
     "affichage": "Autobus, Gazole",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/passager.km": "0.0838"
@@ -147,6 +161,7 @@
   },
   "Autobus, Hybride parallèle": {
     "affichage": "Autobus, Hybride parallèle",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/passager.km": "0.0567"
@@ -157,6 +172,7 @@
   },
   "Autobus, Hybride série": {
     "affichage": "Autobus, Hybride série",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/passager.km": "0.0536"
@@ -167,6 +183,7 @@
   },
   "Autocar, Gazole": {
     "affichage": "Autocar",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/passager.km": "0.0237"
@@ -177,6 +194,7 @@
   },
   "Autres produits pétroliers": {
     "affichage": "Autres produits pétroliers",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "73.8",
@@ -189,6 +207,7 @@
   },
   "Avion cargo, 10 à 25 tonnes, 500 - 1000 kms, 2018, AVEC trainées": {
     "affichage": "Avion cargo, 10 à 25 tonnes, 500 - 1000 kms, 2018",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "1.59"
@@ -199,6 +218,7 @@
   },
   "Avion cargo, 10 à 25 tonnes, <500 kms, 2018, AVEC trainées": {
     "affichage": "Avion cargo, 10 à 25 tonnes, <500 kms, 2018",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "1.42"
@@ -209,6 +229,7 @@
   },
   "Avion cargo, 26 à 100 tonnes, 500 - 1000 kms, 2018, AVEC trainées": {
     "affichage": "Avion cargo, 26 à 100 tonnes, 500 - 1000 kms, 2018",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "1.58"
@@ -219,6 +240,7 @@
   },
   "Avion cargo, 26 à 100 tonnes, <500 kms, 2018, AVEC trainées": {
     "affichage": "Avion cargo, 26 à 100 tonnes, <500 kms, 2018",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "2.49"
@@ -229,6 +251,7 @@
   },
   "Avion cargo, Plus de 100 tonnes, 1000 - 3500 kms, 2018, AVEC trainées": {
     "affichage": "Avion cargo, Plus de 100 tonnes, 1000 - 3500 kms, 2018",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.796"
@@ -239,6 +262,7 @@
   },
   "Avion cargo, Plus de 100 tonnes, 500 - 1000 kms, 2018, AVEC trainées": {
     "affichage": "Avion cargo, Plus de 100 tonnes, 500 - 1000 kms, 2018",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "1.17"
@@ -249,6 +273,7 @@
   },
   "Avion cargo, Plus de 100 tonnes, <500 kms, 2018, AVEC trainées": {
     "affichage": "Avion cargo, Plus de 100 tonnes, <500 kms, 2018",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "1.59"
@@ -259,6 +284,7 @@
   },
   "Avion cargo, Plus de 100 tonnes, >3500 kms, 2018, AVEC trainées": {
     "affichage": "Avion cargo, Plus de 100 tonnes, >3500 kms, 2018",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.494"
@@ -269,6 +295,7 @@
   },
   "Avion passagers, 101-220 sièges, 1000-3500 kms, 2018, AVEC trainées": {
     "affichage": "Avion passagers, 101-220 sièges, 1000-3500 kms, 2018",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/peq.km": "0.0841",
@@ -280,6 +307,7 @@
   },
   "Avion passagers, 101-220 sièges, 500-1000 kms, 2018, AVEC trainées": {
     "affichage": "Avion passagers, 101-220 sièges, 500-1000 kms, 2018",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/peq.km": "0.104",
@@ -291,6 +319,7 @@
   },
   "Avion passagers, 101-220 sièges, <500 kms jet, 2018, AVEC trainées": {
     "affichage": "Avion passagers, 101-220 sièges, <500 kms jet, 2018",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/peq.km": "0.138",
@@ -302,6 +331,7 @@
   },
   "Avion passagers, 101-220 sièges, >3500 kms, 2018, AVEC trainées": {
     "affichage": "Avion passagers, 101-220 sièges, >3500 kms, 2018",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/peq.km": "0.0949",
@@ -313,6 +343,7 @@
   },
   "Avion passagers, 20-50 sièges, 1000-3500 kms, 2018, AVEC trainées": {
     "affichage": "Avion passagers, 20-50 sièges, 1000-3500 kms, 2018",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/peq.km": "0.235",
@@ -324,6 +355,7 @@
   },
   "Avion passagers, 20-50 sièges, 500-1000 kms, 2018, AVEC trainées": {
     "affichage": "Avion passagers, 20-50 sièges, 500-1000 kms, 2018",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/peq.km": "0.185",
@@ -335,6 +367,7 @@
   },
   "Avion passagers, 20-50 sièges, <500 kms jet, 2018, AVEC trainées": {
     "affichage": "Avion passagers, 20-50 sièges, <500 kms jet, 2018",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/peq.km": "0.239",
@@ -346,6 +379,7 @@
   },
   "Avion passagers, 20-50 sièges, <500 kms turboprop, 2018, AVEC trainées": {
     "affichage": "Avion passagers, 20-50 sièges, <500 kms turboprop, 2018",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/peq.km": "0.165",
@@ -357,6 +391,7 @@
   },
   "Avion passagers, 51-100 sièges, 1000-3500 kms, 2018, AVEC trainées": {
     "affichage": "Avion passagers, 51-100 sièges, 1000-3500 kms, 2018",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/peq.km": "0.12",
@@ -368,6 +403,7 @@
   },
   "Avion passagers, 51-100 sièges, 500-1000 kms, 2018, AVEC trainées": {
     "affichage": "Avion passagers, 51-100 sièges, 500-1000 kms, 2018",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/peq.km": "0.152",
@@ -379,6 +415,7 @@
   },
   "Avion passagers, 51-100 sièges, <500 kms  jet, 2018, AVEC trainées": {
     "affichage": "Avion passagers, 51-100 sièges, <500 kms  jet, 2018",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/peq.km": "0.199",
@@ -390,6 +427,7 @@
   },
   "Avion passagers, 51-100 sièges, <500 kms  turboprop, 2018, AVEC trainées": {
     "affichage": "Avion passagers, 51-100 sièges, <500 kms  turboprop, 2018",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/peq.km": "0.117",
@@ -401,6 +439,7 @@
   },
   "Avion passagers, >220 sièges, 1000-3500 kms, 2018, AVEC trainées": {
     "affichage": "Avion passagers, >220 sièges, 1000-3500 kms, 2018",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/peq.km": "0.0807",
@@ -412,6 +451,7 @@
   },
   "Avion passagers, >220 sièges, >3500 kms, 2018, AVEC trainées": {
     "affichage": "Avion passagers, >220 sièges, >3500 kms, 2018",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/peq.km": "0.0686",
@@ -423,6 +463,7 @@
   },
   "Avion passagers, Court courrier, 2018, AVEC trainées": {
     "affichage": "Avion passagers, Court courrier, 2018",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/peq.km": "0.117",
@@ -434,6 +475,7 @@
   },
   "Avion passagers, Long courrier, 2018, AVEC trainées": {
     "affichage": "Avion passagers, Long courrier, 2018",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/peq.km": "0.0687",
@@ -445,6 +487,7 @@
   },
   "Avion passagers, Moyen courrier, 2018, AVEC trainées": {
     "affichage": "Avion passagers, Moyen courrier, 2018",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/peq.km": "0.0847",
@@ -456,6 +499,7 @@
   },
   "Bateau automoteur, 1 000 à 1499 TPL": {
     "affichage": "Bateau automoteur, 1 000 à 1499 TPL",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0236"
@@ -466,6 +510,7 @@
   },
   "Bateau automoteur, 1 500 à 2 999 TPL": {
     "affichage": "Bateau automoteur, 1 500 à 2 999 TPL",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0154"
@@ -476,6 +521,7 @@
   },
   "Bateau automoteur, 400 à 649 TPL": {
     "affichage": "Bateau automoteur, 400 à 649 TPL",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0285"
@@ -486,6 +532,7 @@
   },
   "Bateau automoteur, 650 à 999 TPL": {
     "affichage": "Bateau automoteur, 650 à 999 TPL",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0205"
@@ -496,6 +543,7 @@
   },
   "Bateau automoteur, < 400 TPL": {
     "affichage": "Bateau automoteur, < 400 TPL",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0262"
@@ -506,6 +554,7 @@
   },
   "Bateau automoteur, > 3 000 TPL": {
     "affichage": "Bateau automoteur, > 3 000 TPL",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.011"
@@ -516,6 +565,7 @@
   },
   "Bateau pousseur, < 880 kW": {
     "affichage": "Bateau pousseur, < 880 kW",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0315"
@@ -526,6 +576,7 @@
   },
   "Bateau pousseur, > 880 kW": {
     "affichage": "Bateau pousseur, > 880 kW",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "8.80E-03"
@@ -536,6 +587,7 @@
   },
   "BioGNC -Biométhane comprimé, Pour véhicule routier, Mix Moyen": {
     "affichage": "BioGNC -Biométhane comprimé",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "0.434",
@@ -550,6 +602,7 @@
   },
   "BioGNL, Carburant, Issu d'épuration cryogénique de biogaz": {
     "affichage": "BioGNL",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/kWh (PCI)": "7.00E-03"
@@ -560,16 +613,24 @@
   },
   "Biodiesel, Mix moyen, sans changement d'affectation des sols": {
     "affichage": "Biodiesel, Mix moyen",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/MJ PCI": "0"
       }
     },
-    "groupe": "",
-    "poste": "1"
+    "groupe": [
+      "",
+      "Routier"
+    ],
+    "poste": [
+      "1",
+      "2"
+    ]
   },
   "Biodiesel, sans changement d'affectation des sols": {
     "affichage": "Biodiesel, sans changement d'affectation des sols",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/kWh PCI": "0",
@@ -578,11 +639,18 @@
         "kgCO2e/tonne": "0"
       }
     },
-    "groupe": "",
-    "poste": "1"
+    "groupe": [
+      "",
+      "Routier"
+    ],
+    "poste": [
+      "1",
+      "2"
+    ]
   },
   "Biométhane, Injecté dans les réseaux, Mix moyen": {
     "affichage": "Biométhane",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "0.405",
@@ -599,6 +667,7 @@
   },
   "Biopropane, mix annuel 2020": {
     "affichage": "Biopropane",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "0",
@@ -613,6 +682,7 @@
   },
   "Bioéthanol, sans changement d'affectation des sols": {
     "affichage": "Bioéthanol",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/MJ PCI": "0",
@@ -622,11 +692,18 @@
         "kgCO2e/tonne": "0"
       }
     },
-    "groupe": "",
-    "poste": "1"
+    "groupe": [
+      "",
+      "Routier"
+    ],
+    "poste": [
+      "1",
+      "2"
+    ]
   },
   "Bitumes": {
     "affichage": "Bitumes",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "81.8",
@@ -639,6 +716,7 @@
   },
   "Bois bûche, 20% d'humidité": {
     "affichage": "Bois bûche",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/kWh PCI": "0.0188",
@@ -650,6 +728,7 @@
   },
   "Briquette de lignite": {
     "affichage": "Briquette de lignite",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "99.2",
@@ -663,6 +742,7 @@
   },
   "Broyats de cagettes et de pallettes, 20% d'humidité": {
     "affichage": "Broyats de cagettes et de pallettes",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/kWh PCI": "2.97E-04",
@@ -674,6 +754,7 @@
   },
   "Butane, inclus maritime": {
     "affichage": "Butane",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "64.8",
@@ -688,6 +769,7 @@
   },
   "Camion porteur, 45 m3": {
     "affichage": "Camion porteur",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/m3.km": "0.0426"
@@ -698,6 +780,7 @@
   },
   "Carbureacteur, large coupe (jet B)": {
     "affichage": "Carbureacteur",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "71.8",
@@ -736,6 +819,7 @@
   },
   "Cargo inter-îles, Mayotte-Anjouan, Donnée 2009": {
     "affichage": "Cargo inter-îles, Mayotte-Anjouan",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0537"
@@ -746,6 +830,7 @@
   },
   "Cargo inter-îles, Petit Terre-Grande Terre, Donnée 2009": {
     "affichage": "Cargo inter-îles, Petit Terre-Grande Terre",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0892"
@@ -756,6 +841,7 @@
   },
   "Cargo inter-îles, Polynésie, Donnée 2009": {
     "affichage": "Cargo inter-îles, Polynésie",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.019"
@@ -766,6 +852,7 @@
   },
   "Cargo, 10 000 à 20 000 tonnes, HFO-MGO": {
     "affichage": "Cargo, 10 000 à 20 000 tonnes",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.012"
@@ -776,6 +863,7 @@
   },
   "Cargo, < 10 000 tonnes, HFO-MGO": {
     "affichage": "Cargo, < 10 000 tonnes",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0174"
@@ -786,6 +874,7 @@
   },
   "Charbon sous-bitumineux, PCS entre 17 435 et 23 865 kJ/kg": {
     "affichage": "Charbon sous-bitumineux",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "96.8",
@@ -799,6 +888,7 @@
   },
   "Charbon à coke, PCS supérieur à 23865 kJ/kg": {
     "affichage": "Charbon à coke",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "95.8",
@@ -812,6 +902,7 @@
   },
   "Charbon à vapeur, PCS supérieur à 23865 kJ/kg": {
     "affichage": "Charbon à vapeur",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "95.8",
@@ -825,6 +916,7 @@
   },
   "Coke de houille": {
     "affichage": "Coke de houille",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "108",
@@ -838,6 +930,7 @@
   },
   "Coke de lignite": {
     "affichage": "Coke de lignite",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "109",
@@ -851,6 +944,7 @@
   },
   "Coke de pétrole": {
     "affichage": "Coke de pétrole",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "96.8",
@@ -862,6 +956,7 @@
   },
   "Combustible haute viscosité (CHV)": {
     "affichage": "Combustible haute viscosité (CHV)",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "80.5",
@@ -875,6 +970,7 @@
   },
   "Cyclomoteur, Mixte, 2018": {
     "affichage": "Cyclomoteur, Mixte",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0.0524"
@@ -885,6 +981,7 @@
   },
   "Cyclomoteur, Rural, 2018": {
     "affichage": "Cyclomoteur, Rural",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0.0524"
@@ -895,6 +992,7 @@
   },
   "Cyclomoteur, Urbain, 2018": {
     "affichage": "Cyclomoteur, Urbain",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0.0524"
@@ -905,6 +1003,7 @@
   },
   "Essence aviation (AvGas)": {
     "affichage": "Essence aviation (AvGas)",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "71.8",
@@ -925,6 +1024,7 @@
   },
   "Essence, E10": {
     "affichage": "Essence, E10",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "69.3",
@@ -939,6 +1039,7 @@
   },
   "Essence, E85": {
     "affichage": "Essence, E85",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "16.1",
@@ -953,6 +1054,7 @@
   },
   "Essence, Supercarburant sans plomb (95, 95-E10, 98)": {
     "affichage": "Essence, Supercarburant sans plomb (95, 95-E10, 98)",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "69.2",
@@ -991,6 +1093,7 @@
   },
   "Fioul Lourd, commercial": {
     "affichage": "Fioul Lourd",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "78.5",
@@ -1029,6 +1132,7 @@
   },
   "Fioul domestique": {
     "affichage": "Fioul domestique",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "75.5",
@@ -1061,6 +1165,7 @@
   },
   "Fioul à base de carbone recyclé, VALORTEC, Basse teneur en soufre": {
     "affichage": "Fioul à base de carbone recyclé",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "78.4",
@@ -1073,6 +1178,7 @@
   },
   "Fourgon, 8 m3": {
     "affichage": "Fourgon",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/m3.km": "0.144"
@@ -1083,6 +1189,7 @@
   },
   "GNC, Gaz Naturel Comprimé pour véhicule routier": {
     "affichage": "GNC, Gaz Naturel Comprimé pour véhicule routier",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "52",
@@ -1097,6 +1204,7 @@
   },
   "GNL, Gaz Naturel Liquéfié, (inclus routier, maritime et fluvial)": {
     "affichage": "GNL, Gaz Naturel Liquéfié",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "52",
@@ -1111,6 +1219,7 @@
   },
   "GPL pour véhicule routier": {
     "affichage": "GPL pour véhicule routier",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "64.8",
@@ -1143,6 +1252,7 @@
   },
   "Gaz d'aciérie": {
     "affichage": "Gaz d'aciérie",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "183"
@@ -1153,6 +1263,7 @@
   },
   "Gaz de cokerie": {
     "affichage": "Gaz de cokerie",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "47.5"
@@ -1163,6 +1274,7 @@
   },
   "Gaz de haut fourneau": {
     "affichage": "Gaz de haut fourneau",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "268"
@@ -1171,21 +1283,9 @@
     "groupe": "",
     "poste": "1"
   },
-  "Gaz naturel": {
-    "affichage": "Gaz naturel",
-    "facteurs": {
-      "France continentale : Type B, nord": {
-        "kgCO2e/m3 (n)": "1.81"
-      },
-      "France continentale : Type H, France continentale sauf nord": {
-        "kgCO2e/m3 (n)": "2.12"
-      }
-    },
-    "groupe": "Les plus utilisés",
-    "poste": "1"
-  },
   "Gaz naturel - 2015, mix moyen, consommation": {
     "affichage": "Gaz naturel - 2015",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "52",
@@ -1197,11 +1297,34 @@
         "kgCO2e/m3": "1.81"
       }
     },
+    "groupe": "Les plus utilisés",
+    "poste": "1"
+  },
+  "Gaz naturel, Type B, nord": {
+    "affichage": "Gaz naturel, Type B, nord",
+    "classification": null,
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/m3 (n)": "1.81"
+      }
+    },
+    "groupe": "",
+    "poste": "1"
+  },
+  "Gaz naturel, Type H, France continentale sauf nord": {
+    "affichage": "Gaz naturel, Type H, France continentale sauf nord",
+    "classification": null,
+    "facteurs": {
+      "France continentale": {
+        "kgCO2e/m3 (n)": "2.12"
+      }
+    },
     "groupe": "",
     "poste": "1"
   },
   "Gazier, Petit GPL, Donnée 2009": {
     "affichage": "Gazier, Petit GPL",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0469"
@@ -1212,6 +1335,7 @@
   },
   "Gazier, VLGC (Very Large Gas Carrier), Donnée 2009": {
     "affichage": "Gazier, VLGC (Very Large Gas Carrier)",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0127"
@@ -1222,6 +1346,7 @@
   },
   "Gazole non routier": {
     "affichage": "Gazole non routier",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "72.7",
@@ -1236,6 +1361,7 @@
   },
   "Gazole routier": {
     "affichage": "Gazole routier",
+    "classification": "carburant",
     "facteurs": {
       "Guadeloupe, Martinique, Guyane, Corse": {
         "kgCO2e/kWh PCI": "0.271",
@@ -1267,6 +1393,7 @@
   },
   "Gazole routier, B10": {
     "affichage": "Gazole routier, B10",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "68.2",
@@ -1280,6 +1407,7 @@
   },
   "Gazole routier, B100": {
     "affichage": "Gazole routier, B100",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "0",
@@ -1293,6 +1421,7 @@
   },
   "Gazole routier, B7": {
     "affichage": "Gazole routier, B7",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "70.6",
@@ -1307,6 +1436,7 @@
   },
   "Gazole, B30": {
     "affichage": "Gazole",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "54.1",
@@ -1321,6 +1451,7 @@
   },
   "Granulés bois, 8% d'humidité": {
     "affichage": "Granulés bois",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/kWh PCI": "0.014",
@@ -1332,6 +1463,7 @@
   },
   "HFO (Heavy Fuel Oil), ISO 8217 classes RME à RMK": {
     "affichage": "HFO (Heavy Fuel Oil)",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "78.5",
@@ -1346,6 +1478,7 @@
   },
   "Houille, PCS supérieur à 23865 kJ/kg": {
     "affichage": "Houille",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "96.1",
@@ -1359,6 +1492,7 @@
   },
   "Hoverboard": {
     "affichage": "Hoverboard",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/heure": "6.25E-03"
@@ -1369,6 +1503,7 @@
   },
   "Huiles de schistes": {
     "affichage": "Huiles de schistes",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "73.2",
@@ -1381,6 +1516,7 @@
   },
   "Kérosène, jet A1 ou A": {
     "affichage": "Kérosène",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "71.8",
@@ -1401,6 +1537,7 @@
   },
   "LFO (Light Fuel Oil), ISO 8217 classes RMA à RMD (maritime)": {
     "affichage": "LFO (Light Fuel Oil)",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "75.5",
@@ -1415,6 +1552,7 @@
   },
   "Lignite, PCS inférieur à 17435 kJ/kg": {
     "affichage": "Lignite",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "101",
@@ -1428,6 +1566,7 @@
   },
   "MDO (Marine Diesel Oil), ISO 8217 classes DMX à DMC": {
     "affichage": "MDO (Marine Diesel Oil)",
+    "classification": "carburant",
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "75.5",
@@ -1442,6 +1581,7 @@
   },
   "Moto =< 250 cm3, Mixte, 2018": {
     "affichage": "Moto =< 250 cm3, Mixte",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0.0495"
@@ -1452,6 +1592,7 @@
   },
   "Moto =< 250 cm3, Rural, 2018": {
     "affichage": "Moto =< 250 cm3, Rural",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0.0517"
@@ -1462,6 +1603,7 @@
   },
   "Moto =< 250 cm3, Urbain, 2018": {
     "affichage": "Moto =< 250 cm3, Urbain",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0.0472"
@@ -1472,6 +1614,7 @@
   },
   "Moto > 250 cm3, Mixte, 2018": {
     "affichage": "Moto > 250 cm3, Mixte",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0.135"
@@ -1482,6 +1625,7 @@
   },
   "Moto > 250 cm3, Rural, 2018": {
     "affichage": "Moto > 250 cm3, Rural",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0.124"
@@ -1492,6 +1636,7 @@
   },
   "Moto > 250 cm3, Urbain, 2018": {
     "affichage": "Moto > 250 cm3, Urbain",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0.137"
@@ -1502,6 +1647,7 @@
   },
   "Métro, 2019, Ile de France": {
     "affichage": "Métro",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale : Ile de France": {
         "kgCO2e/passager.km": "0"
@@ -1512,6 +1658,7 @@
   },
   "Naphta": {
     "affichage": "Naphta",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "73.8",
@@ -1524,6 +1671,7 @@
   },
   "Navette fluviale, Donnée 2009": {
     "affichage": "Navette fluviale",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/passager.km": "0.051"
@@ -1534,6 +1682,7 @@
   },
   "Navette inter-îles, Mayotte-Anjouan": {
     "affichage": "Navette inter-îles, Mayotte-Anjouan",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/passager.km": "0.34"
@@ -1544,6 +1693,7 @@
   },
   "Navette inter-îles, Petit Terre-Grande Terre": {
     "affichage": "Navette inter-îles, Petit Terre-Grande Terre",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/passager.km": "0.275"
@@ -1554,6 +1704,7 @@
   },
   "Navette inter-îles, Polynésie": {
     "affichage": "Navette inter-îles, Polynésie",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/passager.km": "0.198"
@@ -1564,6 +1715,7 @@
   },
   "Paille, 10% d'humidité": {
     "affichage": "Paille",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/kWh PCI": "0",
@@ -1575,6 +1727,7 @@
   },
   "Plaquettes forestières, 25% d'humidité": {
     "affichage": "Plaquettes forestières",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/kWh PCI": "0.0132",
@@ -1586,6 +1739,7 @@
   },
   "Pneumatiques usagés non réutilisables, Mix combustible moyen": {
     "affichage": "Pneumatiques usagés non réutilisables, Mix combustible moyen",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "59"
@@ -1596,6 +1750,7 @@
   },
   "Pneumatiques usagés non réutilisables, Poids Lourds": {
     "affichage": "Pneumatiques usagés non réutilisables, Poids Lourds",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "43"
@@ -1606,6 +1761,7 @@
   },
   "Pneumatiques usagés non réutilisables, Véhicules Légers": {
     "affichage": "Pneumatiques usagés non réutilisables, Véhicules Légers",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "62"
@@ -1616,6 +1772,7 @@
   },
   "Porte-conteneur, Dry, Asie - Europe du Nord": {
     "affichage": "Porte-conteneur, Dry, Asie - Europe du Nord",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "5.10E-03"
@@ -1626,6 +1783,7 @@
   },
   "Porte-conteneur, Dry, Asie - Méditerranée": {
     "affichage": "Porte-conteneur, Dry, Asie - Méditerranée",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "6.40E-03"
@@ -1636,6 +1794,7 @@
   },
   "Porte-conteneur, Dry, Autres liaisons détaillées": {
     "affichage": "Porte-conteneur, Dry, Autres liaisons détaillées",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.012"
@@ -1646,6 +1805,7 @@
   },
   "Porte-conteneur, Dry, Autres liaisons majeures": {
     "affichage": "Porte-conteneur, Dry, Autres liaisons majeures",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "8.80E-03"
@@ -1656,6 +1816,7 @@
   },
   "Porte-conteneur, Dry, Europe - Afrique": {
     "affichage": "Porte-conteneur, Dry, Europe - Afrique",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "1.00E-02"
@@ -1666,6 +1827,7 @@
   },
   "Porte-conteneur, Dry, Europe - Amérique du Sud et Centrale": {
     "affichage": "Porte-conteneur, Dry, Europe - Amérique du Sud et Centrale",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "8.10E-03"
@@ -1676,6 +1838,7 @@
   },
   "Porte-conteneur, Dry, Europe - Moyen-Orient et Inde": {
     "affichage": "Porte-conteneur, Dry, Europe - Moyen-Orient et Inde",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "6.60E-03"
@@ -1686,6 +1849,7 @@
   },
   "Porte-conteneur, Dry, Europe - Océanie": {
     "affichage": "Porte-conteneur, Dry, Europe - Océanie",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.011"
@@ -1696,6 +1860,7 @@
   },
   "Porte-conteneur, Dry, Europe du Nord - Amérique du Nord, façade atlantique": {
     "affichage": "Porte-conteneur, Dry, Europe du Nord - Amérique du Nord, façade atlantique",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "1.00E-02"
@@ -1706,6 +1871,7 @@
   },
   "Porte-conteneur, Dry, Europe du Nord - Amérique du Nord, façade pacifique": {
     "affichage": "Porte-conteneur, Dry, Europe du Nord - Amérique du Nord, façade pacifique",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "9.70E-03"
@@ -1716,6 +1882,7 @@
   },
   "Porte-conteneur, Dry, Europe du Nord - Médtierranée": {
     "affichage": "Porte-conteneur, Dry, Europe du Nord - Médtierranée",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "1.00E-02"
@@ -1726,6 +1893,7 @@
   },
   "Porte-conteneur, Dry, Intra Europe du Nord": {
     "affichage": "Porte-conteneur, Dry, Intra Europe du Nord",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.014"
@@ -1736,6 +1904,7 @@
   },
   "Porte-conteneur, Dry, Intra Méditerranée": {
     "affichage": "Porte-conteneur, Dry, Intra Méditerranée",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.015"
@@ -1746,6 +1915,7 @@
   },
   "Porte-conteneur, Dry, Méditerranée - Amérique du Nord, façade atlantique": {
     "affichage": "Porte-conteneur, Dry, Méditerranée - Amérique du Nord, façade atlantique",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "1.00E-02"
@@ -1756,6 +1926,7 @@
   },
   "Porte-conteneur, Dry, Méditerranée - Amérique du Nord, façade pacifique": {
     "affichage": "Porte-conteneur, Dry, Méditerranée - Amérique du Nord, façade pacifique",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "8.60E-03"
@@ -1766,6 +1937,7 @@
   },
   "Porte-conteneur, Dry, Trans-Atlantique": {
     "affichage": "Porte-conteneur, Dry, Trans-Atlantique",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "9.80E-03"
@@ -1776,6 +1948,7 @@
   },
   "Porte-conteneur, Dry, Trans-Suez": {
     "affichage": "Porte-conteneur, Dry, Trans-Suez",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "6.80E-03"
@@ -1786,6 +1959,7 @@
   },
   "Porte-conteneur, Dry, Valeur moyenne": {
     "affichage": "Porte-conteneur, Dry, Valeur moyenne",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "7.80E-03"
@@ -1796,6 +1970,7 @@
   },
   "Porte-conteneur, Reefer, Asie - Europe du Nord": {
     "affichage": "Porte-conteneur, Reefer, Asie - Europe du Nord",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "1.00E-02"
@@ -1806,6 +1981,7 @@
   },
   "Porte-conteneur, Reefer, Asie - Méditerranée": {
     "affichage": "Porte-conteneur, Reefer, Asie - Méditerranée",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.012"
@@ -1816,6 +1992,7 @@
   },
   "Porte-conteneur, Reefer, Autres liaisons détaillées": {
     "affichage": "Porte-conteneur, Reefer, Autres liaisons détaillées",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.019"
@@ -1826,6 +2003,7 @@
   },
   "Porte-conteneur, Reefer, Autres liaisons majeures": {
     "affichage": "Porte-conteneur, Reefer, Autres liaisons majeures",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.014"
@@ -1836,6 +2014,7 @@
   },
   "Porte-conteneur, Reefer, Europe - Afrique": {
     "affichage": "Porte-conteneur, Reefer, Europe - Afrique",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.017"
@@ -1846,6 +2025,7 @@
   },
   "Porte-conteneur, Reefer, Europe - Amérique du Sud et Centrale": {
     "affichage": "Porte-conteneur, Reefer, Europe - Amérique du Sud et Centrale",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.014"
@@ -1856,6 +2036,7 @@
   },
   "Porte-conteneur, Reefer, Europe - Moyen-Orient et Inde": {
     "affichage": "Porte-conteneur, Reefer, Europe - Moyen-Orient et Inde",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.012"
@@ -1866,6 +2047,7 @@
   },
   "Porte-conteneur, Reefer, Europe - Océanie": {
     "affichage": "Porte-conteneur, Reefer, Europe - Océanie",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.016"
@@ -1876,6 +2058,7 @@
   },
   "Porte-conteneur, Reefer, Europe du Nord - Amérique du Nord, façade atlantique": {
     "affichage": "Porte-conteneur, Reefer, Europe du Nord - Amérique du Nord, façade atlantique",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.015"
@@ -1886,6 +2069,7 @@
   },
   "Porte-conteneur, Reefer, Europe du Nord - Amérique du Nord, façade pacifique": {
     "affichage": "Porte-conteneur, Reefer, Europe du Nord - Amérique du Nord, façade pacifique",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.015"
@@ -1896,6 +2080,7 @@
   },
   "Porte-conteneur, Reefer, Europe du Nord - Médtierranée": {
     "affichage": "Porte-conteneur, Reefer, Europe du Nord - Médtierranée",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.017"
@@ -1906,6 +2091,7 @@
   },
   "Porte-conteneur, Reefer, Intra Europe du Nord": {
     "affichage": "Porte-conteneur, Reefer, Intra Europe du Nord",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.022"
@@ -1916,6 +2102,7 @@
   },
   "Porte-conteneur, Reefer, Intra Méditerranée": {
     "affichage": "Porte-conteneur, Reefer, Intra Méditerranée",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.025"
@@ -1926,6 +2113,7 @@
   },
   "Porte-conteneur, Reefer, Méditerranée - Amérique du Nord, façade atlantique": {
     "affichage": "Porte-conteneur, Reefer, Méditerranée - Amérique du Nord, façade atlantique",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.016"
@@ -1936,6 +2124,7 @@
   },
   "Porte-conteneur, Reefer, Méditerranée - Amérique du Nord, façade pacifique": {
     "affichage": "Porte-conteneur, Reefer, Méditerranée - Amérique du Nord, façade pacifique",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.014"
@@ -1946,6 +2135,7 @@
   },
   "Porte-conteneur, Reefer, Trans-Atlantique": {
     "affichage": "Porte-conteneur, Reefer, Trans-Atlantique",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.015"
@@ -1956,6 +2146,7 @@
   },
   "Porte-conteneur, Reefer, Trans-Suez": {
     "affichage": "Porte-conteneur, Reefer, Trans-Suez",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.013"
@@ -1966,6 +2157,7 @@
   },
   "Porte-conteneur, Reefer, Valeur moyenne": {
     "affichage": "Porte-conteneur, Reefer, Valeur moyenne",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.013"
@@ -1976,6 +2168,7 @@
   },
   "Propane, inclus maritime": {
     "affichage": "Propane",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "64.8",
@@ -1990,6 +2183,7 @@
   },
   "Pétrole Brut": {
     "affichage": "Pétrole Brut",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "73.2",
@@ -2001,6 +2195,7 @@
   },
   "Pétrolier, 5 000 à 60 000 tonnes, HFO-MGO": {
     "affichage": "Pétrolier, 5 000 à 60 000 tonnes",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.019"
@@ -2011,6 +2206,7 @@
   },
   "Pétrolier, 60 000 à 200 000 tonnes, HFO-MGO": {
     "affichage": "Pétrolier, 60 000 à 200 000 tonnes",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "8.09E-03"
@@ -2021,6 +2217,7 @@
   },
   "Pétrolier, < 5 000 tonnes, HFO-MGO": {
     "affichage": "Pétrolier, < 5 000 tonnes",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.056"
@@ -2031,6 +2228,7 @@
   },
   "Pétrolier, > 200 000 tonnes, GNL": {
     "affichage": "Pétrolier, > 200 000 tonnes, GNL",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "1.90E-03"
@@ -2041,6 +2239,7 @@
   },
   "Pétrolier, > 200 000 tonnes, HFO-MGO": {
     "affichage": "Pétrolier, > 200 000 tonnes, HFO-MGO",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "2.40E-03"
@@ -2051,6 +2250,7 @@
   },
   "Rigide, 12 à 20 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
     "affichage": "Rigide, 12 à 20 tonnes, Diesel routier, incorporation 7 % de biodiesel",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.12"
@@ -2061,6 +2261,7 @@
   },
   "Rigide, 12 à 20 tonnes, GNC": {
     "affichage": "Rigide, 12 à 20 tonnes, GNC",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.13"
@@ -2071,6 +2272,7 @@
   },
   "Rigide, 12 à 20 tonnes, GNL": {
     "affichage": "Rigide, 12 à 20 tonnes, GNL",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.13"
@@ -2081,6 +2283,7 @@
   },
   "Rigide, 20 à 26 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
     "affichage": "Rigide, 20 à 26 tonnes, Diesel routier, incorporation 7 % de biodiesel",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0242"
@@ -2091,6 +2294,7 @@
   },
   "Rigide, 20 à 26 tonnes, GNC": {
     "affichage": "Rigide, 20 à 26 tonnes, GNC",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.12"
@@ -2101,6 +2305,7 @@
   },
   "Rigide, 20 à 26 tonnes, GNL": {
     "affichage": "Rigide, 20 à 26 tonnes, GNL",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.14"
@@ -2111,6 +2316,7 @@
   },
   "Rigide, 26 à 32 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
     "affichage": "Rigide, 26 à 32 tonnes",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0781"
@@ -2121,6 +2327,7 @@
   },
   "Rigide, 3,5 à 7,5 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
     "affichage": "Rigide, 3,5 à 7,5 tonnes, Diesel routier, incorporation 7 % de biodiesel",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.294"
@@ -2131,6 +2338,7 @@
   },
   "Rigide, 3,5 à 7,5 tonnes, Electrique": {
     "affichage": "Rigide, 3,5 à 7,5 tonnes, Electrique",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0"
@@ -2141,6 +2349,7 @@
   },
   "Rigide, 3,5 à 7,5 tonnes, GNC": {
     "affichage": "Rigide, 3,5 à 7,5 tonnes, GNC",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.31"
@@ -2151,6 +2360,7 @@
   },
   "Rigide, 3,5 à 7,5 tonnes, Hybride parallèle": {
     "affichage": "Rigide, 3,5 à 7,5 tonnes, Hybride parallèle",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.22"
@@ -2161,6 +2371,7 @@
   },
   "Rigide, 3,5 à 7,5 tonnes, Hybride série": {
     "affichage": "Rigide, 3,5 à 7,5 tonnes, Hybride série",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.24"
@@ -2171,6 +2382,7 @@
   },
   "Rigide, 7,5 à 12 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
     "affichage": "Rigide, 7,5 à 12 tonnes, Diesel routier, incorporation 7 % de biodiesel",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.186"
@@ -2181,6 +2393,7 @@
   },
   "Rigide, 7,5 à 12 tonnes, GNC": {
     "affichage": "Rigide, 7,5 à 12 tonnes, GNC",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.19"
@@ -2191,6 +2404,7 @@
   },
   "Ro-Pax, HFO-MGO": {
     "affichage": "Ro-Pax",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.19"
@@ -2201,6 +2415,7 @@
   },
   "Ro-Ro, Camions et Remorques, HFO-MGO": {
     "affichage": "Ro-Ro, Camions et Remorques",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0927"
@@ -2211,6 +2426,7 @@
   },
   "Ro-Ro, Chargement moyen, HFO-MGO": {
     "affichage": "Ro-Ro, Chargement moyen",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0418"
@@ -2221,6 +2437,7 @@
   },
   "Ro-Ro, Remorques uniquement, HFO-MGO": {
     "affichage": "Ro-Ro, Remorques uniquement",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0628"
@@ -2231,6 +2448,7 @@
   },
   "Sciures et chutes de scieries, 50% d'humidité": {
     "affichage": "Sciures et chutes de scieries",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/kWh PCI": "1.99E-04",
@@ -2242,6 +2460,7 @@
   },
   "Taxi brousse": {
     "affichage": "Taxi brousse",
+    "classification": "véhicule",
     "facteurs": {
       "Mayotte": {
         "kgCO2e/passager.km": "0.0318"
@@ -2252,6 +2471,7 @@
   },
   "Taxi brousse, véhicule plein": {
     "affichage": "Taxi brousse, véhicule plein",
+    "classification": "véhicule",
     "facteurs": {
       "Mayotte": {
         "kgCO2e/km": "0.49"
@@ -2262,6 +2482,7 @@
   },
   "Taxi brousse, véhicule vide": {
     "affichage": "Taxi brousse, véhicule vide",
+    "classification": "véhicule",
     "facteurs": {
       "Mayotte": {
         "kgCO2e/km": "0.445"
@@ -2272,6 +2493,7 @@
   },
   "Tourbe": {
     "affichage": "Tourbe",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/GJ PCI": "110",
@@ -2285,6 +2507,7 @@
   },
   "Train, Motorisation moyenne, Chargement dense": {
     "affichage": "Train, Motorisation moyenne, Chargement dense",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "4.37E-03"
@@ -2295,6 +2518,7 @@
   },
   "Train, Motorisation moyenne, Chargement léger": {
     "affichage": "Train, Motorisation moyenne, Chargement léger",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "6.51E-03"
@@ -2305,6 +2529,7 @@
   },
   "Train, Motorisation moyenne, Chargement moyen": {
     "affichage": "Train, Motorisation moyenne, Chargement moyen",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "5.05E-03"
@@ -2315,6 +2540,7 @@
   },
   "Train, Traction diesel, Chargement dense": {
     "affichage": "Train, Traction diesel, Chargement dense",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0192"
@@ -2325,6 +2551,7 @@
   },
   "Train, Traction diesel, Chargement léger": {
     "affichage": "Train, Traction diesel, Chargement léger",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0286"
@@ -2335,6 +2562,7 @@
   },
   "Train, Traction diesel, Chargement moyen": {
     "affichage": "Train, Traction diesel, Chargement moyen",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0222"
@@ -2345,6 +2573,7 @@
   },
   "Train, Traction électrique, Chargement dense": {
     "affichage": "Train, Traction électrique, Chargement dense",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "6.59E-04"
@@ -2355,6 +2584,7 @@
   },
   "Train, Traction électrique, Chargement léger": {
     "affichage": "Train, Traction électrique, Chargement léger",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "9.84E-04"
@@ -2365,6 +2595,7 @@
   },
   "Train, Traction électrique, Chargement moyen": {
     "affichage": "Train, Traction électrique, Chargement moyen",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "7.63E-04"
@@ -2375,6 +2606,7 @@
   },
   "Tramway, 2019, Ile de France": {
     "affichage": "Tramway",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale : Ile de France": {
         "kgCO2e/passager.km": "0"
@@ -2385,6 +2617,7 @@
   },
   "Trotinnette, électrique": {
     "affichage": "Trotinnette",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "2.00E-03"
@@ -2395,6 +2628,7 @@
   },
   "Utilitaire <3,5t, Hydrogène SMR biométhane centralisé": {
     "affichage": "Utilitaire <3,5t, Hydrogène SMR biométhane centralisé",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0"
@@ -2405,6 +2639,7 @@
   },
   "Utilitaire <3,5t, Hydrogène SMR gaz naturel centralisé": {
     "affichage": "Utilitaire <3,5t, Hydrogène SMR gaz naturel centralisé",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0"
@@ -2415,6 +2650,7 @@
   },
   "Utilitaire <3,5t, Hydrogène électrolyse décentralisée mix EnR": {
     "affichage": "Utilitaire <3,5t, Hydrogène électrolyse décentralisée mix EnR",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0"
@@ -2425,6 +2661,7 @@
   },
   "Utilitaire <3,5t, Hydrogène électrolyse décentralisée mix France": {
     "affichage": "Utilitaire <3,5t, Hydrogène électrolyse décentralisée mix France",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0"
@@ -2435,6 +2672,7 @@
   },
   "VUL, < 3,5 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
     "affichage": "VUL, < 3,5 tonnes, Diesel routier, incorporation 7 % de biodiesel",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.541"
@@ -2445,6 +2683,7 @@
   },
   "VUL, < 3,5 tonnes, Essence": {
     "affichage": "VUL, < 3,5 tonnes, Essence",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.85"
@@ -2455,6 +2694,7 @@
   },
   "VUL, < 3,5 tonnes, GNC": {
     "affichage": "VUL, < 3,5 tonnes, GNC",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.54"
@@ -2465,6 +2705,7 @@
   },
   "VUL, < 3,5 tonnes, GPL": {
     "affichage": "VUL, < 3,5 tonnes, GPL",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.59"
@@ -2475,6 +2716,7 @@
   },
   "Voiture E85, Courte distance, 2018": {
     "affichage": "Voiture E85, Courte distance",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/passager.km": "0.0298"
@@ -2485,6 +2727,7 @@
   },
   "Voiture E85, Longue distance, 2018": {
     "affichage": "Voiture E85, Longue distance",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/passager.km": "0.0168"
@@ -2495,6 +2738,7 @@
   },
   "Voiture E85, Mixte, 2018": {
     "affichage": "Voiture E85, Mixte",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/passager.km": "0.0249"
@@ -2505,6 +2749,7 @@
   },
   "Voiture GNV, Courte distance, 2018": {
     "affichage": "Voiture GNV, Courte distance",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/passager.km": "0.113"
@@ -2515,6 +2760,7 @@
   },
   "Voiture GNV, Longue distance, 2018": {
     "affichage": "Voiture GNV, Longue distance",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/passager.km": "0.072"
@@ -2525,6 +2771,7 @@
   },
   "Voiture GNV, Mixte, 2018": {
     "affichage": "Voiture GNV, Mixte",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/passager.km": "0.099"
@@ -2535,6 +2782,7 @@
   },
   "Voiture GPL, Courte distance, 2018": {
     "affichage": "Voiture GPL, Courte distance",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/passager.km": "0.118"
@@ -2545,6 +2793,7 @@
   },
   "Voiture GPL, Longue distance, 2018": {
     "affichage": "Voiture GPL, Longue distance",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/passager.km": "0.075"
@@ -2555,6 +2804,7 @@
   },
   "Voiture GPL, Mixte, 2018": {
     "affichage": "Voiture GPL, Mixte",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/passager.km": "0.103"
@@ -2565,6 +2815,7 @@
   },
   "Voiture essence, Courte distance, 2018": {
     "affichage": "Voiture essence, Courte distance",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/passager.km": "0.122"
@@ -2575,6 +2826,7 @@
   },
   "Voiture essence, Longue distance, 2018": {
     "affichage": "Voiture essence, Longue distance",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/passager.km": "0.0685"
@@ -2585,6 +2837,7 @@
   },
   "Voiture essence, Mixte, 2018": {
     "affichage": "Voiture essence, Mixte",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/passager.km": "0.101"
@@ -2595,6 +2848,7 @@
   },
   "Voiture gazole, Courte distance, 2018": {
     "affichage": "Voiture gazole, Courte distance",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/passager.km": "0.112"
@@ -2605,6 +2859,7 @@
   },
   "Voiture gazole, Longue distance, 2018": {
     "affichage": "Voiture gazole, Longue distance",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/passager.km": "0.0635"
@@ -2615,6 +2870,7 @@
   },
   "Voiture gazole, Mixte, 2018": {
     "affichage": "Voiture gazole, Mixte",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/passager.km": "0.0935"
@@ -2625,6 +2881,7 @@
   },
   "Voiture particulière, Berline, Hydrogène SMR GN centralisé": {
     "affichage": "Voiture particulière, Berline, Hydrogène SMR GN centralisé",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0"
@@ -2635,6 +2892,7 @@
   },
   "Voiture particulière, Berline, Hydrogène SMR biométhane centralisé": {
     "affichage": "Voiture particulière, Berline, Hydrogène SMR biométhane centralisé",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0"
@@ -2645,6 +2903,7 @@
   },
   "Voiture particulière, Berline, Hydrogène électrolyse lix EnR décentralisée": {
     "affichage": "Voiture particulière, Berline, Hydrogène électrolyse lix EnR décentralisée",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0"
@@ -2655,6 +2914,7 @@
   },
   "Voiture particulière, Berline, Hydrogène électrolyse mix France décentralisée": {
     "affichage": "Voiture particulière, Berline, Hydrogène électrolyse mix France décentralisée",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0"
@@ -2665,6 +2925,7 @@
   },
   "Voiture particulière, Coeur de gamme - Véhicule compact, Electrique": {
     "affichage": "Voiture particulière, Coeur de gamme - Véhicule compact, Electrique",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0"
@@ -2675,6 +2936,7 @@
   },
   "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride rechargeable, plug in-hybrid, P2/prius": {
     "affichage": "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride rechargeable, plug in-hybrid, P2/prius",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0"
@@ -2685,6 +2947,7 @@
   },
   "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, full, P2": {
     "affichage": "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, full, P2",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0.106"
@@ -2695,6 +2958,7 @@
   },
   "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, full, Prius": {
     "affichage": "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, full, Prius",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0.078"
@@ -2705,6 +2969,7 @@
   },
   "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, mild, diesel": {
     "affichage": "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, mild, diesel",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0.148"
@@ -2715,6 +2980,7 @@
   },
   "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, mild, essence": {
     "affichage": "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, mild, essence",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0.151"
@@ -2725,6 +2991,7 @@
   },
   "Voiture particulière, Entrée de gamme - Véhicule léger, Electrique": {
     "affichage": "Voiture particulière, Entrée de gamme - Véhicule léger, Electrique",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0"
@@ -2735,6 +3002,7 @@
   },
   "Voiture particulière, Entrée de gamme - Véhicule léger, Hybride rechargeable avec alimentation auxilliaire de puissance": {
     "affichage": "Voiture particulière, Entrée de gamme - Véhicule léger, Hybride rechargeable avec alimentation auxilliaire de puissance",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0"
@@ -2745,6 +3013,7 @@
   },
   "Voiture particulière, Entrée de gamme - Véhicule léger, Hybride, mild essence": {
     "affichage": "Voiture particulière, Entrée de gamme - Véhicule léger, Hybride, mild essence",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0.113"
@@ -2755,6 +3024,7 @@
   },
   "Voiture particulière, Haut de gamme - Berline, Electrique": {
     "affichage": "Voiture particulière, Haut de gamme - Berline, Electrique",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0"
@@ -2765,6 +3035,7 @@
   },
   "Voiture particulière, Haut de gamme - Berline, Hybride rechargeable, plug in-hybrid, P2 / Prius": {
     "affichage": "Voiture particulière, Haut de gamme - Berline, Hybride rechargeable, plug in-hybrid, P2 / Prius",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0"
@@ -2775,6 +3046,7 @@
   },
   "Voiture particulière, Haut de gamme - Berline, Hybride, full P2": {
     "affichage": "Voiture particulière, Haut de gamme - Berline, Hybride, full P2",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0.149"
@@ -2785,6 +3057,7 @@
   },
   "Voiture particulière, Haut de gamme - Berline, Hybride, full Prius": {
     "affichage": "Voiture particulière, Haut de gamme - Berline, Hybride, full Prius",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0.111"
@@ -2795,6 +3068,7 @@
   },
   "Voiture particulière, Haut de gamme - Berline, Hybride, mild diesel": {
     "affichage": "Voiture particulière, Haut de gamme - Berline, Hybride, mild diesel",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0.186"
@@ -2805,6 +3079,7 @@
   },
   "Voiture particulière, Haut de gamme - Berline, Hybride, mild essence": {
     "affichage": "Voiture particulière, Haut de gamme - Berline, Hybride, mild essence",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0.232"
@@ -2815,6 +3090,7 @@
   },
   "Voiture, Motorisation E85, 2018": {
     "affichage": "Voiture, Motorisation E85",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0.0808"
@@ -2825,6 +3101,7 @@
   },
   "Voiture, Motorisation GNV, 2018": {
     "affichage": "Voiture, Motorisation GNV",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0.159"
@@ -2835,6 +3112,7 @@
   },
   "Voiture, Motorisation GPL, 2018": {
     "affichage": "Voiture, Motorisation GPL",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0.165"
@@ -2845,6 +3123,7 @@
   },
   "Voiture, Motorisation essence, 2018": {
     "affichage": "Voiture, Motorisation essence",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0.162"
@@ -2855,6 +3134,7 @@
   },
   "Voiture, Motorisation gazole, 2018": {
     "affichage": "Voiture, Motorisation gazole",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "0.15"
@@ -2865,6 +3145,7 @@
   },
   "Vraquier, 10 000 à 100 000 tonnes, HFO - MGO": {
     "affichage": "Vraquier, 10 000 à 100 000 tonnes",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "6.90E-03"
@@ -2875,6 +3156,7 @@
   },
   "Vraquier, < 10 000 tonnes, GNL": {
     "affichage": "Vraquier, < 10 000 tonnes, GNL",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "2.00E-03"
@@ -2885,6 +3167,7 @@
   },
   "Vraquier, < 10 000 tonnes, HFO - MGO": {
     "affichage": "Vraquier, < 10 000 tonnes, HFO - MGO",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.03"
@@ -2895,6 +3178,7 @@
   },
   "Vraquier, > 100 000 tonnes, HFO - MGO": {
     "affichage": "Vraquier, > 100 000 tonnes",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "2.70E-03"
@@ -2905,6 +3189,7 @@
   },
   "Vélo, à assistance électrique": {
     "affichage": "Vélo",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/km": "2.23E-03"
@@ -2915,6 +3200,7 @@
   },
   "coke de pétrole": {
     "affichage": "coke de pétrole",
+    "classification": null,
     "facteurs": {
       "France continentale": {
         "kgCO2e/kWh PCI": "0.349",
