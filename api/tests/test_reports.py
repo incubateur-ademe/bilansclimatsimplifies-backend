@@ -87,7 +87,7 @@ class TestReportApi(APITestCase):
 
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
         self.assertEqual(
-            response.json()["nonFieldErrors"][0], "Les champs siren, annee doivent former un ensemble unique."
+            response.json()["nonFieldErrors"][0], "Un bilan avec ce couple SIREN / Année de reporting existe déjà."
         )
         reports = Report.objects.all()
         self.assertEqual(len(reports), 1)

@@ -51,7 +51,13 @@ class ReportSerializer(serializers.ModelSerializer):
             "manuel_poste_2",
             "mode",
         ]
-        validators = [UniqueTogetherValidator(queryset=Report.objects.all(), fields=["siren", "annee"])]
+        validators = [
+            UniqueTogetherValidator(
+                queryset=Report.objects.all(),
+                fields=["siren", "annee"],
+                message="Un bilan avec ce couple SIREN / Année de reporting existe déjà.",
+            )
+        ]
 
 
 class PrivateReportExportSerializer(serializers.ModelSerializer):
