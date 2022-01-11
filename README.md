@@ -48,8 +48,6 @@ AUTH_USERS_API=
 AUTH_PASS_REDIRECT_URI=
 ```
 
-Les variables `STATIC_` sont réquis par clevercloud.
-
 ## VPN
 
 Il faut qu'on connecte par VPN au ademe connect pour créer les comptes.
