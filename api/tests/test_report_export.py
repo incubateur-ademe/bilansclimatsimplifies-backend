@@ -4,11 +4,13 @@ from rest_framework.test import APITestCase
 from rest_framework import status
 from data.factories import ReportFactory, UserFactory
 from django.urls import reverse
-from django.test.utils import override_settings
+
+# from django.test.utils import override_settings
 from data.region_choices import Region
 from data.insee_naf_division_choices import NafDivision
-import requests_mock
-from api.management.commands.publicexport import update_public_export
+
+# import requests_mock
+# from api.management.commands.publicexport import update_public_export
 
 
 class TestPrivateReportExport(APITestCase):
@@ -90,45 +92,45 @@ class TestPrivateReportExport(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
 
 
-class TestPublicExport(APITestCase):
-    @requests_mock.Mocker()
-    @override_settings(KOUMOUL_API_KEY="asecurekey")
-    @override_settings(KOUMOUL_API_URL="http://example.com/dataset")
-    def test_external_api_call(self, request_mock):
-        """
-        Test that the helper function calls the external endpoint as expected
-        with the right data
-        """
-        alice = UserFactory.create(first_name="Alice", last_name="Smith", email="alice@example.com")
-        ReportFactory.create(
-            gestionnaire=alice,
-            siren="515277358",
-            statut=Report.Status.PUBLISHED,
-        )
-        ReportFactory.create(statut=Report.Status.PUBLISHED, siren="794690446")
-        ReportFactory.create(siren="910546308", statut=Report.Status.DRAFT)
-        post_mocker = request_mock.post("http://example.com/dataset", json={"success": True})
-        update_public_export()
-        self.assertTrue(post_mocker.called_once)
-        self.assertTrue(post_mocker.last_request.headers["x-api-key"] == "asecurekey")
-        self.assertTrue(post_mocker.last_request.headers["content-type"].startswith("multipart/form-data; boundary="))
-        self.assertTrue(
-            "SIREN,Année de reporting,Raison sociale,Code région,Nom région,Code NAF,Division NAF,Nombre de salariés,Date de publication,Poste 1 tCO2e,Poste 2 tCO2e,Total tCO2e"
-            in post_mocker.last_request.text
-        )
-        self.assertTrue("515277358" in post_mocker.last_request.text)
-        self.assertTrue("794690446" in post_mocker.last_request.text)
-        self.assertFalse("910546308" in post_mocker.last_request.text)
-        self.assertFalse("alice@example.com" in post_mocker.last_request.text)
+# class TestPublicExport(APITestCase):
+#     @requests_mock.Mocker()
+#     @override_settings(KOUMOUL_API_KEY="asecurekey")
+#     @override_settings(KOUMOUL_API_URL="http://example.com/dataset")
+#     def test_external_api_call(self, request_mock):
+#         """
+#         Test that the helper function calls the external endpoint as expected
+#         with the right data
+#         """
+#         alice = UserFactory.create(first_name="Alice", last_name="Smith", email="alice@example.com")
+#         ReportFactory.create(
+#             gestionnaire=alice,
+#             siren="515277358",
+#             statut=Report.Status.PUBLISHED,
+#         )
+#         ReportFactory.create(statut=Report.Status.PUBLISHED, siren="794690446")
+#         ReportFactory.create(siren="910546308", statut=Report.Status.DRAFT)
+#         post_mocker = request_mock.post("http://example.com/dataset", json={"success": True})
+#         update_public_export()
+#         self.assertTrue(post_mocker.called_once)
+#         self.assertTrue(post_mocker.last_request.headers["x-api-key"] == "asecurekey")
+#         self.assertTrue(post_mocker.last_request.headers["content-type"].startswith("multipart/form-data; boundary="))
+#         self.assertTrue(
+#             "SIREN,Année de reporting,Raison sociale,Code région,Nom région,Code NAF,Division NAF,Nombre de salariés,Date de publication,Poste 1 tCO2e,Poste 2 tCO2e,Total tCO2e"
+#             in post_mocker.last_request.text
+#         )
+#         self.assertTrue("515277358" in post_mocker.last_request.text)
+#         self.assertTrue("794690446" in post_mocker.last_request.text)
+#         self.assertFalse("910546308" in post_mocker.last_request.text)
+#         self.assertFalse("alice@example.com" in post_mocker.last_request.text)
 
-    @requests_mock.Mocker()
-    @override_settings(KOUMOUL_API_URL="http://example.com/dataset")
-    def test_no_published_reports(self, request_mock):
-        """
-        Test that the helper function does not call the external endpoint when there are no
-        published reports (since this results in error in the external API)
-        """
-        ReportFactory.create(siren="910546308", statut=Report.Status.DRAFT)
-        post_mocker = request_mock.post("http://example.com/dataset", json={"success": True})
-        update_public_export()
-        self.assertFalse(post_mocker.called)
+#     @requests_mock.Mocker()
+#     @override_settings(KOUMOUL_API_URL="http://example.com/dataset")
+#     def test_no_published_reports(self, request_mock):
+#         """
+#         Test that the helper function does not call the external endpoint when there are no
+#         published reports (since this results in error in the external API)
+#         """
+#         ReportFactory.create(siren="910546308", statut=Report.Status.DRAFT)
+#         post_mocker = request_mock.post("http://example.com/dataset", json={"success": True})
+#         update_public_export()
+#         self.assertFalse(post_mocker.called)

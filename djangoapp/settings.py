@@ -40,6 +40,13 @@ ALLOWED_HOSTS = [x.strip() for x in os.getenv("ALLOWED_HOSTS").split(",")]
 KOUMOUL_API_KEY = os.getenv("KOUMOUL_API_KEY")
 KOUMOUL_API_URL = os.getenv("KOUMOUL_API_URL")
 
+AUTH_CLIENT_ID = os.getenv("AUTH_CLIENT_ID")
+AUTH_CLIENT_SECRET = os.getenv("AUTH_CLIENT_SECRET")
+AUTH_KEYCLOAK = os.getenv("AUTH_KEYCLOAK")
+AUTH_REALM = os.getenv("AUTH_REALM")
+AUTH_USERS_API = os.getenv("AUTH_USERS_API")
+AUTH_PASS_REDIRECT_URI = os.getenv("AUTH_PASS_REDIRECT_URI")
+
 # Application definition
 
 INSTALLED_APPS = [

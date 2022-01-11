@@ -42,9 +42,20 @@ STATIC_FILES_PATH="static/"
 STATIC_URL_PREFIX="/static"
 KOUMOUL_API_KEY=
 KOUMOUL_API_URL="https://koumoul.com/data-fair/api/v1/datasets/bilans-climat-simplifies/"
+AUTH_CLIENT_ID=
+AUTH_CLIENT_SECRET=
+AUTH_KEYCLOAK=
+AUTH_REALM=
+AUTH_USERS_API=
+AUTH_PASS_REDIRECT_URI=
 ```
 
 Les variables `STATIC_` sont réquis par clevercloud.
+
+## VPN
+
+Il faut qu'on connecte par VPN au ademe connect pour créer les comptes.
+TODO: complete instructions
 
 ## Tests
 

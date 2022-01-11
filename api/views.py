@@ -1,8 +1,9 @@
+from django.conf import settings
 from django.contrib.auth import get_user_model
 from django.core.exceptions import BadRequest
 from django.db import transaction
 from django.db.utils import IntegrityError
-from django.http.response import JsonResponse
+from django.http.response import HttpResponse, HttpResponseBadRequest, HttpResponseServerError, JsonResponse
 from django.utils import timezone
 from rest_framework import permissions, status
 from rest_framework.exceptions import NotFound, NotAuthenticated
@@ -26,6 +27,7 @@ from data.emission_factors import get_emission_factors
 from rest_framework.viewsets import ReadOnlyModelViewSet
 from drf_renderer_xlsx.mixins import XLSXFileMixin
 from drf_renderer_xlsx.renderers import XLSXRenderer
+import requests
 
 
 class AdemeUserView(APIView):
@@ -270,3 +272,71 @@ class EmissionsXlsxExportView(XLSXFileMixin, ReadOnlyModelViewSet):
 class EmissionFactorsFile(APIView):
     def get(self, _):
         return JsonResponse(get_emission_factors().emission_factors, status=status.HTTP_200_OK)
+
+
+def get_authorization_header():
+    """Retrieve a service token to call ADEME users API"""
+    token_endpoint = f"{settings.AUTH_KEYCLOAK}/auth/realms/{settings.AUTH_REALM}/protocol/openid-connect/token"
+    token_parameters = {
+        "client_id": settings.AUTH_CLIENT_ID,
+        "client_secret": settings.AUTH_CLIENT_SECRET,
+        "grant_type": "client_credentials",
+    }
+    token_response = requests.post(token_endpoint, data=token_parameters, timeout=5)
+
+    if not token_response.ok:
+        raise BadRequest(f"{token_response.status_code} {token_endpoint}")
+
+    token_json = token_response.json()
+    return {
+        "Authorization": "Bearer " + token_json["access_token"],
+        "accept": "*/*",
+        "content-type": "application/json",
+    }
+
+
+class CreateAccountView(APIView):
+    def get(self, _):
+        # method for testing only - TODO: remove before prod
+        email = self.request.GET.get("email", "")
+        headers = get_authorization_header()
+        search_endpoint = f"{settings.AUTH_USERS_API}/api/users/search?email={email}"
+        response = requests.get(search_endpoint, headers=headers, timeout=5)
+        return JsonResponse({"headers": headers, "status": response.status_code}, status=response.status_code)
+
+    def post(self, _):
+        email = self.request.POST.get("email")
+        firstname = self.request.POST.get("firstname")
+        lastname = self.request.POST.get("lastname")
+        cgu = self.request.POST.get("cgu")
+        if not email or not firstname or not lastname or not cgu:
+            return HttpResponseBadRequest("Données manquantes : on attend email, firstname, lastname, et cgu")
+        headers = get_authorization_header()
+        search_endpoint = f"{settings.AUTH_USERS_API}/api/users/search?email={email}"
+        response = requests.get(search_endpoint, headers=headers, timeout=5)
+        if response.status_code == 200:
+            return HttpResponseBadRequest("Un compte existe déjà avec cet email.")
+        else:
+            # attempt to continue with account creation
+            creation_endpoint = (
+                f"{settings.AUTH_USERS_API}/api/users?updatePasswordRedirectURI={settings.AUTH_PASS_REDIRECT_URI}"
+            )
+            response = requests.post(
+                creation_endpoint,
+                headers=headers,
+                json={"email": email, "firstname": firstname, "lastname": lastname},
+                timeout=5,
+            )
+            if response.status_code == 201 and cgu == "true":
+                # accept CGU
+                user_id = response.json()["userId"]
+                try:
+                    gcu_endpoint = f"{settings.AUTH_USERS_API}/api/users/{user_id}/enableCGU"
+                    requests.put(gcu_endpoint, headers=headers, timeout=5)
+                except Exception as e:
+                    # TODO: log error
+                    print(f"Error enabling GCU for user {user_id}: {e}")
+            else:
+                # TODO: log error
+                return HttpResponseServerError("Erreur lors de la création du compte: " + response.text)
+            return HttpResponse(status=HTTP_201_CREATED)
