@@ -112,3 +112,24 @@ class TestPrivateReportExport(APITestCase):
 
         response = self.client.get(reverse("emissions-csv-export", kwargs={"report_pk": report.id}))
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+
+    @authenticate
+    def test_xlsx_export(self):
+        """
+        Test that private endpoint returns xlsx file of data
+        """
+        report = ReportFactory.create(gestionnaire=authenticate.user, annee=2020, siren="123456789")
+        EmissionFactory.create(bilan=report)
+        response = self.client.get(reverse("emissions-xlsx-export", kwargs={"report_pk": report.id}))
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response["Content-Type"], "application/xlsx; charset=utf-8")
+        self.assertEqual(response["Content-Disposition"], "attachment; filename=export_123456789_2020.xlsx")
+
+    @authenticate
+    def test_only_manager_access_xlsx_export(self):
+        """
+        Test that private endpoint returns xlsx file of data
+        """
+        report = ReportFactory.create()
+        response = self.client.get(reverse("emissions-xlsx-export", kwargs={"report_pk": report.id}))
+        self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)

@@ -17,9 +17,9 @@ class TestPrivateReportExport(APITestCase):
         """
         Test that private endpoint returns csv file of data
         """
-        alice = UserFactory(first_name="Alice", last_name="Smith", email="alice@example.com")
-        bob = UserFactory(first_name="Bob")
-        ReportFactory(
+        alice = UserFactory.create(first_name="Alice", last_name="Smith", email="alice@example.com")
+        bob = UserFactory.create(first_name="Bob")
+        ReportFactory.create(
             gestionnaire=alice,
             annee=2020,
             siren="515277358",
@@ -32,8 +32,8 @@ class TestPrivateReportExport(APITestCase):
             manuel_poste_2=200,
             nombre_salaries=50,
         )
-        ReportFactory(gestionnaire=alice, annee=2021)
-        ReportFactory(gestionnaire=bob, annee=2020)
+        ReportFactory.create(gestionnaire=alice, annee=2021)
+        ReportFactory.create(gestionnaire=bob, annee=2020)
 
         response = self.client.get(reverse("private-csv-export"))
 
@@ -53,6 +53,26 @@ class TestPrivateReportExport(APITestCase):
             )
         )
         self.assertTrue(body[1].endswith(",alice@example.com,Alice,Smith"))
+
+    @authenticate_staff
+    def test_xlsx_export(self):
+        """
+        Test that private endpoint returns xlsx file of data
+        """
+        ReportFactory.create(annee=2020)
+        ReportFactory.create(annee=2021)
+        response = self.client.get(reverse("private-xlsx-export"))
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response["Content-Type"], "application/xlsx; charset=utf-8")
+        self.assertTrue(response["Content-Disposition"].startswith("attachment; filename=bilans_climat_simplifies_"))
+
+    @authenticate
+    def test_only_staff_access_xlsx_export(self):
+        """
+        Test that private endpoint returns xlsx file of data
+        """
+        response = self.client.get(reverse("private-xlsx-export"))
+        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 
     @authenticate
     def test_only_staff_access_report_export(self):
@@ -79,14 +99,14 @@ class TestPublicExport(APITestCase):
         Test that the helper function calls the external endpoint as expected
         with the right data
         """
-        alice = UserFactory(first_name="Alice", last_name="Smith", email="alice@example.com")
-        ReportFactory(
+        alice = UserFactory.create(first_name="Alice", last_name="Smith", email="alice@example.com")
+        ReportFactory.create(
             gestionnaire=alice,
             siren="515277358",
             statut=Report.Status.PUBLISHED,
         )
-        ReportFactory(statut=Report.Status.PUBLISHED, siren="794690446")
-        ReportFactory(siren="910546308", statut=Report.Status.DRAFT)
+        ReportFactory.create(statut=Report.Status.PUBLISHED, siren="794690446")
+        ReportFactory.create(siren="910546308", statut=Report.Status.DRAFT)
         post_mocker = request_mock.post("http://example.com/dataset", json={"success": True})
         update_public_export()
         self.assertTrue(post_mocker.called_once)
@@ -108,7 +128,7 @@ class TestPublicExport(APITestCase):
         Test that the helper function does not call the external endpoint when there are no
         published reports (since this results in error in the external API)
         """
-        ReportFactory(siren="910546308", statut=Report.Status.DRAFT)
+        ReportFactory.create(siren="910546308", statut=Report.Status.DRAFT)
         post_mocker = request_mock.post("http://example.com/dataset", json={"success": True})
         update_public_export()
         self.assertFalse(post_mocker.called)

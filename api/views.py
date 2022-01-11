@@ -22,6 +22,9 @@ from rest_framework_simplejwt.tokens import UntypedToken
 from rest_framework_csv import renderers as r
 from .utils import camelize
 from data.emission_factors import get_emission_factors
+from rest_framework.viewsets import ReadOnlyModelViewSet
+from drf_renderer_xlsx.mixins import XLSXFileMixin
+from drf_renderer_xlsx.renderers import XLSXRenderer
 
 
 class AdemeUserView(APIView):
@@ -162,6 +165,18 @@ class PrivateExportView(ListAPIView):
         return f"bilans_climat_simplifies_{timestamp}.csv"
 
 
+class PrivateXlsxExportView(XLSXFileMixin, ReadOnlyModelViewSet):
+    queryset = Report.objects.all()
+    serializer_class = PrivateReportExportSerializer
+    renderer_classes = [XLSXRenderer]
+    permission_classes = [permissions.IsAdminUser]
+    xlsx_use_labels = True
+
+    def get_filename(self, request):
+        timestamp = timezone.now().strftime("%Y-%m-%d")
+        return f"bilans_climat_simplifies_{timestamp}.xlsx"
+
+
 class EmissionExportRenderer(r.CSVRenderer):
     header = ["type", "valeur", "unite", "facteur_d_emission", "resultat", "poste", "localisation", "note"]
     labels = EmissionExportSerializer.get_labels()
@@ -189,6 +204,25 @@ class EmissionsExportView(ListAPIView):
         report_id = self.request.parser_context.get("kwargs").get("report_pk")
         report = Report.objects.get(pk=report_id)
         return f"export_{report.siren}_{report.annee}.csv"
+
+
+class EmissionsXlsxExportView(XLSXFileMixin, ReadOnlyModelViewSet):
+    queryset = Emission.objects.all()
+    serializer_class = EmissionExportSerializer
+    renderer_classes = [XLSXRenderer]
+    permission_classes = [permissions.IsAuthenticated]
+    xlsx_use_labels = True
+
+    def get_queryset(self):
+        report_id = self.request.parser_context.get("kwargs").get("report_pk")
+        report = Report.objects.get(pk=report_id)
+        if report.gestionnaire != self.request.user:
+            raise NotFound()
+        return Emission.objects.filter(bilan=report_id)
+
+    def get_filename(self, request, report_pk):
+        report = Report.objects.get(pk=report_pk)
+        return f"export_{report.siren}_{report.annee}.xlsx"
 
 
 class EmissionFactorsFile(APIView):

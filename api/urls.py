@@ -3,7 +3,8 @@ from django.urls import path
 from api.views import AdemeUserView
 from api.views import ReportsView, ReportView
 from api.views import ReportEmissionsView, EmissionsView, EmissionView
-from api.views import PrivateExportView, EmissionsExportView, EmissionFactorsFile
+from api.views import PrivateExportView, PrivateXlsxExportView, EmissionsExportView, EmissionsXlsxExportView
+from api.views import EmissionFactorsFile
 
 urlpatterns = {
     path("ademeUser/", AdemeUserView.as_view(), name="ademe_user"),
@@ -13,7 +14,13 @@ urlpatterns = {
     path("emissions/", EmissionsView.as_view(), name="emissions"),
     path("emissions/<int:pk>", EmissionView.as_view(), name="emission"),
     path("export/", PrivateExportView.as_view(), name="private-csv-export"),
+    path("xlsxExport/", PrivateXlsxExportView.as_view({"get": "list"}), name="private-xlsx-export"),
     path("emissionsExport/<int:report_pk>", EmissionsExportView.as_view(), name="emissions-csv-export"),
+    path(
+        "emissionsXlsxExport/<int:report_pk>",
+        EmissionsXlsxExportView.as_view({"get": "list"}),
+        name="emissions-xlsx-export",
+    ),
     path("emissionFactors/", EmissionFactorsFile.as_view(), name="ef-file"),
 }
 
