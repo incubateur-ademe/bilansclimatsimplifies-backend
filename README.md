@@ -55,7 +55,10 @@ Les variables `STATIC_` sont réquis par clevercloud.
 ## VPN
 
 Il faut qu'on connecte par VPN au ademe connect pour créer les comptes.
-TODO: complete instructions
+
+<!-- TODO: complete instructions -->
+
+<!-- TODO: instructions for making someone an admin for full report export purposes -->
 
 ## Tests
 
