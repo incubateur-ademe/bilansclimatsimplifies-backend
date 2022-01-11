@@ -171,6 +171,23 @@ class PrivateXlsxExportView(XLSXFileMixin, ReadOnlyModelViewSet):
     renderer_classes = [XLSXRenderer]
     permission_classes = [permissions.IsAdminUser]
     xlsx_use_labels = True
+    column_header = {
+        "height": 20,
+        "style": {
+            "font": {
+                "bold": True,
+            },
+        },
+    }
+    body = {
+        "style": {
+            "alignment": {
+                "horizontal": "left",
+                "vertical": "center",
+            },
+        },
+        "height": 20,
+    }
 
     def get_filename(self, request):
         timestamp = timezone.now().strftime("%Y-%m-%d")
@@ -212,6 +229,23 @@ class EmissionsXlsxExportView(XLSXFileMixin, ReadOnlyModelViewSet):
     renderer_classes = [XLSXRenderer]
     permission_classes = [permissions.IsAuthenticated]
     xlsx_use_labels = True
+    column_header = {
+        "height": 20,
+        "style": {
+            "font": {
+                "bold": True,
+            },
+        },
+    }
+    body = {
+        "style": {
+            "alignment": {
+                "horizontal": "left",
+                "vertical": "center",
+            },
+        },
+        "height": 20,
+    }
 
     def get_queryset(self):
         report_id = self.request.parser_context.get("kwargs").get("report_pk")

@@ -5,6 +5,7 @@ from data.region_choices import Region
 
 
 # TODO: see if can check serializer label as well to avoid repetition of names between CSV and XLSX export types
+# https://github.com/mjumbewu/django-rest-framework-csv/issues/14#issuecomment-534566844
 def verbose_fieldname_dict(model):
     return {
         f.name: (f.verbose_name[0].upper() + f.verbose_name[1:]) for f in model._meta.fields + model._meta.many_to_many
