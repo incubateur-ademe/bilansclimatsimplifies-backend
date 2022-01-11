@@ -135,16 +135,16 @@ class PrivateReportExportRenderer(r.CSVRenderer):
         "statut",
         "creation_date",
         "publication_date",
-        "gestionnaire.email",
-        "gestionnaire.first_name",
-        "gestionnaire.last_name",
+        "gestionnaire_email",
+        "gestionnaire_first_name",
+        "gestionnaire_last_name",
     ]
     labels = {
         **PrivateReportExportSerializer.get_labels(),
         **{
-            "gestionnaire.email": "Email du créateur du bilan",
-            "gestionnaire.first_name": "Prénom du créateur du bilan",
-            "gestionnaire.last_name": "Nom du créateur du bilan",
+            "gestionnaire_email": "Email du créateur du bilan",
+            "gestionnaire_first_name": "Prénom du créateur du bilan",
+            "gestionnaire_last_name": "Nom du créateur du bilan",
         },
     }
 

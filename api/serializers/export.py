@@ -2,9 +2,9 @@ from rest_framework import serializers
 from data.insee_naf_division_choices import NafDivision
 from data.models import Report, Emission
 from data.region_choices import Region
-from django.contrib.auth import get_user_model
 
 
+# TODO: see if can check serializer label as well to avoid repetition of names between CSV and XLSX export types
 def verbose_fieldname_dict(model):
     return {
         f.name: (f.verbose_name[0].upper() + f.verbose_name[1:]) for f in model._meta.fields + model._meta.many_to_many
@@ -24,37 +24,43 @@ def verbose_report_fieldname_dict():
     }
 
 
-class UserSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = get_user_model()
-        fields = ["username", "email", "first_name", "last_name"]
-        read_only_fields = fields
-
-
 class PrivateReportExportSerializer(serializers.ModelSerializer):
-    gestionnaire = UserSerializer(read_only=True)
-    nom_naf = serializers.CharField(source="naf", read_only=True)
-    nom_region = serializers.CharField(source="region", read_only=True)
+    nom_naf = serializers.CharField(source="naf", label="Division NAF")
+    nom_region = serializers.CharField(source="region", label="Nom région")
+    raison_sociale = serializers.ReadOnlyField(label="Raison sociale")
+    statut = serializers.ReadOnlyField(label="Statut")
+    poste_1_t = serializers.ReadOnlyField(label="Poste 1 tCO2e")
+    poste_2_t = serializers.ReadOnlyField(label="Poste 2 tCO2e")
+    total_t = serializers.ReadOnlyField(label="Total tCO2e")
+    gestionnaire_email = serializers.ReadOnlyField(source="gestionnaire.email", label="Email du créateur du bilan")
+    gestionnaire_first_name = serializers.ReadOnlyField(
+        source="gestionnaire.first_name", label="Prénom du créateur du bilan"
+    )
+    gestionnaire_last_name = serializers.ReadOnlyField(
+        source="gestionnaire.last_name", label="Nom du créateur du bilan"
+    )
 
     class Meta:
         model = Report
         fields = [
             "siren",
+            "annee",
             "raison_sociale",
+            "region",
+            "nom_region",
             "naf",
             "nom_naf",
             "nombre_salaries",
-            "region",
-            "nom_region",
-            "annee",
-            "statut",
+            "mode",
             "poste_1_t",
             "poste_2_t",
             "total_t",
-            "mode",
+            "statut",
             "creation_date",
             "publication_date",
-            "gestionnaire",
+            "gestionnaire_email",
+            "gestionnaire_first_name",
+            "gestionnaire_last_name",
         ]
         read_only_fields = fields
 
@@ -102,9 +108,16 @@ class PublicReportExportSerializer(serializers.ModelSerializer):
 
 
 class EmissionExportSerializer(serializers.ModelSerializer):
+    poste = serializers.ReadOnlyField(label="Poste")
+    valeur = serializers.ReadOnlyField(label="Valeur")
+    note = serializers.ReadOnlyField(label="Note")
+    localisation = serializers.ReadOnlyField(label="Localisation")
+    resultat = serializers.ReadOnlyField(label="Résultat kgCO2e")
+    facteur_d_emission = serializers.ReadOnlyField(label="Facteur d'émission")
+
     class Meta:
         model = Emission
-        fields = ["poste", "type", "localisation", "valeur", "unite", "note", "resultat", "facteur_d_emission"]
+        fields = ["type", "valeur", "unite", "facteur_d_emission", "resultat", "poste", "localisation", "note"]
 
     def get_labels():
         return {
