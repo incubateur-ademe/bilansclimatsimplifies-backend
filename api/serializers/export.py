@@ -1,16 +1,8 @@
-from django.contrib.auth import get_user_model
 from rest_framework import serializers
 from data.insee_naf_division_choices import NafDivision
 from data.models import Report, Emission
 from data.region_choices import Region
-from rest_framework.validators import UniqueTogetherValidator
-
-
-class UserSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = get_user_model()
-        fields = ["username", "email", "first_name", "last_name", "is_staff"]
-        read_only_fields = fields
+from django.contrib.auth import get_user_model
 
 
 def verbose_fieldname_dict(model):
@@ -32,32 +24,11 @@ def verbose_report_fieldname_dict():
     }
 
 
-class ReportSerializer(serializers.ModelSerializer):
+class UserSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Report
-        fields = [
-            "id",
-            "siren",
-            "raison_sociale",
-            "naf",
-            "nombre_salaries",
-            "region",
-            "annee",
-            "statut",
-            "poste_1",
-            "poste_2",
-            "total",
-            "manuel_poste_1",
-            "manuel_poste_2",
-            "mode",
-        ]
-        validators = [
-            UniqueTogetherValidator(
-                queryset=Report.objects.all(),
-                fields=["siren", "annee"],
-                message="Un bilan avec ce couple SIREN / Année de reporting existe déjà.",
-            )
-        ]
+        model = get_user_model()
+        fields = ["username", "email", "first_name", "last_name"]
+        read_only_fields = fields
 
 
 class PrivateReportExportSerializer(serializers.ModelSerializer):
@@ -128,13 +99,6 @@ class PublicReportExportSerializer(serializers.ModelSerializer):
 
     def get_labels():
         return {**verbose_report_fieldname_dict(), **{"nom_naf": "Division NAF", "nom_region": "Nom région"}}
-
-
-class EmissionSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Emission
-        fields = ["id", "bilan", "poste", "type", "localisation", "valeur", "unite", "note", "resultat"]
-        read_only_fields = ["id", "resultat"]
 
 
 class EmissionExportSerializer(serializers.ModelSerializer):
