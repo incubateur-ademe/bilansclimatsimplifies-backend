@@ -35,7 +35,6 @@ AUTH_USER_MODEL = "data.User"
 DEBUG = os.getenv("DEBUG") == "True"
 
 ALLOWED_HOSTS = [x.strip() for x in os.getenv("ALLOWED_HOSTS").split(",")]
-print(ALLOWED_HOSTS)
 
 # Other env variables
 KOUMOUL_API_KEY = os.getenv("KOUMOUL_API_KEY")
