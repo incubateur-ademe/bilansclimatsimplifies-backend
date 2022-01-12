@@ -40,6 +40,7 @@ class TestReportApi(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         reports = Report.objects.all()
         self.assertEqual(len(reports), 1)
+        self.assertEqual(reports[0].gestionnaire, authenticate.user)
 
     @authenticate
     def test_siren_validated(self):

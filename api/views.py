@@ -1,6 +1,7 @@
 from django.contrib.auth import get_user_model
 from django.core.exceptions import BadRequest
 from django.db import transaction
+from django.db.utils import IntegrityError
 from django.http.response import JsonResponse
 from django.utils import timezone
 from rest_framework import permissions, status
@@ -76,6 +77,13 @@ class ReportsView(ListCreateAPIView):
 
     def get_queryset(self):
         return Report.objects.filter(gestionnaire=self.request.user)
+
+    @transaction.atomic
+    def perform_create(self, serializer):
+        try:
+            serializer.save(gestionnaire=self.request.user)
+        except IntegrityError:
+            raise BadRequest()
 
 
 class ReportView(RetrieveUpdateDestroyAPIView):
