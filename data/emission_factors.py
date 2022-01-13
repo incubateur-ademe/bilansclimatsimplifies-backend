@@ -12,11 +12,11 @@ class EmissionFactors:
         with open(file_path, "r") as f:
             self.emission_factors = json.load(f)
 
-    def get_factor(self, name, unit, location):
+    def get_factor(self, type, unit, location):
         factor_unit = f"kgCO2e/{unit}"
-        if name not in self.emission_factors:
+        if type not in self.emission_factors:
             return None
-        all_factors = self.emission_factors[name]["facteurs"]
+        all_factors = self.emission_factors[type]["facteurs"]
         local_factors = None
         if location in all_factors:
             local_factors = all_factors[location]
@@ -28,6 +28,11 @@ class EmissionFactors:
         if factor_unit in local_factors:
             return Decimal(local_factors[factor_unit])
         return None
+
+    def get_classification(self, type):
+        if type not in self.emission_factors:
+            return None
+        return self.emission_factors[type]["classification"]
 
 
 emission_factors = None

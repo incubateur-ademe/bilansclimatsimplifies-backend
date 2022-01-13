@@ -27,6 +27,7 @@ example_emission_factors = {
                 "kgCO2e/kg": "0.2",
             },
         },
+        "classification": "carburant",
     },
     "Essence, E85": {
         "facteurs": {
@@ -156,7 +157,7 @@ class TestEmissionApi(APITestCase):
         Returns all emission sources for a report if user is manager
         """
         my_report = ReportFactory.create(gestionnaire=authenticate.user)
-        EmissionFactory.create(bilan=my_report)
+        EmissionFactory.create(bilan=my_report, type="Essence, E10")
         EmissionFactory.create(bilan=my_report)
 
         response = self.client.get(reverse("report_emissions", kwargs={"report_pk": my_report.id}))
@@ -168,6 +169,7 @@ class TestEmissionApi(APITestCase):
         self.assertIn("id", emission)
         self.assertIn("resultat", emission)
         self.assertIn("note", emission)
+        self.assertEqual(emission["classification"], "carburant")
 
     def test_unauthenticated_fetch_emission(self):
         """

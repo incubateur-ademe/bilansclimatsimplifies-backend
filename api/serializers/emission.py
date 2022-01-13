@@ -5,5 +5,16 @@ from data.models import Emission
 class EmissionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Emission
-        fields = ["id", "bilan", "poste", "type", "localisation", "valeur", "unite", "note", "resultat"]
+        fields = [
+            "id",
+            "bilan",
+            "poste",
+            "type",
+            "localisation",
+            "valeur",
+            "unite",
+            "note",
+            "resultat",
+            "classification",
+        ]
         read_only_fields = ["id", "resultat"]

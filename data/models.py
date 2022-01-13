@@ -179,3 +179,7 @@ class Emission(models.Model):
     @property
     def facteur_d_emission(self):
         return get_emission_factors().get_factor(self.type, self.unite, self.localisation)
+
+    @property
+    def classification(self):
+        return get_emission_factors().get_classification(self.type)
