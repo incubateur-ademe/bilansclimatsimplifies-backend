@@ -107,7 +107,7 @@ class TestUserApi(APITestCase):
             "email": "test@example.com",
             "firstname": "Camille",
             "lastname": "Dupont",
-            "cgu": "true",
+            "cgu": True,
         }
         token_mocker = request_mock.post(
             "https://keycloak.com/auth/realms/test/protocol/openid-connect/token",

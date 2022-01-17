@@ -309,7 +309,6 @@ class CreateAccountView(APIView):
 
     def post(self, _):
         body = json.loads(self.request.body)
-        print(body)
         email = body.get("email")
         firstname = body.get("firstname")
         lastname = body.get("lastname")
@@ -332,7 +331,7 @@ class CreateAccountView(APIView):
                 json={"email": email, "firstname": firstname, "lastname": lastname},
                 timeout=5,
             )
-            if response.status_code == 201 and cgu == "true":
+            if response.status_code == 201 and cgu:
                 # accept CGU
                 user_id = response.json()["userId"]
                 try:
