@@ -304,9 +304,10 @@ class CreateAccountView(APIView):
         response = requests.get(search_endpoint, headers=headers, timeout=5)
         if response.status_code >= 400:
             print(response.text)
-        return JsonResponse({"headers": headers, "status": response.status_code}, status=response.status_code)
+        return JsonResponse({"status": response.status_code}, status=response.status_code)
 
     def post(self, _):
+        print(self.request.POST)
         email = self.request.POST.get("email")
         firstname = self.request.POST.get("firstname")
         lastname = self.request.POST.get("lastname")
@@ -333,8 +334,8 @@ class CreateAccountView(APIView):
                 # accept CGU
                 user_id = response.json()["userId"]
                 try:
-                    gcu_endpoint = f"{settings.AUTH_USERS_API}/api/users/{user_id}/enableCGU"
-                    requests.put(gcu_endpoint, headers=headers, timeout=5)
+                    cgu_endpoint = f"{settings.AUTH_USERS_API}/api/users/{user_id}/enableCGU"
+                    requests.put(cgu_endpoint, headers=headers, timeout=5)
                 except Exception as e:
                     # TODO: log error
                     print(f"Error enabling GCU for user {user_id}: {e}")

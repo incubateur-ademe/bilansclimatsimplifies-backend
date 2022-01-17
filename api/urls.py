@@ -22,7 +22,7 @@ urlpatterns = {
         name="emissions-xlsx-export",
     ),
     path("emissionFactors/", EmissionFactorsFile.as_view(), name="ef-file"),
-    path("ademeAccount/", CreateAccountView.as_view(), name="create-account"),
+    path("ademeAccount/", CreateAccountView.as_view(), name="create_account"),
 }
 
 urlpatterns = format_suffix_patterns(urlpatterns)
