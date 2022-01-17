@@ -119,7 +119,7 @@ class TestUserApi(APITestCase):
         )
         cgu_mocker = request_mock.put("https://example.com/api/users/42/enableCGU", status_code=status.HTTP_200_OK)
 
-        response = self.client.post(reverse("create_account"), payload)
+        response = self.client.post(reverse("create_account"), payload, format="json")
 
         self.assertTrue(token_mocker.called_once)
         self.assertEqual(

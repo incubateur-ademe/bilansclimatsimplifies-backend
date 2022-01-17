@@ -28,6 +28,7 @@ from rest_framework.viewsets import ReadOnlyModelViewSet
 from drf_renderer_xlsx.mixins import XLSXFileMixin
 from drf_renderer_xlsx.renderers import XLSXRenderer
 import requests
+import json
 
 
 class AdemeUserView(APIView):
@@ -307,11 +308,12 @@ class CreateAccountView(APIView):
         return JsonResponse({"status": response.status_code}, status=response.status_code)
 
     def post(self, _):
-        print(self.request.POST)
-        email = self.request.POST.get("email")
-        firstname = self.request.POST.get("firstname")
-        lastname = self.request.POST.get("lastname")
-        cgu = self.request.POST.get("cgu")
+        body = json.loads(self.request.body)
+        print(body)
+        email = body.get("email")
+        firstname = body.get("firstname")
+        lastname = body.get("lastname")
+        cgu = body.get("cgu")
         if not email or not firstname or not lastname or not cgu:
             return HttpResponseBadRequest("Données manquantes : on attend email, firstname, lastname, et cgu")
         headers = get_authorization_header()
