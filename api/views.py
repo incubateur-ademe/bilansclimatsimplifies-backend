@@ -302,6 +302,8 @@ class CreateAccountView(APIView):
         headers = get_authorization_header()
         search_endpoint = f"{settings.AUTH_USERS_API}/api/users/search?email={email}"
         response = requests.get(search_endpoint, headers=headers, timeout=5)
+        if response.status_code >= 400:
+            print(response.text)
         return JsonResponse({"headers": headers, "status": response.status_code}, status=response.status_code)
 
     def post(self, _):
