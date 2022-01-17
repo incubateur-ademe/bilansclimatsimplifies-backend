@@ -1,7 +1,7 @@
 {
   "jobs": [
     {
-      "command": "40 2 * * * $ROOT/crons/publicexport.sh"
+      "command": "40 2 * * * ./crons/publicexport.sh"
     }
   ]
 }
