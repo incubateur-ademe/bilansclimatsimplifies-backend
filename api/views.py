@@ -289,6 +289,7 @@ def get_authorization_header():
         raise BadRequest(f"{token_response.status_code} {token_endpoint}")
 
     token_json = token_response.json()
+    print("access token: ", token_json["access_token"])
     return {
         "Authorization": "Bearer " + token_json["access_token"],
         "accept": "*/*",

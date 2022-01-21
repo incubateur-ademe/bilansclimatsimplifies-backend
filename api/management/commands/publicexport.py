@@ -25,9 +25,11 @@ class ExportRenderer(r.CSVRenderer):
 
 
 def update_public_export():
+    print("Updating public export...")
     published_reports = Report.objects.filter(statut=Report.Status.PUBLISHED)
-    if published_reports.count() == 0:
-        return
+    # TODO: add this back in when going into prod.
+    # if published_reports.count() == 0:
+    #     return
 
     serializer = PublicReportExportSerializer(published_reports, many=True)
     rendered_data = ExportRenderer().render(serializer.data)
@@ -35,7 +37,8 @@ def update_public_export():
 
     url = settings.KOUMOUL_API_URL
     key = settings.KOUMOUL_API_KEY
-    requests.post(url, headers={"x-api-key": key}, files=files, timeout=0.1)
+    response = requests.post(url, headers={"x-api-key": key}, files=files, timeout=0.1)
+    print("public export status", response.status_code)
 
 
 class Command(BaseCommand):
