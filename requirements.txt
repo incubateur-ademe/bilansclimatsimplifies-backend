@@ -39,7 +39,7 @@ python-dotenv==0.19.2
 python-jwt==3.3.2
 pytz==2021.3
 regex==2022.1.18
-requests==2.26.0
+requests==2.27.1
 requests-mock==1.9.3
 six==1.16.0
 sqlparse==0.4.2
