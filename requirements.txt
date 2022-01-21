@@ -3,12 +3,12 @@ astkit==0.5.4
 black==21.12b0
 certifi==2021.10.8
 cffi==1.15.0
-charset-normalizer==2.0.9
+charset-normalizer==2.0.10
 click==8.0.3
 coverage==6.2
 cryptography==36.0.1
 Deprecated==1.2.13
-Django==3.2.10
+Django==3.2.11
 django-cors-headers==3.11.0
 django-nose==1.4.7
 djangorestframework==3.13.1
@@ -36,7 +36,7 @@ pyflakes==2.4.0
 PyJWT==2.3.0
 python-dateutil==2.8.2
 python-dotenv==0.19.2
-python-jwt==3.3.1
+python-jwt==3.3.2
 pytz==2021.3
 regex==2021.11.10
 requests==2.26.0
