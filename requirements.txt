@@ -1,4 +1,4 @@
-asgiref==3.4.1
+asgiref==3.5.0
 astkit==0.5.4
 black==21.12b0
 certifi==2021.10.8
