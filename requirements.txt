@@ -18,7 +18,7 @@ djangorestframework-simplejwt==5.0.0
 drf-renderer-xlsx==0.4.4
 et-xmlfile==1.1.0
 factory-boy==3.2.1
-Faker==11.3.0
+Faker==12.2.0
 flake8==4.0.1
 idna==3.3
 jwcrypto==1.0
