@@ -28,7 +28,7 @@
     "poste": "1"
   },
   "Articulé, 34 à 40 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
-    "affichage": "Articulé, 34 à 40 tonnes, Diesel routier, incorporation 7 % de biodiesel",
+    "affichage": "Articulé, 34 à 40 tonnes, Diesel avec incorporation 7 % de biodiesel",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -61,7 +61,7 @@
     "poste": "2"
   },
   "Articulé, 34 à 40 tonnes, GNL, incorporation bio 20%": {
-    "affichage": "Articulé, 34 à 40 tonnes, GNL, incorporation bio 20%",
+    "affichage": "Articulé, 34 à 40 tonnes, GNL avec 20% incorporation bio",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -149,7 +149,7 @@
     "poste": "2"
   },
   "Autobus, Gazole": {
-    "affichage": "Autobus, Gazole",
+    "affichage": "Autobus, Diesel",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -182,7 +182,7 @@
     "poste": "2"
   },
   "Autocar, Gazole": {
-    "affichage": "Autocar",
+    "affichage": "Autocar, Diesel",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -206,7 +206,7 @@
     "poste": "1"
   },
   "Avion cargo, 10 à 25 tonnes, 500 - 1000 kms, 2018, AVEC trainées": {
-    "affichage": "Avion cargo, 10 à 25 tonnes, 500 - 1000 kms, 2018",
+    "affichage": "Avion cargo, 10 à 25 tonnes, 500 - 1000 kms (2018)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -217,7 +217,7 @@
     "poste": "2"
   },
   "Avion cargo, 10 à 25 tonnes, <500 kms, 2018, AVEC trainées": {
-    "affichage": "Avion cargo, 10 à 25 tonnes, <500 kms, 2018",
+    "affichage": "Avion cargo, 10 à 25 tonnes, <500 kms (2018)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -228,7 +228,7 @@
     "poste": "2"
   },
   "Avion cargo, 26 à 100 tonnes, 500 - 1000 kms, 2018, AVEC trainées": {
-    "affichage": "Avion cargo, 26 à 100 tonnes, 500 - 1000 kms, 2018",
+    "affichage": "Avion cargo, 26 à 100 tonnes, 500 - 1000 kms (2018)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -239,7 +239,7 @@
     "poste": "2"
   },
   "Avion cargo, 26 à 100 tonnes, <500 kms, 2018, AVEC trainées": {
-    "affichage": "Avion cargo, 26 à 100 tonnes, <500 kms, 2018",
+    "affichage": "Avion cargo, 26 à 100 tonnes, <500 kms (2018)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -250,7 +250,7 @@
     "poste": "2"
   },
   "Avion cargo, Plus de 100 tonnes, 1000 - 3500 kms, 2018, AVEC trainées": {
-    "affichage": "Avion cargo, Plus de 100 tonnes, 1000 - 3500 kms, 2018",
+    "affichage": "Avion cargo, >100 tonnes, 1000 - 3500 kms (2018)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -261,7 +261,7 @@
     "poste": "2"
   },
   "Avion cargo, Plus de 100 tonnes, 500 - 1000 kms, 2018, AVEC trainées": {
-    "affichage": "Avion cargo, Plus de 100 tonnes, 500 - 1000 kms, 2018",
+    "affichage": "Avion cargo, >100 tonnes, 500 - 1000 kms (2018)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -272,7 +272,7 @@
     "poste": "2"
   },
   "Avion cargo, Plus de 100 tonnes, <500 kms, 2018, AVEC trainées": {
-    "affichage": "Avion cargo, Plus de 100 tonnes, <500 kms, 2018",
+    "affichage": "Avion cargo, >100 tonnes, <500 kms (2018)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -283,7 +283,7 @@
     "poste": "2"
   },
   "Avion cargo, Plus de 100 tonnes, >3500 kms, 2018, AVEC trainées": {
-    "affichage": "Avion cargo, Plus de 100 tonnes, >3500 kms, 2018",
+    "affichage": "Avion cargo, >100 tonnes, >3500 kms (2018)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
