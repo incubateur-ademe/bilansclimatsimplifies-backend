@@ -294,7 +294,7 @@
     "poste": "2"
   },
   "Avion passagers, 101-220 sièges, 1000-3500 kms, 2018, AVEC trainées": {
-    "affichage": "Avion passagers, 101-220 sièges, 1000-3500 kms, 2018",
+    "affichage": "Avion passagers, 101-220 sièges, 1000-3500 kms (2018)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -306,7 +306,7 @@
     "poste": "2"
   },
   "Avion passagers, 101-220 sièges, 500-1000 kms, 2018, AVEC trainées": {
-    "affichage": "Avion passagers, 101-220 sièges, 500-1000 kms, 2018",
+    "affichage": "Avion passagers, 101-220 sièges, 500-1000 kms (2018)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -318,7 +318,7 @@
     "poste": "2"
   },
   "Avion passagers, 101-220 sièges, <500 kms jet, 2018, AVEC trainées": {
-    "affichage": "Avion passagers, 101-220 sièges, <500 kms jet, 2018",
+    "affichage": "Avion passagers, 101-220 sièges, <500 kms jet (2018)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -330,7 +330,7 @@
     "poste": "2"
   },
   "Avion passagers, 101-220 sièges, >3500 kms, 2018, AVEC trainées": {
-    "affichage": "Avion passagers, 101-220 sièges, >3500 kms, 2018",
+    "affichage": "Avion passagers, 101-220 sièges, >3500 kms (2018)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -342,7 +342,7 @@
     "poste": "2"
   },
   "Avion passagers, 20-50 sièges, 1000-3500 kms, 2018, AVEC trainées": {
-    "affichage": "Avion passagers, 20-50 sièges, 1000-3500 kms, 2018",
+    "affichage": "Avion passagers, 20-50 sièges, 1000-3500 kms (2018)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -354,7 +354,7 @@
     "poste": "2"
   },
   "Avion passagers, 20-50 sièges, 500-1000 kms, 2018, AVEC trainées": {
-    "affichage": "Avion passagers, 20-50 sièges, 500-1000 kms, 2018",
+    "affichage": "Avion passagers, 20-50 sièges, 500-1000 kms (2018)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -366,7 +366,7 @@
     "poste": "2"
   },
   "Avion passagers, 20-50 sièges, <500 kms jet, 2018, AVEC trainées": {
-    "affichage": "Avion passagers, 20-50 sièges, <500 kms jet, 2018",
+    "affichage": "Avion passagers, 20-50 sièges, <500 kms jet (2018)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -378,7 +378,7 @@
     "poste": "2"
   },
   "Avion passagers, 20-50 sièges, <500 kms turboprop, 2018, AVEC trainées": {
-    "affichage": "Avion passagers, 20-50 sièges, <500 kms turboprop, 2018",
+    "affichage": "Avion passagers, 20-50 sièges, <500 kms turboprop (2018)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -390,7 +390,7 @@
     "poste": "2"
   },
   "Avion passagers, 51-100 sièges, 1000-3500 kms, 2018, AVEC trainées": {
-    "affichage": "Avion passagers, 51-100 sièges, 1000-3500 kms, 2018",
+    "affichage": "Avion passagers, 51-100 sièges, 1000-3500 kms (2018)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -402,7 +402,7 @@
     "poste": "2"
   },
   "Avion passagers, 51-100 sièges, 500-1000 kms, 2018, AVEC trainées": {
-    "affichage": "Avion passagers, 51-100 sièges, 500-1000 kms, 2018",
+    "affichage": "Avion passagers, 51-100 sièges, 500-1000 kms (2018)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -414,7 +414,7 @@
     "poste": "2"
   },
   "Avion passagers, 51-100 sièges, <500 kms  jet, 2018, AVEC trainées": {
-    "affichage": "Avion passagers, 51-100 sièges, <500 kms  jet, 2018",
+    "affichage": "Avion passagers, 51-100 sièges, <500 kms  jet (2018)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -426,7 +426,7 @@
     "poste": "2"
   },
   "Avion passagers, 51-100 sièges, <500 kms  turboprop, 2018, AVEC trainées": {
-    "affichage": "Avion passagers, 51-100 sièges, <500 kms  turboprop, 2018",
+    "affichage": "Avion passagers, 51-100 sièges, <500 kms  turboprop (2018)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -438,7 +438,7 @@
     "poste": "2"
   },
   "Avion passagers, >220 sièges, 1000-3500 kms, 2018, AVEC trainées": {
-    "affichage": "Avion passagers, >220 sièges, 1000-3500 kms, 2018",
+    "affichage": "Avion passagers, >220 sièges, 1000-3500 kms (2018)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -450,7 +450,7 @@
     "poste": "2"
   },
   "Avion passagers, >220 sièges, >3500 kms, 2018, AVEC trainées": {
-    "affichage": "Avion passagers, >220 sièges, >3500 kms, 2018",
+    "affichage": "Avion passagers, >220 sièges, >3500 kms (2018)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -462,7 +462,7 @@
     "poste": "2"
   },
   "Avion passagers, Court courrier, 2018, AVEC trainées": {
-    "affichage": "Avion passagers, Court courrier, 2018",
+    "affichage": "Avion passagers, Court courrier (2018)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -474,7 +474,7 @@
     "poste": "2"
   },
   "Avion passagers, Long courrier, 2018, AVEC trainées": {
-    "affichage": "Avion passagers, Long courrier, 2018",
+    "affichage": "Avion passagers, Long courrier (2018)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -486,7 +486,7 @@
     "poste": "2"
   },
   "Avion passagers, Moyen courrier, 2018, AVEC trainées": {
-    "affichage": "Avion passagers, Moyen courrier, 2018",
+    "affichage": "Avion passagers, Moyen courrier (2018)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -586,7 +586,7 @@
     "poste": "2"
   },
   "BioGNC -Biométhane comprimé, Pour véhicule routier, Mix Moyen": {
-    "affichage": "BioGNC -Biométhane comprimé",
+    "affichage": "BioGNC - Biométhane comprimé",
     "classification": "carburant",
     "facteurs": {
       "France continentale": {
@@ -666,7 +666,7 @@
     "poste": "1"
   },
   "Biopropane, mix annuel 2020": {
-    "affichage": "Biopropane",
+    "affichage": "Biopropane (2020)",
     "classification": null,
     "facteurs": {
       "France continentale": {
@@ -768,7 +768,7 @@
     "poste": "1"
   },
   "Camion porteur, 45 m3": {
-    "affichage": "Camion porteur",
+    "affichage": "Camion porteur, 45 m3",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -969,7 +969,7 @@
     "poste": "1"
   },
   "Cyclomoteur, Mixte, 2018": {
-    "affichage": "Cyclomoteur, Mixte",
+    "affichage": "Cyclomoteur, utilisation mixte",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -980,7 +980,7 @@
     "poste": "2"
   },
   "Cyclomoteur, Rural, 2018": {
-    "affichage": "Cyclomoteur, Rural",
+    "affichage": "Cyclomoteur, utilisation rurale",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -991,7 +991,7 @@
     "poste": "2"
   },
   "Cyclomoteur, Urbain, 2018": {
-    "affichage": "Cyclomoteur, Urbain",
+    "affichage": "Cyclomoteur, utilisation urbaine",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -1053,7 +1053,7 @@
     "poste": "2"
   },
   "Essence, Supercarburant sans plomb (95, 95-E10, 98)": {
-    "affichage": "Essence, Supercarburant sans plomb (95, 95-E10, 98)",
+    "affichage": "Essence, Sans plomb (95, 95-E10, 98)",
     "classification": "carburant",
     "facteurs": {
       "France continentale": {
@@ -1164,7 +1164,7 @@
     "poste": "1"
   },
   "Fioul à base de carbone recyclé, VALORTEC, Basse teneur en soufre": {
-    "affichage": "Fioul à base de carbone recyclé",
+    "affichage": "Fioul VALORTEC, à base de carbone recyclé",
     "classification": null,
     "facteurs": {
       "France continentale": {
@@ -1177,7 +1177,7 @@
     "poste": "1"
   },
   "Fourgon, 8 m3": {
-    "affichage": "Fourgon",
+    "affichage": "Fourgon, 8 m3",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -1188,7 +1188,7 @@
     "poste": "2"
   },
   "GNC, Gaz Naturel Comprimé pour véhicule routier": {
-    "affichage": "GNC, Gaz Naturel Comprimé pour véhicule routier",
+    "affichage": "GNC, pour véhicule routier",
     "classification": "carburant",
     "facteurs": {
       "France continentale": {
@@ -1203,7 +1203,7 @@
     "poste": "2"
   },
   "GNL, Gaz Naturel Liquéfié, (inclus routier, maritime et fluvial)": {
-    "affichage": "GNL, Gaz Naturel Liquéfié",
+    "affichage": "GNL, pour véhicule",
     "classification": "carburant",
     "facteurs": {
       "France continentale": {
@@ -1284,7 +1284,7 @@
     "poste": "1"
   },
   "Gaz naturel - 2015, mix moyen, consommation": {
-    "affichage": "Gaz naturel - 2015",
+    "affichage": "Gaz naturel (2015)",
     "classification": null,
     "facteurs": {
       "France continentale": {
@@ -1301,7 +1301,7 @@
     "poste": "1"
   },
   "Gaz naturel, Type B, nord": {
-    "affichage": "Gaz naturel, Type B, nord",
+    "affichage": "Gaz naturel, Type B",
     "classification": null,
     "facteurs": {
       "France continentale": {
@@ -1312,7 +1312,7 @@
     "poste": "1"
   },
   "Gaz naturel, Type H, France continentale sauf nord": {
-    "affichage": "Gaz naturel, Type H, France continentale sauf nord",
+    "affichage": "Gaz naturel, Type H",
     "classification": null,
     "facteurs": {
       "France continentale": {
@@ -1334,7 +1334,7 @@
     "poste": "2"
   },
   "Gazier, VLGC (Very Large Gas Carrier), Donnée 2009": {
-    "affichage": "Gazier, VLGC (Very Large Gas Carrier)",
+    "affichage": "Gazier, Very Large Gas Carrier",
     "classification": "carburant",
     "facteurs": {
       "France continentale": {
@@ -1435,7 +1435,7 @@
     "poste": "2"
   },
   "Gazole, B30": {
-    "affichage": "Gazole",
+    "affichage": "Gazole routier, B30",
     "classification": "carburant",
     "facteurs": {
       "France continentale": {
@@ -1580,7 +1580,7 @@
     "poste": "2"
   },
   "Moto =< 250 cm3, Mixte, 2018": {
-    "affichage": "Moto =< 250 cm3, Mixte",
+    "affichage": "Moto =< 250 cm3, utilisation mixte",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -1591,7 +1591,7 @@
     "poste": "2"
   },
   "Moto =< 250 cm3, Rural, 2018": {
-    "affichage": "Moto =< 250 cm3, Rural",
+    "affichage": "Moto =< 250 cm3, utilisation rurale",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -1602,7 +1602,7 @@
     "poste": "2"
   },
   "Moto =< 250 cm3, Urbain, 2018": {
-    "affichage": "Moto =< 250 cm3, Urbain",
+    "affichage": "Moto =< 250 cm3, utilisation urbaine",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -1613,7 +1613,7 @@
     "poste": "2"
   },
   "Moto > 250 cm3, Mixte, 2018": {
-    "affichage": "Moto > 250 cm3, Mixte",
+    "affichage": "Moto > 250 cm3, utilisation mixte",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -1624,7 +1624,7 @@
     "poste": "2"
   },
   "Moto > 250 cm3, Rural, 2018": {
-    "affichage": "Moto > 250 cm3, Rural",
+    "affichage": "Moto > 250 cm3, utilisation rurale",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -1635,7 +1635,7 @@
     "poste": "2"
   },
   "Moto > 250 cm3, Urbain, 2018": {
-    "affichage": "Moto > 250 cm3, Urbain",
+    "affichage": "Moto > 250 cm3, utilisation urbaine",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -1738,7 +1738,7 @@
     "poste": "1"
   },
   "Pneumatiques usagés non réutilisables, Mix combustible moyen": {
-    "affichage": "Pneumatiques usagés non réutilisables, Mix combustible moyen",
+    "affichage": "Pneumatiques usagés non réutilisables, mix moyen",
     "classification": null,
     "facteurs": {
       "France continentale": {
@@ -1749,7 +1749,7 @@
     "poste": "1"
   },
   "Pneumatiques usagés non réutilisables, Poids Lourds": {
-    "affichage": "Pneumatiques usagés non réutilisables, Poids Lourds",
+    "affichage": "Pneumatiques usagés non réutilisables (Poids Lourds)",
     "classification": null,
     "facteurs": {
       "France continentale": {
@@ -1760,7 +1760,7 @@
     "poste": "1"
   },
   "Pneumatiques usagés non réutilisables, Véhicules Légers": {
-    "affichage": "Pneumatiques usagés non réutilisables, Véhicules Légers",
+    "affichage": "Pneumatiques usagés non réutilisables (Véhicules Légers)",
     "classification": null,
     "facteurs": {
       "France continentale": {
@@ -2249,7 +2249,7 @@
     "poste": "2"
   },
   "Rigide, 12 à 20 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
-    "affichage": "Rigide, 12 à 20 tonnes, Diesel routier, incorporation 7 % de biodiesel",
+    "affichage": "Rigide, 12 à 20 tonnes, Diesel routier (B7)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2282,7 +2282,7 @@
     "poste": "2"
   },
   "Rigide, 20 à 26 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
-    "affichage": "Rigide, 20 à 26 tonnes, Diesel routier, incorporation 7 % de biodiesel",
+    "affichage": "Rigide, 20 à 26 tonnes, Diesel routier (B7)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2326,7 +2326,7 @@
     "poste": "2"
   },
   "Rigide, 3,5 à 7,5 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
-    "affichage": "Rigide, 3,5 à 7,5 tonnes, Diesel routier, incorporation 7 % de biodiesel",
+    "affichage": "Rigide, 3,5 à 7,5 tonnes, Diesel routier (B7)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2381,7 +2381,7 @@
     "poste": "2"
   },
   "Rigide, 7,5 à 12 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
-    "affichage": "Rigide, 7,5 à 12 tonnes, Diesel routier, incorporation 7 % de biodiesel",
+    "affichage": "Rigide, 7,5 à 12 tonnes, Diesel routier (B7)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2539,7 +2539,7 @@
     "poste": "2"
   },
   "Train, Traction diesel, Chargement dense": {
-    "affichage": "Train, Traction diesel, Chargement dense",
+    "affichage": "Train, Diesel, Chargement dense",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2550,7 +2550,7 @@
     "poste": "2"
   },
   "Train, Traction diesel, Chargement léger": {
-    "affichage": "Train, Traction diesel, Chargement léger",
+    "affichage": "Train, Diesel, Chargement léger",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2561,7 +2561,7 @@
     "poste": "2"
   },
   "Train, Traction diesel, Chargement moyen": {
-    "affichage": "Train, Traction diesel, Chargement moyen",
+    "affichage": "Train, Diesel, Chargement moyen",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2572,7 +2572,7 @@
     "poste": "2"
   },
   "Train, Traction électrique, Chargement dense": {
-    "affichage": "Train, Traction électrique, Chargement dense",
+    "affichage": "Train, Electrique, Chargement dense",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2583,7 +2583,7 @@
     "poste": "2"
   },
   "Train, Traction électrique, Chargement léger": {
-    "affichage": "Train, Traction électrique, Chargement léger",
+    "affichage": "Train, Electrique, Chargement léger",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2594,7 +2594,7 @@
     "poste": "2"
   },
   "Train, Traction électrique, Chargement moyen": {
-    "affichage": "Train, Traction électrique, Chargement moyen",
+    "affichage": "Train, Electrique, Chargement moyen",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2627,7 +2627,7 @@
     "poste": "2"
   },
   "Utilitaire <3,5t, Hydrogène SMR biométhane centralisé": {
-    "affichage": "Utilitaire <3,5t, Hydrogène SMR biométhane centralisé",
+    "affichage": "Utilitaire <3,5t, Hydrogène SMR biométhane",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2638,7 +2638,7 @@
     "poste": "2"
   },
   "Utilitaire <3,5t, Hydrogène SMR gaz naturel centralisé": {
-    "affichage": "Utilitaire <3,5t, Hydrogène SMR gaz naturel centralisé",
+    "affichage": "Utilitaire <3,5t, Hydrogène SMR gaz naturel",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2649,7 +2649,7 @@
     "poste": "2"
   },
   "Utilitaire <3,5t, Hydrogène électrolyse décentralisée mix EnR": {
-    "affichage": "Utilitaire <3,5t, Hydrogène électrolyse décentralisée mix EnR",
+    "affichage": "Utilitaire <3,5t, Hydrogène électrolyse mix EnR",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2660,7 +2660,7 @@
     "poste": "2"
   },
   "Utilitaire <3,5t, Hydrogène électrolyse décentralisée mix France": {
-    "affichage": "Utilitaire <3,5t, Hydrogène électrolyse décentralisée mix France",
+    "affichage": "Utilitaire <3,5t, Hydrogène électrolyse mix France",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2671,7 +2671,7 @@
     "poste": "2"
   },
   "VUL, < 3,5 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
-    "affichage": "VUL, < 3,5 tonnes, Diesel routier, incorporation 7 % de biodiesel",
+    "affichage": "VUL, < 3,5 tonnes, Diesel routier (B7)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2737,7 +2737,7 @@
     "poste": "2"
   },
   "Voiture E85, Mixte, 2018": {
-    "affichage": "Voiture E85, Mixte",
+    "affichage": "Voiture E85, Utilisation Mixte",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2770,7 +2770,7 @@
     "poste": "2"
   },
   "Voiture GNV, Mixte, 2018": {
-    "affichage": "Voiture GNV, Mixte",
+    "affichage": "Voiture GNV, Utilisation Mixte",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2803,7 +2803,7 @@
     "poste": "2"
   },
   "Voiture GPL, Mixte, 2018": {
-    "affichage": "Voiture GPL, Mixte",
+    "affichage": "Voiture GPL, Utilisation Mixte",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2836,7 +2836,7 @@
     "poste": "2"
   },
   "Voiture essence, Mixte, 2018": {
-    "affichage": "Voiture essence, Mixte",
+    "affichage": "Voiture essence, Utilisation Mixte",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2847,7 +2847,7 @@
     "poste": "2"
   },
   "Voiture gazole, Courte distance, 2018": {
-    "affichage": "Voiture gazole, Courte distance",
+    "affichage": "Voiture Diesel, Courte distance",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2858,7 +2858,7 @@
     "poste": "2"
   },
   "Voiture gazole, Longue distance, 2018": {
-    "affichage": "Voiture gazole, Longue distance",
+    "affichage": "Voiture Diesel, Longue distance",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2869,7 +2869,7 @@
     "poste": "2"
   },
   "Voiture gazole, Mixte, 2018": {
-    "affichage": "Voiture gazole, Mixte",
+    "affichage": "Voiture Diesel, Utilisation Mixte",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2880,7 +2880,7 @@
     "poste": "2"
   },
   "Voiture particulière, Berline, Hydrogène SMR GN centralisé": {
-    "affichage": "Voiture particulière, Berline, Hydrogène SMR GN centralisé",
+    "affichage": "Voiture particulière, Berline, Hydrogène SMR gaz naturel",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2891,7 +2891,7 @@
     "poste": "2"
   },
   "Voiture particulière, Berline, Hydrogène SMR biométhane centralisé": {
-    "affichage": "Voiture particulière, Berline, Hydrogène SMR biométhane centralisé",
+    "affichage": "Voiture particulière, Berline, Hydrogène SMR biométhane",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2902,7 +2902,7 @@
     "poste": "2"
   },
   "Voiture particulière, Berline, Hydrogène électrolyse lix EnR décentralisée": {
-    "affichage": "Voiture particulière, Berline, Hydrogène électrolyse lix EnR décentralisée",
+    "affichage": "Voiture particulière, Berline, Hydrogène électrolyse mix EnR",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2913,7 +2913,7 @@
     "poste": "2"
   },
   "Voiture particulière, Berline, Hydrogène électrolyse mix France décentralisée": {
-    "affichage": "Voiture particulière, Berline, Hydrogène électrolyse mix France décentralisée",
+    "affichage": "Voiture particulière, Berline, Hydrogène électrolyse mix France",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2924,7 +2924,7 @@
     "poste": "2"
   },
   "Voiture particulière, Coeur de gamme - Véhicule compact, Electrique": {
-    "affichage": "Voiture particulière, Coeur de gamme - Véhicule compact, Electrique",
+    "affichage": "Voiture particulière, Véhicule compact, Electrique",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2935,7 +2935,7 @@
     "poste": "2"
   },
   "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride rechargeable, plug in-hybrid, P2/prius": {
-    "affichage": "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride rechargeable, plug in-hybrid, P2/prius",
+    "affichage": "Voiture particulière, Véhicule compact, Hybride rechargeable, plug in-hybrid, P2/prius",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2946,7 +2946,7 @@
     "poste": "2"
   },
   "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, full, P2": {
-    "affichage": "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, full, P2",
+    "affichage": "Voiture particulière, Véhicule compact, Hybride, full, P2",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2957,7 +2957,7 @@
     "poste": "2"
   },
   "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, full, Prius": {
-    "affichage": "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, full, Prius",
+    "affichage": "Voiture particulière, Véhicule compact, Hybride, full, Prius",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2968,7 +2968,7 @@
     "poste": "2"
   },
   "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, mild, diesel": {
-    "affichage": "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, mild, diesel",
+    "affichage": "Voiture particulière, Véhicule compact, Hybride, mild, diesel",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2979,7 +2979,7 @@
     "poste": "2"
   },
   "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, mild, essence": {
-    "affichage": "Voiture particulière, Coeur de gamme - Véhicule compact, Hybride, mild, essence",
+    "affichage": "Voiture particulière, Véhicule compact, Hybride, mild, essence",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2990,7 +2990,7 @@
     "poste": "2"
   },
   "Voiture particulière, Entrée de gamme - Véhicule léger, Electrique": {
-    "affichage": "Voiture particulière, Entrée de gamme - Véhicule léger, Electrique",
+    "affichage": "Voiture particulière, Véhicule léger, Electrique",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -3001,7 +3001,7 @@
     "poste": "2"
   },
   "Voiture particulière, Entrée de gamme - Véhicule léger, Hybride rechargeable avec alimentation auxilliaire de puissance": {
-    "affichage": "Voiture particulière, Entrée de gamme - Véhicule léger, Hybride rechargeable avec alimentation auxilliaire de puissance",
+    "affichage": "Voiture particulière, Véhicule léger, Hybride rechargeable",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -3012,7 +3012,7 @@
     "poste": "2"
   },
   "Voiture particulière, Entrée de gamme - Véhicule léger, Hybride, mild essence": {
-    "affichage": "Voiture particulière, Entrée de gamme - Véhicule léger, Hybride, mild essence",
+    "affichage": "Voiture particulière, Véhicule léger, Hybride, mild essence",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -3023,7 +3023,7 @@
     "poste": "2"
   },
   "Voiture particulière, Haut de gamme - Berline, Electrique": {
-    "affichage": "Voiture particulière, Haut de gamme - Berline, Electrique",
+    "affichage": "Voiture particulière, Berline, Electrique",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -3034,7 +3034,7 @@
     "poste": "2"
   },
   "Voiture particulière, Haut de gamme - Berline, Hybride rechargeable, plug in-hybrid, P2 / Prius": {
-    "affichage": "Voiture particulière, Haut de gamme - Berline, Hybride rechargeable, plug in-hybrid, P2 / Prius",
+    "affichage": "Voiture particulière, Berline, Hybride rechargeable, plug in-hybrid, P2 / Prius",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -3045,7 +3045,7 @@
     "poste": "2"
   },
   "Voiture particulière, Haut de gamme - Berline, Hybride, full P2": {
-    "affichage": "Voiture particulière, Haut de gamme - Berline, Hybride, full P2",
+    "affichage": "Voiture particulière, Berline, Hybride, full P2",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -3056,7 +3056,7 @@
     "poste": "2"
   },
   "Voiture particulière, Haut de gamme - Berline, Hybride, full Prius": {
-    "affichage": "Voiture particulière, Haut de gamme - Berline, Hybride, full Prius",
+    "affichage": "Voiture particulière, Berline, Hybride, full Prius",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -3067,7 +3067,7 @@
     "poste": "2"
   },
   "Voiture particulière, Haut de gamme - Berline, Hybride, mild diesel": {
-    "affichage": "Voiture particulière, Haut de gamme - Berline, Hybride, mild diesel",
+    "affichage": "Voiture particulière, Berline, Hybride, mild diesel",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -3078,7 +3078,7 @@
     "poste": "2"
   },
   "Voiture particulière, Haut de gamme - Berline, Hybride, mild essence": {
-    "affichage": "Voiture particulière, Haut de gamme - Berline, Hybride, mild essence",
+    "affichage": "Voiture particulière, Berline, Hybride, mild essence",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -3133,7 +3133,7 @@
     "poste": "2"
   },
   "Voiture, Motorisation gazole, 2018": {
-    "affichage": "Voiture, Motorisation gazole",
+    "affichage": "Voiture, Motorisation diesel",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -3188,7 +3188,7 @@
     "poste": "2"
   },
   "Vélo, à assistance électrique": {
-    "affichage": "Vélo",
+    "affichage": "Vélo à assistance électrique",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
