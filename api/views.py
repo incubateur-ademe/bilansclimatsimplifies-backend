@@ -3,7 +3,7 @@ from django.contrib.auth import get_user_model
 from django.core.exceptions import BadRequest
 from django.db import transaction
 from django.db.utils import IntegrityError
-from django.http.response import HttpResponse, HttpResponseBadRequest, HttpResponseServerError, JsonResponse
+from django.http.response import JsonResponse
 from django.utils import timezone
 from rest_framework import permissions, status
 from rest_framework.exceptions import NotFound, NotAuthenticated
@@ -289,7 +289,6 @@ def get_authorization_header():
         raise BadRequest(f"{token_response.status_code} {token_endpoint}")
 
     token_json = token_response.json()
-    print("access token: ", token_json["access_token"])
     return {
         "Authorization": "Bearer " + token_json["access_token"],
         "accept": "*/*",
@@ -315,12 +314,14 @@ class CreateAccountView(APIView):
         lastname = body.get("lastname")
         cgu = body.get("cgu")
         if not email or not firstname or not lastname or not cgu:
-            return HttpResponseBadRequest("Données manquantes : on attend email, firstname, lastname, et cgu")
+            return JsonResponse(
+                {"message": "Données manquantes : on attend email, firstname, lastname, et cgu"}, status=400
+            )
         headers = get_authorization_header()
         search_endpoint = f"{settings.AUTH_USERS_API}/api/users/search?email={email}"
         response = requests.get(search_endpoint, headers=headers, timeout=5)
         if response.status_code == 200:
-            return HttpResponseBadRequest("Un compte existe déjà avec cet email.")
+            return JsonResponse({"message": "Un compte existe déjà avec cet email."}, status=400)
         else:
             # attempt to continue with account creation
             creation_endpoint = (
@@ -343,5 +344,5 @@ class CreateAccountView(APIView):
                     print(f"Error enabling GCU for user {user_id}: {e}")
             else:
                 # TODO: log error
-                return HttpResponseServerError("Erreur lors de la création du compte: " + response.text)
-            return HttpResponse(status=HTTP_201_CREATED)
+                return JsonResponse({"message": "Erreur lors de la création du compte: " + response.text}, status=500)
+            return JsonResponse({}, status=HTTP_201_CREATED)
