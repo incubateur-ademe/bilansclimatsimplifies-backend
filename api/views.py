@@ -297,16 +297,6 @@ def get_authorization_header():
 
 
 class CreateAccountView(APIView):
-    def get(self, _):
-        # method for testing only - TODO: remove before prod
-        email = self.request.GET.get("email", "")
-        headers = get_authorization_header()
-        search_endpoint = f"{settings.AUTH_USERS_API}/api/users/search?email={email}"
-        response = requests.get(search_endpoint, headers=headers, timeout=5)
-        if response.status_code >= 400:
-            print(response.text)
-        return JsonResponse({"status": response.status_code}, status=response.status_code)
-
     def post(self, _):
         body = json.loads(self.request.body)
         email = body.get("email")
