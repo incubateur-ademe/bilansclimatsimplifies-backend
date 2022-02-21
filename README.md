@@ -12,13 +12,13 @@ On utilise:
 
 ## Installer
 
-Créer le BDD : `createdb bilans-climat`
-
 Créer l'envionnement virtuel pour python : `python -m venv ./venv`
 
 Activer l'environnement (si nécéssaire) : `source ./venv/bin/activate`. Quand l'env est actif, on vois `(venv)` avant les commandes dans le terminal.
 
 Installer les requirements du projet : `pip install -r requirements.txt`
+
+Créer le BDD : `createdb bilans-climat`
 
 Lancer keycloak en local `docker run -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin quay.io/keycloak/keycloak:15.0.2` et créer le realm `myrealm`, client, et utilisateur. [En lisant plus du setup](https://www.keycloak.org/getting-started/getting-started-docker).
 
@@ -38,13 +38,32 @@ CORS_ORIGIN_WHITELIST='http://localhost:3000'
 CSRF_TRUSTED_ORIGINS='http://localhost:3000'
 JWT_ISSUER="http://localhost:8080/auth/realms/myrealm"
 JWT_CERTS_URL="http://localhost:8080/auth/realms/myrealm/protocol/openid-connect/certs"
-STATIC_FILES_PATH="static/"
-STATIC_URL_PREFIX="/static"
 KOUMOUL_API_KEY=
 KOUMOUL_API_URL="https://koumoul.com/data-fair/api/v1/datasets/bilans-climat-simplifies/"
+AUTH_CLIENT_ID=
+AUTH_CLIENT_SECRET=
+AUTH_KEYCLOAK=
+AUTH_REALM=
+AUTH_USERS_API=
+AUTH_PASS_REDIRECT_URI=
 ```
 
-Les variables `STATIC_` sont réquis par clevercloud.
+## VPN
+
+Il faut qu'on connecte par VPN au ademe connect pour créer les comptes.
+
+En plus des variables d'environnement au-dessus, on a besoin de :
+
+1. Un add-on scalingo pour OpenVPN ou, en locale, let client (OpenVPN)[https://openvpn.net/download-open-vpn/]
+1. Fichier configuration d'OpenVPN (`.ovpn`) - téléchargable dès le portail keycloak
+1. `ca.pem`, `cert.pem`, `key.pem` (c'est possible que ils sont dans le fichier `.ovpn`, dans ce cas là il faut qu'on les separe en trois fichiers individus et remplace les lignes dans la configuration avec `ca ca.pem`, `cert cert.pem`, `key key.pem`)
+1. nom d'utilisateur et mot de passe pour le VPN
+
+Équipe datagir : pour plus de documentation et acceder les secrets, consulter le cloud datagir.
+
+### Staging
+
+Pour un environnement de staging/preproduction on utilise l'environnement Keycloak preprod parce que l'environnement d'integration a besoin d'ajouter des DNS lookups soi-même, qui n'est pas possible sur les hébérgeurs.
 
 ## Tests
 

@@ -1,6 +1,6 @@
 from rest_framework.urlpatterns import format_suffix_patterns
 from django.urls import path
-from api.views import AdemeUserView
+from api.views import AdemeUserView, CreateAccountView
 from api.views import ReportsView, ReportView
 from api.views import ReportEmissionsView, EmissionsView, EmissionView
 from api.views import PrivateExportView, PrivateXlsxExportView, EmissionsExportView, EmissionsXlsxExportView
@@ -22,6 +22,7 @@ urlpatterns = {
         name="emissions-xlsx-export",
     ),
     path("emissionFactors/", EmissionFactorsFile.as_view(), name="ef-file"),
+    path("ademeAccount/", CreateAccountView.as_view(), name="create_account"),
 }
 
 urlpatterns = format_suffix_patterns(urlpatterns)

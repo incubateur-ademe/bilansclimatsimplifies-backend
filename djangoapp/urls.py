@@ -1,5 +1,6 @@
 from django.urls import include, path
 from django.contrib import admin
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from rest_framework import routers
 from . import views
 
@@ -14,3 +15,5 @@ urlpatterns = [
     path("csrf/", views.csrf),
     path("admin/", admin.site.urls),
 ]
+
+urlpatterns += staticfiles_urlpatterns()

@@ -4,9 +4,11 @@ from rest_framework.test import APITestCase
 from rest_framework import status
 from data.factories import ReportFactory, UserFactory
 from django.urls import reverse
+
 from django.test.utils import override_settings
 from data.region_choices import Region
 from data.insee_naf_division_choices import NafDivision
+
 import requests_mock
 from api.management.commands.publicexport import update_public_export
 

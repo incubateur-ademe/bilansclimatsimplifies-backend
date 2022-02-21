@@ -1,0 +1,7 @@
+{
+  "jobs": [
+    {
+      "command": "40 01 * * * ./crons/publicexport.sh"
+    }
+  ]
+}

@@ -5,6 +5,8 @@ from rest_framework import status
 from .utils import authenticate
 from data.factories import UserFactory
 from unittest.mock import patch
+import requests_mock
+from django.test.utils import override_settings
 
 
 class TestUserApi(APITestCase):
@@ -89,3 +91,51 @@ class TestUserApi(APITestCase):
         """
         response = self.client.post(reverse("ademe_user"), {})
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+
+    @requests_mock.Mocker()
+    @override_settings(AUTH_USERS_API="https://example.com")
+    @override_settings(AUTH_PASS_REDIRECT_URI="https://home.com")
+    @override_settings(AUTH_KEYCLOAK="https://keycloak.com")
+    @override_settings(AUTH_REALM="test")
+    @override_settings(AUTH_CLIENT_ID="hello")
+    @override_settings(AUTH_CLIENT_SECRET="supersecret")
+    def test_account_creation(self, request_mock):
+        """
+        Test that the endpoint calls the account creation endpoints
+        """
+        payload = {
+            "email": "test@example.com",
+            "firstname": "Camille",
+            "lastname": "Dupont",
+            "cgu": True,
+        }
+        token_mocker = request_mock.post(
+            "https://keycloak.com/auth/realms/test/protocol/openid-connect/token",
+            json={"access_token": "myaccesstoken"},
+        )
+        search_mocker = request_mock.get("https://example.com/api/users/search", status_code=status.HTTP_404_NOT_FOUND)
+        create_mocker = request_mock.post(
+            "https://example.com/api/users", status_code=status.HTTP_201_CREATED, json={"userId": 42}
+        )
+        cgu_mocker = request_mock.put("https://example.com/api/users/42/enableCGU", status_code=status.HTTP_200_OK)
+
+        response = self.client.post(reverse("create_account"), payload, format="json")
+
+        self.assertTrue(token_mocker.called_once)
+        self.assertEqual(
+            token_mocker.last_request.text, "client_id=hello&client_secret=supersecret&grant_type=client_credentials"
+        )
+        self.assertTrue(search_mocker.called_once)
+        self.assertEqual(search_mocker.last_request.qs, {"email": ["test@example.com"]})
+        self.assertTrue(create_mocker.called_once)
+        self.assertEqual(
+            create_mocker.last_request.json(),
+            {
+                "email": "test@example.com",
+                "firstname": "Camille",
+                "lastname": "Dupont",
+            },
+        )
+        self.assertTrue(cgu_mocker.called_once)
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+        # user not created in DB at this point - will be created on first login
