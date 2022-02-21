@@ -28,7 +28,7 @@
     "poste": "1"
   },
   "Articulé, 34 à 40 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
-    "affichage": "Articulé, 34 à 40 tonnes, Diesel avec incorporation 7 % de biodiesel",
+    "affichage": "Articulé, 34 à 40 tonnes, Diesel routier (B7)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -72,7 +72,7 @@
     "poste": "2"
   },
   "Articulé, 40 à 44 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
-    "affichage": "Articulé, 40 à 44 tonnes",
+    "affichage": "Articulé, 40 à 44 tonnes, Diesel routier (B7)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -83,7 +83,7 @@
     "poste": "2"
   },
   "Articulé, 44 à 60 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
-    "affichage": "Articulé, 44 à 60 tonnes",
+    "affichage": "Articulé, 44 à 60 tonnes, Diesel routier (B7)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -94,7 +94,7 @@
     "poste": "2"
   },
   "Articulé, 60 à 72 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
-    "affichage": "Articulé, 60 à 72 tonnes",
+    "affichage": "Articulé, 60 à 72 tonnes, Diesel routier (B7)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -116,7 +116,7 @@
     "poste": "2"
   },
   "Articulé, < 34 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
-    "affichage": "Articulé, < 34 tonnes",
+    "affichage": "Articulé, < 34 tonnes, Diesel routier (B7)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
@@ -2315,7 +2315,7 @@
     "poste": "2"
   },
   "Rigide, 26 à 32 tonnes, Diesel routier, incorporation 7 % de biodiesel": {
-    "affichage": "Rigide, 26 à 32 tonnes",
+    "affichage": "Rigide, 26 à 32 tonnes, Diesel routier (B7)",
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
