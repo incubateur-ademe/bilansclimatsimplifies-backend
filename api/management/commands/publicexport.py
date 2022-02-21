@@ -37,7 +37,7 @@ def update_public_export():
 
     url = settings.KOUMOUL_API_URL
     key = settings.KOUMOUL_API_KEY
-    response = requests.post(url, headers={"x-api-key": key}, files=files, timeout=0.1)
+    response = requests.post(url, headers={"x-api-key": key}, files=files, timeout=10)
     print("public export status", response.status_code)
 
 

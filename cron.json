@@ -1,7 +1,7 @@
 {
   "jobs": [
     {
-      "command": "50 12 * * * ./crons/publicexport.sh"
+      "command": "00 14 * * * ./crons/publicexport.sh"
     }
   ]
 }
