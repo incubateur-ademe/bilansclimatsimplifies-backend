@@ -611,43 +611,6 @@
     "groupe": "Non routier",
     "poste": "2"
   },
-  "Biodiesel, Mix moyen, sans changement d'affectation des sols": {
-    "affichage": "Biodiesel, Mix moyen",
-    "classification": "carburant",
-    "facteurs": {
-      "France continentale": {
-        "kgCO2e/MJ PCI": "0"
-      }
-    },
-    "groupe": [
-      "",
-      "Routier"
-    ],
-    "poste": [
-      "1",
-      "2"
-    ]
-  },
-  "Biodiesel, sans changement d'affectation des sols": {
-    "affichage": "Biodiesel, sans changement d'affectation des sols",
-    "classification": "carburant",
-    "facteurs": {
-      "France continentale": {
-        "kgCO2e/kWh PCI": "0",
-        "kgCO2e/litre": "0",
-        "kgCO2e/tep PCI": "0",
-        "kgCO2e/tonne": "0"
-      }
-    },
-    "groupe": [
-      "",
-      "Routier"
-    ],
-    "poste": [
-      "1",
-      "2"
-    ]
-  },
   "Biométhane, Injecté dans les réseaux, Mix moyen": {
     "affichage": "Biométhane",
     "classification": null,
@@ -1324,7 +1287,7 @@
   },
   "Gazier, Petit GPL, Donnée 2009": {
     "affichage": "Gazier, Petit GPL",
-    "classification": "carburant",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0469"
@@ -1335,7 +1298,7 @@
   },
   "Gazier, VLGC (Very Large Gas Carrier), Donnée 2009": {
     "affichage": "Gazier, Very Large Gas Carrier",
-    "classification": "carburant",
+    "classification": "véhicule",
     "facteurs": {
       "France continentale": {
         "kgCO2e/t.km": "0.0127"
@@ -1489,17 +1452,6 @@
     },
     "groupe": "",
     "poste": "1"
-  },
-  "Hoverboard": {
-    "affichage": "Hoverboard",
-    "classification": null,
-    "facteurs": {
-      "France continentale": {
-        "kgCO2e/heure": "6.25E-03"
-      }
-    },
-    "groupe": null,
-    "poste": null
   },
   "Huiles de schistes": {
     "affichage": "Huiles de schistes",
@@ -2620,7 +2572,7 @@
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
-        "kgCO2e/km": "2.00E-03"
+        "kgCO2e/km": "0"
       }
     },
     "groupe": "Routier",
@@ -3192,7 +3144,7 @@
     "classification": "véhicule",
     "facteurs": {
       "France continentale": {
-        "kgCO2e/km": "2.23E-03"
+        "kgCO2e/km": "0"
       }
     },
     "groupe": "Routier",
