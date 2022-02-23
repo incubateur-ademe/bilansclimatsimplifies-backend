@@ -333,6 +333,19 @@ class CreateAccountView(APIView):
                     # TODO: log error
                     print(f"Error enabling GCU for user {user_id}: {e}")
             else:
-                # TODO: log error
-                return JsonResponse({"message": "Erreur lors de la création du compte: " + response.text}, status=500)
+                print(f"Error creating user: {response.status_code} {response.text}")
+                return JsonResponse(
+                    {"message": "Erreur lors de la création du compte. Essayez à nouveau ou contactez-nous."},
+                    status=500,
+                )
             return JsonResponse({}, status=HTTP_201_CREATED)
+
+    def get(self, _):
+        # method for testing VPN connection
+        headers = get_authorization_header()
+        search_endpoint = f"{settings.AUTH_USERS_API}/api/users/search?email=test@example.com"
+        response = requests.get(search_endpoint, headers=headers, timeout=5)
+        if response.status_code >= 400:
+            print("Error searching user")
+            print(response.text)
+        return JsonResponse({"status": response.status_code}, status=response.status_code)
