@@ -14,6 +14,9 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
+
 load_dotenv()  # take environment variables from .env.
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -231,3 +234,14 @@ NOSE_ARGS = [
     "--cover-html",
     "--cover-branches",
 ]
+
+# Sentry
+# No need making this one secret: https://forum.sentry.io/t/dsn-private-public/6297/3
+if not DEBUG:
+    sentry_sdk.init(
+        dsn="https://6529d7f3491b4361930aafa7f0cd206f@o548798.ingest.sentry.io/6230461",
+        integrations=[DjangoIntegration()],
+        traces_sample_rate=0,
+        send_default_pii=False,
+        send_client_reports=False,
+    )
