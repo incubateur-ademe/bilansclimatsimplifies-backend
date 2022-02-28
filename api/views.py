@@ -25,8 +25,8 @@ from rest_framework_csv import renderers as r
 from .utils import camelize
 from data.emission_factors import get_emission_factors
 from rest_framework.viewsets import ReadOnlyModelViewSet
-from drf_renderer_xlsx.mixins import XLSXFileMixin
-from drf_renderer_xlsx.renderers import XLSXRenderer
+from drf_excel.mixins import XLSXFileMixin
+from drf_excel.renderers import XLSXRenderer
 import requests
 import json
 
