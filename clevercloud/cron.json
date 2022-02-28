@@ -1,3 +1,0 @@
-[
-  "40 2 * * * $ROOT/crons/publicexport.sh"
-]

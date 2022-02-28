@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.contrib.auth import get_user_model
 from django.core.exceptions import BadRequest
 from django.db import transaction
@@ -26,6 +27,8 @@ from data.emission_factors import get_emission_factors
 from rest_framework.viewsets import ReadOnlyModelViewSet
 from drf_excel.mixins import XLSXFileMixin
 from drf_excel.renderers import XLSXRenderer
+import requests
+import json
 
 
 class AdemeUserView(APIView):
@@ -270,3 +273,79 @@ class EmissionsXlsxExportView(XLSXFileMixin, ReadOnlyModelViewSet):
 class EmissionFactorsFile(APIView):
     def get(self, _):
         return JsonResponse(get_emission_factors().emission_factors, status=status.HTTP_200_OK)
+
+
+def get_authorization_header():
+    """Retrieve a service token to call ADEME users API"""
+    token_endpoint = f"{settings.AUTH_KEYCLOAK}/auth/realms/{settings.AUTH_REALM}/protocol/openid-connect/token"
+    token_parameters = {
+        "client_id": settings.AUTH_CLIENT_ID,
+        "client_secret": settings.AUTH_CLIENT_SECRET,
+        "grant_type": "client_credentials",
+    }
+    token_response = requests.post(token_endpoint, data=token_parameters, timeout=5)
+
+    if not token_response.ok:
+        raise BadRequest(f"{token_response.status_code} {token_endpoint}")
+
+    token_json = token_response.json()
+    return {
+        "Authorization": "Bearer " + token_json["access_token"],
+        "accept": "*/*",
+        "content-type": "application/json",
+    }
+
+
+class CreateAccountView(APIView):
+    def post(self, _):
+        body = json.loads(self.request.body)
+        email = body.get("email")
+        firstname = body.get("firstname")
+        lastname = body.get("lastname")
+        cgu = body.get("cgu")
+        if not email or not firstname or not lastname or not cgu:
+            return JsonResponse(
+                {"message": "Données manquantes : on attend email, firstname, lastname, et cgu"}, status=400
+            )
+        headers = get_authorization_header()
+        search_endpoint = f"{settings.AUTH_USERS_API}/api/users/search?email={email}"
+        response = requests.get(search_endpoint, headers=headers, timeout=5)
+        if response.status_code == 200:
+            return JsonResponse({"message": "Un compte existe déjà avec cet email."}, status=400)
+        else:
+            # attempt to continue with account creation
+            creation_endpoint = (
+                f"{settings.AUTH_USERS_API}/api/users?updatePasswordRedirectURI={settings.AUTH_PASS_REDIRECT_URI}"
+            )
+            response = requests.post(
+                creation_endpoint,
+                headers=headers,
+                json={"email": email, "firstname": firstname, "lastname": lastname},
+                timeout=5,
+            )
+            if response.status_code == 201 and cgu:
+                # accept CGU
+                user_id = response.json()["userId"]
+                try:
+                    cgu_endpoint = f"{settings.AUTH_USERS_API}/api/users/{user_id}/enableCGU"
+                    requests.put(cgu_endpoint, headers=headers, timeout=5)
+                except Exception as e:
+                    # TODO: log error
+                    print(f"Error enabling GCU for user {user_id}: {e}")
+            else:
+                print(f"Error creating user: {response.status_code} {response.text}")
+                return JsonResponse(
+                    {"message": "Erreur lors de la création du compte. Essayez à nouveau ou contactez-nous."},
+                    status=500,
+                )
+            return JsonResponse({}, status=HTTP_201_CREATED)
+
+    def get(self, _):
+        # method for testing VPN connection
+        headers = get_authorization_header()
+        search_endpoint = f"{settings.AUTH_USERS_API}/api/users/search?email=test@example.com"
+        response = requests.get(search_endpoint, headers=headers, timeout=5)
+        if response.status_code >= 400:
+            print("Error searching user")
+            print(response.text)
+        return JsonResponse({"status": response.status_code}, status=response.status_code)

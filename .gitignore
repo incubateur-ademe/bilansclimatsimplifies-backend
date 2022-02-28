@@ -5,7 +5,6 @@ TODO.md
 scripts/*.json
 .DS_Store
 .vscode/launch.json
-/static
 .coverage
 /cover
 *.code-workspace
