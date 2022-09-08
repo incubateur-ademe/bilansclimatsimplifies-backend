@@ -14,7 +14,7 @@ from rest_framework.generics import (
     ListAPIView,
 )
 from rest_framework.response import Response
-from rest_framework.status import HTTP_201_CREATED
+from rest_framework.status import HTTP_201_CREATED, HTTP_200_OK
 from rest_framework.views import APIView
 from api.serializers import ReportSerializer, PrivateReportExportSerializer
 from api.serializers import UserSerializer, EmissionSerializer, EmissionExportSerializer
@@ -65,7 +65,8 @@ class AdemeUserView(APIView):
                 first_name=user_payload["given_name"],
                 last_name=user_payload["family_name"],
             )
-        return Response({}, status=HTTP_201_CREATED)
+            return Response({}, status=HTTP_201_CREATED)
+        return Response({}, status=HTTP_200_OK)
 
     # wrap to allow for patching in tests
     @staticmethod
@@ -335,7 +336,9 @@ class CreateAccountView(APIView):
             else:
                 print(f"Error creating user: {response.status_code} {response.text}")
                 return JsonResponse(
-                    {"message": "Erreur lors de la création du compte. Essayez à nouveau ou contactez-nous."},
+                    {
+                        "message": "Erreur lors de la création du compte. Essayez à nouveau après une heure. Si l'erreur persiste, contactez-nous."
+                    },
                     status=500,
                 )
             return JsonResponse({}, status=HTTP_201_CREATED)
