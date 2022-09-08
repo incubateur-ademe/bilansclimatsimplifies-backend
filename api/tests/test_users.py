@@ -76,7 +76,7 @@ class TestUserApi(APITestCase):
         with patch("api.views.AdemeUserView._get_token", return_value=mock_token):
             response = self.client.post(reverse("ademe_user"), {"token": "test_token"})
 
-        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(get_user_model().objects.count(), 1)
         user = get_user_model().objects.first()
         self.assertEqual(user.ademe_id, "test-ademe-id")
