@@ -334,7 +334,8 @@ class CreateAccountView(APIView):
                     # TODO: log error
                     print(f"Error enabling GCU for user {user_id}: {e}")
             else:
-                print(f"Error creating user: {response.status_code} {response.text}")
+                # by using email here can double check if they've since created an account
+                print(f"Error creating user: {response.status_code} {email}")
                 return JsonResponse(
                     {
                         "message": "Erreur lors de la création du compte. Essayez à nouveau après une heure. Si l'erreur persiste, contactez-nous."
