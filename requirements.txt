@@ -9,7 +9,7 @@ coverage==6.3.2
 cryptography==36.0.1
 Deprecated==1.2.13
 dj-static==0.0.6
-Django==4.0.8
+Django==4.1.10
 django-cors-headers==3.11.0
 django-nose==1.4.7
 djangorestframework==3.13.1
