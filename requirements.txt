@@ -24,7 +24,7 @@ Faker==13.11.1
 flake8==4.0.1
 gunicorn==20.1.0
 idna==3.4
-importlib-metadata==4.11.2
+importlib-metadata==7.0.1
 jwcrypto==1.4
 mccabe==0.6.1
 mypy-extensions==0.4.3
